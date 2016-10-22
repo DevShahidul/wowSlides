@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script> 
+	<script type="text/javascript" src="assets/js/video.min.js"></script> 
+	<script type="text/javascript" src="assets/js/custom.js"></script> 
+ 
+
+</head>
+<body>
+	 
+
+<!-- loader  
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>	
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu --> 
+<div class="mobile-menu">
+
+	<div class="close-menu">
+		<img src="assets/images/icons/times.svg" width="20" alt="">
+	</div>
+	
+	<div class="top">
+		
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+				</li>
+				<li class="notification">
+					<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+				</li> 
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+
+
+<!-- All Page -->
+<div class="allPage">
+
+ 
+
+	<!-- main -->
+	<div class="navMain" id="main">
+
+ 
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+			
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+		
+
+		<!-- navbar -->
+		<nav id="navbar"> 
+				
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+ 
+		</nav>
+		<!-- #navbar -->
+
+ 
+	</div>
+	<!-- #main -->
+	
+
+
+	<!-- upload -->
+	<div class="upload-container container">
+		
+		<!-- steps -->
+		<div class="steps">
+
+			<!-- left -->
+			<ul class="left-steps">
+				<li class="active">
+					<span>1</span>
+					Upload
+				</li>
+				<li>
+					<span>2</span>
+					Edit Project
+				</li>
+				<li>
+					<span>3</span>
+					Publish
+				</li>
+			</ul>
+
+			<!-- right -->
+			<ul class="right-buttons">
+				<li><a href="#">PREVIEW</a></li>
+				<li><a class="coloured" href="#">PUBLISH</a></li>
+			</ul>
+
+		</div>
+		<!-- #steps -->
+
+		<!-- forms -->
+		<div class="step-forms">
+			
+
+				<!-- left -->
+				<div class="col-md-6 col-xs-12">
+					
+						<h4>PERSONAL INFO</h4>
+
+						<div class="input-row">
+							<label>Name</label>
+							<input type="text" placeholder="Murat">
+						</div>
+						
+						<div class="input-row">
+							<label>Surname</label>
+							<input type="text" placeholder="Ak">
+						</div>
+						
+						<div class="input-row">
+							<label>Email</label>
+							<input type="text" placeholder="murat@akmurat.com">
+						</div>
+						
+						<div class="input-row">
+							<label>Password</label>
+							<input type="password" placeholder="XshaAj63">
+						</div>
+	 				
+				</div>
+				<!-- #left -->
+
+				<!-- right -->
+				<div class="col-md-6 col-xs-12">
+						<h4>DOCUMENT INFO</h4>
+
+						<form action="upload" class="dropzone" id="my-awesome-dropzone">
+
+							<input type="file" name="file" />
+				 				
+						</form>
+
+				</div>
+				<!-- #right -->
+
+				<div class="clear"></div>
+
+				<div class="button">
+					<button type="submit">NEXT STEP</button>
+				</div>
+
+
+				<div class="description">
+					<p>
+						PPT, PPTX, Shot are 400×300 pixels or 800×600 (for HiDPI displays). If your image is bigger than the sizes above, we’ll help you crop it.
+
+PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content and conduct.
+					</p>
+				</div>
+
+
+		</div>
+		<!-- #forms -->
+
+
+	</div>
+	<!-- #upload -->
+
+
+		
+	<!-- contact -->
+	<section class="contact">
+		<div class="container centered">
+			
+			<p>There are many variations of passages of lorem ipsum available!</p>
+
+			<a href="#" class="action">GET IN TOUCH</a>
+
+		</div>
+	</section>
+	<!-- #contact -->
+
+
+	<!-- contactForm -->
+	<div class="contactForm">
+		<div class="container">
+			
+			<h4>GET IN TOUCH</h4>
+			
+		 	<div class="col-md-6 col-xs-12 inputBox">
+		 		<div class="row">
+	                <label>WHO ARE YOU</label>
+	                <input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+            	</div>
+            </div>
+
+            <div class="col-md-6 col-xs-12 inputBox">
+            	<div class="row">
+	                <label>EMAIL TO REACH YOU</label>
+	                <input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+            	</div>
+            </div>
+
+            <div class="col-md-6 col-xs-12 inputBox">
+            	<div class="row">
+	                <label>TELL US ABOUT IT</label>
+	                <textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+            	</div>
+            </div>
+
+            <div class="pull-right">
+            	<button class="button">SUBMIT</button>
+            </div>
+
+		</div>
+	</div>
+	<!-- #contactForm -->
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			
+
+			<!-- left -->
+			<div class="col-md-8 col-xs-12 footerMenu">
+				
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+				<ul>
+					<span class="title">SUPPORT</span> 
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">Templates</a></li>
+					<li><a href="#">Submit Ticket</a></li>
+					<li><a href="#">Affiliate</a></li>
+					<li><a href="#">Sitemap </a></li>
+				</ul>
+				</ul>
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+			</div>
+
+
+			<!-- right -->
+			<div class="col-md-4 col-xs-12 blogList">
+				
+				<span class="title">BLOG</span>
+
+				<ul>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							[Video Series] Unlock The Power Of Conversational
+						</a>
+					</li>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							Escape The Noise: Join Us At The  Dreamforce 
+						</a>
+					</li>
+					<li>
+						<span>Sept. 8, 2016</span>
+						<a href="#">
+							On-Demand Webinar: How to Bring A Data-Driven 
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- #footer -->
+
+ 	
+ 	<!-- copyright -->
+ 	<section id="copyright">
+ 		<div class="container">
+ 			
+ 			<div class="logo">
+ 				<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+ 			</div>
+
+ 			<ul class="copylist">
+ 				<li><a href="#">English</a></li>
+ 				<li><a href="#">Español</a></li>
+ 				<li><a href="#">한국어</a></li>
+ 				<li><a href="#">日本語</a></li>
+ 				<li><a href="#">Deutsch</a></li>
+ 			</ul>
+
+ 			<div class="clear"></div>
+
+ 			<ul class="copylist">
+ 				<ul>                                     
+					<li><a href="#">TERMS OF SERVICE</a> </li>
+					<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+					<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+					<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+					<li><a href="#">PRIVACY POLICY </a></li>
+				</ul>
+ 			</ul>
+
+
+ 			<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+ 		</div>
+ 	</section>
+ 	<!-- #copyright -->
+ 
+		
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>
