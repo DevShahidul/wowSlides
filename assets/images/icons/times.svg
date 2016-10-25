@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512px" version="1.1" height="512px" viewBox="0 0 64 64" enable-background="new 0 0 64 64">
-  <g>
-    <path fill="#FFFFFF" d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z"/>
-  </g>
+
+<svg width="32px" height="33px" viewBox="298 7 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(313.500000, 23.500000) rotate(-315.000000) translate(-313.500000, -23.500000) translate(303.000000, 13.000000)">
+        <rect id="Rectangle-6" fill="#FFFFFF" x="8.88461538" y="-2.55795385e-12" width="3.23076923" height="21" rx="1.61538462"></rect>
+        <rect id="Rectangle-6" fill="#FFFFFF" transform="translate(10.500000, 10.500000) rotate(-90.000000) translate(-10.500000, -10.500000) " x="8.88461538" y="-2.9878322e-12" width="3.23076923" height="21" rx="1.61538462"></rect>
+    </g>
 </svg>
