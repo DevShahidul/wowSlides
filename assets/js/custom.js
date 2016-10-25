@@ -65,7 +65,6 @@ $(window).load(function(){
       // triggers
       var trigger = $(".toggleButton");
 
-
         trigger.click(function(){
           $(".popUpItem").removeClass("active");
           var target = $(this).attr("data-target");
@@ -75,6 +74,12 @@ $(window).load(function(){
           return false;
         });
 
+        $("*").click(function(e){
+          if( !$(e.target).is( trigger.parent() ) && !$(e.target).is( trigger.parent().find("*") ) ){
+              $(".popUpItem").removeClass("active");
+              trigger.removeClass("active");
+          }
+        });
 
 
 
