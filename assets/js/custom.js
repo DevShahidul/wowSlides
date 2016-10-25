@@ -3,17 +3,13 @@ $(window).load(function(){
 
     		// mobile menu
     		var button = $('.mobile-nav .menu-bar'),
-    			page = $('.allPage'),
-    			close = $('.close-menu img');
+    			  page = $('.allPage');
 
 
     		button.click(function(){
-    			page.addClass("active");
+    			page.toggleClass("active");
     		});
 
-    		close.click(function(){
-    			page.removeClass("active");
-    		});
 
 
     		// video section
@@ -49,18 +45,11 @@ $(window).load(function(){
      	$('.contactForm').hide();
      	$('section.contact a.action').on("click",function(){
      		$('.contactForm').slideToggle(500);
+        $(this).toggleClass("active"); 
             return false;
      	});
 
-     	// search
-     	$('.searchButton').click(function(){
-     		$('#search').addClass("active");
-            return false;
-     	});
-     	$('.closeSearch').click(function(){
-     		$('#search').removeClass("active");
-            return false;
-     	})
+
 
       // triggers
       var trigger = $(".toggleButton");
@@ -81,6 +70,21 @@ $(window).load(function(){
           }
         });
 
+
+        // close
+        $(".close-button").on("click",function(){
+          var Closetarget = $(this).attr("data-target");
+          $(Closetarget).fadeOut(500);
+          return false
+        });
+
+
+        // profile buttons
+        $(".toggleButton.profileButton").click(function(){
+
+            $(this).parent().find(".listDetail").toggleClass("active");
+
+        });
 
 
 
