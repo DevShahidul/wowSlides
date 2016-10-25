@@ -14,16 +14,16 @@
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
 	<script type="text/javascript" src="assets/js/dropzone.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script> 
-	<script type="text/javascript" src="assets/js/video.min.js"></script> 
-	<script type="text/javascript" src="assets/js/custom.js"></script> 
- 
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
 
 </head>
 <body>
-	 
 
-<!-- loader  
+
+<!-- loader
 <div id="loader" class="loader centered">
 	<div class="sk-folding-cube">
 	  <div class="sk-cube1 sk-cube"></div>
@@ -31,21 +31,17 @@
 	  <div class="sk-cube4 sk-cube"></div>
 	  <div class="sk-cube3 sk-cube"></div>
 	</div>
-</div>	
+</div>
 <!-- #loader -->
 
 
 
 
-<!-- mobile-menu --> 
+<!-- mobile-menu -->
 <div class="mobile-menu">
 
-	<div class="close-menu">
-		<img src="assets/images/icons/times.svg" width="20" alt="">
-	</div>
-	
 	<div class="top">
-		
+
 		<!-- user -->
 		<div class="user">
 			<a href="#">
@@ -57,11 +53,49 @@
 		<div class="user-bar">
 			<ul class="centered">
 				<li>
-					<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
 				</li>
 				<li class="notification">
-					<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
-				</li> 
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 		</div>
 
@@ -81,6 +115,9 @@
 				<a href="#">TEMPLATES</a>
 			</li>
 			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
 				<a href="#">BLOG</a>
 			</li>
 			<li>
@@ -94,20 +131,19 @@
 <!-- #mobile-menu -->
 
 
-
 <!-- All Page -->
 <div class="allPage">
 
- 
+
 
 	<!-- main -->
 	<div class="navMain" id="main">
 
- 
+
 
 		<!-- mobile nav -->
 		<div class="mobile-nav">
-			
+
 			<div class="logo">
 				<img src="assets/images/logo.svg" alt="">
 			</div>
@@ -117,11 +153,11 @@
 			</div>
 
 		</div>
-		
+
 
 		<!-- navbar -->
-		<nav id="navbar"> 
-				
+		<nav id="navbar">
+
 				<!-- logo -->
 				<h1 class="logo"><a href="#">wowslides</a></h1>
 
@@ -162,19 +198,19 @@
 						</li>
 					</ul>
 				</div>
- 
+
 		</nav>
 		<!-- #navbar -->
 
- 
+
 	</div>
 	<!-- #main -->
-	
+
 
 
 	<!-- upload -->
 	<div class="upload-container container">
-		
+
 		<!-- steps -->
 		<div class="steps">
 
@@ -205,33 +241,33 @@
 
 		<!-- forms -->
 		<div class="step-forms">
-			
+
 
 				<!-- left -->
 				<div class="col-md-6 col-xs-12">
-					
+
 						<h4>PERSONAL INFO</h4>
 
 						<div class="input-row">
 							<label>Name</label>
 							<input type="text" placeholder="Murat">
 						</div>
-						
+
 						<div class="input-row">
 							<label>Surname</label>
 							<input type="text" placeholder="Ak">
 						</div>
-						
+
 						<div class="input-row">
 							<label>Email</label>
 							<input type="text" placeholder="murat@akmurat.com">
 						</div>
-						
+
 						<div class="input-row">
 							<label>Password</label>
 							<input type="password" placeholder="XshaAj63">
 						</div>
-	 				
+
 				</div>
 				<!-- #left -->
 
@@ -242,7 +278,7 @@
 						<form action="upload" class="dropzone" id="my-awesome-dropzone">
 
 							<input type="file" name="file" />
-				 				
+
 						</form>
 
 				</div>
@@ -272,11 +308,11 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 	<!-- #upload -->
 
 
-		
+
 	<!-- contact -->
 	<section class="contact">
 		<div class="container centered">
-			
+
 			<p>There are many variations of passages of lorem ipsum available!</p>
 
 			<a href="#" class="action">GET IN TOUCH</a>
@@ -289,9 +325,9 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 	<!-- contactForm -->
 	<div class="contactForm">
 		<div class="container">
-			
+
 			<h4>GET IN TOUCH</h4>
-			
+
 		 	<div class="col-md-6 col-xs-12 inputBox">
 		 		<div class="row">
 	                <label>WHO ARE YOU</label>
@@ -325,11 +361,11 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
-			
+
 
 			<!-- left -->
 			<div class="col-md-8 col-xs-12 footerMenu">
-				
+
 				<ul>
 					<span class="title">COMPANY</span>
 					<li><a href="#">About</a></li>
@@ -340,7 +376,7 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 				</ul>
 
 				<ul>
-					<span class="title">SUPPORT</span> 
+					<span class="title">SUPPORT</span>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Tutorials</a></li>
 					<li><a href="#">Templates</a></li>
@@ -364,7 +400,7 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 
 			<!-- right -->
 			<div class="col-md-4 col-xs-12 blogList">
-				
+
 				<span class="title">BLOG</span>
 
 				<ul>
@@ -377,13 +413,13 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 					<li>
 						<span>Sept. 22, 2016</span>
 						<a href="#">
-							Escape The Noise: Join Us At The  Dreamforce 
+							Escape The Noise: Join Us At The  Dreamforce
 						</a>
 					</li>
 					<li>
 						<span>Sept. 8, 2016</span>
 						<a href="#">
-							On-Demand Webinar: How to Bring A Data-Driven 
+							On-Demand Webinar: How to Bring A Data-Driven
 						</a>
 					</li>
 				</ul>
@@ -395,11 +431,11 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
 	</div>
 	<!-- #footer -->
 
- 	
+
  	<!-- copyright -->
  	<section id="copyright">
  		<div class="container">
- 			
+
  			<div class="logo">
  				<a href="#"><img src="assets/images/logo.svg" alt=""></a>
  			</div>
@@ -415,7 +451,7 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
  			<div class="clear"></div>
 
  			<ul class="copylist">
- 				<ul>                                     
+ 				<ul>
 					<li><a href="#">TERMS OF SERVICE</a> </li>
 					<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
 					<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
@@ -431,8 +467,8 @@ PSST Read our <a href="#">Community Guidelines</a> regarding appropriate content
  		</div>
  	</section>
  	<!-- #copyright -->
- 
-		
+
+
 </div>
 <!-- #All Page -->
 

@@ -13,14 +13,14 @@
 
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script> 
-	<script type="text/javascript" src="assets/js/video.min.js"></script> 
-	<script type="text/javascript" src="assets/js/custom.js"></script> 
- 
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
 
 </head>
 <body>
-	 
+
 
 <!-- loader -->
 <div id="loader" class="loader centered">
@@ -30,21 +30,17 @@
 	  <div class="sk-cube4 sk-cube"></div>
 	  <div class="sk-cube3 sk-cube"></div>
 	</div>
-</div>	
+</div>
 <!-- #loader -->
 
 
 
 
-<!-- mobile-menu --> 
+<!-- mobile-menu -->
 <div class="mobile-menu">
 
-	<div class="close-menu">
-		<img src="assets/images/icons/times.svg" width="20" alt="">
-	</div>
-	
 	<div class="top">
-		
+
 		<!-- user -->
 		<div class="user">
 			<a href="#">
@@ -56,11 +52,49 @@
 		<div class="user-bar">
 			<ul class="centered">
 				<li>
-					<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
 				</li>
 				<li class="notification">
-					<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
-				</li> 
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 		</div>
 
@@ -80,6 +114,9 @@
 				<a href="#">TEMPLATES</a>
 			</li>
 			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
 				<a href="#">BLOG</a>
 			</li>
 			<li>
@@ -93,11 +130,10 @@
 <!-- #mobile-menu -->
 
 
-
 <!-- All Page -->
 <div class="allPage">
 
- 
+
 
 	<!-- main -->
 	<div id="main">
@@ -111,7 +147,7 @@
 			</div>
 
 			<div class="cover centered">
-				
+
 				<video id="my-video" class="video-js" controls preload="auto" poster="" data-setup="{}">
 				    <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/black-and-white-flip-clock_bjdanxzzb__PM.mp4" type='video/mp4'>
 				    <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/black-and-white-flip-clock_bjdanxzzb__PM.mp4" type='video/webm'>
@@ -128,21 +164,22 @@
 
 		<!-- mobile nav -->
 		<div class="mobile-nav">
-			
-			<div class="logo">
-				<img src="assets/images/logo.svg" alt="">
-			</div>
 
 			<div class="menu-bar">
 				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
 			</div>
 
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+
 		</div>
-		
+
 
 		<!-- navbar -->
-		<nav id="navbar"> 
-				
+		<nav id="navbar">
+
 				<!-- logo -->
 				<h1 class="logo"><a href="#">wowslides</a></h1>
 
@@ -170,10 +207,48 @@
 				<div class="user-bar">
 					<ul class="centered">
 						<li>
-							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+							<a href="#" class="toggleButton" data-target=".searchBox"><img src="assets/images/icons/search.svg" alt=""></a>
+							<div class="searchBox popUpItem">
+								<input type="text" placeholder="Search">
+								<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+							</div>
 						</li>
 						<li class="notification">
-							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+							<a href="#" class="toggleButton" data-target=".notification-box"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+							<div class="notification-box popUpItem">
+								<ul>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li class="user">
 							<a href="#"><img src="assets/images/araz.png" alt=""></a>
@@ -183,22 +258,23 @@
 						</li>
 					</ul>
 				</div>
- 
+
+
 		</nav>
 		<!-- #navbar -->
 
 
 		<!-- motto -->
 		<div class="motto">
-			
+
 			<div class="motto-inner">
 
 				<h1 class="title">LOREM IPSUM THE <span>VARIATIONS</span><br>GET DOLOR ON WORK.</h1>
-			
+
 				<p>Share what you know and love through presentations, infographics, documents and more.</p>
-				
+
 				<a href="#" class="action watch">WATCH VIDEO</a>
-				
+
 
 			</div>
 
@@ -213,10 +289,10 @@
 		<!-- info boxes -->
 		<div class="container info-boxes">
 			<div class="row">
-				
+
 
 				<div class="col-md-4 col-xs-12 info-box">
-					
+
 					<span class="icon">
 						<img src="assets/images/icons/icon_1.png" alt="">
 					</span>
@@ -228,7 +304,7 @@
 				</div>
 
 				<div class="col-md-4 col-xs-12 info-box">
-					
+
 					<span class="icon">
 						<img src="assets/images/icons/icon_2.png" alt="">
 					</span>
@@ -240,7 +316,7 @@
 				</div>
 
 				<div class="col-md-4 col-xs-12 info-box">
-					
+
 					<span class="icon">
 						<img src="assets/images/icons/icon_3.png" alt="">
 					</span>
@@ -263,12 +339,12 @@
 
 	<!-- main slider -->
 	<div class="main-slider" data-bg-name="Trending WowSlides">
-		
+
 		<!-- titles -->
 		<div class="container titleTop">
 
 			<div class="selects">
-				
+
 				<select>
 					<option value="1">SELECT CATEGORIES</option>
 					<option value="1">CATEGORY I</option>
@@ -283,14 +359,14 @@
 		</div>
 		<!-- #titles -->
 
-		
+
 		    <!-- Swiper -->
 		    <div class="swiper-container wowSlideTop">
 		        <div class="swiper-wrapper">
 
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -304,7 +380,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -313,7 +389,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -321,7 +397,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -338,7 +414,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -352,7 +428,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -361,7 +437,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -369,7 +445,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -386,7 +462,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -400,7 +476,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -409,7 +485,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -417,7 +493,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -434,7 +510,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -448,7 +524,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -457,7 +533,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -465,7 +541,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -482,7 +558,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -496,7 +572,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -505,7 +581,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -513,7 +589,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -530,7 +606,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -544,7 +620,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -553,7 +629,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -561,7 +637,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -578,7 +654,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -592,7 +668,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -601,7 +677,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -609,7 +685,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -626,7 +702,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -640,7 +716,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -649,7 +725,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -657,7 +733,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -674,7 +750,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -688,7 +764,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -697,7 +773,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -705,7 +781,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -722,7 +798,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -736,7 +812,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -745,7 +821,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -753,7 +829,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -770,7 +846,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -784,7 +860,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -793,7 +869,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -801,7 +877,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -818,7 +894,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -832,7 +908,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -841,7 +917,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -849,7 +925,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -863,12 +939,12 @@
 
 		            </div>
 		            <!-- #slide -->
-		        
-		        </div> 
+
+		        </div>
 
 	            <div class="swiper-pagination wowSlideTop"></div>
 
-		
+
 	        <!-- Add Arrows -->
 	        <div class="swiper-button-next wowSlideTop"></div>
 	        <div class="swiper-button-prev wowSlideTop"></div>
@@ -885,7 +961,7 @@
 		    <script>
 		    var swiper = new Swiper('.swiper-container.wowSlideTop', {
 		    	pagination: '.swiper-pagination.wowSlideTop',
-		        slidesPerView: 4,  
+		        slidesPerView: 4,
 		        spaceBetween: 30,
 		        nextButton: '.swiper-button-next.wowSlideTop',
 		        prevButton: '.swiper-button-prev.wowSlideTop',
@@ -915,11 +991,11 @@
 	</div>
 	<!-- #main slider -->
 
-	
+
 	<!-- getStarted -->
 	<section id="getStarted" class="centered">
 		<div>
-			
+
 			<h4>Start WowSlides. Contrary to popular belief, lorem Ipsum is not simply on the random text.</h4>
 
 			<a href="#" class="btn">GET STARTED</a>
@@ -932,13 +1008,13 @@
 
 	<!-- works -->
 	<div id="works">
-		<div class="container"> 
-				
+		<div class="container">
+
 				<!-- titles -->
 				<div class="titleTop">
 
 					<div class="selects centered">
-						
+
 						<select>
 							<option value="1">SELECT COUNTRY</option>
 							<option value="1">CATEGORY I</option>
@@ -963,10 +1039,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -980,7 +1056,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -989,7 +1065,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -997,7 +1073,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1017,10 +1093,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1034,7 +1110,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1043,7 +1119,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1051,7 +1127,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1071,10 +1147,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1088,7 +1164,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1097,7 +1173,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1105,7 +1181,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1125,10 +1201,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1142,7 +1218,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1151,7 +1227,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1159,7 +1235,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1179,10 +1255,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1196,7 +1272,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1205,7 +1281,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1213,7 +1289,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1233,10 +1309,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1250,7 +1326,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1259,7 +1335,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1267,7 +1343,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1287,10 +1363,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1304,7 +1380,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1313,7 +1389,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1321,7 +1397,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1341,10 +1417,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1358,7 +1434,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1367,7 +1443,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1375,7 +1451,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1395,10 +1471,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1412,7 +1488,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1421,7 +1497,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1429,7 +1505,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1449,10 +1525,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1466,7 +1542,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1475,7 +1551,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1483,7 +1559,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1503,10 +1579,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1520,7 +1596,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1529,7 +1605,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1537,7 +1613,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1557,10 +1633,10 @@
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
-					
+
 					<!-- slide -->
 		            <div class="swiper-slide wowSlideBox">
-		            	
+
 		            	<!-- image -->
 		            	<div class="img">
 		            		<a href="#">
@@ -1574,7 +1650,7 @@
 		            	</div>
 
 		            	<div class="texts">
-		            		
+
 		            		<!-- tags -->
 		            		<h5><a href="#">Red Mountain</a></h5>
 
@@ -1583,7 +1659,7 @@
 
 							<!-- tags -->
 		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
-							
+
 							<!-- user -->
 							<div class="user">
 								<a href="#">
@@ -1591,7 +1667,7 @@
 									<span class="text">Araz Murat Ak</span>
 								</a>
 							</div>
- 
+
 		            	</div>
 
 						<!-- list -->
@@ -1614,7 +1690,7 @@
 					<a href="#">SHOW MORE</a>
 				</div>
 
- 
+
 		</div>
 	</div>
 	<!-- #works -->
@@ -1623,16 +1699,16 @@
 	<!-- blog -->
 	<section class="blog">
 		<div class="container">
-			
+
 
 			<!-- titles -->
 			<div class="titleTop">
 
 				<div class="selects centered">
-					
+
 					 <a class="more" href="#">VIEW ALL STORIES <img src="assets/images/icons/arrow_right.svg" alt=""></a>
-					
-				</div> 
+
+				</div>
 
 				<h3>ON THE BLOG</h3>
 
@@ -1647,7 +1723,7 @@
 
 					<!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1667,7 +1743,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1687,7 +1763,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1707,7 +1783,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1727,7 +1803,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1747,7 +1823,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1767,7 +1843,7 @@
 
 		            <!-- slide -->
 		            <div class="swiper-slide slideBlogBox">
-		            	
+
 		            	<div class="date centered">
 		            		<div>
 			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
@@ -1784,14 +1860,14 @@
 
 		            </div>
 		            <!-- #slide -->
-		        
-		        </div> 
+
+		        </div>
 
 	            <div class="swiper-pagination slideBlog"></div>
 
 		    </div>
 
- 
+
 
 
 		    <!-- Initialize Swiper -->
@@ -1799,8 +1875,8 @@
 		    var swiper = new Swiper('.swiper-container.slideBlog', {
     			paginationClickable: true,
         		pagination: '.swiper-pagination.slideBlog',
-		        slidesPerView: 3,  
-		        spaceBetween: 30, 
+		        slidesPerView: 3,
+		        spaceBetween: 30,
     			breakpoints: {
 	            1024: {
 	                slidesPerView: 3,
@@ -1822,7 +1898,7 @@
 		    });
 		    </script>
 
- 
+
  		<div class="clear"></div>
 	</section>
 	<!-- #blog -->
@@ -1831,7 +1907,7 @@
 	<!-- clients -->
 	<div id="clients">
 		<div class="container">
-			
+
 			<h3>They love us, we love them back</h3>
 
 			<div class="col-md-2 col-sm-6 col-xs-6 centered">
@@ -1862,11 +1938,11 @@
 	</div>
 	<!-- #clients -->
 
-	
+
 	<!-- contact -->
 	<section class="contact">
 		<div class="container centered">
-			
+
 			<p>There are many variations of passages of lorem ipsum available!</p>
 
 			<a href="#" class="action">GET IN TOUCH</a>
@@ -1878,9 +1954,9 @@
 		<!-- contactForm -->
 	<div class="contactForm">
 		<div class="container">
-			
+
 			<h4>GET IN TOUCH</h4>
-			
+
 		 	<div class="col-md-6 col-xs-12 inputBox">
 		 		<div class="row">
 	                <label>WHO ARE YOU</label>
@@ -1914,11 +1990,11 @@
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
-			
+
 
 			<!-- left -->
 			<div class="col-md-8 col-xs-12 footerMenu">
-				
+
 				<ul>
 					<span class="title">COMPANY</span>
 					<li><a href="#">About</a></li>
@@ -1929,7 +2005,7 @@
 				</ul>
 
 				<ul>
-					<span class="title">SUPPORT</span> 
+					<span class="title">SUPPORT</span>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Tutorials</a></li>
 					<li><a href="#">Templates</a></li>
@@ -1953,7 +2029,7 @@
 
 			<!-- right -->
 			<div class="col-md-4 col-xs-12 blogList">
-				
+
 				<span class="title">BLOG</span>
 
 				<ul>
@@ -1966,13 +2042,13 @@
 					<li>
 						<span>Sept. 22, 2016</span>
 						<a href="#">
-							Escape The Noise: Join Us At The  Dreamforce 
+							Escape The Noise: Join Us At The  Dreamforce
 						</a>
 					</li>
 					<li>
 						<span>Sept. 8, 2016</span>
 						<a href="#">
-							On-Demand Webinar: How to Bring A Data-Driven 
+							On-Demand Webinar: How to Bring A Data-Driven
 						</a>
 					</li>
 				</ul>
@@ -1984,11 +2060,11 @@
 	</div>
 	<!-- #footer -->
 
- 	
+
  	<!-- copyright -->
  	<section id="copyright">
  		<div class="container">
- 			
+
  			<div class="logo">
  				<a href="#"><img src="assets/images/logo.svg" alt=""></a>
  			</div>
@@ -2004,7 +2080,7 @@
  			<div class="clear"></div>
 
  			<ul class="copylist">
- 				<ul>                                     
+ 				<ul>
 					<li><a href="#">TERMS OF SERVICE</a> </li>
 					<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
 					<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
@@ -2020,7 +2096,7 @@
  		</div>
  	</section>
  	<!-- #copyright -->
-	
+
 </div>
 <!-- #All Page -->
 

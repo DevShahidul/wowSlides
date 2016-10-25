@@ -40,10 +40,6 @@
 <!-- mobile-menu -->
 <div class="mobile-menu">
 
-	<div class="close-menu">
-		<img src="assets/images/icons/times.svg" width="20" alt="">
-	</div>
-
 	<div class="top">
 
 		<!-- user -->
@@ -57,10 +53,48 @@
 		<div class="user-bar">
 			<ul class="centered">
 				<li>
-					<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
 				</li>
 				<li class="notification">
-					<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -81,6 +115,9 @@
 				<a href="#">TEMPLATES</a>
 			</li>
 			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
 				<a href="#">BLOG</a>
 			</li>
 			<li>
@@ -92,8 +129,6 @@
 
 </div>
 <!-- #mobile-menu -->
-
-
 
 <!-- All Page -->
 <div class="allPage">
