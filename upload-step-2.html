@@ -10,6 +10,7 @@
 
 	<!-- basic needs -->
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/jquery.tagsinput.min.css">
 
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
@@ -17,6 +18,12 @@
 	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
 	<script type="text/javascript" src="assets/js/video.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.tagsinput.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#tags,#tags2').tagsInput();
+		})
+	</script>
 
 
 </head>
@@ -270,11 +277,11 @@
 						</div>
 
 						<div class="formItem desc">
-							<input type="text" placeholder="Description">
+							<textarea placeholder="Description"></textarea>
 						</div>
 
 						<div class="formItem kewy">
-							<input type="text" placeholder="Keywords">
+							<input name="tags" id="tags2" placeholder="Add Keywords"/>
 						</div>
 
 					<div class="user">
@@ -320,12 +327,12 @@
 
 						<div class="inputRow">
 							<label>Description</label>
-							<input type="text" placeholder="Enter Description">
+							<textarea placeholder="Enter Description"></textarea>
 						</div>
 
-						<div class="inputRow">
+						<div class="inputRow keyw">
 							<label>Keywords</label>
-							<input type="text" placeholder="Add Keywords">
+							<input name="tags" id="tags" placeholder="Add Keywords"/>
 						</div>
 
 					</div>
@@ -594,7 +601,7 @@
 </div>
 <!-- #All Page -->
 
-
+<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 
 </body>
 </html>
