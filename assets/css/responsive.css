@@ -24,11 +24,22 @@
 
 		#main .info-boxes .info-box{margin-bottom: 30px;}
 
+		.contentDescs{padding:10px!important}
+
 		.mobile-nav{display: block!important;}
 
 		.mobile-menu{display: block!important}
 
+		.imageBig .fullscreen{display: none;}
+
+		.left-desc .tags ul li{margin-bottom: 10px;}
+
+		.left-desc{padding-left: 25px!important;padding-bottom: 0!important;margin-bottom: -20px;}
+		.left-desc h1.title{font-size: 28px!important;}
+
 		.hoverItems{opacity: 1!important}
+
+		.alert{padding:20px;text-align: center;line-height: 20px;}
 
 		.popUp{overflow-y: auto}
 		.popUp .close{top:5px!important;right: 5px!important}
