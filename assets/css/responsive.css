@@ -26,6 +26,8 @@
 
 		.contentDescs{padding:10px!important}
 
+		.follower-box{margin-top: 50px;}
+
 		.mobile-nav{display: block!important;}
 
 		.mobile-menu{display: block!important}
@@ -36,6 +38,32 @@
 
 		.left-desc{padding-left: 25px!important;padding-bottom: 0!important;margin-bottom: -20px;}
 		.left-desc h1.title{font-size: 28px!important;}
+
+		.blog-full-box{margin:10px;padding-bottom: 20px!important;height: 400px!important;}
+		.blog-full-box .image{height: 200px!important;border-radius:4px!important}
+		.blog-full-box .descs{padding:20px!important;;}
+		.blog-full-box .descs h3{font-size: 20px!important;margin-bottom: 10px!important;}
+		.blog-full-box .descs p{font-size: 14px!important;}
+		.blog-full-box .descs ul{padding-bottom: 10px!important;margin-bottom: 10px;}
+		.blog-full-box .descs .tags{display: none;}
+
+		.contactPageForm,.contactInfo{width: 100%!important;}
+		.contactPageForm .contactRow{width: 100%!important;}
+
+		.contactPageForm .contactRow input, .contactPageForm .contactRow textarea{width: 200px!important;font-size: 16px!important;}
+
+		.contactPageForm .contactRow{width: 100%!important;margin:0 auto;display: block!important;line-height: 72px;}
+		.contactPageForm .contactRow span{font-size: 13px!important;width: 100px!important;padding-left: 20px!important;}
+		.contactPageForm .button{padding:20px 30px!important}
+
+		.contactInfo{padding:50px!important}
+
+		.titleTop h3{width: 100%;}
+
+		.blog-full-box.smallBlog:nth-child(odd){left:auto!important}
+		.blog-full-box.smallBlog:nth-child(even){right:auto!important}
+		.blog-full-box.smallBlog{height: auto!important;min-height: auto!important;}
+		.blog-full-box.smallBlog:after{content: '';display: block;clear: both}
 
 		.hoverItems{opacity: 1!important}
 
