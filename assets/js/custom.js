@@ -50,6 +50,12 @@ $(window).load(function(){
      	});
 
 
+      // form clear
+      $('#clearButton').bind("click",function(){
+        $('.contactPageForm input,.contactPageForm textarea').val("");
+      })
+
+
 
       // triggers
       var trigger = $(".toggleButton");
