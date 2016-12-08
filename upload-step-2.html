@@ -245,11 +245,11 @@
 		<!-- #steps -->
 
 		<!-- forms -->
-		<div class="step-forms">
+		<div class="step-forms container">
 
 
 				<!-- left -->
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-xs-12" id="preview__area">
 
 				<h4>PERSONAL INFO</h4>
 
@@ -264,24 +264,21 @@
 					</label>
 
 					<div class="select">
-						<select>
-							<option value="1">SELECT CATEGORY</option>
-							<option value="1">Item 1</option>
-							<option value="1">Item 2</option>
-							<option value="1">Item 3</option>
-						</select>
+						<div class="nice-select no-icon">
+							<span class="current" id="pre__keyw">KEYWORD</span>
+						</div>
 					</div>
 
 						<div class="formItem title">
-							<input type="text" placeholder="Enter a Project Title">
+							<h3 id="pre__title">Enter a project title</h3>
 						</div>
 
 						<div class="formItem desc">
-							<textarea placeholder="Description"></textarea>
+							<p id="pre__desc">Your text is coming here</p>
 						</div>
 
 						<div class="formItem kewy">
-							<input name="tags" id="tags2" placeholder="Add Keywords"/>
+							<input name="tags" id="pre__tags" placeholder="Add Keywords"/>
 						</div>
 
 					<div class="user">
@@ -305,7 +302,7 @@
 
 
 				<!-- middle -->
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-8 col-xs-12" id="preview__items">
 
 					<h4>PROJECT DETAILS</h4>
 
@@ -313,26 +310,26 @@
 
 						<div class="inputRow">
 							<label>Title</label>
-							<input type="text" placeholder="Enter Project Title">
+							<input type="text" data-pre-target="#pre__title" placeholder="Enter Project Title">
 						</div>
 
-						<div class="inputRow">
+						<div class="inputRow niceSelectArea" data-pre-target="#pre__keyw">
 							<label>Category</label>
-							<select>
-								<option value="1">Select Category</option>
-								<option value="1">Select Category</option>
-								<option value="1">Select Category</option>
+							<select id="post_category">
+								<option value="ANGULAR">ANGULAR</option>
+								<option value="NODE.JS">NODE.JS</option>
+								<option value="STYLUS">STYLUS</option>
 							</select>
 						</div>
 
 						<div class="inputRow">
 							<label>Description</label>
-							<textarea placeholder="Enter Description"></textarea>
+							<textarea placeholder="Enter Description" data-pre-target="#pre__desc"></textarea>
 						</div>
 
 						<div class="inputRow keyw">
 							<label>Keywords</label>
-							<input name="tags" id="tags" placeholder="Add Keywords"/>
+							<input name="tags" data-pre-target="#pre__tags" placeholder="Add Keywords"/>
 						</div>
 
 					</div>
@@ -340,7 +337,7 @@
 				</div>
 				<!-- #middle -->
 
-				<!-- right -->
+				<!-- right
 				<div class="col-md-4 col-xs-12">
 
 					<h4>MEMBERS</h4>
