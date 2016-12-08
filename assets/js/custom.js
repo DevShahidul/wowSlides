@@ -11,7 +11,6 @@ $(window).load(function(){
     		});
 
 
-
     		// video section
     		$('#video-section').hide();
     		$('a.action.watch').click(function(){
@@ -95,6 +94,22 @@ $(window).load(function(){
         $(".toggleButton.profileButton").click(function(){
             $(this).parent().find(".listDetail").toggleClass("active");
         });
+
+
+      // post____
+      $('#preview__items input,#preview__items textarea').keyup(function(){
+        var newVal = $(this).val();
+        var newTargetPost = $(this).attr("data-pre-target");
+        $('#preview__area ' + newTargetPost).text(newVal);
+        $('#preview__area ' + newTargetPost).val(newVal);
+      })
+
+
+      $('.niceSelectArea ul.list li').click(function(){
+        var dataCat = $(this).attr("data-value");
+        var newtarget__post = $('.niceSelectArea').attr("data-pre-target");
+        $('#preview__area ' + newtarget__post).text(dataCat);
+      })
 
 
 
