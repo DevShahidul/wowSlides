@@ -24,7 +24,20 @@
 
 		#main .info-boxes .info-box{margin-bottom: 30px;}
 
+		.user-messages{min-height: 280px!important;max-height: 280px!important;margin-bottom: 20px;}
+
+		.bigTitle{font-size: 24px!important;float:none!important;margin-bottom: 20px;padding-left: 10px;}
+		.bigTitle:after{content: '';display: block;clear:both;width: 100%;float:none!importantt;}
+
+		.user-messages{margin-top: -80px;}
+
+		.message-content{position: relative;top:60px;min-height: 300px!important;max-height: 300px!important;padding:10px!important}
+
+		.message-title{position: relative;top:280px;z-index: 9999;}
+
 		.contentDescs{padding:10px!important}
+
+		.message-status-bar .message-title .inner{font-size: 14px!important;}
 
 		.follower-box{margin-top: 50px;}
 
