@@ -5,9 +5,25 @@
 .has-tooltip{
 	position: relative;
 }
+#tags_tagsinput{
+	margin-left: 40px;
+}
+#tags_tagsinput:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+#tags_tag{
+	position: relative;
+	left:10px;
+}
 .has-toopltip::before{
 	content:attr(data-tooltip);
 	display: block;
 	position: absolute;
 	right: -100%;
+}
+.blog-full-box ul li a img{
+	position: relative;
+	top:2px;
 }
