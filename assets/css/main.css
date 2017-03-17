@@ -13,6 +13,9 @@
 	display: block;
 	clear: both;
 }
+.contentDescs img{
+	max-width:100%
+}
 #tags_tag{
 	position: relative;
 	left:10px;
