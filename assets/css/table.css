@@ -1,0 +1,32 @@
+table {
+  background-color: #dbe0e5;
+  width: 100%;
+  box-shadow: 0px 12px 34px 0px rgba(178,178,178,0.5);
+  border-radius: 5px;
+}
+table th,td {
+  padding: 20px 10px;
+}
+
+table th {
+  font-family: 'latoblack';
+  color: #3F515D;
+}
+
+table td {
+  color: #7E8693;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+tr {
+  text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table .img {
+  width: 60px;
+  height: 60px;
+}
