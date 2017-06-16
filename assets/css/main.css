@@ -252,6 +252,17 @@ table .img {
   color: #fff;
 }
 
+.list-style::-webkit-scrollbar {
+  width: 7px;
+  background: #3F515D;
+  border-radius: 90px;
+}
+
+.list-style::-webkit-scrollbar-thumb {
+  background: #56C8C2;
+  border-radius: 10px;
+}
+
 .title-search-row {
   display: flex;
   justify-content: space-between;
@@ -346,11 +357,25 @@ table .img {
 
 .slide-box .slide-buttons {
   display: flex;
+  overflow-x: auto;
+  padding: 0px 5px 10px 5px;
 }
 
 .slide-box .slide-buttons button {
   width: 100%;
+  min-width: 50px;
   cursor: pointer;
-  padding: 16px 0;
   box-shadow: 1px 1px 10px 1px #5a5a5a;
+}
+
+.slide-box .slide-buttons::-webkit-scrollbar {
+  height: 7px;
+  width: 100%;
+  background: #3F515D;
+  border-radius: 90px;
+}
+
+.slide-box .slide-buttons::-webkit-scrollbar-thumb {
+  background: #56C8C2;
+  border-radius: 10px;
 }
