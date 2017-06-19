@@ -308,6 +308,7 @@ table .img {
 .project-frame {
   width: 100%;
   height: 550px;
+  position: relative;
 }
 
 .imageBig .fullscreen {
