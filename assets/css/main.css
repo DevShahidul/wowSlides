@@ -419,6 +419,7 @@ table .img {
   border-top-right-radius: 6px;
   border-bottom: 2px solid #F4F5F7;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .action-buttons .edit-buttons {
@@ -479,8 +480,28 @@ table .img {
   resize: none;
   padding: 15px;
   border-radius: 5px;
-  min-height: 150px;
+  height: 115px;
   margin-bottom: 10px;
+}
+
+.contentDescs {
+  height: 515px;
+}
+
+@media (min-width: 768px) {
+  .contentDescs p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentDescs {
+    height: auto;
+  }
 }
 
 .profile-box {

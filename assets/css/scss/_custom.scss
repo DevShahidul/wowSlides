@@ -350,6 +350,7 @@
   border-top-right-radius: 6px;
   border-bottom: 2px solid #F4F5F7;
   position: relative;
+  margin-bottom: 10px;
   .edit-buttons {
     margin-bottom: 0;
     display: flex;
@@ -401,8 +402,24 @@
     resize: none;
     padding: 15px;
     border-radius: 5px;
-    min-height: 150px;
+    height: 115px;
     margin-bottom: 10px;
+  }
+}
+.contentDescs  {
+  height: 515px;
+
+  @media (min-width: 768px) {
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+    }
+  }
+  @media (max-width: 768px) {
+    height: auto;
   }
 }
 .profile-box {
