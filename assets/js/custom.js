@@ -122,11 +122,11 @@ $(window).load(function(){
 $(window).load(function(){
 	$('#loader').fadeOut(400);
 
-  var frame_height = $('.project-frame').outerWidth() * (0.6);
-	$('.project-frame').css('height', frame_height) ;
+  // var frame_height = $('.project-frame').outerWidth() * (0.6);
+	// $('.project-frame').css('height', frame_height) ;
 });
 
-$(window).resize(function(){
-  var frame_height = $('.project-frame').outerWidth() * (0.6);
-	$('.project-frame').css('height', frame_height) ;
-});
+// $(window).resize(function(){
+//   var frame_height = $('.project-frame').outerWidth() * (0.6);
+// 	$('.project-frame').css('height', frame_height) ;
+// });

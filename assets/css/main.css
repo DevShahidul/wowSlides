@@ -170,8 +170,11 @@ table .img {
 
 .edit-buttons img {
   border-radius: 0;
-  width: 20px;
-  padding-right: 5px;
+  width: 15px;
+}
+
+.edit-buttons span {
+  padding-left: 5px;
 }
 
 .edit-tab.tab-page-links {
@@ -307,16 +310,12 @@ table .img {
 
 .project-frame {
   width: 100%;
-  height: 550px;
+  height: calc(100vh - 220px);
   position: relative;
 }
 
 .imageBig .fullscreen {
   z-index: 999999;
-}
-
-.likeButtons a.like.selected {
-  opacity: 0.5;
 }
 
 .project-content {
@@ -379,4 +378,123 @@ table .img {
 .slide-box .slide-buttons::-webkit-scrollbar-thumb {
   background: #56C8C2;
   border-radius: 10px;
+}
+
+.shareBox {
+  padding: 15px 35px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pagination img {
+  width: 40px;
+}
+
+.fullsize {
+  position: absolute;
+  right: 20px;
+  bottom: 23px;
+}
+
+.fullsize span {
+  padding-left: 10px;
+}
+
+.fullsize img {
+  width: 15px;
+  border-radius: 0;
+}
+
+.members.tags ul li {
+  margin: 0 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 2px solid #F4F5F7;
+  position: relative;
+}
+
+.action-buttons .edit-buttons {
+  margin-bottom: 0;
+  display: flex;
+}
+
+.action-buttons .edit-buttons a {
+  margin: 0 3px;
+}
+
+.action-buttons .share-buttons img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.action-buttons .share-buttons span {
+  color: #56c8c2;
+  font-size: 1rem;
+  padding-left: 8px;
+  font-family: latoblack;
+}
+
+.action-buttons .share-buttons a {
+  margin: 0 10px;
+}
+
+.action-buttons .share-buttons a.like {
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 300ms;
+}
+
+.action-buttons .share-buttons a.like:hover img {
+  opacity: .5;
+}
+
+.action-buttons .share-buttons a.unlike img {
+  transform: rotate(180deg);
+}
+
+.action-buttons .share-buttons a.like.selected img {
+  opacity: 0.5;
+}
+
+.embedCopy {
+  padding: 20px;
+  background: #fff;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.embedCopy textarea {
+  width: 100%;
+  color: #7E8693;
+  font-size: 15px;
+  background: #F6F7F9;
+  resize: none;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+
+.profile-box {
+  margin: 10px 0;
+}
+
+span.title {
+  font-size: 20px;
+  color: #3F515D;
+  font-family: 'latoblack';
+  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 1px solid #D6D6D6;
 }
