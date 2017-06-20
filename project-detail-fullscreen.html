@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div id="main" class="navMain">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a class="searchButton" href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+	</div>
+	<!-- #main -->
+
+
+	<div class="container-fluid imageBig">
+		<div class="project-frame">
+			<img style="height: 100%;" src="https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg" alt="">
+
+			<!-- <iframe class="fullFrame" src="https://www.youtube.com/embed/QSMbk2nLTBk" frameborder="0" allowfullscreen></iframe> -->
+		</div>
+
+
+
+		<div class="pagination">
+			<ul>
+				<li class="coloured"><a href="#"><img src="assets/images/icons/left-arrow.svg" alt=""><span class="hidden-xs">PREVIOUS</span></a></li>
+				<li><a href="#">1</a></li>
+				<li class="active"><a href="#">12</a></li>
+				<li><a href="#">24</a></li>
+				<li class="coloured"><a href="#"><span class="hidden-xs">NEXT</span> <img src="assets/images/icons/right-arrow.svg" alt=""></a></li>
+			</ul>
+			<div class="fullsize hidden-xs"><a href="#" class="main-btn blue"><img src="assets/images/icons/full-screen.svg" alt=""><span>FULL SCREEN</span></a></div>
+		</div>
+	</div>
+	<!-- content -->
+	<div class="container" style="margin-bottom: 20px;">
+		<div class="row">
+
+			<!-- image -->
+			<div class="action-buttons col-md-12 col-xs-12 transition">
+				<div class="share-buttons">
+					<a href="#" class="like selected"><img src="assets/images/icons/icon_like_big.svg" alt=""><span>23</span></a>
+					<a href="#" class="like unlike"><img src="assets/images/icons/icon_like_big.svg" alt=""><span>12</span></a>
+				</div>
+				<div class="edit-buttons">
+					<a href="#" class="main-btn"> <img src="assets/images/icons/stats.svg" alt=""><span class="hidden-xs">ANALYTICS</span></a>
+					<a href="#" class="main-btn red hidden-xs"> <img src="assets/images/icons/edit.svg" alt=""><span class="hidden-xs">EDIT PROJECT</span></a>
+					<a href="#" class="main-btn blue visible-xs"><img src="assets/images/icons/full-screen.svg" alt=""></a>
+
+				</div>
+			</div>
+			<!-- #image -->
+
+
+
+			<!-- Content Details -->
+			<div class="contentDescs col-md-12 col-xs-12">
+
+				<h1>5 Examples of Business Sales Presentations</h1>
+
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+				<!-- tags -->
+				<div class="members tags hidden-xs hidden-sm">
+
+					<ul>
+						<li><a href="#">ART</a></li>
+						<li><a href="#">DIRECTION</a></li>
+						<li><a href="#">DESIGN</a></li>
+					</ul>
+
+				</div>
+				<!-- #tags -->
+
+			</div>
+			<!-- #Content Details -->
+
+
+
+			<div class="col-md-3 col-xs-12">
+						<div class="shareBox">
+							<ul style="margin-top: 0;">
+								<li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
+								<li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
+								<li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
+								<li><a href="#"><img src="assets/images/icons/mail.svg" alt=""></a></li>
+							</ul>
+						</div>
+
+						<!-- profile box -->
+						<div class="profile-box">
+							<div class="topInfo">
+								<div class="img">
+									<img src="assets/images/araz.png" alt="">
+								</div>
+								<div class="name">
+									Araz Murat Ak
+									<span>İstanbul, Turkey</span>
+								</div>
+
+							</div>
+
+							<div class="links">
+								<ul>
+									<li><a href="#">FOLLOW</a></li>
+									<li><a href="#">MESSAGE</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- #profile box -->
+
+						<!-- members -->
+						<div class="embedCopy embed hidden-xs hidden-sm">
+							<span class="title">EMBED</span>
+
+							 <textarea><iframe width="560" height="315" src="https://www.wowslides.com/embed/SEaFHPvuE6Y" frameborder=
+		"0" allowfullscreen></iframe></textarea>
+
+							<button class="main-btn blue">COPY CODE</button>
+
+						</div>
+						<!-- #members -->
+			</div>
+
+			<!-- project-content -->
+
+
+			<div class=" col-md-9 col-xs-12">
+				<!-- comments -->
+				<div class="comments">
+
+
+					<span class="title">COMMENTS</span>
+
+
+					<div class="enter-comment">
+
+						<div class="img">
+							<img src="assets/images/araz.png" alt="">
+						</div>
+
+						<div class="area">
+							<textarea placeholder="Enter your comment"></textarea>
+						</div>
+
+						<div class="button">
+							<button>POST A COMMENT</button>
+						</div>
+
+					</div>
+
+					<!-- comment -->
+					<div class="comment">
+
+						<div class="info">
+							<div class="img">
+								<img src="assets/images/araz.png" alt="">
+							</div>
+							<div class="name">
+								Araz Murat Ak <span>2 Years Ago</span>
+							</div>
+							<p>
+								Hi bro, clean & simple! Congrats!
+							</p>
+						</div>
+
+					</div>
+
+					<!-- comment -->
+					<div class="comment">
+
+						<div class="info">
+							<div class="img">
+								<img src="assets/images/araz.png" alt="">
+							</div>
+							<div class="name">
+								Araz Murat Ak <span>2 Years Ago</span>
+							</div>
+							<p>
+								Hi bro, clean & simple! Congrats!
+							</p>
+						</div>
+
+					</div>
+				</div>
+				<!-- #comments -->
+				<div class="project-content">
+					<h2><img src="assets/images/icons/file.svg" alt="">5 Examples of Business Sales Presentations</h2>
+					<ul>
+						<li>1. <a href="#">Title of project</a> <span>Cras facilisis leo nec lorem feugiat finibus. Quisque quis euismod nisi, eget fringilla nulla.</span></li>
+						<li>2. <a href="#">Title of project</a> <span>Cras facilisis leo nec lorem feugiat finibus. Quisque quis euismod nisi, eget fringilla nulla.</span></li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- #content -->
+
+
+	<!-- main slider -->
+	<div class="main-slider">
+
+		<!-- titles -->
+		<div class="container titleTop">
+
+			<div class="selects">
+
+				<a href="#">View Complete Profile <img src="assets/images/icons/box_arrow_right.svg " alt=""></a>
+
+			</div>
+
+			<div class="user-item">
+
+				<div class="img">
+					<img src="assets/images/araz.png" alt="">
+				</div>
+				<div class="name">
+					Araz Murat Ak
+					<span>İstanbul, Turkey</span>
+				</div>
+				<div class="link"><a href="#">FOLLOW</a></div>
+
+			</div>
+
+		</div>
+		<!-- #titles -->
+
+
+		    <!-- Swiper -->
+		    <div class="swiper-container wowSlideTop">
+		        <div class="swiper-wrapper">
+
+					<!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image1.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#FF6C0D">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image2.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#50DCE3">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image3.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#7ED321">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image4.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#BD10E0">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image1.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#FF6C0D">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image2.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#50DCE3">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image3.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#7ED321">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image4.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#BD10E0">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image1.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#FF6C0D">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image2.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#50DCE3">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image3.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#7ED321">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide wowSlideBox">
+
+		            	<!-- image -->
+		            	<div class="img">
+		            		<a href="#">
+		            			<img src="assets/images/image4.png" alt="">
+		            		</a>
+		            	</div>
+
+						<!-- icon -->
+		            	<div class="icon" style="background:#BD10E0">
+		            		EDUCATION
+		            	</div>
+
+		            	<div class="texts">
+
+		            		<!-- tags -->
+		            		<h5><a href="#">Red Mountain</a></h5>
+
+							<!-- desc -->
+		            		<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+							<!-- tags -->
+		            		<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							<!-- user -->
+							<div class="user">
+								<a href="#">
+									<span><img src="assets/images/araz.png" alt=""></span>
+									<span class="text">Araz Murat Ak</span>
+								</a>
+							</div>
+
+		            	</div>
+
+						<!-- list -->
+						<div class="details">
+							<ul>
+								<li class="view"><a href="#">682</a></li>
+								<li class="like"><a href="#">349</a></li>
+								<li class="share"><a href="#">280</a></li>
+							</ul>
+						</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		        </div>
+
+	            <div class="swiper-pagination wowSlideTop"></div>
+
+
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next wowSlideTop"></div>
+	        <div class="swiper-button-prev wowSlideTop"></div>
+
+		    </div>
+
+
+			<div class="see-more colured">
+				<a href="#">VIEW PORTFOLIO</a>
+			</div>
+
+
+		    <!-- Initialize Swiper -->
+		    <script>
+		    var swiper = new Swiper('.swiper-container.wowSlideTop', {
+		    	pagination: '.swiper-pagination.wowSlideTop',
+		        slidesPerView: 4,
+		        spaceBetween: 30,
+		        nextButton: '.swiper-button-next.wowSlideTop',
+		        prevButton: '.swiper-button-prev.wowSlideTop',
+    			breakpoints: {
+	            1024: {
+	                slidesPerView: 3,
+	                spaceBetween: 40
+	            },
+	            768: {
+	                slidesPerView: 2,
+	                spaceBetween: 30
+	            },
+	            640: {
+	                slidesPerView: 1,
+	                spaceBetween: 20
+	            },
+	            320: {
+	                slidesPerView: 1,
+	                spaceBetween: 10
+	            }
+	        }
+		    });
+		    </script>
+
+
+
+	</div>
+	<!-- #main slider -->
+
+
+
+
+
+	<!-- contact -->
+	<section class="contact">
+		<div class="container centered">
+
+			<p>There are many variations of passages of lorem ipsum available!</p>
+
+			<a href="#" class="action">GET IN TOUCH</a>
+
+		</div>
+	</section>
+	<!-- #contact -->
+
+		<!-- contactForm -->
+	<div class="contactForm">
+		<div class="container">
+
+			<h4>GET IN TOUCH</h4>
+
+		 	<div class="col-md-6 col-xs-12 inputBox">
+		 		<div class="row">
+	                <label>WHO ARE YOU</label>
+	                <input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+            	</div>
+            </div>
+
+            <div class="col-md-6 col-xs-12 inputBox">
+            	<div class="row">
+	                <label>EMAIL TO REACH YOU</label>
+	                <input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+            	</div>
+            </div>
+
+            <div class="col-md-6 col-xs-12 inputBox">
+            	<div class="row">
+	                <label>TELL US ABOUT IT</label>
+	                <textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+            	</div>
+            </div>
+
+            <div class="pull-right">
+            	<button class="button">SUBMIT</button>
+            </div>
+
+		</div>
+	</div>
+	<!-- #contactForm -->
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+
+
+			<!-- left  -->
+			<div class="col-md-8 col-xs-12 footerMenu">
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+				<ul>
+					<span class="title">SUPPORT</span>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">Templates</a></li>
+					<li><a href="#">Submit Ticket</a></li>
+					<li><a href="#">Affiliate</a></li>
+					<li><a href="#">Sitemap </a></li>
+				</ul>
+				</ul>
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+			</div>
+
+
+			<!-- right  -->
+			<div class="col-md-4 col-xs-12 blogList">
+
+				<span class="title">BLOG</span>
+
+				<ul>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							[Video Series] Unlock The Power Of Conversational
+						</a>
+					</li>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							Escape The Noise: Join Us At The  Dreamforce
+						</a>
+					</li>
+					<li>
+						<span>Sept. 8, 2016</span>
+						<a href="#">
+							On-Demand Webinar: How to Bring A Data-Driven
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- #footer -->
+
+
+ 	<!-- copyright  -->
+ 	<section id="copyright">
+ 		<div class="container">
+
+ 			<div class="logo">
+ 				<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+ 			</div>
+
+ 			<ul class="copylist">
+ 				<li><a href="#">English</a></li>
+ 				<li><a href="#">Español</a></li>
+ 				<li><a href="#">한국어</a></li>
+ 				<li><a href="#">日本語</a></li>
+ 				<li><a href="#">Deutsch</a></li>
+ 			</ul>
+
+ 			<div class="clear"></div>
+
+ 			<ul class="copylist">
+ 				<ul>
+					<li><a href="#">TERMS OF SERVICE</a> </li>
+					<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+					<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+					<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+					<li><a href="#">PRIVACY POLICY </a></li>
+				</ul>
+ 			</ul>
+
+
+ 			<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+ 		</div>
+ 	</section>
+ 	<!-- #copyright -->
+
+
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>
