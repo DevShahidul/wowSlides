@@ -1,5 +1,5 @@
 $(window).load(function(){
-        $('.fullsize').click(function(){
+        $('.fullscreen-btn').click(function(){
           $('.project-frame').toggleClass("full-screen-toggle");
         });
 

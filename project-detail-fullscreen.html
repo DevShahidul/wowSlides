@@ -141,13 +141,19 @@
 
 		<!-- mobile nav -->
 		<div class="mobile-nav">
+			<div class="d-flex justify-between centered">
+				<div class="menu-bar">
+					<img src="assets/images/icons/menuBar.svg" width="20" fill="#fff" alt="">
+				</div>
 
-			<div class="logo">
-				<img src="assets/images/logo.svg" alt="">
-			</div>
+				<div class="logo">
+					<img src="assets/images/logo.svg" alt="">
+				</div>
 
-			<div class="menu-bar">
-				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+				<!-- userbar -->
+				<div class="">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+				</div>
 			</div>
 
 		</div>
@@ -178,25 +184,6 @@
 					</ul>
 				</div>
 
-
-				<!-- userbar -->
-				<div class="user-bar">
-					<ul class="centered">
-						<li>
-							<a class="searchButton" href="#"><img src="assets/images/icons/search.svg" alt=""></a>
-						</li>
-						<li class="notification">
-							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
-						</li>
-						<li class="user">
-							<a href="#"><img src="assets/images/araz.png" alt=""></a>
-						</li>
-						<li class="upload">
-							<a href="#">UPLOAD</a>
-						</li>
-					</ul>
-				</div>
-
 		</nav>
 		<!-- #navbar -->
 
@@ -205,7 +192,7 @@
 	<!-- #main -->
 
 
-	<div class="container-fluid imageBig w-100">
+	<div class="container-fluid imageBig w-100 mobile-full-screen">
 		<div class="project-frame">
 			<img style="height: 100%;" src="https://static.pexels.com/photos/415949/pexels-photo-415949.jpeg" alt="">
 
@@ -222,7 +209,7 @@
 				<li><a href="#">24</a></li>
 				<li class="coloured"><a href="#"><span class="hidden-xs">NEXT</span> <img src="assets/images/icons/right-arrow.svg" alt=""></a></li>
 			</ul>
-			<div class="fullsize hidden-xs"><a href="#" class="main-btn blue"><img src="assets/images/icons/full-screen.svg" alt=""><span>FULL SCREEN</span></a></div>
+			<div class="fullsize hidden-xs"><a href="#" class="main-btn blue fullscreen-btn"><img src="assets/images/icons/full-screen.svg" alt=""><span>FULL SCREEN</span></a></div>
 		</div>
 	</div>
 	<!-- content -->
@@ -246,7 +233,7 @@
 			</div>
 			<!-- #image -->
 
-			<div class="col-md-4 col-xs-12 pull-right">
+			<div class="col-md-3 col-xs-12 pull-right">
 						<div class="shareBox">
 							<ul style="margin-top: 0;">
 								<li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
@@ -258,10 +245,13 @@
 
 						<!-- profile box -->
 						<div class="profile-box">
+
 							<div class="topInfo">
+
 								<div class="img">
 									<img src="assets/images/araz.png" alt="">
 								</div>
+
 								<div class="name">
 									Araz Murat Ak
 									<span>İstanbul, Turkey</span>
@@ -275,26 +265,35 @@
 									<li><a href="#">MESSAGE</a></li>
 								</ul>
 							</div>
+
+							<div class="link">
+								<a href="#">wows.li/<span>projectname</span></a>
+							</div>
+
+							<div class="desc">
+								<span class="title">ABOUT</span>
+								<p>Here we have a sample sales deck for a technology company.</p>
+							</div>
+
+							<span class="date">Published: October 13, 2016</span>
+
+							<!-- list -->
+							<div class="details">
+								<ul>
+									<li class="view"><a href="#">682</a></li>
+									<li class="like"><a href="#">349</a></li>
+									<li class="share"><a href="#">280</a></li>
+								</ul>
+							</div>
+
 						</div>
 						<!-- #profile box -->
-
-						<!-- members -->
-						<div class="embedCopy embed hidden-xs hidden-sm">
-							<span class="title">EMBED</span>
-
-							 <textarea><iframe width="560" height="315" src="https://www.wowslides.com/embed/SEaFHPvuE6Y" frameborder=
-		"0" allowfullscreen></iframe></textarea>
-
-							<button class="main-btn blue">COPY CODE</button>
-
-						</div>
-						<!-- #members -->
 			</div>
 
 			<!-- project-content -->
 
 			<!-- Content Details -->
-			<div class="col-md-8 col-xs-12">
+			<div class="col-md-9 col-xs-12">
 				<div class="contentDescs ">
 
 					<h1>5 Examples of Business Sales Presentations</h1>
@@ -319,6 +318,19 @@
 
 
 			<div class=" col-md-12 col-xs-12">
+
+				<!-- embedded -->
+				<div class="embedCopy embed hidden-xs hidden-sm">
+					<span class="title">EMBED</span>
+
+					 <textarea><iframe width="560" height="315" src="https://www.wowslides.com/embed/SEaFHPvuE6Y" frameborder=
+"0" allowfullscreen></iframe></textarea>
+
+					<button class="main-btn blue">COPY CODE</button>
+
+				</div>
+
+
 				<!-- comments -->
 				<div class="comments">
 
