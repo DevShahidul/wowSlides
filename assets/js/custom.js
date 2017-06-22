@@ -1,5 +1,7 @@
 $(window).load(function(){
-
+        $('.fullsize').click(function(){
+          $('.project-frame').toggleClass("full-screen-toggle");
+        });
 
     		// mobile menu
     		var button = $('.mobile-nav .menu-bar'),

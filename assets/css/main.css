@@ -314,6 +314,14 @@ table .img {
   position: relative;
 }
 
+.full-screen-toggle {
+  height: calc(100vh - 112px);
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .imageBig .fullscreen {
   z-index: 999999;
 }
