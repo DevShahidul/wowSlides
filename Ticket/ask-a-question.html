@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>Help</title>
+
+  	<link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-toggleable-md navbar-light">
+        <div class="container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Logo</a>
+
+          <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="ask-a-question.html">Ask A Question </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="explore-questions.html">Explore Questions </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documentation.html">Documentation </a>
+              </li>
+            </ul>
+            <div class="d-flex navbar-nav">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              </form>
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img width="30" class="rounded-circle" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ginger-guy.png" alt=""> Betül Uzun
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Ask A Question</a>
+                    <a class="dropdown-item" href="#">Question Manager</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </nav>
+        <div id="content">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-3">Ask A Question</h1>
+              <p class="lead">Aliquam placerat, nisl nec tempor luctus, massa urna bibendum nisl, vitae egestas est tortor vel urna.</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row border-style">
+              <form class="col-md-12 col-xs-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Subject</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Question</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelect1">Example select</label>
+                  <select class="form-control" id="exampleSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelect2">Example multiple select</label>
+                  <select multiple class="form-control" id="exampleSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                </div>
+                <fieldset class="form-group">
+                  <legend>Radio buttons</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                  </div>
+                  <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Option two can be something else and selecting it will deselect option one
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                      Option three is disabled
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Check me out
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-success float-right">Submit</button>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/vendor/tether.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+  </body>
+</html>
