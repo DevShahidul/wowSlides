@@ -50,7 +50,7 @@
     }
     .user-name {
       font-size: 1rem;
-      color: #ea7e5c;
+      color: $primary_color;
     }
     .date {
       color: #868686;
@@ -121,4 +121,14 @@
     @extend .border-style;
     margin: 10px 0;
   }
+}
+.file-input {
+  input {
+    display: none;
+  }
+}
+
+label {
+  font-size: 18px;
+  color: $primary_color;
 }

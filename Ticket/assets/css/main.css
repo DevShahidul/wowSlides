@@ -9117,6 +9117,15 @@ a:hover {
   margin: 10px 0;
 }
 
+.file-input input {
+  display: none;
+}
+
+label {
+  font-size: 18px;
+  color: #ea7e5c;
+}
+
 /*Pages*/
 .jumbotron-fluid {
   background: #ea7e5c;
