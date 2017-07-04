@@ -395,7 +395,7 @@ table .img {
 }
 
 .pagination img {
-  width: 40px;
+  width: 25px;
 }
 
 .fullsize {
@@ -428,6 +428,7 @@ table .img {
   border-bottom: 2px solid #F4F5F7;
   position: relative;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .action-buttons .edit-buttons {
