@@ -2,10 +2,6 @@
   padding: 20px;
 }
 
-.project-loading {
-    padding: 100px 0;
-}
-
 #loader-area{
   padding: 60px;
   background: #fff;
@@ -105,6 +101,9 @@
   font-family: 'latolight';
   text-align: center;
   padding: 60px 0;
+  @media (max-width: 768px) {
+    font-size: 27px;
+  }
 }
 
 .big-title {
@@ -254,6 +253,9 @@
   width: 100%;
   height: calc(100vh - 210px);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .full-screen-toggle {
@@ -491,20 +493,29 @@ span.title {
     &.swiper-slide.wowSlideBox:hover:after {
       display: none;
     }
-  .img-warning {
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+.img-warning {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img {
+    width: 70px;
+  }
+  p {
     text-align: center;
-    img {
-      width: 70px;
-    }
-    p {
-      text-align: center;
-      padding-top: 10px;
-      color: #5d5d5d;
+    padding-top: 10px;
+    color: #5d5d5d;
+  }
+}
+.warning-full {
+  @extend .img-warning;
+  height: auto;
+  img {
+    width: 250px;
+    @media (max-width: 768px) {
+      width: 100px;
     }
   }
-
 }

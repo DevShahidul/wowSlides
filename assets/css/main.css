@@ -5463,10 +5463,6 @@ table .img {
   padding: 20px;
 }
 
-.project-loading {
-  padding: 100px 0;
-}
-
 #loader-area {
   padding: 60px;
   background: #fff;
@@ -5579,6 +5575,12 @@ table .img {
   font-family: 'latolight';
   text-align: center;
   padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .loading-title, .big-title {
+    font-size: 27px;
+  }
 }
 
 .big-title {
@@ -5735,6 +5737,9 @@ table .img {
   width: 100%;
   height: calc(100vh - 210px);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .full-screen-toggle {
@@ -5995,7 +6000,7 @@ span.title {
   display: none;
 }
 
-.warningBox .img-warning {
+.img-warning, .warning-full {
   height: 200px;
   display: flex;
   justify-content: center;
@@ -6003,12 +6008,26 @@ span.title {
   text-align: center;
 }
 
-.warningBox .img-warning img {
+.img-warning img, .warning-full img {
   width: 70px;
 }
 
-.warningBox .img-warning p {
+.img-warning p, .warning-full p {
   text-align: center;
   padding-top: 10px;
   color: #5d5d5d;
+}
+
+.warning-full {
+  height: auto;
+}
+
+.warning-full img {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .warning-full img {
+    width: 100px;
+  }
 }
