@@ -327,7 +327,6 @@ section#getStarted a.btn {
 
 #main {
   width: 100%;
-  min-height: calc(100vh + 450px);
   background: url(../images/bg/mainBg.jpg) no-repeat;
   -ms-background-size: cover;
   background-size: cover;
@@ -1408,6 +1407,9 @@ section#copyright {
   position: relative;
   .logo {
     text-align: center;
+    img {
+      width: 40px;
+    }
   }
 }
 
@@ -2974,6 +2976,10 @@ nav#navbar.whiteNav {
   height: 250px;
   min-height: 250px;
   margin-bottom: 160px;
+  @media (max-width: 850px) {
+    height: 210px;
+    min-height: 210px;
+  }
 }
 
 .profile-container {

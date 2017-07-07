@@ -1,4 +1,12 @@
-@import url(../fonts/lato/stylesheet.css);@import url(swiper.min.css);@import url(reset.css);@import url(niceSelect.css);@import url(grids.css);@import url(responsive.css);@import url(video-js.min.css);@import url(dropzone.css);
-@import "scss/app.scss";
+@import "../fonts/lato/stylesheet";
+@import "scss/swiper";
+@import "scss/reset";
+@import "scss/niceSelect";
+@import "scss/grids";
+@import "scss/responsive";
+@import "scss/video-js";
+@import "scss/dropzone";
+@import "scss/app";
 @import "scss/table";
+@import "scss/tags";
 @import "scss/custom";
