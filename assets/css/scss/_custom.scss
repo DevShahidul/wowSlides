@@ -487,3 +487,24 @@ span.title {
     color: #fff;
   }
 }
+.warningBox {
+    &.swiper-slide.wowSlideBox:hover:after {
+      display: none;
+    }
+  .img-warning {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      width: 70px;
+    }
+    p {
+      text-align: center;
+      padding-top: 10px;
+      color: #5d5d5d;
+    }
+  }
+
+}

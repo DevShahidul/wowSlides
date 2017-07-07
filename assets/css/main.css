@@ -567,3 +567,25 @@ span.title {
   font-family: 'latoblack';
   color: #fff;
 }
+
+.warningBox.swiper-slide.wowSlideBox:hover:after {
+  display: none;
+}
+
+.warningBox .img-warning {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.warningBox .img-warning img {
+  width: 70px;
+}
+
+.warningBox .img-warning p {
+  text-align: center;
+  padding-top: 10px;
+  color: #5d5d5d;
+}
