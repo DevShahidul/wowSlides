@@ -45,7 +45,7 @@
   .media {
     @extend .border-style;
     margin: 10px 0;
-    img {
+    .user-img {
       width: 80px;
       border-radius: 50%;
     }
@@ -53,11 +53,20 @@
       font-size: 1rem;
       color: $primary_color;
     }
-    .date {
-      color: #868686;
-      font-size: 0.9rem;
+  }
+  .stars {
+    img {
+      width: 25px;
     }
   }
+  .rate {
+    font-size: 1.5rem;
+  }
+}
+
+.date {
+  color: #868686;
+  font-size: 0.9rem;
 }
 
 .table {
@@ -145,6 +154,9 @@ label {
       padding: 5px 10px;
       margin: 4px 2px;
       background-color: rgba(255, 152, 0, 0.25);
+      a {
+            margin-left: 5px;
+      }
     }
   }
   .tag-horizontal {
@@ -197,5 +209,40 @@ label {
     padding-left: 5px;
     vertical-align: middle;
     color: $primary_color;
+  }
+}
+
+.text-input {
+  @extend .w-100;
+  padding: 10px;
+  border-color: $p_border_color;
+}
+
+.button-style {
+  button {
+    width: 200px;
+    cursor: pointer;
+    margin-top: 10px;
+    &:hover {
+      box-shadow: 1px 1px 5px 1px #c5c5c5;
+    }
+  }
+  .btn-outline-secondary {
+    color: #616161;
+    &:hover {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc;
+    }
+  }
+}
+.create {
+  padding: 40px 0;
+  border: 1px solid $p_border_color;
+  margin-top: 20px;
+  .text {
+    color: $light_text_color;
+    font-size: 2rem;
+    text-align: center;
   }
 }

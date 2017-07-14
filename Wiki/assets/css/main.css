@@ -6823,7 +6823,7 @@ a.bg-inverse:hover {
   width: 75% !important;
 }
 
-.w-100 {
+.w-100, .text-input {
   width: 100% !important;
 }
 
@@ -8731,6 +8731,14 @@ a:hover {
   text-decoration: none;
 }
 
+.tab-content {
+  width: 100%;
+}
+
+.modal-title {
+  color: #636363;
+}
+
 /*Theme Color */
 /*Text Color*/
 /*Border Color*/
@@ -9039,7 +9047,7 @@ a:hover {
   margin: 10px 0;
 }
 
-.question-media .media img {
+.question-media .media .user-img {
   width: 80px;
   border-radius: 50%;
 }
@@ -9049,7 +9057,15 @@ a:hover {
   color: #ea7e5c;
 }
 
-.question-media .media .date {
+.question-media .stars img {
+  width: 25px;
+}
+
+.question-media .rate {
+  font-size: 1.5rem;
+}
+
+.date {
   color: #868686;
   font-size: 0.9rem;
 }
@@ -9138,6 +9154,10 @@ label {
   background-color: rgba(255, 152, 0, 0.25);
 }
 
+.tag-style .tag-child-style li a {
+  margin-left: 5px;
+}
+
 .tag-style .tag-horizontal {
   overflow-x: auto;
   max-height: 60px;
@@ -9190,6 +9210,43 @@ label {
   color: #ea7e5c;
 }
 
+.text-input {
+  padding: 10px;
+  border-color: #d8d8d8;
+}
+
+.button-style button {
+  width: 200px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button-style button:hover {
+  box-shadow: 1px 1px 5px 1px #c5c5c5;
+}
+
+.button-style .btn-outline-secondary {
+  color: #616161;
+}
+
+.button-style .btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.create {
+  padding: 40px 0;
+  border: 1px solid #d8d8d8;
+  margin-top: 20px;
+}
+
+.create .text {
+  color: #707070;
+  font-size: 2rem;
+  text-align: center;
+}
+
 /*Pages*/
 .jumbotron-fluid {
   background: #fff;
@@ -9208,6 +9265,10 @@ label {
 
 .nav-pills .nav-link {
   font-size: 1.5rem;
+}
+
+.word-edit-btn button {
+  margin-top: 0;
 }
 
 .mini-jumbotron {
