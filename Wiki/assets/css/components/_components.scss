@@ -168,10 +168,6 @@ label {
   }
 }
 
-.big-search {
-  margin-top: 30px;
-}
-
 .alphabet {
   display: flex;
   justify-content: space-around;
@@ -245,4 +241,17 @@ label {
     font-size: 2rem;
     text-align: center;
   }
+}
+
+.profile-info {
+  display: flex;
+  float: right;
+  margin-bottom: 5px;
+}
+.mini-img  {
+  width: 25px;
+  height: 25px;
+  border: 2px solid $primary_color;
+  border-radius: 50%;
+  margin-right: 5px;
 }
