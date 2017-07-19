@@ -15,17 +15,18 @@
         <div id="content">
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-3 text-center">Wiki / Word</h1>
               <div class="profile-info">
                 <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
                 <a href="#">Betül Uzun</a>
               </div>
-              <div class="input-group">
-                <input type="text" class="form-control text-center" placeholder="Search Wiki or Word">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Go!</button>
-                </span>
+            </div>
+            <div class="container m_t_30">
+
+              <div class="logo">
+                <img src="assets/img/Wiktionary.png" alt="">
               </div>
+
+              <input type="text" class="form-control big-search" placeholder="Search Wiki or Word">
               <div class="tag-style">
                 <ul class="tag-child-style tag-horizontal">
                   <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
@@ -34,9 +35,6 @@
                   <li class=""><span>Porta</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Vestibulum</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
-                  <li class=""><span>Dapibusn</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
-                  <li class=""><span>Morbi</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
-                  <li class=""><span>Porta</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Vestibulum</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Dapibusn</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
@@ -51,7 +49,7 @@
                       <a class="nav-link active" data-toggle="tab" href="#wiki" role="tab">Wiki</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#word" role="tab">Word</a>
+                      <a class="nav-link" data-toggle="tab" href="#word" role="tab">Dictionary</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" data-toggle="tab" href="#published" role="tab">Published</a>
@@ -163,6 +161,7 @@
                     <div class="col-md-3 col-xs-12 m_t_10">
                       <div class="border-style list-style">
                         <div class="border-small-title">
+                          <img class="m_r_5" width="20px" src="assets/img/category.svg" alt="">
                           Wiki Categories
                         </div>
                         <ul class="list-child-style">
@@ -175,6 +174,7 @@
                       </div>
                       <div class="border-style tag-style">
                         <div class="border-small-title">
+                          <img class="m_r_5" width="20px" src="assets/img/tag.svg" alt="">
                           Wiki Tags
                         </div>
                         <ul class="tag-child-style">
@@ -215,7 +215,7 @@
                          </div>
                       </div>
                     </div>
-                    <div class="col-md-12 col-xs-12 m_t_30">
+                    <div class="col-md-12 col-xs-12">
                       <div class="create">
                         <div class="text">
                           <p>Make a contribution to the dictionary.</p>
@@ -224,6 +224,8 @@
                           <button class="btn btn-outline-success" type="button" name="button"  data-toggle="modal" data-target="#create-word-modal">Add Word</button>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 ">
                       <ul class="alphabet">
                         <li><a href="#">A</a></li>
                         <li><a href="#">B</a></li>
@@ -253,7 +255,7 @@
                         <li><a href="#">Z</a></li>
                       </ul>
                     </div>
-                    <div class="col-md-12 col-xs-12 ">
+                    <div class="col-md-12 col-xs-12 m_t_20">
                       <ul class="word-wrapper">
                         <li class="letter"><a href="#" class="left-line">A</a>
                           <ul>
@@ -263,6 +265,8 @@
                             <li><a href="#">Alive</a></li>
                             <li><a href="#">Align</a></li>
                             <li><a href="#">Aim</a></li>
+                            <li><a href="#">Aim</a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                         <li class="letter"><a href="#" class="left-line">B</a>
@@ -270,6 +274,7 @@
                             <li><a href="#">Break</a></li>
                             <li><a href="#">Beautiful</a></li>
                             <li><a href="#">Because </a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                         <li class="letter"><a href="#" class="left-line">F</a>
@@ -277,11 +282,13 @@
                             <li><a href="#">Fear</a></li>
                             <li><a href="#">Fight</a></li>
                             <li><a href="#">Fall</a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                         <li class="letter"><a href="#" class="left-line">D</a>
                           <ul>
                             <li><a href="#">Description</a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                         <li class="letter"><a href="#" class="left-line">S</a>
@@ -289,6 +296,7 @@
                             <li><a href="#">Slgm</a></li>
                             <li><a href="#">Silyuj</a></li>
                             <li><a href="#">Sğktğ</a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                         <li class="letter"><a href="#" class="left-line">T</a>
@@ -296,17 +304,16 @@
                             <li><a href="#">Trfvd</a></li>
                             <li><a href="#">Tfdvc</a></li>
                             <li><a href="#">Tolıkjö </a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                         <li class="letter"><a href="#" class="left-line">W</a>
                           <ul>
                             <li class="selected-word"><a href="#">Word</a></li>
+                            <li><a class="more" href="#">More...</a></li>
                           </ul>
                         </li>
                       </ul>
-                      <div class="button-style text-center">
-                        <button class="btn btn-outline-secondary" type="button" name="button">Load More</button>
-                      </div>
                     </div>
                   </div>
                 </div>

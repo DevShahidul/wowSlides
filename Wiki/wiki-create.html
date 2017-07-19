@@ -15,17 +15,18 @@
         <div id="content">
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-3 text-center">Wiki / Word</h1>
               <div class="profile-info">
                 <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
                 <a href="#">Betül Uzun</a>
               </div>
-              <div class="input-group">
-                <input type="text" class="form-control text-center" placeholder="Search Wiki or Word">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Go!</button>
-                </span>
+            </div>
+            <div class="container m_t_30">
+
+              <div class="logo">
+                <img src="assets/img/Wiktionary.png" alt="">
               </div>
+
+              <input type="text" class="form-control big-search" placeholder="Search Wiki or Word">
               <div class="tag-style">
                 <ul class="tag-child-style tag-horizontal">
                   <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
@@ -34,9 +35,6 @@
                   <li class=""><span>Porta</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Vestibulum</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
-                  <li class=""><span>Dapibusn</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
-                  <li class=""><span>Morbi</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
-                  <li class=""><span>Porta</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Vestibulum</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   <li class=""><span>Dapibusn</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
@@ -51,7 +49,7 @@
               <form class="col-md-12 col-xs-12">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Wiki Title</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
 
@@ -64,6 +62,7 @@
                 <div class="form-group">
                   <label for="exampleSelect1">Category</label>
                   <select class="form-control" id="exampleSelect1">
+                    <option></option>
                     <option>Cars</option>
                     <option>Beauty</option>
                     <option>Technology</option>
@@ -71,11 +70,11 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Tag</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter tag">
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                 <div class="tag-style">
-                  <ul class="tag-child-style tag-horizontal">
+                  <ul class="tag-child-style">
                     <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                     <li class=""><span>Dapibusn</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                     <li class=""><span>Morbi</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
@@ -84,6 +83,13 @@
                     <li class=""><span>Cras</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                     <li class=""><span>Dapibusn</span><a href="#"><img width="10px" src="assets/img/close.svg" alt=""></a></li>
                   </ul>
+                </div>
+                <div class="form-group form-control-file">
+                  <label>File input</label>
+                  <input type="file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <label  for="exampleInputFile" class="form-control-file-box">
+                      <img src="assets/img/upload.svg" alt="">
+                  </label>
                 </div>
 
                 <div class="button-style text-center">
