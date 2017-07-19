@@ -7,6 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -8716,6 +8717,10 @@ a.text-gray-dark:hover {
   .hidden-print {
     display: none !important;
   }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
