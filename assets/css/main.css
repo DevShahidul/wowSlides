@@ -9857,6 +9857,7 @@ div.tagsinput div {
 }
 
 .full-screen-toggle {
+  width: calc(100vw);
   height: calc(100vh - 112px);
 }
 
@@ -9942,7 +9943,7 @@ div.tagsinput div {
 
 .fullsize {
   position: absolute;
-  right: 20px;
+  right: 3%;
   bottom: 23px;
 }
 

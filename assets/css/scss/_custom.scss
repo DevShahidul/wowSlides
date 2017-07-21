@@ -259,6 +259,7 @@
 }
 
 .full-screen-toggle {
+  width: calc(100vw);
   height: calc(100vh - 112px);
 }
 
@@ -338,7 +339,7 @@
 
 .fullsize {
   position: absolute;
-  right: 20px;
+  right: 3%;
   bottom: 23px;
   span {
     padding-left: 10px;
