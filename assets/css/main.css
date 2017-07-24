@@ -6983,7 +6983,6 @@ rotateX .check-item span.box.square {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 30px 70px;
-  margin-bottom: 20px;
 }
 
 .contentDescs h1 {
@@ -8088,7 +8087,7 @@ nav#navbar.whiteNav {
   background: url(../images/icons/icon_upload.svg);
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .listDetail {
+.listDetail {
   position: absolute;
   right: 10px;
   z-index: 9999;
@@ -8100,7 +8099,7 @@ nav#navbar.whiteNav {
   transform: scale(0, 0);
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .listDetail:before {
+.listDetail:before {
   content: '';
   display: block;
   border: 7px solid transparent;
@@ -8112,22 +8111,22 @@ nav#navbar.whiteNav {
   right: 7px;
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .listDetail.active {
+.listDetail.active {
   border-radius: 5px;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .listDetail li {
+.listDetail li {
   border-bottom: 1px solid #E6E6E6;
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .listDetail li:last-child {
+.listDetail li:last-child {
   border: 0;
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .listDetail li a {
+.listDetail li a {
   padding: 10px;
   display: block;
   font-size: 12px;
@@ -8135,7 +8134,7 @@ nav#navbar.whiteNav {
   font-family: 'latoblack';
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .profileButton {
+.profileButton {
   position: absolute;
   right: 5px;
   top: 10px;
@@ -8143,9 +8142,40 @@ nav#navbar.whiteNav {
   cursor: pointer;
 }
 
-.wowSlideBox.ownProfileItem .hoverItems .profileButton img {
+.profileButton img {
   width: 20px;
   opacity: 1;
+}
+
+.shareList {
+  position: absolute;
+  z-index: 9999;
+  top: 70px;
+  background: #adbac8;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  transition: 0.5s;
+}
+
+.shareList.active {
+  border-radius: 5px;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.shareList ul {
+  display: flex;
+  margin-top: 0;
+}
+
+.shareList ul img {
+  height: 30px;
+}
+
+.shareList ul li {
+  padding: 15px 5px;
 }
 
 .text-center {
@@ -9873,7 +9903,7 @@ div.tagsinput div {
   background: #fff;
   border-radius: 5px;
   padding: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .project-content li {
@@ -10037,7 +10067,7 @@ div.tagsinput div {
 }
 
 .project-desc {
-  height: 470px;
+  height: 400px;
 }
 
 @media (min-width: 768px) {
@@ -10054,10 +10084,6 @@ div.tagsinput div {
   .project-desc {
     height: auto;
   }
-}
-
-.profile-box {
-  margin: 10px 0;
 }
 
 span.title {
@@ -10145,4 +10171,22 @@ span.title {
   .warning-full img {
     width: 100px;
   }
+}
+
+.fullscreen-btn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: none;
+}
+
+.fullscreen-btn img {
+  width: 15px;
+  border-radius: 0;
+}
+
+.social-icons img {
+  height: 15px;
+  width: 20px;
+  margin-right: 10px;
 }

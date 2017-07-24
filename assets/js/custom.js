@@ -97,6 +97,14 @@ $(window).load(function(){
             $(this).parent().find(".listDetail").toggleClass("active");
         });
 
+        $(".toggleButton.shareButton").click(function(){
+            $(this).parent().find(".shareList").toggleClass("active");
+        });
+
+        $( "body" ).click(function(){
+            $(this).parent().find(".listDetail").removeClass("active");
+            $(this).parent().find(".shareList").removeClass("active");
+        });
 
       // post____
       $('#preview__items input,#preview__items textarea').keyup(function(){
@@ -113,9 +121,7 @@ $(window).load(function(){
         $('#preview__area ' + newtarget__post).text(dataCat);
       })
 
-
-
-
+      fullScreenBtn();
 
 });
 
@@ -123,12 +129,17 @@ $(window).load(function(){
 // loader
 $(window).load(function(){
 	$('#loader').fadeOut(400);
-
-  // var frame_height = $('.project-frame').outerWidth() * (0.6);
-	// $('.project-frame').css('height', frame_height) ;
 });
 
-// $(window).resize(function(){
-//   var frame_height = $('.project-frame').outerWidth() * (0.6);
-// 	$('.project-frame').css('height', frame_height) ;
-// });
+$(window).resize(function(){
+	fullScreenBtn();
+});
+
+function fullScreenBtn() {
+  if ($(window).width() < 768){
+    $('.project-frame').click(function(){
+      $('.fullscreen-btn').fadeIn("slow");
+      setTimeout(function(){$('.fullscreen-btn').fadeOut();}, 3000);
+    })
+  }
+}

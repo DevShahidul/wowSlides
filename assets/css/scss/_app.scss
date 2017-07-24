@@ -2693,7 +2693,6 @@ rotateX .check-item span.box.square {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 30px 70px;
-  margin-bottom: 20px;
   h1 {
     font-size: 50px;
     color: #3F515D;
@@ -3666,62 +3665,88 @@ nav#navbar.whiteNav {
   }
 }
 
-.wowSlideBox.ownProfileItem {
-  .hoverItems {
-    .listDetail {
-      position: absolute;
-      right: 10px;
-      z-index: 9999;
-      top: 40px;
-      background: #eaeaea ;
-      border-radius: 5px;
-      -webkit-transform: scale(0, 0);
-      -ms-transform: scale(0, 0);
-      transform: scale(0, 0);
-      &:before {
-        content: '';
-        display: block;
-        border: 7px solid transparent;
-        border-bottom-color: #fff;
-        width: 14px;
-        top: -14px;
-        position: absolute;
-        z-index: 99999;
-        right: 7px;
-      }
-      &.active {
-        border-radius: 5px;
-        -webkit-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-        transform: scale(1, 1);
-      }
-      li {
-        border-bottom: 1px solid #E6E6E6;
-        &:last-child {
-          border: 0;
-        }
-        a {
-          padding: 10px;
-          display: block;
-          font-size: 12px;
-          color: #3F515D;
-          font-family: 'latoblack';
-        }
-      }
+
+.listDetail {
+  position: absolute;
+  right: 10px;
+  z-index: 9999;
+  top: 40px;
+  background: #eaeaea ;
+  border-radius: 5px;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  &:before {
+    content: '';
+    display: block;
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    width: 14px;
+    top: -14px;
+    position: absolute;
+    z-index: 99999;
+    right: 7px;
+  }
+  &.active {
+    border-radius: 5px;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  li {
+    border-bottom: 1px solid #E6E6E6;
+    &:last-child {
+      border: 0;
     }
-    .profileButton {
-      position: absolute;
-      right: 5px;
-      top: 10px;
-      z-index: 999999999999;
-      cursor: pointer;
-      img {
-        width: 20px;
-        opacity: 1;
-      }
+    a {
+      padding: 10px;
+      display: block;
+      font-size: 12px;
+      color: #3F515D;
+      font-family: 'latoblack';
     }
   }
 }
+.profileButton {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  z-index: 999999999999;
+  cursor: pointer;
+  img {
+    width: 20px;
+    opacity: 1;
+  }
+}
+
+
+.shareList {
+  position: absolute;
+  z-index: 9999;
+  top: 70px ;
+  background: #adbac8 ;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  transition: 0.5s;
+  &.active {
+    border-radius: 5px;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  ul {
+    display: flex;
+    margin-top: 0;
+    img {
+      height: 30px;
+    }
+    li {
+        padding: 15px 5px;
+    }
+  }
+}
+
 
 .text-center {
   text-align: center;
