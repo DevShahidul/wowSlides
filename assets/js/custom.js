@@ -121,8 +121,6 @@ $(window).load(function(){
         $('#preview__area ' + newtarget__post).text(dataCat);
       })
 
-      fullScreenBtn();
-
 });
 
 
@@ -130,16 +128,3 @@ $(window).load(function(){
 $(window).load(function(){
 	$('#loader').fadeOut(400);
 });
-
-$(window).resize(function(){
-	fullScreenBtn();
-});
-
-function fullScreenBtn() {
-  if ($(window).width() < 768){
-    $('.project-frame').click(function(){
-      $('.fullscreen-btn').fadeIn("slow");
-      setTimeout(function(){$('.fullscreen-btn').fadeOut();}, 3000);
-    })
-  }
-}

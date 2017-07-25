@@ -10098,7 +10098,7 @@ span.title {
   border-bottom: 1px solid #D6D6D6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mobile-full-screen {
     padding: 0;
     padding-bottom: 10px;
@@ -10107,10 +10107,10 @@ span.title {
     padding-top: 10px;
   }
   .fullsize {
-    bottom: 13px;
+    bottom: 12px;
   }
   .fullsize .main-btn {
-    padding: 8px 20px;
+    padding: 7px 20px;
   }
   .imageBig .pagination ul li a {
     height: 30px;
@@ -10120,6 +10120,15 @@ span.title {
   }
   .full-screen-toggle {
     height: calc(100vh - 56px);
+  }
+  .imageBig .pagination ul li.coloured:first-child a {
+    padding-right: 0;
+  }
+  .imageBig .pagination ul li.coloured:last-child a {
+    padding-left: 0;
+  }
+  .imageBig .pagination ul li a {
+    min-width: 35px;
   }
 }
 
@@ -10171,18 +10180,6 @@ span.title {
   .warning-full img {
     width: 100px;
   }
-}
-
-.fullscreen-btn {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  display: none;
-}
-
-.fullscreen-btn img {
-  width: 15px;
-  border-radius: 0;
 }
 
 .social-icons img {
