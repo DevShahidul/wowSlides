@@ -9250,7 +9250,7 @@ label {
 .view span {
   padding-left: 5px;
   vertical-align: middle;
-  color: #af6494;
+  color: #707070;
 }
 
 .text-input {
@@ -9420,7 +9420,7 @@ form .form-control p {
   -webkit-transition: 0.2s ease all;
 }
 
-.form-group input:focus ~ label, .form-group input:valid ~ label {
+.form-group input:focus ~ label {
   top: -20px;
   font-size: 14px;
   color: #af6494;
@@ -9430,6 +9430,13 @@ form .form-control p {
   color: #999;
   font-size: 18px;
   font-weight: normal;
+}
+
+.publish-status {
+  margin-right: 10px;
+  padding-right: 15px;
+  border-right: 1px solid #d8d8d8;
+  font-size: 1rem;
 }
 
 /*Pages*/
@@ -9459,9 +9466,9 @@ form .form-control p {
 }
 
 .wiki-info {
-  padding: 10px;
-  border: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
   margin: 10px 0;
+  padding-bottom: 10px;
 }
 
 .author-detail {
@@ -9484,9 +9491,8 @@ form .form-control p {
 }
 
 .action-area {
-  padding: 10px;
-  border: 1px solid #d8d8d8;
-  margin: 10px 0;
+  padding: 15px 5px;
+  border-top: 1px solid #d8d8d8;
 }
 
 .action-buttons {

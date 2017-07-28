@@ -1,7 +1,16 @@
-.jumbotron-fluid {
-  background: $primary_color;
-  color: #fff;
+
+
+
+//Wiki hompage
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+  background-color: #fff;
+  color: $primary_color;
 }
-.card-img-top {
-  height: 180px;
+.nav-pills .nav-link {
+  font-size: 1.5rem;
+}
+.word-edit-btn {
+  button {
+    margin-top: 0;
+  }
 }

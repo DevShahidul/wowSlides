@@ -217,7 +217,7 @@ label {
   span {
     padding-left: 5px;
     vertical-align: middle;
-    color: $primary_color;
+    color: $light_text_color;
   }
 }
 
@@ -375,7 +375,7 @@ form {
   }
 
   /* active state */
-  input:focus ~ label, input:valid ~ label 		{
+  input:focus ~ label		{
     top:-20px;
     font-size:14px;
     color: $primary_color;
@@ -385,4 +385,11 @@ form {
     font-size:18px;
     font-weight:normal;
   }
+}
+
+.publish-status {
+  margin-right: 10px;
+  padding-right: 15px;
+  border-right: 1px solid $p_border_color;
+  font-size: 1rem;
 }
