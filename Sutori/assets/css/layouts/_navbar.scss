@@ -1,0 +1,13 @@
+.bg-shadow {
+  box-shadow: 1px 1px 25px 1px #e2e2e2;
+  padding: 20px 40px;
+}
+.nav-link {
+  font-size: 1.4rem;
+}
+.navbar-toggleable-md .navbar-collapse {
+  align-items: center;
+}
+.nav-item.active {
+  border-bottom: 2px solid $primary_color;
+}

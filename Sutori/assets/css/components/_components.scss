@@ -1,0 +1,148 @@
+.mini-img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid $primary_color;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.form-control {
+  border-radius: 0;
+  &:focus {
+    border-color: $secondary_color;
+  }
+}
+
+.big-search-input.form-control {
+  padding: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.primary-color {
+  color: $primary_color;
+}
+.secondary-color {
+  color: $secondary_color;
+}
+
+.nav {
+  border-bottom: 1px solid #d8d8d8;
+  .nav-link.active {
+    border-bottom: 2px solid $secondary_color;
+    box-shadow: 1px 1px 10px 1px #d8d8d8;
+  }
+}
+
+.catalog-wrapper {
+  justify-content: space-between;
+  margin: 10px 0;
+  @media (max-width: 767px) {
+      justify-content: center;
+  }
+}
+.card-catalog {
+  width: 22rem;
+  margin: 10px 0;
+  text-align: center;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid $secondary_color;
+  box-shadow: 1px 1px 20px 3px #d8d8d8;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 1px 1px 5px 1px #d8d8d8;
+    transition: 0.3s;
+  }
+  .card-img {
+    width: 100%;
+    height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+      width: 27rem;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+      width: 20rem;
+  }
+  @media (max-width: 575px) {
+      width: 100%;
+  }
+}
+
+.story-main-img {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.container-info {
+  margin-top: -20px;
+  box-shadow: 1px 5px 15px 1px #e2e2e2;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.profile-title {
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 1.2rem;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: #fff;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.btn-primary-color {
+  border-color: $primary_color;
+  color: $primary_color;
+  &:hover {
+    border-color: $primary_color;
+    background: $primary_color;
+    color: #fff;
+  }
+}
+.btn-secondary-color {
+  border-color: $secondary_color;
+  color: $secondary_color;
+  &:hover {
+    border-color: $secondary_color;
+    background: $secondary_color;
+    color: #fff;
+  }
+}
+.show > .btn-outline-info.dropdown-toggle  {
+
+}
+.action-button {
+  display: flex;
+  button {
+    margin-right: 10px;
+  }
+}
+
+.story-title {
+  p {
+    width: 70%;
+    margin: auto;
+  }
+}

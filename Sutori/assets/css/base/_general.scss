@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400&subset=latin-ext');
+body {
+  font-family: 'Dosis', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: #636363;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Dosis', sans-serif;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
