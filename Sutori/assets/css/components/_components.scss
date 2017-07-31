@@ -141,8 +141,32 @@
 }
 
 .story-title {
+  margin-bottom: 80px;
   p {
     width: 70%;
     margin: auto;
+  }
+  .story-title-input {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: $primary_color;
+    &:focus {
+      border: none;
+    }
+  }
+  .story-description {
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    height: 200px;
+    font-size: 1.5rem;
+    color: #666;
+    &:focus {
+      border: none;
+    }
   }
 }

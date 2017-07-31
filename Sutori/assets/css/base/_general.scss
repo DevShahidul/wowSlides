@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext');
+
 body {
   font-family: 'Dosis', sans-serif;
   // font-family: 'Open Sans', sans-serif;
@@ -24,4 +26,9 @@ textarea {
 
 .dropdown-toggle::after {
   display: none;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
 }
