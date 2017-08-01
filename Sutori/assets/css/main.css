@@ -8731,6 +8731,7 @@ ul {
 
 a {
   color: #636363;
+  cursor: pointer;
 }
 
 a:hover {
@@ -8989,6 +8990,10 @@ p {
   border-bottom: 2px solid #00cebe;
 }
 
+#footer {
+  margin-top: 150px;
+}
+
 /*Components*/
 .mini-img {
   width: 40px;
@@ -9164,7 +9169,7 @@ p {
   margin: auto;
 }
 
-.story-title .story-title-input {
+.no-border-input, .no-border-input-md {
   border: none;
   padding: 1rem;
   width: 100%;
@@ -9173,22 +9178,174 @@ p {
   color: #00cebe;
 }
 
-.story-title .story-title-input:focus {
-  border: none;
+.no-border-input:focus, .no-border-input-md:focus {
+  outline-color: #fff;
 }
 
-.story-title .story-description {
+.no-border-textarea, .no-border-textarea-xs {
   border: none;
   width: 100%;
   text-align: center;
   padding: 1rem;
-  height: 200px;
+  height: 100px;
   font-size: 1.5rem;
   color: #666;
 }
 
-.story-title .story-description:focus {
+.no-border-textarea:focus, .no-border-textarea-xs:focus {
+  outline-color: #fff;
+}
+
+.no-border-input-md {
+  font-size: 2.5rem;
+}
+
+.no-border-textarea-xs {
+  font-size: 1rem;
+  height: 75px;
+  text-align: left;
+}
+
+.absolute-right-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+}
+
+.mini-btn {
+  padding: 0.5rem 1rem;
+}
+
+.mini-btn:hover {
+  background-color: #eee;
+}
+
+.insert-heading {
+  position: relative;
+}
+
+.upload-box {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #d8d8d8;
+}
+
+.upload-box label {
+  cursor: pointer;
+}
+
+.upload-box img {
+  width: 40px;
+}
+
+.upload-box input[type=file] {
+  display: none;
+}
+
+.create-new-box {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 25px);
+  z-index: 10001;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background-color: #f8a132;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.create-new-box img {
+  width: 20px;
+}
+
+.create-new-box:hover {
+  background-color: #fc4a1a;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+  .create-new-box {
+    left: 14px;
+  }
+}
+
+.create-new-dropdown {
+  left: calc(50% - 90px);
+  top: 50px;
+}
+
+.create-new-dropdown img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.create-new-dropdown .dropdown-item {
+  padding: 10px 1.5rem;
+}
+
+.create-new-dropdown .dropdown-item:active {
+  background-color: #00cebe;
+}
+
+@media (max-width: 767px) {
+  .create-new-dropdown {
+    left: 20px;
+  }
+}
+
+/*** INPUT SEARCH STYLE ***/
+.search {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  margin: 0 20px;
+  padding: 7px 9px 0px 9px;
+  border: 3px solid #999;
+  border-radius: 25px;
+  transition: all 200ms ease;
+  cursor: text;
+}
+
+.search:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  right: -5px;
+  top: 21px;
+  background: #999;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+  transition: all 200ms ease;
+}
+
+.search.active,
+.search:hover {
+  width: 200px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.search.active:after,
+.search:hover:after {
+  height: 0px;
+}
+
+.search input {
+  width: 100%;
   border: none;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: inherit;
+  background: transparent;
+  outline-width: 0px;
 }
 
 .story-timeline {
@@ -9357,7 +9514,7 @@ p {
   margin-right: 10px;
 }
 
-.timeline-footer img {
+.timeline-footer .timline-icon-img {
   width: 20px;
   margin-right: 5px;
 }

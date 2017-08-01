@@ -28,9 +28,16 @@
                 <li class="nav-item">
                   <a class="nav-link " href="#">Create</a>
                 </li>
+                <li class="nav-item d-flex m_l_20">
+                  <button class="btn btn-secondary-color" type="button" name="button">Create Story</button>
+                </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Explore">
+                <!-- <input class="form-control mr-sm-2" type="text" placeholder="Explore"> -->
+
+            	  <label class="search" for="inpt_search">
+            			<input id="inpt_search" type="text" />
+            		</label>
               </form>
               <div class="dropdown">
                 <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,153 +76,156 @@
             </div>
           </div>
           <!-- End Story Info -->
-
           <div class="container m_t_30">
             <div class="story-title text-center">
               <!-- <h1 class="display-3  primary-color">Story Title</h1> -->
-              <input class="story-title-input" type="text" name="" value="" placeholder="Enter Stroy Title">
+              <input class="no-border-input" type="text" name="" value="" placeholder="Enter Stroy Title">
               <!-- <p>Praesent tincidunt erat ac mi iaculis, a tempor massa venenatis. Proin sed cursus orci.
                 Cras consequat metus elit, sit amet maximus elit pretium sit amet.
                 Donec tristique mattis elementum. Vestibulum vestibulum elementum tincidunt.</p> -->
-              <textarea class="story-description" name="name" placeholder="Description in here"></textarea>
+                <!-- TinyMCE -->
+              <textarea class="no-border-textarea" name="name" placeholder="Description in here"></textarea>
             </div>
             <div class="story-timeline">
-              <h2 class="display-4 secondary-color text-center p_b_10">2011</h2>
+              <div class="insert-heading">
+                <input class="no-border-input-md" type="text" name="" value="" placeholder="Insert Heading">
+                <!-- <h2 class="display-4 secondary-color text-center p_b_10">2011</h2> -->
+                <button class="btn btn-secondary-color absolute-right-bottom mini-btn " type="button" name="button" title="Delete"><img width="20px" src="assets/img/trash.svg" alt=""></button>
+              </div>
               <ul class="timeline">
+                <!-- Create Image -->
                  <li>
                    <div class="timeline-badge badge-image"></div>
                    <div class="timeline-panel">
                      <div class="timeline-heading">
-                       <img class="img-fluid" src="https://static.pexels.com/photos/450279/pexels-photo-450279.jpeg" />
+                       <!-- <img class="img-fluid" src="https://static.pexels.com/photos/450279/pexels-photo-450279.jpeg" /> -->
+                       <div class="upload-box">
+                        <label>
+                          <input type="file" name="" value="">
+                          <img src="assets/img/upload.svg" alt="">
+                          <p>Upload Image</p>
+                          <!-- <p>Your image is uploading...</p> -->
+                        </label>
+                        <input class="form-control" type="text" name="" value="" placeholder="Or paste a image link here...">
+                       </div>
                      </div>
                      <div class="timeline-body">
-                       <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+                       <!-- <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
                           Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis
                            quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
-                           Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                           Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p> -->
+                        <!-- TinyMCE -->
+                        <textarea class="no-border-textarea-xs" name="name" placeholder="Add description"></textarea>
                      </div>
 
                      <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/liked.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
+                         <a href="#"><img class="timline-icon-img" src="assets/img/share.svg" alt=""><span>Share</span></a>
+                         <a class="float-right" title="Delete"><img width="20px" src="assets/img/trash.svg" alt=""></a>
                      </div>
                    </div>
                  </li>
+                 <!--End Create Image -->
 
+                 <!-- Create Video -->
                  <li>
                    <div class="timeline-badge badge-video"></div>
                    <div class="timeline-panel">
                      <div class="timeline-heading">
-                       <iframe height="315" src="https://www.youtube.com/embed/GHo_Fc3LMUo?ecver=1" frameborder="0" allowfullscreen></iframe>
+                       <!-- <iframe height="315" src="https://www.youtube.com/embed/GHo_Fc3LMUo?ecver=1" frameborder="0" allowfullscreen></iframe> -->
+                       <div class="upload-box">
+                        <label>
+                          <input type="file" name="" value="">
+                          <img src="assets/img/upload-video.svg" alt="">
+                          <p>Upload Video</p>
+                          <!-- <p>Your image is uploading...</p> -->
+                        </label>
+                        <input class="form-control" type="text" name="" value="" placeholder="Or paste a video link here...">
+                       </div>
                      </div>
                      <div class="timeline-body">
-                       <p>2Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+                       <!-- <p>2Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
                           Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis
                           quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
                            Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                        <p>2Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
                           Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis
                           quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
-                           Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                           Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p> -->
+                           <!-- TinyMCE -->
+                        <textarea class="no-border-textarea-xs" name="name" placeholder="Add description"></textarea>
                      </div>
                      <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/like.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
+                         <a href="#"><img class="timline-icon-img" src="assets/img/share.svg" alt=""><span>Share</span></a>
+                         <a class="float-right" title="Delete"><img width="20px" src="assets/img/trash.svg" alt=""></a>
                      </div>
                    </div>
                  </li>
+                 <!--End Create Video -->
+
+                 <!-- Create 'Did You Know?' -->
                  <li>
                    <div class="timeline-badge"></div>
                    <div class="timeline-panel">
                      <div class="timeline-heading">
                        <h2 class="">Did you know?</h2>
+                       <div class="upload-box m_t_20">
+                        <label>
+                          <input type="file" name="" value="">
+                          <img src="assets/img/upload.svg" alt="">
+                          <p>Upload Image</p>
+                          <!-- <p>Your image is uploading...</p> -->
+                        </label>
+                        <input class="form-control" type="text" name="" value="" placeholder="Or paste a image link here...">
+                       </div>
                      </div>
                      <div class="timeline-body">
-                       <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-
+                       <!-- <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p> -->
+                       <!-- TinyMCE -->
+                        <textarea class="no-border-textarea-xs" name="name" placeholder="Add description"></textarea>
                      </div>
 
                      <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/like.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
+                         <a href="#"><img class="timline-icon-img" src="assets/img/share.svg" alt=""><span>Share</span></a>
+                         <a class="float-right" title="Delete"><img width="20px" src="assets/img/trash.svg" alt=""></a>
                      </div>
                    </div>
                  </li>
+                 <!--End Create 'Did You Know?' -->
 
+                 <!-- Create text -->
                  <li>
                    <div class="timeline-badge"></div>
                    <div class="timeline-panel">
                      <div class="timeline-body">
-                       <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
+                       <!-- <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.
                          Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio,
                           in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis
                           i pareci latim.
-                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p> -->
+                        <!-- TinyMCE -->
+                       <textarea class="no-border-textarea-xs" name="name" placeholder="Share something..."></textarea>
                      </div>
                      <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/like.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
+                         <a href="#"><img class="timline-icon-img" src="assets/img/share.svg" alt=""><span>Share</span></a>
+                         <a class="float-right" title="Delete"><img width="20px" src="assets/img/trash.svg" alt=""></a>
                      </div>
                    </div>
                  </li>
-                 <li>
-                   <div class="timeline-badge badge-image"></div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <img class="img-fluid" src="https://static.pexels.com/photos/442404/succulents-hands-woman-female-442404.jpeg" />
-                     </div>
-                     <div class="timeline-body">
-                       <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
-                         Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                         Manduma pindureta quium dia nois paga.
-                         Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                     </div>
-                     <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/like.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
-                     </div>
-                   </div>
-                 </li>
-                 <li>
-                   <div class="timeline-badge badge-video"></div>
-                   <div class="timeline-panel">
-                     <div class="timeline-heading">
-                       <iframe height="315" src="https://www.youtube.com/embed/ebb5AinKxWI?ecver=1" frameborder="0" allowfullscreen></iframe>
-                     </div>
-                     <div class="timeline-body">
-                       <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis,
-                         espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                          Manduma pindureta quium dia nois paga.
-                         Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                     </div>
-                     <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/like.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
-                     </div>
-                   </div>
-                 </li>
-                 <li>
-                   <div class="timeline-badge primary"></div>
-                   <div class="timeline-panel">
-                     <div class="timeline-body">
-                       <p>I only make it responsive and remove the empty spaces to be more like Facebook timeline!</p>
-                     </div>
-                     <div class="timeline-footer">
-                         <a href="#"><img src="assets/img/like.svg" alt=""><span>Like</span></a>
-                         <a href="#"><img src="assets/img/share.svg" alt=""><span>Share</span></a>
-                         <a class="float-right">06.07.1992</a>
-                     </div>
-                   </div>
+                 <!-- End Create text -->
+                 <li class="w-100">
+
+                    <a class="create-new-box dropdown-toggle " id="addStory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img src="assets/img/add.svg" alt=""></a>
+                    <div class="create-new-dropdown dropdown-menu" aria-labelledby="addStory">
+                      <a class="dropdown-item" href="#"><img src="assets/img/text.svg" alt=""> Text</a>
+                      <a class="dropdown-item" href="#"><img src="assets/img/image.svg" alt=""> Image</a>
+                      <a class="dropdown-item" href="#"><img src="assets/img/video.svg" alt=""> Video</a>
+                      <a class="dropdown-item" href="#"><img src="assets/img/didyouknow.svg" alt=""> Did You Know?</a>
+                    </div>
                  </li>
 
                  <li class="clearfix" style="float: none;"></li>
              </ul>
+
           </div>
         </div>
 
@@ -231,5 +241,6 @@
     <script src="assets/js/vendor/tether.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
