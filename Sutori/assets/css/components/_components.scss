@@ -79,6 +79,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+  position: relative;
 }
 
 .container-info {
@@ -311,4 +312,23 @@
 		background: transparent;
 		outline-width: 0px;
 	}
+}
+
+
+.edit-image {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 200ms ease;
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 200ms ease;
+    padding: 15px;
+  }
+  img {
+    width: 25px;
+  }
 }
