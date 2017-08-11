@@ -534,3 +534,19 @@ span.title {
     margin-right: 10px;
   }
 }
+.big-search {
+  width: 60vw;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+  color: #525252;
+  font-size: 1.1rem;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
