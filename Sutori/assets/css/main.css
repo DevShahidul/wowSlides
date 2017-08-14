@@ -9369,6 +9369,76 @@ p {
   width: 25px;
 }
 
+.canvas {
+  align-items: center;
+  display: flex;
+  height: 10em;
+  justify-content: center;
+}
+
+/* Spinner 1 starts here */
+.spinner1 {
+  align-items: center;
+  border: .3em solid transparent;
+  border-top: 0.3em solid #00cebe;
+  border-right: 0.3em solid #00cebe;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spinnerMax {
+  animation: spinnerOne 4s linear infinite;
+  height: 3em;
+  width: 3em;
+}
+
+.spinnerMid {
+  animation: spinnerOne 3s linear infinite;
+  height: 2.4em;
+  width: 2.4em;
+}
+
+.spinnerMin {
+  animation: spinnerOne 2s linear infinite;
+  height: 1.8em;
+  width: 1.8em;
+}
+
+@keyframes spinnerOne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spinner 1 ends here */
+.share-social ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.share-social li {
+  display: inline-block;
+}
+
+.share-social li img {
+  width: 80px;
+}
+
+.share-link {
+  margin-top: 30px;
+}
+
+.share-link input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  color: #3d3d3d;
+}
+
 .story-timeline {
   position: relative;
   margin-top: 30px;

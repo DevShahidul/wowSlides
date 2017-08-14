@@ -61,7 +61,7 @@
                 <span><a href="#">Betül Uzun</a></span>
               </div>
               <div class="action-button">
-                <button class="btn btn-primary-color" type="button" name="button">Share</button>
+                <button class="btn btn-primary-color" type="button" name="button" data-toggle="modal" data-target="#exampleModal">Share</button>
                 <div class="dropdown">
                   <button class="btn btn-secondary-color dropdown-toggle" type="button" name="button"
                     id="actionBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</button>
@@ -369,6 +369,36 @@
         </div>
     </div>
 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Share</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="share-social">
+              <ul>
+                <li><a href="#"><img src="assets/img/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/linkedin.svg" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/google-plus.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="share-link">
+              <span>Copy Link</span>
+              <input type="text" name="link" value="www.story.com/story">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary-color" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <script src="assets/js/vendor/tether.min.js"></script>
