@@ -7,12 +7,12 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<title>Profile</title>
 
-  	<link href="assets/css/main.css" rel="stylesheet">
+  	<link href="../assets/css/main.css" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
       <div id="content">
-        <div class="profile-cover-image" style="background-image: url('assets/img/profile-cover.jpeg')">
+        <div class="profile-cover-image" style="background-image: url('../assets/img/profile-cover.jpeg')">
           <div class="profile-cover">
             <div class="container">
               <nav class="navbar navbar-toggleable-md navbar-light">
@@ -47,10 +47,10 @@
                       <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Settings</a>
                       </li> -->
-                      <li class="nav-item"><a href="#"><img src="assets/img/facebook.svg" alt=""></a></li>
-                      <li class="nav-item"><a href="#"><img src="assets/img/twitter.svg" alt=""></a></li>
-                      <li class="nav-item"><a href="#"><img src="assets/img/linkedin.svg" alt=""></a></li>
-                      <li class="nav-item"><a href="#"><img src="assets/img/instagram.svg" alt=""></a></li>
+                      <li class="nav-item"><a href="#"><img src="../assets/img/facebook.svg" alt=""></a></li>
+                      <li class="nav-item"><a href="#"><img src="../assets/img/twitter.svg" alt=""></a></li>
+                      <li class="nav-item"><a href="#"><img src="../assets/img/linkedin.svg" alt=""></a></li>
+                      <li class="nav-item"><a href="#"><img src="../assets/img/instagram.svg" alt=""></a></li>
                     </ul>
                   </div>
                 </div>
@@ -59,97 +59,85 @@
           </div>
         </div>
         <div class="profile-inner">
-          <div class="profile-picture">
-            <img src="assets/img/profile.jpg" alt="">
+          <div class="account-icons">
+            <a class="account" href="#"><img src="../assets/img/wiki.png" alt=""></a>
+            <a class="account" href="#"><img src="../assets/img/story.png" alt=""></a>
+            <div class="profile-picture-wrapper">
+              <img class="profile-picture" src="../assets/img/profile.jpg" alt="">
+              <a href="#" class="profile-picture-layer">
+                <img src="../assets/img/camera.svg" alt="">
+              </a>
+            </div>
+            <a class="account" href="#"><img src="../assets/img/ticket.png" alt=""></a>
+            <a class="account" href="#"><img src="../assets/img/kb.png" alt=""></a>
           </div>
           <div class="profile-about">
             <h4 >Marion Cotillard</h4>
             <p>Academy Award-winning actress Marion Cotillard was born on September 30, 1975 in Paris. Cotillard is the daughter of Jean-Claude
               Cotillard, an actor, playwright and director, and Niseema Theillaud, an actress and drama teacher. Her father's family is Breton. </p>
           </div>
-          <div class="profile-follow">
+          <!-- <div class="profile-follow">
             <button class="btn button-primary" type="button" name="button">Follow</button>
-            <!-- <button class="btn button-primary" type="button" name="button">Unfollow</button> -->
-          </div>
+            <button class="btn button-primary" type="button" name="button">Unfollow</button>
+          </div> -->
         </div>
         <div class="container profile-relates">
           <div class="row catalog-wrapper">
             <div class="card card-catalog">
-              <a href="story.html">
-                <div class="card-img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/564x/67/47/25/67472561517a7b69094268201c41addc.jpg);">
-                  <div class="card-img-layer">
-                    <h2 class="">Wiki</h2>
+              <a href="#">
+                <div class="card-header">
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/img/setting.svg " alt="Generic placeholder image">
+                    <h5 class="card-header-title">Kişisel Ayarlar</h5>
                   </div>
+                  <img src="../assets/img/right-angle.svg " alt="Generic placeholder image">
                 </div>
               </a>
               <div class="card-block">
-                <h4 class="card-title"><a href="#">You have 24 Wiki</a></h4>
-                <p class="card-text">View <a href="#">256</a></p>
+                <p class="card-title">Aenean fermentum sodales risus, ut sodales risus gravida nec. </p>
+                <ul class="card-text">
+                  <li><a href="#">Kişisel Bilgileriniz</a></li>
+                  <li><a href="#">Curabitur iaculis iaculis aliquam.</a></li>
+                  <li><a href="#">İaculis iaculis aliquam.</a></li>
+                </ul>
               </div>
             </div>
             <div class="card card-catalog">
               <a href="#">
-                <div class="card-img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/564x/c2/fb/ae/c2fbaed1d7016b51a6e02a084ca578d4.jpg);">
-                  <div class="card-img-layer">
-                    <h2 class="">Ticket</h2>
+                <div class="card-header">
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/img/setting1.svg " alt="Generic placeholder image">
+                    <h5 class="card-header-title">Güvenlik Ayarları</h5>
                   </div>
+                  <img src="../assets/img/right-angle.svg " alt="Generic placeholder image">
                 </div>
               </a>
               <div class="card-block">
-                <h4 class="card-title"><a href="#">You have 18 Questions</a></h4>
-                <p class="card-text">Lorem <a href="#">Ipsum</a></p>
-              </div>
-            </div>
-            <div class="card card-catalog">
-            <a href="#">
-              <div class="card-img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/564x/ad/95/f6/ad95f6571ad13afd73e276238574fc1f.jpg);">
-                <div class="card-img-layer">
-                  <h2 class="">More</h2>
-                </div>
-              </div>
-            </a>
-              <div class="card-block">
-                <h4 class="card-title"><a href="#">You have 13 registered courses</a></h4>
-                <p class="card-text">Lorem <a href="#">Ipsum</a></p>
+                <p class="card-title">Aenean fermentum sodales risus, ut sodales risus gravida nec. </p>
+                <ul class="card-text">
+                  <li><a href="#">Kişisel Bilgileriniz</a></li>
+                  <li><a href="#">Curabitur iaculis iaculis aliquam.</a></li>
+                  <li><a href="#">İaculis iaculis aliquam.</a></li>
+                </ul>
               </div>
             </div>
             <div class="card card-catalog">
               <a href="#">
-                <div class="card-img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/564x/4e/c5/64/4ec564b7553bed5aaad899825169e15a.jpg);">
-                  <div class="card-img-layer">
-                    <h2 class="">More</h2>
+                <div class="card-header">
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/img/setting2.svg " alt="Generic placeholder image">
+                    <h5 class="card-header-title">Gizlilik Ayarları</h5>
                   </div>
+                  <img src="../assets/img/right-angle.svg " alt="Generic placeholder image">
                 </div>
               </a>
               <div class="card-block">
-                <h4 class="card-title"><a href="#">You have 13 registered courses</a></h4>
-                <p class="card-text">Lorem <a href="#">Ipsum</a></p>
-              </div>
-            </div>
-            <div class="card card-catalog">
-              <a href="#">
-                <div class="card-img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/564x/42/6d/d9/426dd9cd332602b0265218379bc2c1c8.jpg);">
-                  <div class="card-img-layer">
-                    <h2 class="">More</h2>
-                  </div>
-                </div>
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"><a href="#">You have 13 registered courses</a></h4>
-                <p class="card-text">Lorem <a href="#">Ipsum</a></p>
-              </div>
-            </div>
-            <div class="card card-catalog">
-              <a href="#">
-                <div class="card-img" style="background-image: url(https://s-media-cache-ak0.pinimg.com/564x/0f/ac/ac/0facac6dd7cd858a86d9faddb9326b4a.jpg);">
-                  <div class="card-img-layer">
-                    <h2 class="">More</h2>
-                  </div>
-                </div>
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"><a href="#">You have 13 registered courses</a></h4>
-                <p class="card-text">Lorem <a href="#">Ipsum</a></p>
+                <p class="card-title">Aenean fermentum sodales risus, ut sodales risus gravida nec. </p>
+                <ul class="card-text">
+                  <li><a href="#">Kişisel Bilgileriniz</a></li>
+                  <li><a href="#">Curabitur iaculis iaculis aliquam.</a></li>
+                  <li><a href="#">İaculis iaculis aliquam.</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -168,8 +156,8 @@
     </div>
 
 
-    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/vendor/tether.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/vendor/tether.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
   </body>
 </html>
