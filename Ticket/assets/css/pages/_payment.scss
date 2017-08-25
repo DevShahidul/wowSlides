@@ -1,0 +1,104 @@
+.dashboard-menu-wrapper {
+  .explore-products {
+
+    li {
+      font-weight: 600;
+      transition: 0.2s;
+      background-color: $primary_color;
+      display: flex;
+      align-items: center;
+      a {
+        color: #fff;
+        padding: 10px;
+      }
+      &:hover {
+        background-color: lighten($primary_color, 10%);
+        margin-right: -10px;
+      }
+      .product-img {
+        padding: 10px;
+        background-color: lighten($primary_color, 10%);
+        img {
+          width: 30px;
+        }
+      }
+
+    }
+  }
+
+  h5 {
+    padding: 10px 30px;
+  }
+}
+.product-list {
+  width: 100%;
+  box-shadow: 1px 1px 20px 1px #d8d8d8;
+  .table-style {
+    width: 100%;
+    tr {
+      border: 1px solid #eaeaea;
+      transition: 0.2s;
+      font-size: 0.9rem;
+      &:hover {
+        background-color: #f1f1f1;
+        transition: 0.2s;
+      }
+
+      td {
+        padding: 20px;
+      }
+      .price {
+        font-size: 1rem;
+        color: $primary_color;
+      }
+      .close-icon{
+        text-align: right;
+        img {
+          width: 15px;
+        }
+      }
+    }
+  }
+}
+.card-list {
+  width: 500px;
+  height: 390px;
+  overflow-y: auto;
+  .card-wrapper {
+    width: 280px;
+    height: 160px;
+    background: linear-gradient(to right, #3b4a66, #16191b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &.active {
+      background: linear-gradient(to right, #73c8a9, #373b44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    &:hover {
+      background: linear-gradient(to right, #73c8a9, #373b44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      transition: background-color 0.5s ease;
+    }
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .card-bank {
+        height: 40px;
+        background: #fff;
+        border-radius: 5px;
+      }
+    }
+    .card-number {
+      font-size: 1.5rem;
+      text-shadow: 1px 2px 3px #000;
+      margin-top: 20px;
+    }
+    h6 {
+      margin-top: 5px;
+    }
+  }
+}
