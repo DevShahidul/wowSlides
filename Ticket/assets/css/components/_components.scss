@@ -41,6 +41,14 @@
   margin-bottom: 5px;
 }
 
+.color-primary {
+  color: $primary_color;
+}
+
+.background-primary {
+  background: $primary_color;
+}
+
 .question-media {
   margin-top: 20px;
   .media {
@@ -144,8 +152,7 @@
 }
 
 label {
-  font-size: 18px;
-  color: $primary_color;
+  font-size: 16px;
 }
 
 .tag-style {
@@ -381,6 +388,11 @@ form {
     font-size:14px;
     color: $primary_color;
   }
+  input:valid ~ label		{
+    top:-20px;
+    font-size:14px;
+    color: $primary_color;
+  }
   textarea::placeholder {
     color:#999;
     font-size:18px;
@@ -485,4 +497,106 @@ form {
   a {
     color: #0275d8;
   }
+}
+
+.form-check {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+.form-check {
+  &:hover input ~ .control__indicator {
+    background: #ccc;
+  }
+  input {
+    &:focus ~ .control__indicator {
+      background: #ccc;
+    }
+    &:checked ~ .control__indicator {
+      background: $primary_color  ;
+    }
+  }
+  &:hover input:not([disabled]):checked ~ .control__indicator {
+    background: $primary_color;
+  }
+  input {
+    &:checked:focus ~ .control__indicator {
+      background: $primary_color;
+      transition: 0.4s;
+    }
+    &:disabled ~ .control__indicator {
+      background: #e6e6e6;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}
+
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.form-check input:checked ~ .control__indicator:after {
+  display: block;
+  transition: 0.4s;
+}
+
+.form-check-label {
+  padding-left: 0;
+  color: #6d6d6d;
+  .control__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+  input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+  }
+}
+
+.control--radio {
+  .control__indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  input:disabled ~ .control__indicator:after {
+    background: #7b7b7b;
+  }
+}
+
+.text-muted {
+  color: $primary_color !important;
 }
