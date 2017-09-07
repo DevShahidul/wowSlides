@@ -1,19 +1,6 @@
-
-// Ticket Css
-
-// ul {
-//   list-style-type: none;
-//   padding: 0;
-// }
-// a {
-//   color: #636363;
-//   &:hover {
-//     text-decoration: none;
-//   }
-// }
-
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext');
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -32,4 +19,7 @@ a {
 }
 .modal-title {
   color: #636363;
+}
+.form-control {
+  color: #999;
 }

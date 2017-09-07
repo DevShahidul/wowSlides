@@ -600,3 +600,127 @@ form {
 .text-muted {
   color: $primary_color !important;
 }
+
+// ::-webkit-scrollbar-track
+// {
+// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+// 	border-radius: 10px;
+// 	background-color: #F5F5F5;
+// }
+//
+// ::-webkit-scrollbar
+// {
+// 	width: 12px;
+// 	background-color: #F5F5F5;
+//   height: 10px;
+// }
+//
+// ::-webkit-scrollbar-thumb
+// {
+// 	border-radius: 10px;
+// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+// 	background-color: #555;
+// }
+
+
+
+nav[role="navigation"] {
+  text-align: center;
+}
+
+.cd-pagination {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto 4em;
+  text-align: center;
+  -webkit-box-shadow: 1px 5px 10px #eaeaea;
+  -moz-box-shadow: 1px 5px 10px #eaeaea;
+  box-shadow: 1px 5px 10px #eaeaea;
+  li {
+    display: none;
+    &.button {
+      display: inline-block;
+    }
+  }
+  a {
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
+    color: #565656;
+  }
+  .active {
+    background-color: #3f515d;
+    border-color: #3f515d;
+    color: #fff;
+    pointer-events: none;
+    a {
+      color: #fff;
+    }
+  }
+  &.no-space {
+    width: auto;
+    max-width: none;
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    li {
+      margin: 0;
+      float: left;
+      border-right: 1px solid #e6e6e6;
+      &:last-of-type {
+        border-right: none;
+        a {
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+        }
+      }
+      &:first-of-type a {
+        -webkit-border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        border-radius: 0.25em;
+      }
+    }
+  }
+  a, span {
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+  }
+  a.disabled {
+    &::before, &::after {
+      opacity: 0.4;
+    }
+  }
+  &.no-space {
+    a, span {
+      float: left;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      padding: 0.5em 1em;
+      border: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .cd-pagination li {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-pagination {
+    margin: 0 auto 2em;
+  }
+}
