@@ -14,3 +14,13 @@
     margin-top: 0;
   }
 }
+
+
+.bd-sidebar {
+  padding-left: 30px;
+  border-right: 1px solid #d0d0d0;
+  position: sticky;
+  z-index: 1000;
+  max-height: calc(100vh - 1rem);
+  top: 1rem;
+}
