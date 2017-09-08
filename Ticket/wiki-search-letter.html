@@ -14,15 +14,22 @@
 
         <div id="content">
           <div class="jumbotron jumbotron-fluid wiki-nav-background">
-            <div class="container">
-              <div class="profile-info">
+            <div class="container nav-mobile">
+              <img class="mobile-logo" src="assets/img/wiki.png" alt="">
+              <div class="profile-info dropdown">
+                <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
-                <a href="#">Betül Uzun</a>
+                Betül Uzun</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
               </div>
             </div>
             <div class="container m_t_30">
 
-              <div class="logo">
+              <div class="logo hidden-sm-down">
                 <img src="assets/img/Wiktionary.png" alt="">
               </div>
 
@@ -47,7 +54,7 @@
                 <div class="col-md-12 col-xs-12">
                   <div class="question-media question-wrapper">
                     <div class="media">
-                      <div class="media-body d-flex justify-content-between">
+                      <div class="media-body word-info">
 
                         <h2 class="mt-0"><a href="#" class="left-line">A</a></h2>
                         <!-- Sadece kelimeyi yazan kişi editleyebilecek -->

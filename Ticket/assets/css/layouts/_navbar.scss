@@ -35,11 +35,31 @@
   .tag-style .tag-child-style li {
       background-color: rgba(255, 255, 255, 0.5);
   }
+  @media (max-width: 576px) {
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 576px) {
   .wiki-nav-background {
       padding: 1rem 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobile-logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+@media (min-width: 769px) {
+  .mobile-logo {
+    display: none;
   }
 }
 
@@ -49,6 +69,11 @@
   margin: auto;
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+    width: 100%;
+    margin: inherit;
+  }
 }
 .mini-img  {
   width: 25px;

@@ -14,15 +14,22 @@
 
         <div id="content">
           <div class="jumbotron jumbotron-fluid wiki-nav-background">
-            <div class="container">
-              <div class="profile-info">
+            <div class="container nav-mobile">
+              <img class="mobile-logo" src="assets/img/wiki.png" alt="">
+              <div class="profile-info dropdown">
+                <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
-                <a href="#">Betül Uzun</a>
+                Betül Uzun</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
               </div>
             </div>
             <div class="container m_t_30">
 
-              <div class="logo">
+              <div class="logo hidden-sm-down">
                 <img src="assets/img/Wiktionary.png" alt="">
               </div>
 
@@ -45,7 +52,7 @@
           <div class="container">
             <div class="row border-style">
                 <form  class="col-md-12 col-xs-12 m_t_20">
-                <label>Kelimeler</label>
+                <h5 class="m_b_20">Kelimeler</h5>
                 <div class="form-group">
                   <input type="email" class="form-control text-input" id="" aria-describedby="emailHelp" required>
                   <label for="" class="input-label"> Bu kelimelerin tümü</label>
@@ -66,7 +73,7 @@
                   <input type="email" class="form-control text-input" id="" aria-describedby="emailHelp" required>
                   <label for="" class="input-label"> Bu etiketler</label>
                 </div>
-                <label>Diğer Arama Ayarları</label>
+                <h5 class="m_b_20">Diğer Arama Ayarları</h5>
                 <div class="form-group">
                   <select class="form-control" id="exampleSelect1" >
                     <option>Dil</option>

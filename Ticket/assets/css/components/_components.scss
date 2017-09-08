@@ -57,6 +57,9 @@
     .user-img {
       width: 80px;
       border-radius: 50%;
+      @media (max-width: 544px) {
+        width: 40px;
+      }
     }
     .user-name {
       font-size: 1rem;
@@ -64,6 +67,7 @@
     }
   }
   .stars {
+    min-width: 100px;
     img {
       width: 25px;
     }
@@ -192,6 +196,9 @@ label {
     padding: 0 5px;
     border-bottom: 5px solid $primary_color;
   }
+  @media (max-width: 380px) {
+    font-size: 1rem;
+  }
 }
 
 .word-wrapper {
@@ -219,6 +226,31 @@ label {
       color: $primary_color;
     }
   }
+  @media (max-width: 544px){
+    -webkit-column-width: 10rem;
+    -moz-column-width: 10rem;
+    column-width: 10rem;
+    padding: 5px;
+  }
+  @media (min-width: 545px) and (max-width: 768px){
+    -webkit-column-width: 12rem;
+    -moz-column-width: 12rem;
+    column-width: 12rem;
+    padding: 5px;
+
+  }
+}
+
+.word-info {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 544px) {
+    display: block;
+    .word-edit-btn {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
 }
 
 .view {
@@ -237,7 +269,7 @@ label {
 
 .button-style {
   button {
-    width: 200px;
+    width: 180px;
     cursor: pointer;
     margin-top: 10px;
     &:hover {
@@ -261,6 +293,9 @@ label {
     color: $light_text_color;
     font-size: 2rem;
     text-align: center;
+    @media (max-width: 769px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -305,6 +340,9 @@ form {
   margin-top: 20px;
   line-height: 2.5rem;
   text-align: center;
+  @media (max-width: 768px){
+    line-height: 1.5rem;
+  }
 }
 .form-group {
   margin-bottom: 20px;
@@ -318,7 +356,10 @@ form {
   }
   .page-link {
     color: $p_text_color;
-      padding: 0.7rem 1.4rem;
+    padding: 0.7rem 1.4rem;
+    @media (max-width: 544px) {
+      padding: 0.4rem .7rem;
+    }
   }
   img {
     width: 15px;
@@ -380,6 +421,9 @@ form {
     transition:0.2s ease all;
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
+    @media (max-width: 544px) {
+      font-size: 15px;
+    }
   }
 
   /* active state */
@@ -601,26 +645,23 @@ form {
   color: $primary_color !important;
 }
 
-// ::-webkit-scrollbar-track
-// {
-// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-// 	border-radius: 10px;
-// 	background-color: #F5F5F5;
-// }
-//
-// ::-webkit-scrollbar
-// {
-// 	width: 12px;
-// 	background-color: #F5F5F5;
-//   height: 10px;
-// }
-//
-// ::-webkit-scrollbar-thumb
-// {
-// 	border-radius: 10px;
-// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-// 	background-color: #555;
-// }
+::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #fff;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #d8d8d8;
+}
 
 
 

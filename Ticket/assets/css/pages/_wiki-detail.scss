@@ -36,6 +36,10 @@
   @extend .align-items-center;
   padding: 15px 5px;
   border-top: 1px solid $p_border_color;
+  @media (max-width: 544px) {
+    display: block !important;
+    text-align: center;
+  }
 }
 .action-buttons {
   margin-bottom: 0;
@@ -48,9 +52,18 @@
     img {
       padding-right: 5px;
     }
+    @media (max-width: 544px) {
+      margin-bottom: 10px;
+    }
   }
   .view {
     padding-bottom: 5px;
     padding-right: 5px;
+  }
+}
+
+.wiki-content {
+  img {
+    max-width: 100%;
   }
 }
