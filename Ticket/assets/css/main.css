@@ -10190,14 +10190,10 @@ nav[role="navigation"] {
 }
 
 .dashboard-menu-wrapper .dashboard-menu li {
-  padding: 15px 15px;
+  padding: 10px 15px;
   font-weight: 600;
   transition: 0.2s;
-}
-
-.dashboard-menu-wrapper .dashboard-menu li:hover {
-  background-color: #f7f7f7;
-  transition: 0.2s;
+  margin: 10px 0;
 }
 
 .dashboard-menu-wrapper .dashboard-menu li .active {
@@ -10211,10 +10207,10 @@ nav[role="navigation"] {
   margin-left: 20px;
 }
 
-.dashboard-menu-wrapper .dashboard-menu .dashboard-inner-menu li {
-  margin: 10px 0;
+.dashboard-menu-wrapper .dashboard-menu .dashboard-inner-menu .inner-li {
   font-size: 0.9rem;
   font-weight: 300;
+  margin: 0;
 }
 
 #dashboard-inner {
@@ -10289,6 +10285,7 @@ nav[role="navigation"] {
 .dashboard-menu-wrapper .dashboard-menu img {
   width: 25px;
   margin-right: 15px;
+  margin-top: -4px;
 }
 
 .product-list-wrapper {

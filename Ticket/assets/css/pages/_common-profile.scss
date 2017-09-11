@@ -123,13 +123,10 @@
   box-shadow: 1px 10px 25px 1px $p_border_color;
   .dashboard-menu {
     li {
-      padding: 15px 15px;
+      padding: 10px 15px;
       font-weight: 600;
       transition: 0.2s;
-      &:hover {
-        background-color: #f7f7f7;
-        transition: 0.2s;
-      }
+      margin: 10px 0;
       .active {
         border-left: 5px solid $primary_color;
         color: $primary_color;
@@ -139,10 +136,11 @@
     }
     .dashboard-inner-menu {
       margin-left: 20px;
-      li {
-        margin: 10px 0;
+
+      .inner-li {
         font-size: 0.9rem;
         font-weight: 300;
+        margin: 0;
       }
     }
   }
