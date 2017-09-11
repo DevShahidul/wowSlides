@@ -54,6 +54,15 @@
   background: $primary_color;
 }
 
+.color-gobito {
+  color: $gobito_color;
+}
+
+.background-gobito {
+  background: $gobito_color;
+}
+
+
 .question-media {
   margin-top: 20px;
   .media {
@@ -311,7 +320,7 @@ form {
     border-radius: 0;
     &:focus {
       outline: none;
-      border-color: $primary_color;
+      border-color: $gobito_color;
        border-bottom-width: 2px;
        transition-duration: 0.3s;
     }
@@ -435,12 +444,12 @@ form {
   input:focus ~ label		{
     top:-20px;
     font-size:14px;
-    color: $primary_color;
+    color: $gobito_color;
   }
   input:valid ~ label		{
     top:-20px;
     font-size:14px;
-    color: $primary_color;
+    color: $gobito_color;
   }
   textarea::placeholder {
     color:#999;
@@ -465,7 +474,7 @@ form {
   .profile-cover {
     height: 200px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba($primary_color, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba($gobito_color, 0.6));
     .nav-link {
       color: #fff;
     }
@@ -584,15 +593,15 @@ form {
       background: #ccc;
     }
     &:checked ~ .control__indicator {
-      background: $primary_color  ;
+      background: $gobito_color  ;
     }
   }
   &:hover input:not([disabled]):checked ~ .control__indicator {
-    background: $primary_color;
+    background: $gobito_color;
   }
   input {
     &:checked:focus ~ .control__indicator {
-      background: $primary_color;
+      background: $gobito_color;
       transition: 0.4s;
     }
     &:disabled ~ .control__indicator {
@@ -647,7 +656,7 @@ form {
 }
 
 .text-muted {
-  color: $primary_color !important;
+  color: $gobito_color !important;
 }
 
 ::-webkit-scrollbar-track

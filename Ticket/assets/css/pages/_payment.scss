@@ -4,7 +4,7 @@
     li {
       font-weight: 600;
       transition: 0.2s;
-      background-color: $primary_color;
+      background-color: $gobito_color;
       display: flex;
       align-items: center;
       a {
@@ -12,12 +12,12 @@
         padding: 10px;
       }
       &:hover {
-        background-color: lighten($primary_color, 10%);
+        background-color: lighten($gobito_color, 10%);
         margin-right: -10px;
       }
       .product-img {
         padding: 10px;
-        background-color: lighten($primary_color, 10%);
+        background-color: lighten($gobito_color, 10%);
         img {
           width: 30px;
         }
@@ -38,8 +38,8 @@
   }
 }
 .product-list-wrapper {
-  width: 100%;
-  margin-right: 15px;
+  width: 90%;
+  margin-right: 30px;
 
 }
 
@@ -68,7 +68,7 @@
       }
       .price {
         font-size: 1rem;
-        color: $primary_color;
+        color: $gobito_color;
       }
       .close-icon{
         text-align: right;
@@ -183,7 +183,7 @@
   }
   p {
     font-size: 1.4rem;
-    color: $primary_color;
+    color: $gobito_color;
   }
 }
 

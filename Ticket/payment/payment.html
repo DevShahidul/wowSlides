@@ -78,7 +78,7 @@
             </div>
             <div class="col-md-12 col-xs-12 d-flex justify-content-between">
               <div class="product-list-wrapper">
-                <p class="color-primary">Sipariş Özeti</p>
+                <p class="color-gobito">Sipariş Özeti</p>
                 <div class="product-list product-list-overflow">
                   <table class="table-style">
                     <!-- <tr>
@@ -122,73 +122,93 @@
                       <td class="price">50TL</td>
                       <td class="close-icon"><a href="#"><img src="../assets/img/close.svg" alt=""></a></td>
                     </tr>
+                    <tr>
+                      <td><a href="#">Kişisel Bilgi Güvenliği</a></td>
+                      <td>Akademi.net</td>
+                      <td class="price">50TL</td>
+                      <td class="close-icon"><a href="#"><img src="../assets/img/close.svg" alt=""></a></td>
+                    </tr>
                   </table>
+                </div>
+                <div class="text-right m_t_30">
+                  <h1 class="display-3 color-gobito   ">356TL</h1>
+
                 </div>
               </div>
 
               <div class="card-list-wrapper">
-                <p class="color-primary">*Lütfen ödeme yöntemi seçiniz.</p>
-                <div class="card-list">
-                  <a href="#" data-toggle="modal" data-target="#addCreditCard">
-                    <div class="card-wrapper card-create">
-                      <img class="card-bank" src="../assets/img/add.svg" alt="">
-                      <h6>Add a credit card</h6>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="card-wrapper">
-                      <div class="card-head">
-                        <span>Credit Card</span>
-                        <img class="card-bank" src="../assets/img/garanti.png" alt="">
-                      </div>
-                      <div class="card-number">
-                        2552 3669 9889 4554
-                      </div>
-                      <h6>Betül Uzun</h6>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="card-wrapper ">
-                      <div class="card-head">
-                        <span>Bank Card</span>
-                        <img class="card-bank" src="../assets/img/akbank.png" alt="">
-                      </div>
-                      <div class="card-number">
-                        2552 3669 9889 4554
-                      </div>
-                      <h6>Betül Uzun</h6>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="card-wrapper">
-                      <div class="card-head">
-                        <span>Credit Card</span>
-                        <img class="card-bank" src="../assets/img/vakif.png" alt="">
-                      </div>
-                      <div class="card-number">
-                        2552 3669 9889 4554
-                      </div>
-                      <h6>Betül Uzun</h6>
-                    </div>
-                  </a>
+                <p class="color-gobito">*Lütfen ödeme yöntemi seçiniz.</p>
+                <div class="text-center">
+                  <button class="btn button-secondary w-100" type="button" name="button">PayPal</button>
+
+                  <button class="btn button-secondary w-100 m_t_10" href="#" data-toggle="modal" data-target="#addCreditCard">
+                    Select from my saved cards
+                  </button>
+                  <h4 class="color-gobito text-center m_t_20">or</h4>
+                  <button class="btn button-primary w-100 m_t_10" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Credit Card
+                  </button>
                 </div>
+
+                <form class="col-md-12 col-xs-12 m_t_20 m_b_20 collapse" id="collapseExample">
+                  <!-- <div class="card-wrapper">
+                    <div class="card-head">
+                      <span>Credit Card</span>
+                      <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                    </div>
+                    <div class="card-number">
+                      {{cardNumber}}
+                    </div>
+                    <h6>{{fullName}}</h6>
+                  </div> -->
+
+                  <div class="form-group m_t_10">
+                    <input type="text" class="form-control text-input" required ng-model="fullName">
+                    <label class="input-label">Full Name</label>
+                    <small id="emailHelp" class="form-text text-muted">*Bu alan boş bırakılamaz.</small>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control text-input" required  ng-model="cardNumber">
+                    <label class="input-label">Credit Card Number</label>
+                  </div>
+                  <div class="d-flex">
+                    <div class="form-group m_r_10">
+                      <input type="text" class="form-control text-input" required>
+                      <label class="input-label">MM</label>
+                    </div>
+                    <div class="form-group m_r_10">
+                      <input type="text" class="form-control text-input" id="exampleInputEmail3" aria-describedby="emailHelp" required>
+                      <label for="exampleInputEmail3" class="input-label">YY</label>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control text-input" id="exampleInputEmail4" aria-describedby="emailHelp" required>
+                      <label for="exampleInputEmail4" class="input-label">CVC</label>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input">
+                      <div class="control__indicator"></div>
+                      <a href="#">Mesafeli Satış Sözleşmesi</a>ni okudum ve kabul ediyorum.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        <div class="control__indicator"></div>
+                         Ödeme yöntemini kayıt ederek bir sonraki satın alma işleminizi hızlı ve kolay bir şekilde yapın.
+                      </label>
+                    </div>
+                    <div class="col-md-12 col-xs-12 m_t_30">
+                      <div class="profile-follow m_b_20 m_t_20">
+                        <button class="btn button-primary" type="button" name="button">Pay</button>
+                      </div>
+                    </div>
+                </form>
               </div>
+
             </div>
-            <div class="col-md-12 col-xs-12 m_t_30">
-              <div class="">
-                <h1 class="display-3 color-primary ">356TL</h1>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">
-                    <div class="control__indicator"></div>
-                    <a href="#">Mesafeli Satış Sözleşmesi</a>ni okudum ve kabul ediyorum.
-                  </label>
-                </div>
-              </div>
-              <div class="profile-follow m_b_20 m_t_20">
-                <button class="btn button-primary" type="button" name="button">Pay</button>
-              </div>
-            </div>
+
           </div>
         </div>
 
@@ -222,7 +242,45 @@
             </button>
           </div>
           <div class="modal-body">
-            <form class="col-md-12 col-xs-12 m_t_20 m_b_20">
+            <div class="">
+              <a href="#">
+                <div class="card-wrapper">
+                  <div class="card-head">
+                    <span>Credit Card</span>
+                    <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-wrapper ">
+                  <div class="card-head">
+                    <span>Bank Card</span>
+                    <img class="card-bank" src="../assets/img/akbank.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-wrapper">
+                  <div class="card-head">
+                    <span>Credit Card</span>
+                    <img class="card-bank" src="../assets/img/vakif.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+            </div>
+            <!-- <form class="col-md-12 col-xs-12 m_t_20 m_b_20">
               <div class="card-wrapper">
                 <div class="card-head">
                   <span>Credit Card</span>
@@ -263,11 +321,11 @@
                      Ödeme yöntemini kayıt ederek bir sonraki satın alma işleminizi hızlı ve kolay bir şekilde yapın.
                   </label>
                 </div>
-            </form>
+            </form> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn button-secondary" data-dismiss="modal">Close</button>
-            <button class="btn button-primary" type="button" name="button">Add</button>
+            <button class="btn button-primary" type="button" name="button">Select</button>
           </div>
         </div>
       </div>

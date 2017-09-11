@@ -13,6 +13,9 @@ a {
   &:hover {
     text-decoration: none;
   }
+  &:focus {
+    text-decoration: none;
+  }
 }
 .tab-content {
   width: 100%;
