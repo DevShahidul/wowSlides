@@ -8799,6 +8799,14 @@ a:hover {
   margin-top: 30px;
 }
 
+.m_t_100 {
+  margin-top: 100px;
+}
+
+.m_t_120 {
+  margin-top: 120px;
+}
+
 /*RIGHT*/
 .m_r_5 {
   margin-right: 5px;
@@ -8986,6 +8994,15 @@ a:hover {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .jumbotron-fluid .display-3 {
+    font-size: 3rem;
+  }
+  .jumbotron-fluid .lead {
+    font-size: 1rem;
+  }
+}
+
 .card-img-top {
   height: 180px;
 }
@@ -9086,6 +9103,11 @@ a:hover {
 }
 
 /*Components*/
+.display-4 {
+  color: #707070;
+  margin-bottom: 20px;
+}
+
 .list-style .list-parent-title {
   padding: 5px 0;
   font-size: 1.2rem;
@@ -9801,6 +9823,7 @@ form .form-control p {
 
 ::-webkit-scrollbar-track {
   background-color: #F5F5F5;
+  width: 12px;
 }
 
 ::-webkit-scrollbar {
@@ -9812,6 +9835,7 @@ form .form-control p {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #d8d8d8;
+  width: 12px;
 }
 
 nav[role="navigation"] {
@@ -10205,11 +10229,6 @@ nav[role="navigation"] {
   margin-bottom: 40px;
 }
 
-.settings-container h1 {
-  color: #707070;
-  margin-bottom: 20px;
-}
-
 .settings-table {
   box-shadow: 1px 1px 15px 1px #d8d8d8;
   margin-top: 40px;
@@ -10227,6 +10246,13 @@ nav[role="navigation"] {
   min-width: 200px;
   font-weight: 600;
   align-self: flex-start;
+}
+
+.form-wrapper {
+  margin-top: 40px;
+  padding: 30px;
+  padding-top: 40px;
+  box-shadow: 1px 1px 20px 3px #d8d8d8;
 }
 
 .dashboard-menu-wrapper .explore-products li {

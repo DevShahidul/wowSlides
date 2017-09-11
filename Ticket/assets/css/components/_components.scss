@@ -1,4 +1,9 @@
 
+.display-4 {
+  color: $light_text_color;
+  margin-bottom: 20px;
+}
+
 .list-style {
   .list-parent-title {
     padding: 5px 0;
@@ -648,6 +653,7 @@ form {
 ::-webkit-scrollbar-track
 {
 	background-color: #F5F5F5;
+  width: 12px;
 }
 
 ::-webkit-scrollbar
@@ -661,6 +667,7 @@ form {
 {
 	border-radius: 10px;
 	background-color: #d8d8d8;
+  width: 12px;
 }
 
 
