@@ -11,8 +11,8 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav class="navbar navbar-toggleable-md navbar-light">
-        <div class="container">
+      <div class="container">
+        <nav class="navbar navbar-toggleable-md navbar-light">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,7 +27,7 @@
                 <a class="nav-link" href="explore-questions.html">Explore Questions </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="documentation.html">Documentation </a>
+                <a class="nav-link active" href="documentation.html">Documentation </a>
               </li>
             </ul>
             <div class="d-flex navbar-nav">
@@ -50,8 +50,8 @@
               </ul>
             </div>
           </div>
-        </div>
         </nav>
+        </div>
         <div id="content">
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -61,11 +61,16 @@
           </div>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                </form>
-                <div class="menu-list m_t_20">
+              <div class="col-12 col-lg-3 col-md-4 col-xl-2 bd-sidebar">
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-link hidden-md-up" style="margin-right: 5px" type="button" data-toggle="collapse" data-target="#docMenu" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="assets/img/docMenu.svg" alt="">
+                  </button>
+                  <form class="form-inline my-2 my-lg-0 w-100">
+                    <input class="form-control mr-sm-2 w-100" type="text" placeholder="Search">
+                  </form>
+                </div>
+                <div class="menu-list m_t_20 collapse" id="docMenu">
                   <div class="list-style">
                     <a class="list-parent-title" href="#">Getting Started</a>
                     <ul class="list-child-style">
@@ -79,47 +84,32 @@
                   <div class="list-style">
                     <a class="list-parent-title" href="#">Maecenas</a>
                     <ul class="list-child-style">
-                      <!-- <li class="active"><a href="#">Cras justo odio</a></li>
-                      <li class=""><a href="#">Dapibus ac facilisis in</a></li>
-                      <li class=""><a href="#">Morbi leo risus</a></li>
-                      <li class=""><a href="#">Porta ac consectetur ac</a></li>
-                      <li class=""><a href="#">Vestibulum at eros</a></li> -->
                     </ul>
                   </div>
                   <div class="list-style">
                     <a class="list-parent-title" href="#">Iiaculis</a>
                     <ul class="list-child-style">
-                      <!-- <li class="active"><a href="#">Cras justo odio</a></li>
-                      <li class=""><a href="#">Dapibus ac facilisis in</a></li>
-                      <li class=""><a href="#">Morbi leo risus</a></li>
-                      <li class=""><a href="#">Porta ac consectetur ac</a></li>
-                      <li class=""><a href="#">Vestibulum at eros</a></li> -->
                     </ul>
                   </div>
                   <div class="list-style">
                     <a class="list-parent-title" href="#">Urna</a>
                     <ul class="list-child-style">
-                      <!-- <li class="active"><a href="#">Cras justo odio</a></li>
-                      <li class=""><a href="#">Dapibus ac facilisis in</a></li>
-                      <li class=""><a href="#">Morbi leo risus</a></li>
-                      <li class=""><a href="#">Porta ac consectetur ac</a></li>
-                      <li class=""><a href="#">Vestibulum at eros</a></li> -->
                     </ul>
                   </div>
                   <div class="list-style">
                     <a class="list-parent-title" href="#">Tempus</a>
                     <ul class="list-child-style">
-                      <!-- <li class="active"><a href="#">Cras justo odio</a></li>
+                      <li class="active"><a href="#">Cras justo odio</a></li>
                       <li class=""><a href="#">Dapibus ac facilisis in</a></li>
                       <li class=""><a href="#">Morbi leo risus</a></li>
                       <li class=""><a href="#">Porta ac consectetur ac</a></li>
-                      <li class=""><a href="#">Vestibulum at eros</a></li> -->
+                      <li class=""><a href="#">Vestibulum at eros</a></li>
                     </ul>
                   </div>
                 </div>
 
               </div>
-              <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5">
+              <div class="col-12 col-lg-9 col-md-8 col-xl-8 py-md-3 pl-md-5">
                 <section>
                   <h1 class="display-3">Getting Started</h1>
                   <p class="content">Sed volutpat arcu tristique vehicula congue. Mauris suscipit sodales dolor, eleifend imperdiet sem tincidunt quis.

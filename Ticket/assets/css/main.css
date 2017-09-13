@@ -8754,6 +8754,12 @@ a:focus {
   color: #999;
 }
 
+.nav-tabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 0px;
+}
+
 /*Theme Color */
 /*Text Color*/
 /*Border Color*/
@@ -9022,11 +9028,18 @@ a:focus {
 }
 
 .logo img {
-  width: 50%;
+  width: 30%;
 }
 
 .jumbotron .tag-style .tag-child-style li {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    margin-bottom: 0.4rem;
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -9037,7 +9050,7 @@ a:focus {
 
 @media (min-width: 576px) {
   .wiki-nav-background {
-    padding: 1rem 0 4rem;
+    padding: 1rem 0 2rem;
   }
 }
 
@@ -9174,7 +9187,7 @@ a:focus {
 }
 
 .question-media {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .question-media .media {
@@ -9199,6 +9212,7 @@ a:focus {
 
 .question-media .stars {
   min-width: 100px;
+  text-align: right;
 }
 
 .question-media .stars img {
@@ -9212,6 +9226,13 @@ a:focus {
 .date {
   color: #868686;
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .scroll-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
 
 .table thead {
@@ -9961,6 +9982,31 @@ nav[role="navigation"] {
   }
 }
 
+.card-position-three {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 769px) {
+  .card-position-three {
+    display: block;
+  }
+  .card-position-three .card {
+    margin: auto;
+  }
+}
+
+.card-position-three .card {
+  width: 20rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) and (min-width: 995px) {
+  .card-position-three .card {
+    width: 16rem;
+  }
+}
+
 /*Pages*/
 .nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
   background-color: #fff;
@@ -9988,6 +10034,21 @@ nav[role="navigation"] {
   z-index: 1000;
   max-height: calc(100vh - 1rem);
   top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .bd-sidebar {
+    position: static;
+    padding-left: 10px;
+    border-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  #docMenu {
+    display: block;
+    visibility: visible;
+  }
 }
 
 .mini-jumbotron {

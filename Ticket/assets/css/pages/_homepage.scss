@@ -26,4 +26,16 @@
   z-index: 1000;
   max-height: calc(100vh - 1rem);
   top: 1rem;
+  @media (max-width: 768px) {
+    position: static;
+    padding-left: 10px;
+    border-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  #docMenu {
+    display: block;
+    visibility: visible;
+  }
 }

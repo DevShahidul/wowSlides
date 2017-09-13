@@ -64,7 +64,7 @@
 
 
 .question-media {
-  margin-top: 20px;
+  margin-top: 10px;
   .media {
     @extend .border-style;
     margin: 10px 0;
@@ -82,6 +82,7 @@
   }
   .stars {
     min-width: 100px;
+    text-align: right;
     img {
       width: 25px;
     }
@@ -95,8 +96,14 @@
   color: #868686;
   font-size: 0.9rem;
 }
-
+.scroll-wrapper {
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
 .table {
+
   thead {
     background: antiquewhite;
   }
@@ -779,5 +786,23 @@ nav[role="navigation"] {
 @media only screen and (min-width: 1170px) {
   .cd-pagination {
     margin: 0 auto 2em;
+  }
+}
+
+.card-position-three {
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 769px) {
+    display: block;
+    .card {
+      margin: auto;
+    }
+  }
+  .card {
+    width: 20rem;
+    margin-bottom: 20px;
+    @media (max-width: 1200px) and (min-width: 995px) {
+      width: 16rem;
+    }
   }
 }
