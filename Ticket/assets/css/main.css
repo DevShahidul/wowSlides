@@ -9133,6 +9133,7 @@ a:focus {
 
 .list-style .list-child-style {
   padding-left: 10px;
+  font-size: 0.9rem;
 }
 
 .list-style .list-child-style li {
@@ -9164,7 +9165,7 @@ a:focus {
 
 .border-small-title {
   padding: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #394d5f;
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 5px;
@@ -9507,7 +9508,7 @@ form .form-control p {
   margin: auto;
   width: 80%;
   margin-top: 20px;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-align: center;
 }
 
@@ -10126,6 +10127,35 @@ nav[role="navigation"] {
 
 .wiki-content img {
   max-width: 100%;
+}
+
+.wiki-detail-wrapper {
+  display: flex;
+}
+
+.wiki-detail-wrapper .left-menu {
+  max-width: 300px;
+  margin-left: 10px;
+}
+
+.wiki-detail-wrapper .wiki-content-wrapper {
+  width: 100%;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .wiki-detail-wrapper {
+    display: block;
+  }
+  .wiki-detail-wrapper .left-menu {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .wiki-detail-wrapper .wiki-content-wrapper {
+    margin: 0;
+  }
 }
 
 .profile-inner {
