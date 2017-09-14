@@ -10718,12 +10718,18 @@ nav[role="navigation"] {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #sutori .story-main-img {
+    height: 240px;
+  }
+}
+
 #sutori .container-info {
   margin-top: -20px;
   box-shadow: 1px 5px 15px 1px #e2e2e2;
 }
 
-#sutori .profile-info {
+#sutori .profile-information {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10804,6 +10810,12 @@ nav[role="navigation"] {
   outline-color: #fff;
 }
 
+@media (max-width: 768px) {
+  #sutori .no-border-input, #sutori .no-border-input-md {
+    font-size: 2.5rem;
+  }
+}
+
 #sutori .no-border-textarea, #sutori .no-border-textarea-xs {
   border: none;
   width: 100%;
@@ -10844,6 +10856,10 @@ nav[role="navigation"] {
 
 #sutori .insert-heading {
   position: relative;
+}
+
+#sutori .insert-heading input {
+  padding: 1rem 60px;
 }
 
 #sutori .upload-box {
@@ -10891,7 +10907,7 @@ nav[role="navigation"] {
 
 @media (max-width: 767px) {
   #sutori .create-new-box {
-    left: 14px;
+    left: -10px;
   }
 }
 
@@ -11308,7 +11324,7 @@ nav[role="navigation"] {
 
 @media (max-width: 767px) {
   #sutori ul.timeline:before {
-    left: 40px;
+    left: 15px;
   }
   #sutori ul.timeline > li {
     margin-bottom: 20px;
@@ -11318,14 +11334,14 @@ nav[role="navigation"] {
     clear: left;
   }
   #sutori ul.timeline > li > .timeline-panel {
-    width: calc(100% - 90px);
-    width: -moz-calc(100% - 90px);
-    width: -webkit-calc(100% - 90px);
+    width: calc(100% - 50px);
+    width: -moz-calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
   }
   #sutori ul.timeline > li > .timeline-badge {
-    left: 32px;
+    left: 1px;
     margin-left: 0;
-    top: 34px;
+    top: 25px;
   }
   #sutori ul.timeline > li > .timeline-panel {
     float: right;
@@ -11349,7 +11365,7 @@ nav[role="navigation"] {
     margin-bottom: 30px;
   }
   #sutori .timeline > li:nth-child(2n) > .timeline-badge {
-    left: 32px;
+    left: 1px;
   }
 }
 
@@ -11372,4 +11388,18 @@ nav[role="navigation"] {
 
 #sutori #footer {
   margin-top: 150px;
+}
+
+@media (max-width: 992px) {
+  #sutori .mobile-navbar {
+    text-align: center;
+  }
+  #sutori .mobile-navbar .nav-item {
+    justify-content: center;
+    margin-left: 0;
+  }
+  #sutori .mobile-navbar .form-inline {
+    justify-content: center;
+    margin: 10px 0;
+  }
 }
