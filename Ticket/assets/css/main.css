@@ -9645,12 +9645,12 @@ form .form-control p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  min-height: 200px;
   width: 100%;
 }
 
 .profile-cover-image .profile-cover {
-  height: 200px;
+  min-height: 200px;
   width: 100%;
   background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 108, 182, 0.6));
 }
@@ -9660,7 +9660,7 @@ form .form-control p {
 }
 
 .profile-cover-image.dashboard {
-  height: 82px;
+  min-height: 82px;
   position: fixed;
   top: 0;
   right: 0;
@@ -9669,7 +9669,16 @@ form .form-control p {
 }
 
 .profile-cover-image.dashboard .profile-cover {
-  height: 82px;
+  min-height: 82px;
+}
+
+@media (max-width: 576px) {
+  .profile-cover-image.dashboard {
+    min-height: 82px;
+  }
+  .profile-cover-image.dashboard .profile-cover {
+    min-height: 82px;
+  }
 }
 
 .catalog-wrapper {
@@ -10006,6 +10015,40 @@ nav[role="navigation"] {
   .card-position-three .card {
     width: 16rem;
   }
+}
+
+.gallery-wrapper img {
+  max-height: 160px;
+  max-width: 100%;
+}
+
+.gallery-wrapper .image-wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gallery-wrapper .border-style, .gallery-wrapper .question-media .media, .question-media .gallery-wrapper .media, .gallery-wrapper .question-assign, .gallery-wrapper .reply-textarea, .gallery-wrapper .attachments li, .attachments .gallery-wrapper li {
+  transition: 0.3s;
+}
+
+.gallery-wrapper .border-style:hover, .gallery-wrapper .question-media .media:hover, .question-media .gallery-wrapper .media:hover, .gallery-wrapper .question-assign:hover, .gallery-wrapper .reply-textarea:hover, .gallery-wrapper .attachments li:hover, .attachments .gallery-wrapper li:hover {
+  border-color: #006cb6;
+  transition: 0.3s;
+}
+
+.image-name {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  right: 0;
+  padding: 3px 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
 
 /*Pages*/
@@ -11400,6 +11443,5 @@ nav[role="navigation"] {
   }
   #sutori .mobile-navbar .form-inline {
     justify-content: center;
-    margin: 10px 0;
   }
 }

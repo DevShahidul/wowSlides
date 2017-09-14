@@ -477,10 +477,10 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  min-height: 200px;
   width: 100%;
   .profile-cover {
-    height: 200px;
+    min-height: 200px;
     width: 100%;
     background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba($gobito_color, 0.6));
     .nav-link {
@@ -488,14 +488,20 @@ form {
     }
   }
   &.dashboard {
-    height: 82px;
+    min-height: 82px;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
     .profile-cover {
-      height: 82px;
+      min-height: 82px;
+    }
+    @media (max-width: 576px) {
+      min-height: 82px;
+      .profile-cover {
+        min-height: 82px;
+      }
     }
   }
 }
@@ -806,4 +812,36 @@ nav[role="navigation"] {
       width: 16rem;
     }
   }
+}
+
+.gallery-wrapper {
+  img {
+      max-height: 160px;
+      max-width: 100%;
+  }
+  .image-wrapper {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .border-style {
+    transition: 0.3s;
+    &:hover {
+      border-color: $gobito_color;
+      transition: 0.3s;
+    }
+  }
+}
+.image-name {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  right: 0;
+  padding: 3px 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
