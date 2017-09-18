@@ -9180,11 +9180,11 @@ a:focus {
 }
 
 .color-gobito {
-  color: #006cb6;
+  color: #3482c6;
 }
 
 .background-gobito {
-  background: #006cb6;
+  background: #3482c6;
 }
 
 .question-media {
@@ -9476,7 +9476,7 @@ form .form-control {
 
 form .form-control:focus {
   outline: none;
-  border-color: #006cb6;
+  border-color: #3482c6;
   border-bottom-width: 2px;
   transition-duration: 0.3s;
 }
@@ -9619,13 +9619,13 @@ form .form-control p {
 .form-group input:focus ~ label {
   top: -20px;
   font-size: 14px;
-  color: #006cb6;
+  color: #3482c6;
 }
 
 .form-group input:valid ~ label {
   top: -20px;
   font-size: 14px;
-  color: #006cb6;
+  color: #3482c6;
 }
 
 .form-group textarea::placeholder {
@@ -9652,7 +9652,7 @@ form .form-control p {
 .profile-cover-image .profile-cover {
   min-height: 200px;
   width: 100%;
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 108, 182, 0.6));
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(52, 130, 198, 0.6));
 }
 
 .profile-cover-image .profile-cover .nav-link {
@@ -9798,15 +9798,15 @@ form .form-control p {
 }
 
 .form-check input:checked ~ .control__indicator {
-  background: #006cb6;
+  background: #3482c6;
 }
 
 .form-check:hover input:not([disabled]):checked ~ .control__indicator {
-  background: #006cb6;
+  background: #3482c6;
 }
 
 .form-check input:checked:focus ~ .control__indicator {
-  background: #006cb6;
+  background: #3482c6;
   transition: 0.4s;
 }
 
@@ -9861,7 +9861,7 @@ form .form-control p {
 }
 
 .text-muted {
-  color: #006cb6 !important;
+  color: #3482c6 !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -10036,7 +10036,7 @@ nav[role="navigation"] {
 }
 
 .gallery-wrapper .border-style:hover, .gallery-wrapper .question-media .media:hover, .question-media .gallery-wrapper .media:hover, .gallery-wrapper .question-assign:hover, .gallery-wrapper .reply-textarea:hover, .gallery-wrapper .attachments li:hover, .attachments .gallery-wrapper li:hover {
-  border-color: #006cb6;
+  border-color: #3482c6;
   transition: 0.3s;
 }
 
@@ -10272,9 +10272,9 @@ nav[role="navigation"] {
 
 .button-primary, .button-secondary {
   background: #fff;
-  border: 2px solid #006cb6;
+  border: 2px solid #3482c6;
   width: 160px;
-  color: #006cb6;
+  color: #3482c6;
   cursor: pointer;
 }
 
@@ -10283,7 +10283,7 @@ nav[role="navigation"] {
 }
 
 .button-primary:hover, .button-secondary:hover {
-  background: #006cb6;
+  background: #3482c6;
   color: #fff;
 }
 
@@ -10342,8 +10342,8 @@ nav[role="navigation"] {
 }
 
 .dashboard-menu-wrapper .dashboard-menu li .active {
-  border-left: 5px solid #006cb6;
-  color: #006cb6;
+  border-left: 5px solid #3482c6;
+  color: #3482c6;
   padding-left: 10px;
   margin-left: -10px;
 }
@@ -10399,7 +10399,7 @@ nav[role="navigation"] {
 .dashboard-menu-wrapper .explore-products li {
   font-weight: 600;
   transition: 0.2s;
-  background-color: #006cb6;
+  background-color: #3482c6;
   display: flex;
   align-items: center;
 }
@@ -10410,13 +10410,13 @@ nav[role="navigation"] {
 }
 
 .dashboard-menu-wrapper .explore-products li:hover {
-  background-color: #008ae9;
+  background-color: #599bd4;
   margin-right: -10px;
 }
 
 .dashboard-menu-wrapper .explore-products li .product-img {
   padding: 10px;
-  background-color: #008ae9;
+  background-color: #599bd4;
 }
 
 .dashboard-menu-wrapper .explore-products li .product-img img {
@@ -10477,7 +10477,7 @@ nav[role="navigation"] {
 
 .product-list .table-style tr .price {
   font-size: 1rem;
-  color: #006cb6;
+  color: #3482c6;
 }
 
 .product-list .table-style tr .close-icon {
@@ -10614,7 +10614,7 @@ nav[role="navigation"] {
 
 .welcome-section p {
   font-size: 1.4rem;
-  color: #006cb6;
+  color: #3482c6;
 }
 
 .product-section {
