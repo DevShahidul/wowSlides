@@ -8760,6 +8760,10 @@ a:focus {
   border-bottom: 0px;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*Theme Color */
 /*Text Color*/
 /*Border Color*/
@@ -10051,6 +10055,10 @@ nav[role="navigation"] {
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
+}
+
+.published a {
+  color: #ea7e5c;
 }
 
 /*Pages*/

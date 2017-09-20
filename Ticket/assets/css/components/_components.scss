@@ -845,3 +845,9 @@ nav[role="navigation"] {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
+
+.published {
+  a {
+    color: $primary_color;
+  }
+}
