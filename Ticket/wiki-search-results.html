@@ -6,7 +6,6 @@
   	<meta name="description" content="">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<title>Wiki</title>
-
   	<link href="assets/css/main.css" rel="stylesheet">
   </head>
   <body>
@@ -16,7 +15,12 @@
           <div class="jumbotron jumbotron-fluid wiki-nav-background">
             <div class="container nav-mobile">
               <img class="mobile-logo" src="assets/img/wiki.png" alt="">
-              <div class="profile-info dropdown">
+              <div class="profile-info">
+                <a class="p_r_5" href="#">Login </a>
+                <span> / </span>
+                <a  class="p_l_5" href="#"> Sign Up</a>
+              </div>
+              <!-- <div class="profile-info dropdown">
                 <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
                 Betül Uzun</a>
@@ -25,7 +29,7 @@
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="container m_t_30">
 
@@ -187,7 +191,7 @@
                 </div>
                 <div class="col-md-12 col-xs-12">
                   <div class="button-style text-center">
-                    <button class="btn btn-outline-secondary" type="button" name="button">Load More</button>
+                    <button class="btn btn-outline-secondary" type="button" name="button" id="notification-trigger">Load More</button>
                   </div>
                 </div>
               </div>
@@ -200,5 +204,43 @@
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <script src="assets/js/vendor/tether.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/notificationFx.js"></script>
+    <script>
+			(function() {
+				var bttn = document.getElementById( 'notification-trigger' );
+
+				// make sure..
+				bttn.disabled = false;
+
+				bttn.addEventListener( 'click', function() {
+					// simulate loading (for demo purposes only)
+					classie.add( bttn, 'active' );
+					setTimeout( function() {
+
+						classie.remove( bttn, 'active' );
+
+						// create the notification
+						var notification = new NotificationFx({
+							message : '<p>Hello there! I\'m a classic notification but I have some elastic jelliness thanks. </p>',
+							layout : 'growl',
+							effect : 'jelly',
+							type : 'notice', // notice, warning, error or success
+							onClose : function() {
+								bttn.disabled = false;
+							}
+						});
+
+						// show the notification
+						notification.show();
+
+					}, 120 );
+
+					// disable the button (for demo purposes only)
+					this.disabled = true;
+				} );
+			})();
+		</script>
   </body>
 </html>

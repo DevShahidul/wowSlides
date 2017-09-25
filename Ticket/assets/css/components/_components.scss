@@ -290,22 +290,47 @@ label {
 }
 
 .button-style {
-  button {
+  button, a {
     width: 180px;
     cursor: pointer;
     margin-top: 10px;
     &:hover {
       box-shadow: 1px 1px 5px 1px #c5c5c5;
     }
-  }
-  .btn-outline-secondary {
-    color: #616161;
-    &:hover {
-    color: #fff;
-    background-color: #ccc;
-    border-color: #ccc;
+    &.btn-outline-secondary {
+      color: #616161;
+      &:hover {
+      color: #fff;
+      background-color: #ccc;
+      border-color: #ccc;
+      }
+    }
+    &.btn-outline-success {
+      color: #5cb85c;
+      &:hover {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #5cb85c;
+      }
+    }
+    &.btn-outline-warning {
+      color: #f0ad4e;
+      &:hover {
+      color: #fff;
+      background-color: #f0ad4e;
+      border-color: #f0ad4e;
+      }
+    }
+    &.button-primary {
+      color: $gobito-color;
+      &:hover {
+      color: #fff;
+      background-color: $gobito-color;
+      border-color: $gobito-color;
+      }
     }
   }
+
 }
 .create {
   padding: 40px 0;
@@ -482,7 +507,7 @@ form {
   .profile-cover {
     min-height: 200px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba($gobito_color, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba($primary_color , 0.6));
     .nav-link {
       color: #fff;
     }

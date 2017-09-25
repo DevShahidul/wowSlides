@@ -91,3 +91,20 @@
     }
   }
 }
+.comment-wrapper{
+  .action-buttons {
+    margin-top: -10px;
+    padding: 10px;
+    background: #e4e4e4;
+    text-align: right;
+  }
+  &.comment-reply {
+    margin-top: -10px;
+    .reply-comment {
+      width: 20px;
+      margin-top: 30px;
+      margin-right: 20px;
+      transform: rotate(180deg);
+    }
+  }
+}

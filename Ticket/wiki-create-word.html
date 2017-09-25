@@ -54,6 +54,27 @@
             <div class="row border-style">
 
               <form class="col-md-12 col-xs-12">
+                <div class="notify-label error">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/error.svg" alt="">
+                    <span>Lütfen kelime başlığı giriniz.</span>
+                  </div>
+                  <a href="#"><img src="assets/img/close-white.svg" alt=""></a>
+                </div>
+                <div class="notify-label warning">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/warning.svg" alt="">
+                    <span>Lütfen kelime başlığı giriniz.</span>
+                  </div>
+                  <a href="#"><img src="assets/img/close-white.svg" alt=""></a>
+                </div>
+                <div class="notify-label success">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/img/success.svg" alt="">
+                    <span>Lütfen kelime başlığı giriniz.</span>
+                  </div>
+                  <a href="#"><img src="assets/img/close-white.svg" alt=""></a>
+                </div>
                 <div class="form-group m_t_20">
                   <input type="text" class="form-control text-input" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                   <label class="input-label" for="">Enter word</label>
@@ -65,7 +86,7 @@
                 </div>
 
                 <div class="button-style text-center">
-                  <button class="btn btn-outline-warning" type="button" name="button">Submit</button>
+                  <button class="btn btn-outline-warning" type="button" name="button" id="notification-trigger">Submit</button>
                 </div>
                 </form>
             </div>
@@ -76,5 +97,43 @@
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <script src="assets/js/vendor/tether.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/notificationFx.js"></script>
+    <script>
+			(function() {
+				var bttn = document.getElementById( 'notification-trigger' );
+
+				// make sure..
+				bttn.disabled = false;
+
+				bttn.addEventListener( 'click', function() {
+					// simulate loading (for demo purposes only)
+					classie.add( bttn, 'active' );
+					setTimeout( function() {
+
+						classie.remove( bttn, 'active' );
+
+						// create the notification
+						var notification = new NotificationFx({
+							message : '<p>Hello there! I\'m a classic notification but I have some elastic jelliness thanks. </p>',
+							layout : 'growl',
+							effect : 'jelly',
+							type : 'notice', // notice, warning, error or success
+							onClose : function() {
+								bttn.disabled = false;
+							}
+						});
+
+						// show the notification
+						notification.show();
+
+					}, 120 );
+
+					// disable the button (for demo purposes only)
+					this.disabled = true;
+				} );
+			})();
+		</script>
   </body>
 </html>

@@ -9,7 +9,7 @@
 
   	<link href="assets/css/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body ng-app="myApp">
     <div id="wrapper">
 
         <div id="content">
@@ -192,28 +192,64 @@
                     </div>
                   </div>
 
-                  <div class="comment-area">
+                  <div class="comment-area" >
                     <div class="comment-input">
                       <textarea class="text-input" name="name" rows="3" placeholder="Say Something..."></textarea>
                       <div class="button-style text-center"><button class="btn btn-outline-warning" type="button" name="button">Send</button></div>
                     </div>
-                    <div class="comment question-media">
-                      <div class="media">
-                        <img class="user-img d-flex mr-3" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ginger-guy.png" alt="Generic placeholder image">
-                        <div class="media-body">
-                          <a href="#" class="user-name">Billie Jean</a>
-                          <div class="date">06.07.1992</div>
-                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    <div class="comments question-media">
+                      <div class="comment-wrapper">
+                        <div class="media">
+                          <img class="user-img d-flex mr-3" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ginger-guy.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <a href="#" class="user-name">Billie Jean</a>
+                            <div class="date">06.07.1992</div>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                        </div>
+                        <ul class="action-buttons" >
+                          <li><img width="20px" src="assets/img/edit.svg" alt=""><a href="#">Edit</a></li>
+                          <li><img width="20px" src="assets/img/trash.svg" alt=""><a href="#">Delete</a></li>
+                          <li><img width="20px" src="assets/img/reply.svg" alt="" ><a href="" ng-click="openReply = !openReply">Reply</a></li>
+                        </ul>
+                      </div>
+                      <div class="comment-wrapper m_b_30" ng-show="openReply">
+                        <div class="comment-input">
+                          <textarea class="text-input" name="name" rows="3" placeholder="Say Something..."></textarea>
+                          <div class="button-style text-center"><button class="btn btn-outline-warning" type="button" name="button">Send</button></div>
                         </div>
                       </div>
-                      <div class="media">
-                        <img class="user-img d-flex mr-3" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-afro-guy.png" alt="Generic placeholder image">
-                        <div class="media-body">
-                          <a href="#" class="user-name">Billie Jean</a>
-                          <div class="date">06.07.1992</div>
-                          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      <div class="comment-wrapper">
+                        <div class="media">
+                          <img class="user-img d-flex mr-3" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-afro-guy.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <a href="#" class="user-name">Billie Jean</a>
+                            <div class="date">06.07.1992</div>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
                         </div>
+                        <ul class="action-buttons">
+                          <li><img width="20px" src="assets/img/edit.svg" alt=""><a href="#">Edit</a></li>
+                          <li><img width="20px" src="assets/img/trash.svg" alt=""><a href="#">Delete</a></li>
+                          <li><img width="20px" src="assets/img/reply.svg" alt=""><a href="#">Reply</a></li>
+                        </ul>
                       </div>
+                      <div class="comment-wrapper comment-reply">
+                        <div class="media">
+                          <img class="reply-comment" style="width: 20px;" src="assets/img/reply-comment.svg" alt="">
+                          <img class="user-img d-flex mr-3" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-afro-guy.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <a href="#" class="user-name">Billie Jean</a>
+                            <div class="date">06.07.1992</div>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                          </div>
+                        </div>
+                        <ul class="action-buttons">
+                          <li><img width="20px" src="assets/img/edit.svg" alt=""><a href="#">Edit</a></li>
+                          <li><img width="20px" src="assets/img/trash.svg" alt=""><a href="#">Delete</a></li>
+                        </ul>
+                      </div>
+
                       <div class="button-style text-center">
                         <button class="btn btn-outline-secondary" type="button" name="button">Load More</button>
                       </div>
@@ -269,5 +305,9 @@
     <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
     <script src="assets/js/vendor/tether.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script>
+    var myApp = angular.module('myApp', []);
+    </script>
   </body>
 </html>
