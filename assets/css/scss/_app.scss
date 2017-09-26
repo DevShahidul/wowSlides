@@ -349,7 +349,7 @@ section#getStarted a.btn {
           float: left;
           margin-right: 45px;
           a {
-            color: #989fa5;
+            color: #e3e3e3;
             font-size: 13px;
             font-family: 'latobold';
             text-transform: uppercase;
@@ -358,14 +358,18 @@ section#getStarted a.btn {
             padding-top: 65px;
             padding-bottom: 10px;
             position: relative;
-            @media (max-width: 1500px) and (min-width: 768px) {
-              padding-top: 40px;
+            transition: 0.2s;
+            @media (min-width: 768px) {
+              padding-top: 15px;
             }
             &:hover {
               color: #fff;
+              transition: 0.2s;
               &:before {
                 width: 100%;
                 top: 0;
+                opacity: 1;
+                transition: 0.2s;
               }
             }
             &:before {
@@ -376,8 +380,10 @@ section#getStarted a.btn {
               top: -4px;
               left: 0;
               background: #56C8C2;
-              @media (max-width: 1500px) and (min-width: 768px) {
-                display: none;
+              transition: 0.2s;
+              @media (min-width: 768px) {
+                opacity: 0.1;
+                transition: 0.2s;
               }
             }
           }
@@ -386,9 +392,11 @@ section#getStarted a.btn {
           }
         }
       }
-      @media (max-width: 1500px) and (min-width: 768px) {
+      @media (min-width: 768px) {
         display: block;
         padding-left: 5vw;
+        background: rgba(255, 255, 255, 0.2);
+        margin-top: 20px;
 
       }
     }
@@ -396,7 +404,7 @@ section#getStarted a.btn {
       position: absolute;
       right: 0;
       top: 0;
-      margin-top: 50px;
+      margin-top: 30px;
       padding-right: 5vw;
       > ul > li {
         float: left;
@@ -462,8 +470,8 @@ section#getStarted a.btn {
         margin-right: 30px;
         align-items: flex-end;
       }
-      @media (max-width: 1500px) and (min-width: 768px) {
-        margin-top: 50px;
+      @media (min-width: 768px) {
+        margin-top: 30px;
         a {
           padding-top: 40px;
         }
