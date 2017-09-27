@@ -4440,7 +4440,7 @@ section#getStarted a.btn:after {
   #main nav#navbar .menu-bar {
     display: block;
     padding-left: 5vw;
-    background: rgba(52, 65, 74, 0.71);
+    background: linear-gradient(to left, rgba(44, 62, 80, 0.51), rgba(76, 161, 175, 0.51));
     margin-top: 20px;
   }
 }
@@ -5046,7 +5046,7 @@ section#getStarted a.btn:after {
   opacity: .2;
 }
 
-.swiper-slide.wowSlideBox:hover:after {
+.swiper-slide.wowSlideBox:hover .img:after {
   content: '';
   width: 64px;
   height: 64px;
@@ -5056,6 +5056,7 @@ section#getStarted a.btn:after {
   top: 70px;
   left: 50%;
   margin-left: -32px;
+  cursor: pointer;
 }
 
 .swiper-slide.wowSlideBox .icon {
