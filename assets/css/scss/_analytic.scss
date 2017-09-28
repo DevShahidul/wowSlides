@@ -1,3 +1,87 @@
+.heatmaps{
+	width: 22%;
+}
+
+.main-scene-info{
+	margin-bottom: 10px;
+	height: 550px;
+}
+
+.scene-info{
+	display: inline-block;
+    position: relative;
+    width: 45%;
+    padding: 15px;
+    background: rgba(186, 194, 200, 0.25);
+    height: 550px;
+}
+
+.video-info{
+    width: 100%;
+    height: 500px;
+}
+
+.scene-stats-table{
+	width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    border: 12px solid transparent;
+}
+
+.stats-cell{
+	vertical-align: middle;
+    text-align: left;
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+    width: 50%;
+    border-bottom: 1px solid rgba(131, 151, 167, 0.5);
+}
+
+.second-stats-cell{
+	font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+    width: 50%;
+    border-bottom: 1px solid rgba(131, 151, 167, 0.5);
+}
+
+.title-stats-cell{
+	font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    color: #009abd;
+}
+
+.description-stats-cell{
+	font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    color: #019ec1;
+}
+
+.scene-chart-container{
+	width:96%;
+	height: 83%;
+    position: absolute;
+}
+
+#scene-chart-container path{
+    opacity: 1;
+}
+
+.highcharts-background{
+    opacity: 0
+}
+
+.scene-video-container{
+	position: absolute;
+	width: 96%;
+	height: 90%;
+	/*min-width: 765px;
+	min-height: 445px;*/
+}
 
 .legend{
 	display: inline-block;
@@ -99,6 +183,6 @@
 	color: #fff;
 	img {
 		width: 15px;
-vertical-align: middle;
+		vertical-align: middle;
 	}
 }
