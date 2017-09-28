@@ -226,7 +226,7 @@
 
   			      	<div class="col-md-12 col-sm-12 col-xs-12 ">
 
-  			      		<div class="pageTexts">
+  			      		<div class="pageTexts" style="margin-bottom:80px;">
   			      			<div class="row">
                       <div class="col-md-4">
       			      				<table >
@@ -294,19 +294,19 @@
 
   			      		</div>
 
-  			      		<div id="scene-tabs" class="tab-page-links">
-                 		<ul>
-                 			<li id="heatmap-tab" class="active">
-                 				<a ng-click="showHeatmapTab()" href="#">Heatmap</a>
+  			      		<div id="scene-tabs" class="tab-page-links" ng-init="heatmap=true">
+                 		<ul class="nav nav-tabs" role="tablist">
+                 			<li id="heatmap-tab" class="nav-item active">
+                 				<a ng-click="heatmap=true" class="nav-link active" data-toggle="tab" href="#heatmap" role="tab">Heatmap</a>
                  			</li>
-                 			<li id="tracks-tab">
-                				<a ng-click="showTracksTab()" href="#">Tracks</a>
+                 			<li id="tracks-tab" class="nav-item">
+                				<a ng-click="heatmap=false" class="nav-link" data-toggle="tab" href="#tracks" role="tab">Tracks</a>
                  			</li>
                  		</ul>
                  	</div>
 
   							<div class="tab-content">
-  							  	<div class="tab-pane active" id="heatmap-detail-tab">
+  							  	<div class="tab-pane active" id="heatmap" role="tabpanel" ng-show="heatmap">
 
   				          			<div class="legend">
   						      			<span class="legend-title">Watched:</span>
@@ -323,8 +323,8 @@
   						      		</div>
 
 
-  						      		<div id="table-container" style="overflow-y:auto">
-  						      			<table class="table table-borderless">
+  						      		<div id="table-container" style="overflow-y:auto" class="simple-table">
+  						      			<table class="simple-table">
   										    <thead>
   										      <tr>
   										        <th width="15%">User</th>
@@ -376,7 +376,7 @@
   										<div id="error-modal" title="Error" style="display: none;">
   											There was a problem generating your report, please try again.
   										</div>
-  							      		<div class="text-center" style="padding: 10px;">
+  							      		<div class="text-center" style="margin: 20px 0;">
                             <a data-url="{{getExcelPath('heatmap')}}" class="main-btn blue" style="float: right;">
     							      			<i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download Heatmap Report
     							      		</a>
@@ -386,8 +386,8 @@
 
   								</div>
 
-  								<div class="tab-pane" id="tracks-detail-tab">
-  				          			<div id="table-container">
+  								<div class="tab-pane" id="tracks" role="tabpanel" ng-hide="heatmap">
+  				          			<div id="table-container" class="simple-table">
   						      			<table class="table table-striped table-bordered">
   										    <thead>
   										      <tr>
@@ -427,7 +427,7 @@
   												    	ng-if="trackExposure.trackType == 'FORM_DESIGNER' && trackExposure.interactions != 0"
   												    	data-toggle="collapse" id="row{{trackExposure.trackId}}" data-target="#customRow{{trackExposure.trackId}}"
   												    	for="customRow{{trackExposure.trackId}}" style="cursor:pointer;">
-  												    		<i id="chevron{{trackExposure.trackId}}" class="fa fa-chevron-down" aria-hidden="true"></i>
+																	<img id="chevron{{trackExposure.trackId}}" src="assets/images/icons/arrow_right_blue.svg" alt="">
   												    	</center>
 
 
@@ -524,14 +524,14 @@
 
   																		<div class="row">
   																			<form name="search">
-  																				<div class="col-lg-12">
-  																					<div class="form-group col-xs-2">
+  																				<div class="col-lg-12 centerForms">
+  																					<div class="form-group col-xs-2 inputRow">
   																						<input type="search" class="input-sm form-control" placeholder="Name" ng-model="filter.name">
   																					</div>
-  																					<div class="form-group col-xs-2">
+  																					<div class="form-group col-xs-2 inputRow">
   																						<input type="search" class="input-sm form-control" placeholder="Surname" ng-model="filter.surname">
   																					</div>
-  																					<div class="form-group col-xs-2">
+  																					<div class="form-group col-xs-2 inputRow">
   																						<input type="search" class="input-sm form-control" placeholder="Username" ng-model="filter.username">
   																					</div>
   																				    <div class="form-group col-xs-1">
@@ -565,7 +565,7 @@
   																			</form>
   																		</div>
 
-  												  						<div id="table-container">
+  												  						<div id="table-container" class="simple-table" style="padding: 20px;">
     															      			<table class="table table-striped table-bordered">
   																			    <thead>
   																			      <tr>
@@ -686,7 +686,7 @@
   									<div id="error-modal" title="Error" style="display: none;">
   										There was a problem generating your report, please try again.
   									</div>
-  						      		<a data-url="{{getExcelPath('tracks')}}" class="main-btn blue" style="float: right;">
+  						      		<a data-url="{{getExcelPath('tracks')}}" class="main-btn blue" style="float: right; margin: 20px 0;">
   						      			Download Tracks Report
   						      		</a>
   								</div>

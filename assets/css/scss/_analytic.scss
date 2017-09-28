@@ -186,3 +186,34 @@
 		vertical-align: middle;
 	}
 }
+.scene-stats-table{
+	width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    border: 12px solid transparent;
+}
+.collapse.in.detail-row-analytics{
+	display: table-row;
+}
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+tr.collapse.show {
+  display: table-row;
+}
+
+tbody.collapse.show {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}

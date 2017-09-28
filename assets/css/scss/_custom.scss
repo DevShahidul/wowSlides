@@ -584,3 +584,14 @@ span.title {
       right: 0;
     }
 }
+
+
+.simple-table {
+  table {
+    td {
+      border-right: 1px solid #d1d1d1;
+      border-bottom: 1px solid #d1d1d1;
+      background: #fff;
+    }
+  }
+}
