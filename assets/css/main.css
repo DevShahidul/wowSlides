@@ -4440,8 +4440,7 @@ section#getStarted a.btn:after {
   #main nav#navbar .menu-bar {
     display: block;
     padding-left: 5vw;
-    background: linear-gradient(to left, rgba(44, 62, 80, 0.51), rgba(76, 161, 175, 0.51));
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -4536,7 +4535,7 @@ section#getStarted a.btn:after {
 #main .motto {
   border-bottom: 1px dashed #60666A;
   text-align: center;
-  height: calc(100vh - 92px);
+  height: calc(100vh - 130px);
   padding-top: 13vh;
   width: 90vw;
   margin: 0 auto;
@@ -7349,6 +7348,7 @@ nav#navbar.whiteNav {
   height: 250px;
   min-height: 250px;
   margin-bottom: 160px;
+  background-size: cover;
 }
 
 @media (max-width: 850px) {
@@ -7361,7 +7361,7 @@ nav#navbar.whiteNav {
 .profile-container {
   padding: 0 5vw;
   position: relative;
-  top: 95px;
+  top: 60px;
 }
 
 .profile-container:after {
@@ -9924,7 +9924,7 @@ div.tagsinput div {
 
 .project-frame {
   width: 100%;
-  height: calc(100vh - 210px);
+  height: calc(100vh - 240px);
   position: relative;
   display: flex;
   align-items: center;
