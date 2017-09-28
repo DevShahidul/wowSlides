@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+  <!-- css sirasi onemli -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css"/>
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+		<script src="reporting/bootstrap.min.js"></script>
+		<script src="reporting/angular.min.js"></script>
+		<script src="reporting/angular-local-storage.js"></script>
+		<script src="reporting/truncate.js"></script>
+		<script src="reporting/moment.min.js"></script>
+		<script src="reporting/daterangepicker.js"></script>
+		<script src="reporting/highcharts.js"></script>
+		<script src="reporting/highcharts-exporting.js"></script>
+
+		<script src="reporting/app.js"></script>
+		<script src="reporting/controller_main.js"></script>
+</head>
+<body>
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div id="main" class="">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a class="searchButton" href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+	</div>
+	<!-- #main -->
+
+  	<div ng-app="reportingApp" ng-controller="MainReportingCtrl">
+
+  		<section>
+  		  	<div id="analytics-controller" class="container" style="margin-top: 20px;">
+
+  		    	<div class="row">
+
+  			      	<div class="col-md-12 col-xs-12">
+  			        	 <h1 class="big-title">Analytics</h1>
+  			      	</div>
+
+  			      	<div class="col-xs-12">
+
+  			      		<div id="main-chart-stats-area" class="main-chart-stats-area">
+
+									<div class="time-period centerForms">
+					          <div class="inputRow">
+											<label>Time Period</label>
+											<input type="text" name="daterange" id="stats-date" class="stats-date">
+										</div>
+										<div class="inputRow">
+											<span class="analytic-tag" ng-show="selectedScene.name != null">{{selectedScene.name}}
+												<a href="#" ng-click="getMainChartData(null, null, true)"><img src="assets/images/icons/times.svg" alt=""></a>
+											</span>
+										</div>
+					        </div>
+									<div id="stats-total" class="analytic-counts">
+					          <div class="counts-inner" data-id="watch" ng-click="getAllChartData()">
+											<h2 class="value" id="watchtime">{{mainChartData.totalWatchTime}}</h2>
+											<p class="description">Watch time <span id="watchname">(minutes)</span></p>
+					          </div>
+					          <div class="counts-inner" data-id="total" ng-click="getViewCountChartData()">
+											<h2 class="value" id="total">{{mainChartData.totalViewCount}}</h2>
+											<p class="description">Views count</p>
+					          </div>
+					          <div class="counts-inner" data-id="unique" ng-click="getViewUniqueCountChartData()">
+											<h2 class="value" id="unique">{{mainChartData.totalUniqueViewCount}}</h2>
+											<p class="description">Unique views</p>
+					          </div>
+					          <div class="counts-inner" data-id="engagement">
+											<h2 class="value" id="engagement">{{mainChartData.totalEngagement}}%</h2>
+											<p class="description">Engagements</p>
+					          </div>
+					        </div>
+									<div class="row analytics ">
+										<div class="col-md-12 col-sm-12 col-xs-12 pageTexts">
+											<div class="row ">
+												<div class="col-md-12">
+													<div id="chart-svg-stats" class="chart-svg-stats" style="z-index: 0; margin-bottom: 40px;">
+			  				      			<div id="main-chart-container" style="margin: 0 auto"></div>
+			  				      		</div>
+												</div>
+												<div class="col-md-12" style="margin-bottom: 40px;">
+													<div id="browser-usage-chart-container" class="col-xs-6" style="min-width: 250px; height: 400px; margin: 0 auto"></div>
+		  				      			<div id="device-usage-chart-container" class="col-xs-6" style="min-width: 250px; height: 400px; margin: 0 auto"></div>
+												</div>
+												<div class="col-md-12" style="margin-bottom: 40px;">
+													<div id="os-usage-chart-container" class="col-xs-6" style="min-width: 250px; height: 400px; margin: 0 auto"></div>
+			  					      		<h5 style="text-align: center;">Location Usage</h5>
+			  					      		<div id="geo-loc-container" class="col-xs-6 "	>
+				  									<ul class="list-style" ng-repeat="geoLocData in geoLocDatas">
+				  									  <li class="">
+				  									    {{ geoLocData.name }}
+				  									    <span class="view	">{{ geoLocData.value }}</span>
+				  									  </li>
+				  									</ul>
+		  					      		</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12 title-search-row">
+						                <h1 class="big-title">Time Based View List</h1>
+														<form name="search" class="searchPage">
+						  										<input type="search"	 placeholder="Name" ng-model="filter.name">
+						  								    	<button ng-click="fetchSceneTimeBasedChartData(false, true)" class="btn btn-info"><img src="assets/images/icons/search_white.svg" alt=""></a>
+						  							</form>
+						            </div>
+												<div class="col-md-12 col-xs-12">
+			  				      			<table>
+					  								    <thead>
+					  								      <tr>
+					  								        <th width="20%">Name</th>
+					  								        <th width="20%">View Count</th>
+					  								        <th width="20%">Unique View Count</th>
+					  								        <th width="15%">Watch Time</th>
+					  								        <th width="10%">Engagement</th>
+					  												<th width="5%">More Analytics</th>
+					  								      </tr>
+					  								    </thead>
+					  								    <tbody>
+					  								      <tr ng-repeat="sceneTimeBasedChartData in mainChartData.sceneTimeBasedChartDatas">
+					  									    <td style="cursor: pointer;" ng-click="getSceneBasedChartData(sceneTimeBasedChartData.id, sceneTimeBasedChartData.name)">
+					  									    	<a href="">{{ sceneTimeBasedChartData.name}}</a>
+					  									    </td>
+					  									    <td>{{ sceneTimeBasedChartData.viewCount }}</td>
+					  									    <td>{{ sceneTimeBasedChartData.uniqueViewCount }}</td>
+					  									    <td>{{ sceneTimeBasedChartData.watchTime }}</td>
+					  									    <td>{{ sceneTimeBasedChartData.engagement }}%</td>
+																	<td><a class="analytic-btn" href="#/analytics/{{ sceneTimeBasedChartData.id }}"><img style="width: 30px;" src="assets/images/icons/stats.svg" alt=""></a></td>
+					  										</td>
+					  									  </tr>
+					  								    </tbody>
+					  								</table>
+			  				      		</div>
+											</div>
+										</div>
+									</div>
+
+
+  				      		<button ng-if="loadMoreStatus" class="btn btn-success center-block" ng-click="fetchSceneTimeBasedChartData(true, false)" ng-disabled="loading">Load more</button>
+
+  			     		</div>
+  			      	</div>
+
+  		    	</div>
+
+  		  	</div>
+  		</section>
+
+
+
+
+  	</div> <!-- /reportingApp-->
+		<section class="contact">
+			<div class="container centered">
+
+				<p>There are many variations of passages of lorem ipsum available!</p>
+
+				<a href="#" class="action">GET IN TOUCH</a>
+
+			</div>
+		</section>
+		<!-- #contact -->
+
+			<!-- contactForm -->
+		<div class="contactForm">
+			<div class="container">
+
+				<h4>GET IN TOUCH</h4>
+
+				<div class="col-md-6 col-xs-12 inputBox">
+					<div class="row">
+										<label>WHO ARE YOU</label>
+										<input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+								</div>
+							</div>
+
+							<div class="col-md-6 col-xs-12 inputBox">
+								<div class="row">
+										<label>EMAIL TO REACH YOU</label>
+										<input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+								</div>
+							</div>
+
+							<div class="col-md-6 col-xs-12 inputBox">
+								<div class="row">
+										<label>TELL US ABOUT IT</label>
+										<textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+								</div>
+							</div>
+
+							<div class="pull-right">
+								<button class="button">SUBMIT</button>
+							</div>
+
+			</div>
+		</div>
+		<!-- #contactForm -->
+
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+
+
+				<!-- left  -->
+				<div class="col-md-8 col-xs-12 footerMenu">
+
+					<ul>
+						<span class="title">COMPANY</span>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+
+					<ul>
+						<span class="title">SUPPORT</span>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Tutorials</a></li>
+						<li><a href="#">Templates</a></li>
+						<li><a href="#">Submit Ticket</a></li>
+						<li><a href="#">Affiliate</a></li>
+						<li><a href="#">Sitemap </a></li>
+					</ul>
+					</ul>
+
+					<ul>
+						<span class="title">COMPANY</span>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+
+				</div>
+
+
+				<!-- right  -->
+				<div class="col-md-4 col-xs-12 blogList">
+
+					<span class="title">BLOG</span>
+
+					<ul>
+						<li>
+							<span>Sept. 22, 2016</span>
+							<a href="#">
+								[Video Series] Unlock The Power Of Conversational
+							</a>
+						</li>
+						<li>
+							<span>Sept. 22, 2016</span>
+							<a href="#">
+								Escape The Noise: Join Us At The  Dreamforce
+							</a>
+						</li>
+						<li>
+							<span>Sept. 8, 2016</span>
+							<a href="#">
+								On-Demand Webinar: How to Bring A Data-Driven
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div>
+		<!-- #footer -->
+
+
+		<!-- copyright  -->
+		<section id="copyright">
+			<div class="container">
+
+				<div class="logo">
+					<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+				</div>
+
+				<ul class="copylist">
+					<li><a href="#">English</a></li>
+					<li><a href="#">Español</a></li>
+					<li><a href="#">한국어</a></li>
+					<li><a href="#">日本語</a></li>
+					<li><a href="#">Deutsch</a></li>
+				</ul>
+
+				<div class="clear"></div>
+
+				<ul class="copylist">
+					<ul>
+						<li><a href="#">TERMS OF SERVICE</a> </li>
+						<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+						<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+						<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+						<li><a href="#">PRIVACY POLICY </a></li>
+					</ul>
+				</ul>
+
+
+				<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+			</div>
+		</section>
+		<!-- #copyright -->
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>

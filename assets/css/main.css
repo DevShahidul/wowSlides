@@ -2254,6 +2254,189 @@ a {
   }
 }
 
+.legend {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+  height: 45px;
+  vertical-align: top;
+}
+
+.legend-title {
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin: 0 0.1% 0 1.4%;
+}
+
+.main-chart-stats-area {
+  position: relative;
+  vertical-align: top;
+  display: block;
+  z-index: 0;
+  width: auto;
+  padding: 0;
+  min-height: 500px;
+  font-size: 12px;
+  line-height: 1.3;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif, Arial;
+}
+
+.chart-svg-stats {
+  display: block;
+  margin: 20px auto;
+  background: #FFF;
+  color: #333333;
+  overflow: hidden;
+  font-size: inherit;
+  height: 370px;
+  width: 100%;
+}
+
+.stats-total {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin: 0;
+  padding: 0px;
+  background: rgba(204, 214, 235, 0.38);
+  color: #474748;
+  text-align: center;
+}
+
+.stats-total li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  /*cursor: pointer;*/
+  z-index: 1;
+  width: 24%;
+  padding: 10px 0;
+  text-align: center;
+  color: #474747;
+}
+
+.stats-total li:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  right: -1px;
+  width: 2px;
+  top: 20px;
+  bottom: 20px;
+  background: #bac2c8;
+}
+
+.stats-total li:last-child:after {
+  display: none;
+}
+
+.stats-total li.active {
+  background: #7e838c;
+  color: #FFFFFF;
+}
+
+.stats-total li.active .value {
+  color: inherit;
+}
+
+.stats-total li p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.stats-total li .description span {
+  color: #8c8c8c;
+}
+
+.stats-total li.active .description span {
+  color: #F0F0F0;
+}
+
+.stats-total li .value {
+  font-size: 35px;
+  line-height: 1.4;
+  color: #646668;
+}
+
+.stats-total li .value sub, .stats-total li .value sup {
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .stats-total li {
+    width: 50%;
+  }
+  .stats-total li .value {
+    font-size: 27px;
+  }
+}
+
+.top-selects {
+  display: block;
+  position: relative;
+  color: rgba(13, 22, 34, 0.7);
+}
+
+.top-selects .top-block {
+  display: block;
+  padding: 20px 5px;
+  background: #f6f7fb;
+}
+
+.top-selects .top-block .top-text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.top-selects .top-block .btn {
+  padding: 0;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+  .top-selects .top-selects .top-text {
+    display: none;
+  }
+  .top-selects .top-block {
+    padding: 20px 5px 0;
+  }
+}
+
+.stats-date {
+  width: 240px;
+  height: 32px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  border: 1px solid #0694df;
+  border-radius: 3px;
+}
+
+.analytic-tag {
+  background-color: #56c8c2;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.analytic-tag img {
+  width: 15px;
+  vertical-align: middle;
+}
+
 .video-js .vjs-audio-button, .video-js .vjs-big-play-button, .video-js .vjs-captions-button, .video-js .vjs-chapters-button, .video-js .vjs-control.vjs-close-button, .video-js .vjs-descriptions-button, .video-js .vjs-fullscreen-control, .video-js .vjs-mouse-display, .video-js .vjs-mute-control, .video-js .vjs-mute-control.vjs-vol-0, .video-js .vjs-mute-control.vjs-vol-1, .video-js .vjs-mute-control.vjs-vol-2, .video-js .vjs-play-control, .video-js .vjs-play-control.vjs-playing, .video-js .vjs-play-progress, .video-js .vjs-subtitles-button, .video-js .vjs-volume-level, .video-js .vjs-volume-menu-button, .video-js .vjs-volume-menu-button.vjs-vol-0, .video-js .vjs-volume-menu-button.vjs-vol-1, .video-js .vjs-volume-menu-button.vjs-vol-2, .video-js.vjs-fullscreen .vjs-fullscreen-control, .vjs-icon-audio, .vjs-icon-audio-description, .vjs-icon-cancel, .vjs-icon-captions, .vjs-icon-chapters, .vjs-icon-circle, .vjs-icon-circle-inner-circle, .vjs-icon-circle-outline, .vjs-icon-cog, .vjs-icon-facebook, .vjs-icon-fullscreen-enter, .vjs-icon-fullscreen-exit, .vjs-icon-gplus, .vjs-icon-hd, .vjs-icon-linkedin, .vjs-icon-pause, .vjs-icon-pinterest, .vjs-icon-play, .vjs-icon-play-circle, .vjs-icon-replay, .vjs-icon-spinner, .vjs-icon-square, .vjs-icon-subtitles, .vjs-icon-tumblr, .vjs-icon-twitter, .vjs-icon-volume-high, .vjs-icon-volume-low, .vjs-icon-volume-mid, .vjs-icon-volume-mute {
   font-family: VideoJS;
   font-weight: 400;
