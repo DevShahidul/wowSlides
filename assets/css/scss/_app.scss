@@ -61,11 +61,10 @@
       transition: all 300ms;
     }
   }
-  .motto .action {
-    transition: all 300ms;
-  }
 }
-
+.motto .action {
+  transition: all 300ms;
+}
 .titleTop .user-item .link a, .see-more a {
   transition: all 300ms;
 }
@@ -479,54 +478,7 @@ section#getStarted a.btn {
       }
     }
   }
-  .motto {
-    border-bottom: 1px dashed #60666A;
-    text-align: center;
-    height: calc(100vh - 130px);
-    padding-top: 13vh;
-    width: 90vw;
-    margin: 0 auto;
-    position: relative;
-    .action {
-      display: inline-block;
-      padding: 20px 33px;
-      background: #56C8C2;
-      color: #fff;
-      font-size: 19px;
-      font-family: 'latoblack';
-      letter-spacing: 0.68px;
-      border-radius: 30px;
-      &:hover {
-        background: #F0B841;
-        color: #fff;
-        -webkit-transform: scale(1.03, 1.03);
-        -ms-transform: scale(1.03, 1.03);
-        transform: scale(1.03, 1.03);
-      }
-    }
-    h1.title {
-      font-size: 60px;
-      font-family: 'latoblack';
-      letter-spacing: -1.71px;
-      line-height: 72px;
-      padding-top: 50px;
-      text-transform: uppercase;
-      color: #fff;
-      background: url(../images/icons/video.png) no-repeat center 0;
-      span {
-        display: inline-block;
-        color: #56C8C2;
-      }
-    }
-    p {
-      margin: 30px 0;
-      font-size: 21px;
-      color: #fff;
-      font-family: 'latolight';
-      padding: 0 30%;
-      line-height: 30px;
-    }
-  }
+
   .scroll-down {
     text-align: center;
     position: absolute;
@@ -568,6 +520,59 @@ section#getStarted a.btn {
         font-size: 19px;
       }
     }
+  }
+}
+.motto {
+  border-bottom: 1px dashed #60666A;
+  text-align: center;
+  height: 180px;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: -180px;
+  position: relative;
+  .action {
+    display: inline-block;
+    padding: 20px 33px;
+    background: #56C8C2;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'latoblack';
+    letter-spacing: 0.68px;
+    border-radius: 30px;
+    &:hover {
+      background: #F0B841;
+      color: #fff;
+      -webkit-transform: scale(1.03, 1.03);
+      -ms-transform: scale(1.03, 1.03);
+      transform: scale(1.03, 1.03);
+    }
+  }
+  h1.title {
+    font-size: 60px;
+    font-family: 'latoblack';
+    letter-spacing: -1.71px;
+    line-height: 72px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(../images/icons/video.png) no-repeat center 0;
+    span {
+      display: inline-block;
+      color: #56C8C2;
+    }
+  }
+  p {
+    margin: 30px 0;
+    font-size: 21px;
+    color: #fff;
+    font-family: 'latolight';
+    padding: 0 30%;
+    line-height: 30px;
+  }
+  &.motto-homepage {
+    height: calc(100vh - 120px);
+    margin-top: 0;
+    padding-top: 100px;
   }
 }
 
@@ -1675,18 +1680,9 @@ section#copyright {
 }
 
 .smallMain {
-  max-height: 400px !important;
-  min-height: 400px !important;
-  height: 400px !important;
-  .motto {
-    max-height: 300px !important;
-    min-height: 300px !important;
-    height: 300px !important;
-    border-bottom: 0 !important;
-    .motto-inner {
-      padding-top: 30px;
-    }
-  }
+  max-height: 300px !important;
+  min-height: 300px !important;
+  height: 300px !important;
 }
 
 .light {
