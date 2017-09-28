@@ -526,10 +526,11 @@ section#getStarted a.btn {
   border-bottom: 1px dashed #60666A;
   text-align: center;
   height: 180px;
-  width: 90vw;
+  width: 100% ;
   margin: 0 auto;
   margin-top: -180px;
   position: relative;
+  padding: 0 5vw;
   .action {
     display: inline-block;
     padding: 20px 33px;
@@ -566,7 +567,6 @@ section#getStarted a.btn {
     font-size: 21px;
     color: #fff;
     font-family: 'latolight';
-    padding: 0 30%;
     line-height: 30px;
   }
   &.motto-homepage {
@@ -1381,6 +1381,7 @@ div.tagsinput {
     float: left;
     li {
       line-height: 30px;
+      padding-bottom: 10px;
       a {
         color: #6E7E83;
         &:hover {
@@ -1388,6 +1389,10 @@ div.tagsinput {
         }
       }
     }
+  }
+  img {
+    width: 25px;
+    vertical-align: middle;
   }
 }
 

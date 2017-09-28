@@ -4584,10 +4584,11 @@ section#getStarted a.btn:after {
   border-bottom: 1px dashed #60666A;
   text-align: center;
   height: 180px;
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   margin-top: -180px;
   position: relative;
+  padding: 0 5vw;
 }
 
 .motto .action {
@@ -4630,7 +4631,6 @@ section#getStarted a.btn:after {
   font-size: 21px;
   color: #fff;
   font-family: 'latolight';
-  padding: 0 30%;
   line-height: 30px;
 }
 
@@ -5534,6 +5534,7 @@ div.tagsinput input {
 
 .footer .footerMenu ul li {
   line-height: 30px;
+  padding-bottom: 10px;
 }
 
 .footer .footerMenu ul li a {
@@ -5542,6 +5543,11 @@ div.tagsinput input {
 
 .footer .footerMenu ul li a:hover {
   color: #fff;
+}
+
+.footer img {
+  width: 25px;
+  vertical-align: middle;
 }
 
 section#copyright {
