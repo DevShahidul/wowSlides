@@ -531,6 +531,9 @@ section#getStarted a.btn {
   margin-top: -180px;
   position: relative;
   padding: 0 5vw;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   .action {
     display: inline-block;
     padding: 20px 33px;
