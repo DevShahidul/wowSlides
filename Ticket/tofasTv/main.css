@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin-ext');
+
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0
+}
+ul {
+  padding: 0;
+}
+#wrapper {
+  display: flex;
+}
+
+#left {
+  width: 70%;
+}
+
+#right {
+  width: 30%;
+  background: #fff;
+}
+
+#content {
+  width: 100%;
+  height: calc(100vh - 186px);
+}
+.video-content {
+  height: 100%;
+}
+.course-info-wrapper {
+  color: #fff;
+  padding: 0 70px;
+  padding-top: 70px;
+}
+
+#top {
+  height: 180px;
+  border-bottom: 1px dashed;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top .class-name {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 35px 20px;
+  text-transform: uppercase;
+
+}
+
+.background-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.background-layer {
+  background: linear-gradient(to bottom, rgba(76, 175, 80, 0.19), #009688);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.background-layer.available {
+  background: linear-gradient(to bottom, rgba(0, 150, 136, 0.36), rgba(0, 131, 5, 0.75));
+}
+
+.background-layer.busy {
+  background: linear-gradient(to bottom, rgba(0, 150, 136, 0.36), rgba(126, 9, 0, 0.75));
+}
+
+.course-title {
+  font-size: 2.5rem;
+}
+.trainer-name {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.class-hours {
+  margin-top: 50px;
+  font-size: 3rem;
+}
+.course-description {
+  margin-top: 30px;
+  font-weight: 100;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+.time {
+  padding: 30px 0 5px 0px;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #505050;
+  font-weight: 100;
+}
+.date {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.time-info {
+  height: 180px;
+  border-bottom: 1px dashed #cacaca;
+}
+.other-courses ul {
+  padding: 10px 25px;
+}
+.other-courses li {
+  padding: 10px 0px;
+  color: #494949;
+  font-weight: 100;
+  list-style-type: none;
+}
+.other-courses-title {
+  padding: 5px 25px;
+  color: #515151;
+  margin-top: 20px;
+}
+.other-class-hours {
+  min-width: 100px;
+  color: #252525;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.status {
+  font-size: 10rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.20);
+}
