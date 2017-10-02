@@ -10610,7 +10610,7 @@ span.title {
 }
 
 .noResult p {
-  color: gray;
+  color: #808080;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
