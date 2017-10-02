@@ -611,3 +611,20 @@ span.title {
 .m-auto {
   margin: auto;
 }
+
+.sitemap {
+  @extend .pageLinks;
+  ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin-bottom: 30px;
+    a {
+      padding: 0;
+      padding-left: 15px;
+      line-height: 3rem;
+      font-family: 'latomedium';
+      text-transform: capitalize;
+    }
+  }
+}
