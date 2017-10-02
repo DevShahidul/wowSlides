@@ -3499,14 +3499,14 @@ nav#navbar.whiteNav {
     font-family: 'latolight';
     padding-left: 30px;
     h3 {
-      font-size: 66px;
+      font-size: 3rem;
       color: #3F515D;
-      line-height: 80px;
+      line-height: 70px;
       margin-bottom: 30px;
     }
     p {
-      font-size: 29px;
-      line-height: 45px;
+      font-size: 1.5rem;
+      line-height: 35px;
     }
   }
   .img {
@@ -3542,6 +3542,24 @@ nav#navbar.whiteNav {
       max-width: 100%;
       position: relative;
       z-index: 99;
+    }
+  }
+  ul {
+    list-style-type: circle;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin-top: 20px;
+  }
+  &:nth-child(odd) {
+    ul {
+      direction: rtl;
+      margin-right: 20px;
+    }
+  }
+  &:nth-child(even ) {
+    ul {
+      direction: ltr;
+      margin-left: 20px;
     }
   }
 }
