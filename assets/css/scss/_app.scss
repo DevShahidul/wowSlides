@@ -1359,7 +1359,8 @@ div.tagsinput {
 
 .footer {
   background: #3B474F;
-  padding: 90px 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
   span.title {
     display: block;
     color: #5C6E72;
@@ -1402,7 +1403,7 @@ div.tagsinput {
 section#copyright {
   text-align: center;
   background: #2D383F;
-  padding: 60px 0;
+  padding: 30px 0;
   p {
     font-size: 13px;
     color: #5C6E72;
@@ -2545,6 +2546,7 @@ rotateX .check-item span.box.square {
 .profile-box {
   background: #fff;
   border-radius: 5px;
+  height: 350px;
   .desc {
     padding: 0 0 10px 15px;
     p {
@@ -2732,7 +2734,7 @@ rotateX .check-item span.box.square {
   border-bottom-left-radius: 5px;
   padding: 30px 70px;
   h1 {
-    font-size: 50px;
+    font-size: 2rem;
     color: #3F515D;
     font-family: 'latoblack';
     line-height: 55px;
@@ -3127,6 +3129,12 @@ nav#navbar.whiteNav {
         color: #fff;
         font-family: 'latoblack';
         background: #ADBAC8;
+        span {
+          font-size: 0.6rem;
+          vertical-align: top;
+          color: #F44336;
+          font-family: 'latomedium';
+        }
       }
     }
   }
@@ -4088,12 +4096,6 @@ h1.title.regular {
     padding-left: 0 !important;
     padding-right: 0;
     position: relative;
-    &:nth-child(odd) {
-      left: -15px;
-    }
-    &:nth-child(even) {
-      right: -15px;
-    }
     .image {
       height: 240px !important;
     }

@@ -5806,7 +5806,8 @@ div.tagsinput input {
 
 .footer {
   background: #3B474F;
-  padding: 90px 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .footer span.title {
@@ -5858,7 +5859,7 @@ div.tagsinput input {
 section#copyright {
   text-align: center;
   background: #2D383F;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 section#copyright p {
@@ -7121,6 +7122,7 @@ rotateX .check-item span.box.square {
 .profile-box {
   background: #fff;
   border-radius: 5px;
+  height: 350px;
 }
 
 .profile-box .desc {
@@ -7336,7 +7338,7 @@ rotateX .check-item span.box.square {
 }
 
 .contentDescs h1 {
-  font-size: 50px;
+  font-size: 2rem;
   color: #3F515D;
   font-family: 'latoblack';
   line-height: 55px;
@@ -7788,6 +7790,13 @@ nav#navbar.whiteNav {
   color: #fff;
   font-family: 'latoblack';
   background: #ADBAC8;
+}
+
+.user-items .links li a span {
+  font-size: 0.6rem;
+  vertical-align: top;
+  color: #F44336;
+  font-family: 'latomedium';
 }
 
 .user-items .name {
@@ -8867,14 +8876,6 @@ h1.title.regular span {
   padding-left: 0 !important;
   padding-right: 0;
   position: relative;
-}
-
-.blog-full-box.smallBlog:nth-child(odd) {
-  left: -15px;
-}
-
-.blog-full-box.smallBlog:nth-child(even) {
-  right: -15px;
 }
 
 .blog-full-box.smallBlog .image {
@@ -10418,7 +10419,7 @@ div.tagsinput div {
 }
 
 .project-desc {
-  height: 400px;
+  height: 350px;
 }
 
 @media (min-width: 768px) {
@@ -10613,4 +10614,8 @@ span.title {
   color: #808080;
   font-size: 1.5rem;
   margin-bottom: 20px;
+}
+
+.m-auto {
+  margin: auto;
 }

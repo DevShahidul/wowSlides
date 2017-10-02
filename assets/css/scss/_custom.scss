@@ -420,7 +420,7 @@
   }
 }
 .project-desc {
-  height: 400px;
+  height: 350px;
 
   @media (min-width: 768px) {
     p {
@@ -606,4 +606,8 @@ span.title {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
+}
+
+.m-auto {
+  margin: auto;
 }
