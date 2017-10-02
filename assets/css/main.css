@@ -5890,6 +5890,10 @@ section#copyright ul.copylist li a:hover {
   color: #fff;
 }
 
+section#copyright p a {
+  color: #fff;
+}
+
 .close-menu {
   margin-bottom: 30px;
   opacity: .6;
