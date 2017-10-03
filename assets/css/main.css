@@ -4922,7 +4922,7 @@ section#getStarted a.btn:after {
   font-family: 'latoblack';
   letter-spacing: -1.71px;
   line-height: 72px;
-  padding-top: 50px;
+  padding-top: 30px;
   text-transform: uppercase;
   color: #fff;
   background: url(../images/icons/video.png) no-repeat center 0;
@@ -4945,6 +4945,15 @@ section#getStarted a.btn:after {
   height: calc(100vh - 120px);
   margin-top: 0;
   padding-top: 100px;
+}
+
+.motto .main-btn {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  max-width: 200px;
+  margin: auto;
 }
 
 .titleTop .user-item {
@@ -5016,10 +5025,10 @@ section#getStarted a.btn:after {
   display: inline-block;
   font-size: 13px;
   font-family: 'latoblack';
-  color: #56C8C2;
+  color: #fff;
   padding: 18px 25px;
   border-radius: 5px;
-  background: #fff;
+  background: #c0c0c0;
 }
 
 .see-more a:hover {
@@ -10680,10 +10689,6 @@ span.title {
   text-transform: capitalize;
 }
 
-.modal-content {
-  padding-bottom: 20px;
-}
-
 .modal-content p {
   padding-bottom: 15px;
   color: #1d1d1d;
@@ -10691,8 +10696,9 @@ span.title {
   line-height: 30px;
 }
 
-.modal-content .blue {
+.modal-content .main-btn {
   width: 100%;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
