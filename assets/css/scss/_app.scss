@@ -819,7 +819,9 @@ section#getStarted a.btn {
     letter-spacing: 6.43px;
   }
 }
-
+.hidden {
+  display: none;
+}
 .titleTop {
   margin-bottom: 40px;
   position: relative;
@@ -893,7 +895,20 @@ section#getStarted a.btn {
       min-width: 100%;
     }
   }
+  .reset {
+    position: relative;
+
+    a {
+      position: absolute;
+      right: -8px;
+      top: -9px;
+      cursor: pointer;
+      display: block;
+    }
+  }
 }
+
+
 
 .swiper-container {
   width: 90%;
@@ -989,6 +1004,7 @@ section#getStarted a.btn {
     padding: 10px 25px 25px 25px;
     padding-bottom: 20px;
     position: relative;
+    margin-bottom: 30px;
     h5 {
       font-size: 18px;
       font-family: 'latoblack';
@@ -1050,6 +1066,10 @@ section#getStarted a.btn {
   .details {
     background: #F4F2F2;
     padding: 15px 0 5px 3px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
     ul li {
       float: left;
       width: 33%;
@@ -2537,11 +2557,12 @@ rotateX .check-item span.box.square {
         }
         a {
           border-radius: 5px;
-          height: 50px;
           min-width: 50px;
           font-size: 15px;
           color: #8796A0;
           font-family: 'latoblack';
+          height: 50px !important;
+          width: 100% !important;
         }
       }
     }
@@ -3685,7 +3706,7 @@ nav#navbar.whiteNav {
   border-radius: 10px;
   margin-bottom: 150px;
   p {
-    color: #8B929F;
+    color: #1d1d1d;
     font-family: 'latolight';
     line-height: 30px;
     &:not(:last-of-type) {

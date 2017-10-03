@@ -462,7 +462,7 @@ span.title {
     }
   }
   .imageBig .pagination ul li a {
-    height: 30px;
+    height: 30px !important;
   }
   .project-frame {
     height: calc(100vh - 50px);
@@ -626,5 +626,19 @@ span.title {
       font-family: 'latomedium';
       text-transform: capitalize;
     }
+  }
+}
+.modal-content {
+  padding-bottom: 20px;
+  p {
+    padding-bottom: 15px;
+    color: #1d1d1d;
+    font-family: 'latolight';
+    line-height: 30px;
+  }
+  .blue {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
   }
 }

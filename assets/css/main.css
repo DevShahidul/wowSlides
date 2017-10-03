@@ -697,6 +697,8 @@ a {
 }
 
 .nice-select.open .list {
+  max-height: 300px;
+  overflow-y: auto;
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: scale(1) translateY(0);
@@ -5205,6 +5207,10 @@ section#getStarted a.btn:after {
   letter-spacing: 6.43px;
 }
 
+.hidden {
+  display: none;
+}
+
 .titleTop {
   margin-bottom: 40px;
   position: relative;
@@ -5287,6 +5293,18 @@ section#getStarted a.btn:after {
 
 .titleTop .nice-select ul {
   min-width: 100%;
+}
+
+.titleTop .reset {
+  position: relative;
+}
+
+.titleTop .reset a {
+  position: absolute;
+  right: -8px;
+  top: -9px;
+  cursor: pointer;
+  display: block;
 }
 
 .swiper-container {
@@ -5391,6 +5409,7 @@ section#getStarted a.btn:after {
   padding: 10px 25px 25px 25px;
   padding-bottom: 20px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .swiper-slide.wowSlideBox .texts h5 {
@@ -5464,6 +5483,10 @@ section#getStarted a.btn:after {
 .swiper-slide.wowSlideBox .details {
   background: #F4F2F2;
   padding: 15px 0 5px 3px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .swiper-slide.wowSlideBox .details ul li {
@@ -7116,11 +7139,12 @@ rotateX .check-item span.box.square {
 
 .imageBig .pagination ul li a {
   border-radius: 5px;
-  height: 50px;
   min-width: 50px;
   font-size: 15px;
   color: #8796A0;
   font-family: 'latoblack';
+  height: 50px !important;
+  width: 100% !important;
 }
 
 .profile-box {
@@ -8413,7 +8437,7 @@ nav#navbar.whiteNav {
 }
 
 .pageTexts p {
-  color: #8B929F;
+  color: #1d1d1d;
   font-family: 'latolight';
   line-height: 30px;
 }
@@ -10486,7 +10510,7 @@ span.title {
     padding: 7px 20px;
   }
   .imageBig .pagination ul li a {
-    height: 30px;
+    height: 30px !important;
   }
   .project-frame {
     height: calc(100vh - 50px);
@@ -10654,4 +10678,21 @@ span.title {
   line-height: 3rem;
   font-family: 'latomedium';
   text-transform: capitalize;
+}
+
+.modal-content {
+  padding-bottom: 20px;
+}
+
+.modal-content p {
+  padding-bottom: 15px;
+  color: #1d1d1d;
+  font-family: 'latolight';
+  line-height: 30px;
+}
+
+.modal-content .blue {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
 }
