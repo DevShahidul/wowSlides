@@ -13,6 +13,7 @@
 
 
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="reporting/bootstrap.min.js"></script>
 		<script src="reporting/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
@@ -221,7 +222,7 @@
 				<!-- #titles -->
 
 
-				<div class="selects-area">
+				<div class="selects-area collapse"  id="collapseExample">
 					<span class="title">FILTER</span>
 					<div class="select-position m_b_20">
 						<div class="select-wrapper">
@@ -261,8 +262,6 @@
 								</ui-select>
 						</div>
 					</div>
-				</div>
-				<div class="select-position p_20	">
 					<div class="checkbox-filter checkbox-style ">
 						<label>
 								<input type="checkbox">
@@ -275,6 +274,9 @@
 								<span class="checkbox-name">Template</span>
 						</label>
 					</div>
+				</div>
+				<div class="select-position p_20	">
+					<a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Advanced Filter</a>
 					<div class="select-sort">
 
 						<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
