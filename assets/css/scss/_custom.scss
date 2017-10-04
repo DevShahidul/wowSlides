@@ -721,3 +721,13 @@ span.title {
     padding-right: 9px;
   }
 }
+
+.collapse.in {
+  display: block;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
