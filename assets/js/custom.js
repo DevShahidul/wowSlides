@@ -28,7 +28,7 @@ $(window).load(function(){
     		});
 
 
-    		$('select').niceSelect();
+    		// $('select').niceSelect();
 
 
     		// Dropzone

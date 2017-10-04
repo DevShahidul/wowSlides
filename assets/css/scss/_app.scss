@@ -1014,7 +1014,7 @@ section#getStarted a.btn {
     position: relative;
     margin-bottom: 30px;
     h5 {
-      font-size: 18px;
+      font-size: 1rem;
       font-family: 'latoblack';
       border-bottom: 1px solid #F2F3F4;
       padding-bottom: 10px;
@@ -4548,6 +4548,39 @@ h1.title.regular {
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+}
+
+.checkbox-style {
+  label {
+    input {
+      opacity: 0;
+      position: absolute;
+      &:checked ~ span.box {
+        background-color: #56C8C2;
+        background-image: url(../images/icons/icon-check.png);
+        background-position: center center;
+        background-size: 75%;
+        background-repeat: no-repeat;
+      }
+    }
+    span.box {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #D4DBE2;
+      vertical-align: middle;
+      transition: all 300ms;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    .checkbox-name {
+      color: #404040;
+      vertical-align: middle;
+      font-size: 1.1rem;
+      cursor: pointer;
     }
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  ng-app="demo">
 <head>
 	<meta charset="UTF-8">
 
@@ -11,15 +11,22 @@
 	<!-- basic needs -->
 	<link rel="stylesheet" href="assets/css/main.css">
 
+
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+		<script src="reporting/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/select.js"></script>
 	<script type="text/javascript" src="assets/js/video.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
 
+
+    <script src="reporting/demo.js"></script>
+
+
 </head>
-<body>
+<body ng-controller="DemoCtrl as ctrl">
 
 
 <!-- loader -->
@@ -210,53 +217,77 @@
 		<div class="container">
 
 				<!-- titles -->
-				<div class="titleTop">
-
-					<div class="selects centered">
-
-						<div class="reset">
-              <select >
-  							<option value="1">SELECT CATEGORY</option>
-  							<option value="1">CATEGORY I</option>
-  							<option value="1">CATEGORY II</option>
-  							<option value="1">CATEGORY III</option>
-                <option value="1">CATEGORY I</option>
-  							<option value="1">CATEGORY II</option>
-  							<option value="1">CATEGORY III</option>
-                <option value="1">CATEGORY I</option>
-  							<option value="1">CATEGORY II</option>
-  							<option value="1">CATEGORY III</option>
-  						</select>
-              <a class="hidden" type="button" name="button"><img src="assets/images/icons/icon_times.svg" alt=""></a>
-						</div>
-
-            <div class="">
-              <select >
-  							<option value="1">SELECT COUNTRY</option>
-  							<option value="1">CATEGORY I</option>
-  							<option value="1">CATEGORY II</option>
-  							<option value="1">CATEGORY III</option>
-  						</select>
-              <a class="hidden" type="button" name="button"><img src="assets/images/icons/icon_times.svg" alt=""></a>
-						</div>
-
-            <div class="">
-              <select >
-  							<option value="1">SELECT COUNTRY</option>
-  							<option value="1">CATEGORY I</option>
-  							<option value="1">CATEGORY II</option>
-  							<option value="1">CATEGORY III</option>
-  						</select>
-              <a class="hidden" type="button" name="button"><img src="assets/images/icons/icon_times.svg" alt=""></a>
-						</div>
-
-					</div>
-
-					<h3>Latest</h3>
-
-				</div>
+				<h1 class="big-title p_20">Search 'Design'</h1>
 				<!-- #titles -->
 
+
+				<div class="selects-area">
+					<span class="title">FILTER</span>
+					<div class="select-position m_b_20">
+						<div class="select-wrapper">
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
+										<span ng-bind-html="item.name | highlight: $select.search"></span>
+										<small ng-bind-html="item.email | highlight: $select.search"></small>
+									</ui-select-choices>
+								</ui-select>
+						</div>
+						<div class="select-wrapper">
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
+										<span ng-bind-html="item.name | highlight: $select.search"></span>
+										<small ng-bind-html="item.email | highlight: $select.search"></small>
+									</ui-select-choices>
+								</ui-select>
+						</div>
+						<div class="select-wrapper">
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
+										<span ng-bind-html="item.name | highlight: $select.search"></span>
+										<small ng-bind-html="item.email | highlight: $select.search"></small>
+									</ui-select-choices>
+								</ui-select>
+						</div>
+						<div class="select-wrapper">
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
+										<span ng-bind-html="item.name | highlight: $select.search"></span>
+										<small ng-bind-html="item.email | highlight: $select.search"></small>
+									</ui-select-choices>
+								</ui-select>
+						</div>
+					</div>
+				</div>
+				<div class="select-position p_20	">
+					<div class="checkbox-filter checkbox-style ">
+						<label>
+								<input type="checkbox">
+								<span class="box"></span>
+								<span class="checkbox-name">Curated</span>
+						</label>
+						<label>
+								<input type="checkbox">
+								<span class="box"></span>
+								<span class="checkbox-name">Template</span>
+						</label>
+					</div>
+					<div class="select-sort">
+
+						<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+								<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+								<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+									<span ng-bind-html="item.name | highlight: $select.search"></span>
+								</ui-select-choices>
+							</ui-select>
+							<div class="desc-btn">
+								<a href="#"><img src="assets/images/icons/descendant.svg" alt=""><span>DESC</span></a>
+							</div>
+					</div>
+				</div>
 
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
