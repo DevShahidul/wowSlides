@@ -323,7 +323,12 @@
 
 						<div class="inputRow keyw">
 							<label>Keywords</label>
-							<input name="tags" data-pre-target="#pre__tags" placeholder="Add Keywords"/>
+							<ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" style="width: 300px;" title="Choose a color">
+						    <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+						    <ui-select-choices repeat="color in ctrl.availableColors | filter:$select.search">
+						      {{color}}
+						    </ui-select-choices>
+						  </ui-select>
 						</div>
 
 					</div>
