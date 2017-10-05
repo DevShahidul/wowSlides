@@ -251,7 +251,7 @@
 
 .project-frame {
   width: 100%;
-  height: calc(100vh - 240px);
+  height: auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -554,7 +554,7 @@ span.title {
 .bar-search {
     height: 40px;
     border: 6px solid #fff;
-    width: 300px;
+    width: 250px;
     background: #fff;
     z-index: 9999;
     -ms-box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
@@ -646,6 +646,9 @@ span.title {
 .m_b_20 {
   margin-bottom: 20px;
 }
+.m_t_20 {
+  margin-top: 20px;
+}
 .p_20 {
   padding: 20px;
 }
@@ -717,6 +720,7 @@ span.title {
   }
 }
 .checkbox-filter {
+  padding-bottom: 20px;
   label {
     padding-right: 9px;
   }
@@ -756,4 +760,11 @@ tbody.collapse.in {
 
 .ui-select-multiple.ui-select-bootstrap .ui-select-match .close {
   vertical-align: middle;
+}
+
+.related-projects {
+  .swiper-slide.wowSlideBox {
+    min-height: auto;
+    height: 320px;
+  }
 }

@@ -5506,6 +5506,7 @@ section#getStarted a.btn:after {
 
 #main nav#navbar {
   background: rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
 }
 
 #main nav#navbar .menu-bar {
@@ -5575,19 +5576,11 @@ section#getStarted a.btn:after {
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
-  #main nav#navbar .menu-bar {
-    display: block;
-    padding-left: 5vw;
-    margin-top: 10px;
-  }
-}
-
 #main nav#navbar .user-bar {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-right: 5vw;
 }
 
@@ -5664,7 +5657,7 @@ section#getStarted a.btn:after {
 
 @media (min-width: 768px) {
   #main nav#navbar h1.logo {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   #main nav#navbar h1.logo a {
     padding-top: 40px;
@@ -5777,7 +5770,7 @@ section#getStarted a.btn:after {
 }
 
 .motto.motto-homepage {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 75px);
   margin-top: 0;
   padding-top: 100px;
 }
@@ -6090,16 +6083,6 @@ section#getStarted a.btn:after {
   margin-left: 30px;
 }
 
-.titleTop .search {
-  background: #56C8C2;
-  float: right;
-  margin-left: 20px;
-  height: 50px;
-  width: 50px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .titleTop .nice-select {
   background: transparent;
   border: 0;
@@ -6149,6 +6132,16 @@ section#getStarted a.btn:after {
   top: -9px;
   cursor: pointer;
   display: block;
+}
+
+.search {
+  background: #56C8C2;
+  float: right;
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .swiper-container {
@@ -7925,8 +7918,8 @@ rotateX .check-item span.box.square {
 
 .imageBig .fullscreen {
   position: absolute;
-  right: 30px;
-  top: auto;
+  right: -10px;
+  bottom: -20px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -7995,6 +7988,10 @@ rotateX .check-item span.box.square {
   background: #fff;
   border-radius: 5px;
   height: 350px;
+}
+
+.profile-box.in-project {
+  height: auto;
 }
 
 .profile-box .desc {
@@ -8108,34 +8105,6 @@ rotateX .check-item span.box.square {
   height: 100%;
 }
 
-.rightSection .copy {
-  width: 100%;
-  font-size: 13px;
-  color: #fff;
-  text-align: center;
-  background: #56C8C2;
-  border-radius: 5px;
-  padding: 17px;
-  font-family: 'latoblack';
-  cursor: pointer;
-}
-
-.rightSection .copy:hover {
-  background: #3F515D;
-}
-
-.rightSection .embed textarea {
-  width: 100%;
-  color: #7E8693;
-  font-size: 15px;
-  background: #F6F7F9;
-  resize: none;
-  padding: 15px;
-  border-radius: 5px;
-  min-height: 150px;
-  margin-bottom: 10px;
-}
-
 .rightSection span.title {
   font-size: 13px;
   color: #3F515D;
@@ -8202,6 +8171,38 @@ rotateX .check-item span.box.square {
   height: 100%;
 }
 
+.copy {
+  width: 100%;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  background: #56C8C2;
+  border-radius: 5px;
+  padding: 17px;
+  font-family: 'latoblack';
+  cursor: pointer;
+}
+
+.copy:hover {
+  background: #3F515D;
+}
+
+.embed {
+  margin: 10px;
+}
+
+.embed textarea {
+  width: 100%;
+  color: #7E8693;
+  font-size: 15px;
+  background: #F6F7F9;
+  resize: none;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+
 .contentDescs {
   background: #fff;
   border-bottom-right-radius: 5px;
@@ -8227,6 +8228,11 @@ rotateX .check-item span.box.square {
   padding: 50px;
   text-align: center;
   display: block;
+}
+
+.contentDescs .date {
+  color: #40525e;
+  font-size: 0.8rem;
 }
 
 .comments {
@@ -9417,6 +9423,7 @@ nav#navbar.whiteNav {
 .shareList ul {
   display: flex;
   margin-top: 0;
+  justify-content: center;
 }
 
 .shareList ul img {
@@ -11152,7 +11159,7 @@ div.tagsinput div {
 
 .project-frame {
   width: 100%;
-  height: calc(100vh - 240px);
+  height: auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -11484,7 +11491,7 @@ span.title {
 .bar-search {
   height: 40px;
   border: 6px solid #fff;
-  width: 300px;
+  width: 250px;
   background: #fff;
   z-index: 9999;
   -ms-box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
@@ -11574,6 +11581,10 @@ span.title {
   margin-bottom: 20px;
 }
 
+.m_t_20 {
+  margin-top: 20px;
+}
+
 .p_20 {
   padding: 20px;
 }
@@ -11649,6 +11660,10 @@ span.title {
   padding-right: 5px;
 }
 
+.checkbox-filter {
+  padding-bottom: 20px;
+}
+
 .checkbox-filter label {
   padding-right: 9px;
 }
@@ -11689,4 +11704,9 @@ tbody.collapse.in {
 
 .ui-select-multiple.ui-select-bootstrap .ui-select-match .close {
   vertical-align: middle;
+}
+
+.related-projects .swiper-slide.wowSlideBox {
+  min-height: auto;
+  height: 320px;
 }

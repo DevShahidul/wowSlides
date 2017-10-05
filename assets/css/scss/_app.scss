@@ -340,6 +340,7 @@ section#getStarted a.btn {
 #main {
   nav#navbar {
     background: rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
     .menu-bar {
       min-width: 35px;
       display: inline-block;
@@ -392,19 +393,12 @@ section#getStarted a.btn {
           }
         }
       }
-      @media (min-width: 768px) {
-        display: block;
-        padding-left: 5vw;
-        //background: linear-gradient(to left, rgba(44, 62, 80, 0.51), rgba(76, 161, 175, 0.51));
-        margin-top: 10px;
-
-      }
     }
     .user-bar {
       position: absolute;
       right: 0;
       top: 0;
-      margin-top: 30px;
+      margin-top: 20px;
       padding-right: 5vw;
       > ul > li {
         float: left;
@@ -471,7 +465,7 @@ section#getStarted a.btn {
         align-items: flex-end;
       }
       @media (min-width: 768px) {
-        margin-top: 30px;
+        margin-top: 20px;
         a {
           padding-top: 40px;
         }
@@ -573,7 +567,7 @@ section#getStarted a.btn {
     line-height: 30px;
   }
   &.motto-homepage {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 75px);
     margin-top: 0;
     padding-top: 100px;
   }
@@ -859,15 +853,7 @@ section#getStarted a.btn {
       }
     }
   }
-  .search {
-    background: #56C8C2;
-    float: right;
-    margin-left: 20px;
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+
   .nice-select {
     background: transparent;
     border: 0;
@@ -916,7 +902,15 @@ section#getStarted a.btn {
   }
 }
 
-
+.search {
+  background: #56C8C2;
+  float: right;
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .swiper-container {
   width: 90%;
@@ -2520,8 +2514,8 @@ rotateX .check-item span.box.square {
   position: relative;
   .fullscreen {
     position: absolute;
-    right: 30px;
-    top: auto;
+    right: -10px;
+    bottom: -20px;
     cursor: pointer;
     margin-top: 10px;
   }
@@ -2581,6 +2575,9 @@ rotateX .check-item span.box.square {
   background: #fff;
   border-radius: 5px;
   height: 350px;
+  &.in-project {
+    height: auto;
+  }
   .desc {
     padding: 0 0 10px 15px;
     p {
@@ -2677,31 +2674,7 @@ rotateX .check-item span.box.square {
 }
 
 .rightSection {
-  .copy {
-    width: 100%;
-    font-size: 13px;
-    color: #fff;
-    text-align: center;
-    background: #56C8C2;
-    border-radius: 5px;
-    padding: 17px;
-    font-family: 'latoblack';
-    cursor: pointer;
-    &:hover {
-      background: #3F515D;
-    }
-  }
-  .embed textarea {
-    width: 100%;
-    color: #7E8693;
-    font-size: 15px;
-    background: #F6F7F9;
-    resize: none;
-    padding: 15px;
-    border-radius: 5px;
-    min-height: 150px;
-    margin-bottom: 10px;
-  }
+
   span.title {
     font-size: 13px;
     color: #3F515D;
@@ -2761,6 +2734,34 @@ rotateX .check-item span.box.square {
     }
   }
 }
+.copy {
+  width: 100%;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  background: #56C8C2;
+  border-radius: 5px;
+  padding: 17px;
+  font-family: 'latoblack';
+  cursor: pointer;
+  &:hover {
+    background: #3F515D;
+  }
+}
+.embed  {
+  margin: 10px;
+  textarea {
+    width: 100%;
+    color: #7E8693;
+    font-size: 15px;
+    background: #F6F7F9;
+    resize: none;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 150px;
+    margin-bottom: 10px;
+  }
+}
 
 .contentDescs {
   background: #fff;
@@ -2783,6 +2784,10 @@ rotateX .check-item span.box.square {
     padding: 50px;
     text-align: center;
     display: block;
+  }
+  .date {
+    color: #40525e;
+    font-size: 0.8rem;
   }
 }
 
@@ -3837,6 +3842,7 @@ nav#navbar.whiteNav {
   ul {
     display: flex;
     margin-top: 0;
+    justify-content: center;
     img {
       height: 30px;
     }
