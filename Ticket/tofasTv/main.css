@@ -98,8 +98,8 @@ ul {
   font-size: 1.1rem;
 }
 .time {
-  padding: 30px 0 5px 0px;
-  font-size: 3.5rem;
+  padding: 5px 0 5px 0px;
+  font-size: 3rem;
   text-align: center;
   color: #505050;
   font-weight: 100;
@@ -111,7 +111,7 @@ ul {
 }
 
 .time-info {
-  height: 180px;
+  height: 120px;
   border-bottom: 1px dashed #cacaca;
 }
 .other-courses ul {
