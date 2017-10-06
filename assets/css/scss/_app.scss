@@ -2575,9 +2575,6 @@ rotateX .check-item span.box.square {
   background: #fff;
   border-radius: 5px;
   height: 350px;
-  &.in-project {
-    height: auto;
-  }
   .desc {
     padding: 0 0 10px 15px;
     p {
@@ -3064,7 +3061,7 @@ nav#navbar.whiteNav {
 .profile-container {
   padding: 0 5vw;
   position: relative;
-  top: 60px;
+  top: 110px;
   &:after {
     content: '';
     display: block;

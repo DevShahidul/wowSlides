@@ -3111,7 +3111,7 @@ disabled look for disabled choices in the results dropdown
 
 .video-info {
   width: 100%;
-  height: 420px;  
+  height: 420px;
 }
 
 .scene-stats-table {
@@ -8006,10 +8006,6 @@ rotateX .check-item span.box.square {
   height: 350px;
 }
 
-.profile-box.in-project {
-  height: auto;
-}
-
 .profile-box .desc {
   padding: 0 0 10px 15px;
 }
@@ -8563,7 +8559,7 @@ nav#navbar.whiteNav {
 .profile-container {
   padding: 0 5vw;
   position: relative;
-  top: 60px;
+  top: 110px;
 }
 
 .profile-container:after {
@@ -11745,4 +11741,76 @@ tbody.collapse.in {
 
 .related-projects .swiper-slide.wowSlideBox .img {
   height: 150px;
+}
+
+.curated {
+  position: absolute;
+  top: 38%;
+  right: 15px;
+  z-index: 99;
+}
+
+.profile-in-project .profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-in-project .profile-info .img {
+  border: 3px solid #F6F7F9;
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin-right: 18px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-in-project .profile-info .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-in-project .profile-info .name h3 {
+  font-size: 1.2rem;
+  color: #40525e;
+  font-family: 'latoblack';
+}
+
+.profile-in-project .profile-info .name p {
+  font-size: 0.8rem;
+  color: gray;
+  padding-top: 5px;
+}
+
+.profile-in-project.right-items .social {
+  float: none;
+  top: 10px;
+  left: 60px;
+}
+
+.profile-in-project.right-items .social li a {
+  width: 35px;
+  height: 35px;
+  background: gray;
+}
+
+.profile-in-project.right-items .social li a img {
+  height: 14px;
+}
+
+.profile-in-project.right-items .social li a.add-user {
+  background: #5fc8c1;
+}
+
+.profile-in-project.right-items .social li a.add-user img {
+  height: 22px;
+}
+
+.profile-in-project.right-items .social li a.remove-user {
+  background: gray;
+}
+
+.profile-in-project.right-items .social li a.remove-user img {
+  height: 22px;
 }
