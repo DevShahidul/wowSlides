@@ -3111,7 +3111,7 @@ disabled look for disabled choices in the results dropdown
 
 .video-info {
   width: 100%;
-  height: 500px;
+  height: 420px;  
 }
 
 .scene-stats-table {
@@ -3170,10 +3170,15 @@ disabled look for disabled choices in the results dropdown
 
 .scene-video-container {
   position: absolute;
-  width: 96%;
+  width: 100%;
   height: 90%;
   /*min-width: 765px;
 	min-height: 445px;*/
+}
+
+.scene-video-container iframe {
+  width: 100%;
+  height: 420px;
 }
 
 .legend {
@@ -3391,6 +3396,17 @@ tbody.collapse.show {
   height: 0;
   overflow: hidden;
   transition: height 0.35s ease;
+}
+
+.table-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.download-report {
+  position: absolute;
+  right: 0;
+  top: 17px;
 }
 
 .video-js .vjs-audio-button, .video-js .vjs-big-play-button, .video-js .vjs-captions-button, .video-js .vjs-chapters-button, .video-js .vjs-control.vjs-close-button, .video-js .vjs-descriptions-button, .video-js .vjs-fullscreen-control, .video-js .vjs-mouse-display, .video-js .vjs-mute-control, .video-js .vjs-mute-control.vjs-vol-0, .video-js .vjs-mute-control.vjs-vol-1, .video-js .vjs-mute-control.vjs-vol-2, .video-js .vjs-play-control, .video-js .vjs-play-control.vjs-playing, .video-js .vjs-play-progress, .video-js .vjs-subtitles-button, .video-js .vjs-volume-level, .video-js .vjs-volume-menu-button, .video-js .vjs-volume-menu-button.vjs-vol-0, .video-js .vjs-volume-menu-button.vjs-vol-1, .video-js .vjs-volume-menu-button.vjs-vol-2, .video-js.vjs-fullscreen .vjs-fullscreen-control, .vjs-icon-audio, .vjs-icon-audio-description, .vjs-icon-cancel, .vjs-icon-captions, .vjs-icon-chapters, .vjs-icon-circle, .vjs-icon-circle-inner-circle, .vjs-icon-circle-outline, .vjs-icon-cog, .vjs-icon-facebook, .vjs-icon-fullscreen-enter, .vjs-icon-fullscreen-exit, .vjs-icon-gplus, .vjs-icon-hd, .vjs-icon-linkedin, .vjs-icon-pause, .vjs-icon-pinterest, .vjs-icon-play, .vjs-icon-play-circle, .vjs-icon-replay, .vjs-icon-spinner, .vjs-icon-square, .vjs-icon-subtitles, .vjs-icon-tumblr, .vjs-icon-twitter, .vjs-icon-volume-high, .vjs-icon-volume-low, .vjs-icon-volume-mid, .vjs-icon-volume-mute {
@@ -3701,10 +3717,10 @@ body.vjs-full-window {
   -webkit-border-radius: .3em;
   -moz-border-radius: .3em;
   border-radius: .3em;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .vjs-big-play-centered .vjs-big-play-button {
@@ -3803,7 +3819,7 @@ body.vjs-full-window {
   font-size: 1em;
   line-height: 2em;
   padding: 0;
-  margin: 0 0 .3em;
+  margin: 0 0 0.3em;
   font-weight: 700;
   cursor: default;
 }
@@ -3833,10 +3849,10 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-menu-button-inline {
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   overflow: hidden;
 }
 
@@ -3864,10 +3880,10 @@ body.vjs-full-window {
   top: 0;
   padding: 0;
   margin: 0;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .vjs-menu-button-inline.vjs-slider-active .vjs-menu, .vjs-menu-button-inline:focus .vjs-menu, .vjs-menu-button-inline:hover .vjs-menu {
@@ -3912,19 +3928,19 @@ body.vjs-full-window {
   display: flex;
   visibility: visible;
   opacity: 1;
-  -webkit-transition: visibility .1s,opacity .1s;
-  -moz-transition: visibility .1s,opacity .1s;
-  -o-transition: visibility .1s,opacity .1s;
-  transition: visibility .1s,opacity .1s;
+  -webkit-transition: visibility 0.1s, opacity 0.1s;
+  -moz-transition: visibility 0.1s, opacity 0.1s;
+  -o-transition: visibility 0.1s, opacity 0.1s;
+  transition: visibility 0.1s, opacity 0.1s;
 }
 
 .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
   visibility: visible;
   opacity: 0;
-  -webkit-transition: visibility 1s,opacity 1s;
-  -moz-transition: visibility 1s,opacity 1s;
-  -o-transition: visibility 1s,opacity 1s;
-  transition: visibility 1s,opacity 1s;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  -o-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s;
 }
 
 .vjs-controls-disabled .vjs-control-bar, .vjs-error .vjs-control-bar, .vjs-using-native-controls .vjs-control-bar {
@@ -4010,10 +4026,10 @@ body.vjs-full-window {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   height: .3em;
 }
 
@@ -4120,10 +4136,10 @@ body.vjs-full-window {
 .video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display, .video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display:after {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 1s,opacity 1s;
-  -moz-transition: visibility 1s,opacity 1s;
-  -o-transition: visibility 1s,opacity 1s;
-  transition: visibility 1s,opacity 1s;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  -o-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s;
 }
 
 .video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display, .video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display:after {
@@ -4141,7 +4157,7 @@ body.vjs-full-window {
   position: relative;
   cursor: pointer;
   padding: 0;
-  margin: 0 .45em;
+  margin: 0 0.45em;
   background-color: #73859f;
   background-color: rgba(115, 133, 159, 0.5);
 }
@@ -4180,7 +4196,7 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-volume-bar {
-  margin: 1.35em .45em;
+  margin: 1.35em 0.45em;
 }
 
 .vjs-volume-bar.vjs-slider-horizontal {
@@ -4451,7 +4467,7 @@ video::-webkit-media-text-track-display {
   line-height: 1;
   margin-top: -.5em;
   position: absolute;
-  text-shadow: .05em .05em .1em #000;
+  text-shadow: 0.05em 0.05em 0.1em #000;
   text-align: center;
   top: 50%;
   vertical-align: middle;
@@ -6907,13 +6923,13 @@ section#copyright p a {
 .swiper-button-prev.wowSlideTop {
   left: 0 !important;
   background: linear-gradient(to right, #f6f7f9 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9',  endColorstr='#00ffffff', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9', endColorstr='#00ffffff', GradientType=1 );
 }
 
 .swiper-button-next.wowSlideTop {
   right: 0 !important;
   background: linear-gradient(to left, #f6f7f9 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9',  endColorstr='#00ffffff', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9', endColorstr='#00ffffff', GradientType=1 );
 }
 
 .transBg {
