@@ -652,22 +652,39 @@ span.title {
 .p_20 {
   padding: 20px;
 }
+.p_t_20 {
+  padding-top: 20px;
+}
 .selects-area {
-  margin: 0 15px;
-  padding: 20px;
+  margin: 20px 15px;
+  padding: 0 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 1px #bdbdbd;
-  margin-top: 30px;
+  border: 1px solid #dddddd;
 }
 
 .select-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+  h2.title {
+    color: #3F515D;
+    font-family: 'latoblack';
+    text-transform: uppercase;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.select-position-inline {
+  padding: 20px 0;
 }
 
 .select-wrapper {
-  width: 23%;
+  width: 30%;
+  display: inline-block;
+  margin: 5px;
 }
 
 .ui-select-container {
@@ -714,13 +731,12 @@ span.title {
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
-  }
-  img {
-        padding-right: 5px;
+    &.up {
+      transform: rotate(180deg);
+    }
   }
 }
 .checkbox-filter {
-  padding-bottom: 20px;
   label {
     padding-right: 9px;
   }
@@ -765,6 +781,9 @@ tbody.collapse.in {
 .related-projects {
   .swiper-slide.wowSlideBox {
     min-height: auto;
-    height: 320px;
+    height: 230px;
+    .img {
+      height: 150px;
+    }
   }
 }

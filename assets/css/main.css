@@ -3701,10 +3701,10 @@ body.vjs-full-window {
   -webkit-border-radius: .3em;
   -moz-border-radius: .3em;
   border-radius: .3em;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
 .vjs-big-play-centered .vjs-big-play-button {
@@ -3803,7 +3803,7 @@ body.vjs-full-window {
   font-size: 1em;
   line-height: 2em;
   padding: 0;
-  margin: 0 0 0.3em;
+  margin: 0 0 .3em;
   font-weight: 700;
   cursor: default;
 }
@@ -3833,10 +3833,10 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-menu-button-inline {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
   overflow: hidden;
 }
 
@@ -3864,10 +3864,10 @@ body.vjs-full-window {
   top: 0;
   padding: 0;
   margin: 0;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
 .vjs-menu-button-inline.vjs-slider-active .vjs-menu, .vjs-menu-button-inline:focus .vjs-menu, .vjs-menu-button-inline:hover .vjs-menu {
@@ -3912,19 +3912,19 @@ body.vjs-full-window {
   display: flex;
   visibility: visible;
   opacity: 1;
-  -webkit-transition: visibility 0.1s, opacity 0.1s;
-  -moz-transition: visibility 0.1s, opacity 0.1s;
-  -o-transition: visibility 0.1s, opacity 0.1s;
-  transition: visibility 0.1s, opacity 0.1s;
+  -webkit-transition: visibility .1s,opacity .1s;
+  -moz-transition: visibility .1s,opacity .1s;
+  -o-transition: visibility .1s,opacity .1s;
+  transition: visibility .1s,opacity .1s;
 }
 
 .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
   visibility: visible;
   opacity: 0;
-  -webkit-transition: visibility 1s, opacity 1s;
-  -moz-transition: visibility 1s, opacity 1s;
-  -o-transition: visibility 1s, opacity 1s;
-  transition: visibility 1s, opacity 1s;
+  -webkit-transition: visibility 1s,opacity 1s;
+  -moz-transition: visibility 1s,opacity 1s;
+  -o-transition: visibility 1s,opacity 1s;
+  transition: visibility 1s,opacity 1s;
 }
 
 .vjs-controls-disabled .vjs-control-bar, .vjs-error .vjs-control-bar, .vjs-using-native-controls .vjs-control-bar {
@@ -4010,10 +4010,10 @@ body.vjs-full-window {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   height: .3em;
 }
 
@@ -4120,10 +4120,10 @@ body.vjs-full-window {
 .video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display, .video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display:after {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 1s, opacity 1s;
-  -moz-transition: visibility 1s, opacity 1s;
-  -o-transition: visibility 1s, opacity 1s;
-  transition: visibility 1s, opacity 1s;
+  -webkit-transition: visibility 1s,opacity 1s;
+  -moz-transition: visibility 1s,opacity 1s;
+  -o-transition: visibility 1s,opacity 1s;
+  transition: visibility 1s,opacity 1s;
 }
 
 .video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display, .video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display:after {
@@ -4141,7 +4141,7 @@ body.vjs-full-window {
   position: relative;
   cursor: pointer;
   padding: 0;
-  margin: 0 0.45em;
+  margin: 0 .45em;
   background-color: #73859f;
   background-color: rgba(115, 133, 159, 0.5);
 }
@@ -4180,7 +4180,7 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-volume-bar {
-  margin: 1.35em 0.45em;
+  margin: 1.35em .45em;
 }
 
 .vjs-volume-bar.vjs-slider-horizontal {
@@ -4451,7 +4451,7 @@ video::-webkit-media-text-track-display {
   line-height: 1;
   margin-top: -.5em;
   position: absolute;
-  text-shadow: 0.05em 0.05em 0.1em #000;
+  text-shadow: .05em .05em .1em #000;
   text-align: center;
   top: 50%;
   vertical-align: middle;
@@ -6907,13 +6907,13 @@ section#copyright p a {
 .swiper-button-prev.wowSlideTop {
   left: 0 !important;
   background: linear-gradient(to right, #f6f7f9 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9', endColorstr='#00ffffff', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9',  endColorstr='#00ffffff', GradientType=1 );
 }
 
 .swiper-button-next.wowSlideTop {
   right: 0 !important;
   background: linear-gradient(to left, #f6f7f9 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9', endColorstr='#00ffffff', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f9',  endColorstr='#00ffffff', GradientType=1 );
 }
 
 .transBg {
@@ -11589,22 +11589,42 @@ span.title {
   padding: 20px;
 }
 
+.p_t_20 {
+  padding-top: 20px;
+}
+
 .selects-area {
-  margin: 0 15px;
-  padding: 20px;
+  margin: 20px 15px;
+  padding: 0 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 1px #bdbdbd;
-  margin-top: 30px;
+  border: 1px solid #dddddd;
 }
 
 .select-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+}
+
+.select-position h2.title {
+  color: #3F515D;
+  font-family: 'latoblack';
+  text-transform: uppercase;
+}
+
+.select-position h2.title img {
+  vertical-align: middle;
+}
+
+.select-position-inline {
+  padding: 20px 0;
 }
 
 .select-wrapper {
-  width: 23%;
+  width: 30%;
+  display: inline-block;
+  margin: 5px;
 }
 
 .ui-select-container {
@@ -11656,12 +11676,8 @@ span.title {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.desc-btn img {
-  padding-right: 5px;
-}
-
-.checkbox-filter {
-  padding-bottom: 20px;
+.desc-btn a.up {
+  transform: rotate(180deg);
 }
 
 .checkbox-filter label {
@@ -11708,5 +11724,9 @@ tbody.collapse.in {
 
 .related-projects .swiper-slide.wowSlideBox {
   min-height: auto;
-  height: 320px;
+  height: 230px;
+}
+
+.related-projects .swiper-slide.wowSlideBox .img {
+  height: 150px;
 }

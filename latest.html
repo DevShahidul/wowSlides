@@ -221,9 +221,42 @@
 				<h1 class="big-title p_20">Search 'Design'</h1>
 				<!-- #titles -->
 
+		<div class="selects-area">
+			<div class="select-position ">
+				<div class="">
 
-				<div class="selects-area collapse"  id="collapseExample">
-					<span class="title">FILTER</span>
+					<a  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+						<h2 class="title">Advanced Filter <img src="assets/images/icons/down-arrow.svg" alt=""></h2>
+					</a>
+					<!-- <div class="search catSearch toggleButton" style="position:relative" data-target=".categoryItem">
+					<a href="#">
+						<img src="assets/images/icons/search_white.svg" alt="">
+					</a>
+					<div class="user-bar">
+						<div class="searchBox categoryItem">
+							<input type="text" placeholder="Search">
+							<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+						<a div="">
+					</a></div><a div="">
+				</a></div></div> -->
+				</div>
+				<div class="select-sort">
+
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+						<div class="desc-btn">
+							<a class="down" href="#"><img src="assets/images/icons/arrow-down.svg" alt=""></a>
+							<!-- <a class="up" href="#"><img src="assets/images/icons/arrow-down.svg" alt=""></a> -->
+						</div>
+				</div>
+			</div>
+
+				<div class=" collapse"  id="collapseExample">
 					<div class="checkbox-filter checkbox-style ">
 						<label>
 								<input type="checkbox">
@@ -231,7 +264,16 @@
 								<span class="checkbox-name">Curated</span>
 						</label>
 					</div>
-					<div class="select-position m_b_20">
+					<div class="select-position-inline">
+						<div class="select-wrapper">
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
+										<span ng-bind-html="item.name | highlight: $select.search"></span>
+										<small ng-bind-html="item.email | highlight: $select.search"></small>
+									</ui-select-choices>
+								</ui-select>
+						</div>
 						<div class="select-wrapper">
 							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
 									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
@@ -271,35 +313,8 @@
 					</div>
 
 				</div>
-				<div class="select-position p_20	">
-					<div class="">
-						<a class="main-btn blue" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Advanced Filter</a>
-						<!-- <div class="search catSearch toggleButton" style="position:relative" data-target=".categoryItem">
-						<a href="#">
-							<img src="assets/images/icons/search_white.svg" alt="">
-						</a>
-						<div class="user-bar">
-		 				  <div class="searchBox categoryItem">
-		 					  <input type="text" placeholder="Search">
-		 					  <button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
-							<a div="">
-						</a></div><a div="">
-					</a></div></div> -->
-					</div>
-					<div class="select-sort">
 
-						<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
-								<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
-								<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
-									<span ng-bind-html="item.name | highlight: $select.search"></span>
-								</ui-select-choices>
-							</ui-select>
-							<div class="desc-btn">
-								<a href="#"><img src="assets/images/icons/descendant.svg" alt=""><span>DESC</span></a>
-							</div>
-					</div>
-				</div>
-
+</div>
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
 
