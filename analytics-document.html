@@ -215,7 +215,7 @@
   	<div ng-app="reportingApp" ng-controller="DetailedReportingCtrl">
 
 
-  		  	<div id="scene-analytics-controller" class="container-fluid" >
+  		  	<div id="scene-analytics-controller" class="container" >
 
   		    	<div class="row analytics">
 
@@ -226,7 +226,7 @@
 
   			      	<div class="col-md-12 col-sm-12 col-xs-12 ">
 
-  			      		<div class="pageTexts" style="margin-bottom:80px;">
+  			      		<div class="pageTexts" style="margin-bottom:50px;">
   			      			<div class="row">
                       <div class="col-md-4">
       			      				<table >
@@ -323,7 +323,7 @@
   						      		</div>
 
 
-  						      		<div id="table-container" style="overflow-y:auto" class="simple-table">
+  						      		<div id="table-container" class="simple-table">
   						      			<table class="simple-table">
   										    <thead>
   										      <tr>
@@ -377,11 +377,11 @@
   											There was a problem generating your report, please try again.
   										</div>
   							      		<div class="text-center" style="margin: 20px 0;">
-                            <a data-url="{{getExcelPath('heatmap')}}" class="main-btn blue" style="float: right;">
-    							      			<i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download Heatmap Report
-    							      		</a>
     						      			<a class="main-btn" ng-show="fetchButtonStatus" ng-click="fetchSceneAnalytics(true)">Load More</a>
   							      		</div>
+													<a data-url="{{getExcelPath('heatmap')}}" class="main-btn blue download-report" >
+														<i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download Heatmap Report
+													</a>
   						      		</div>
 
   								</div>
