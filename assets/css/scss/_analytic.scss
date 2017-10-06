@@ -18,7 +18,7 @@
 
 .video-info{
     width: 100%;
-    height: 500px;
+    height: 420px;
 }
 
 .scene-stats-table{
@@ -77,10 +77,14 @@
 
 .scene-video-container{
 	position: absolute;
-	width: 96%;
+	width: 100%;
 	height: 90%;
 	/*min-width: 765px;
 	min-height: 445px;*/
+	iframe {
+		width: 100%;
+		height: 420px;
+	}
 }
 
 .legend{
@@ -216,4 +220,15 @@ tbody.collapse.show {
   height: 0;
   overflow: hidden;
   transition: height 0.35s ease;
+}
+
+.table-container {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.download-report {
+	position: absolute;
+	right: 0;
+	top: 17px;
 }
