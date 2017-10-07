@@ -704,8 +704,10 @@ span.title {
     height: 40px;
     background-image: none;
     .select2-arrow  {
-        background: #f2f2f2;
+        background: #fff;
         background-image: none;
+        border: none;
+
       b {
         margin-top: 5px;
       }
@@ -849,6 +851,34 @@ tbody.collapse.in {
           height: 22px;
         }
       }
+    }
+  }
+}
+
+.filter-area {
+  padding: 0 20px;
+
+  .bar-search {
+    width: 100%;
+    margin: 0 20px;
+    position: relative;
+    button {
+      top: -6px;
+      right: -7px;
+    }
+  }
+  .select-position h2.title {
+    width: 180px;
+  }
+}
+
+.filter-wrapper {
+  background: #fff;
+  margin-bottom: 20px;
+  .advanced-filter {
+      padding: 0px 10px;
+    .ui-select-container {
+        padding: 20px 10px;
     }
   }
 }

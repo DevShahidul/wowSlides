@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  ng-app="demo">
 <head>
 	<meta charset="UTF-8">
 
@@ -12,14 +12,17 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="reporting/angular.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/select.js"></script>
 	<script type="text/javascript" src="assets/js/video.min.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
-
+	  <script src="reporting/demo.js"></script>
 
 </head>
-<body>
+<body ng-controller="DemoCtrl as ctrl">
 
 
 <!-- loader -->
@@ -216,46 +219,79 @@
 	</div>
 	<!-- #motto -->
 
+	<div class="filter-wrapper">
+		<div class="filter-area">
+			<div class="select-position ">
+				<div class="">
+
+					<a  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+						<h2 class="title">Advanced Filter <img src="assets/images/icons/down-arrow.svg" alt=""></h2>
+					</a>
+				</div>
+				<div class="bar-search">
+					<input type="text" placeholder="Search">
+					<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+				</div>
+				<div class="select-sort">
+
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+						<div class="desc-btn">
+							<a class="down" href="#"><img src="assets/images/icons/arrow-down.svg" alt=""></a>
+							<!-- <a class="up" href="#"><img src="assets/images/icons/arrow-down.svg" alt=""></a> -->
+						</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="advanced-filter collapse"  id="collapseExample">
+			<div class="d-flex">
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+						<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+								<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+								<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+									<span ng-bind-html="item.name | highlight: $select.search"></span>
+								</ui-select-choices>
+							</ui-select>
+			</div>
+
+		</div>
+	</div>
+
 	<!-- works -->
 	<div id="works">
 		<div class="container">
 
 				<!-- titles -->
-				<div class="titleTop">
 
-					<div class="search catSearch toggleButton" style="position:relative" data-target=".categoryItem">
-						<a href="#">
-							<img src="assets/images/icons/search_white.svg" alt="">
-						</a>
-						<div class="user-bar">
-		 				  <div class="searchBox categoryItem">
-		 					  <input type="text" placeholder="Search">
-		 					  <button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
-							</div>
-						</div>
-					</div>
-
-					<div class="selects centered">
-
-						<select>
-							<option value="1">SELECT COUNTRY</option>
-							<option value="1">CATEGORY I</option>
-							<option value="1">CATEGORY II</option>
-							<option value="1">CATEGORY III</option>
-						</select>
-
-						<select>
-							<option value="1">SELECT CATEGORIES</option>
-							<option value="1">CATEGORY I</option>
-							<option value="1">CATEGORY II</option>
-							<option value="1">CATEGORY III</option>
-						</select>
-
-					</div>
-
-					<h3>TODAY’S TOP WOWSLIDES</h3>
-
-				</div>
 				<!-- #titles -->
 
 

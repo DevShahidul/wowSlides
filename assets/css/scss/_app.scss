@@ -550,7 +550,7 @@ section#getStarted a.btn {
     font-family: 'latoblack';
     letter-spacing: -1.71px;
     line-height: 72px;
-    padding-top: 30px;
+    padding-top: 10px;
     text-transform: uppercase;
     color: #fff;
     background: url(../images/icons/video.png) no-repeat center 0;
@@ -573,7 +573,7 @@ section#getStarted a.btn {
   }
   .main-btn {
     position: absolute;
-    bottom: -20px;
+    bottom: 10px;
     right: 0;
     left: 0;
     max-width: 200px;
@@ -1716,9 +1716,9 @@ section#copyright {
 }
 
 .smallMain {
-  max-height: 300px !important;
-  min-height: 300px !important;
-  height: 300px !important;
+  max-height: 250px !important;
+  min-height: 250px !important;
+  height: 250px !important;
 }
 
 .light {
