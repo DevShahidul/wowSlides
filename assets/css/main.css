@@ -11847,3 +11847,7 @@ tbody.collapse.in {
 .filter-wrapper .advanced-filter .ui-select-container {
   padding: 20px 10px;
 }
+
+.filter-wrapper .advanced-filter .checkbox-style {
+  padding: 0px 0px 20px 10px;
+}

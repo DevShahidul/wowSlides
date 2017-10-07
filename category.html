@@ -250,6 +250,7 @@
 
 		</div>
 		<div class="advanced-filter collapse"  id="collapseExample">
+
 			<div class="d-flex">
 					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
 							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
@@ -282,7 +283,13 @@
 								</ui-select-choices>
 							</ui-select>
 			</div>
-
+			<div class="checkbox-filter checkbox-style ">
+				<label>
+						<input type="checkbox">
+						<span class="box"></span>
+						<span class="checkbox-name">Curated</span>
+				</label>
+			</div>
 		</div>
 	</div>
 
