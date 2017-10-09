@@ -464,9 +464,6 @@ span.title {
   .imageBig .pagination ul li a {
     height: 30px !important;
   }
-  .related-projects {
-    margin-top: 30px;
-  }
   .profile-in-project.right-items {
     margin-top: 0;
     margin-bottom: 40px;
@@ -800,6 +797,9 @@ tbody.collapse.in {
     .img {
       height: 150px;
     }
+  }
+  @media (max-width: 994px) {
+    margin-top: 30px;
   }
 }
 
