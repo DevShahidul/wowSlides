@@ -898,3 +898,58 @@ tbody.collapse.in {
     }
   }
 }
+
+
+.alphabet {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  a {
+    color: #5d5d5d;
+  }
+  li {
+    padding: 5px;
+  }
+  li.active {
+    border-bottom: 5px solid #5fc8c1;
+  }
+  @media (max-width: 380px) {
+    font-size: 1rem;
+  }
+}
+
+.background-panel {
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-title {
+  font-size: 20px;
+  color: #3F515D;
+  font-family: 'latoblack';
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+.page-tags {
+  margin: 10px 0;
+  li {
+    padding: 5px 10px;
+  }
+  a {
+    color: #39819c;
+  }
+}
+
+.upload.trans {
+  a {
+    display: inline-block !important;
+    padding: 0 !important;
+  }
+}
+
+.user-bar .search {
+  background: none;
+}

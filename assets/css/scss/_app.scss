@@ -344,6 +344,8 @@ section#getStarted a.btn {
     .menu-bar {
       min-width: 35px;
       display: inline-block;
+      float: left;
+      padding-top: 25px;
       ul {
         display: inline-block;
         li {
@@ -455,17 +457,18 @@ section#getStarted a.btn {
       text-indent: -99999px;
       display: inline-block;
       padding-left: 5vw;
+      float: left;
       a {
         display: flex;
-        width: 66px;
-        height: 40px;
+        width: 170px;
+        height: 60px;
         margin-top: 0;
-        background: url(../images/logo.svg) no-repeat;
+        background: url(../images/logo.png) no-repeat;
         margin-right: 30px;
         align-items: flex-end;
       }
       @media (min-width: 768px) {
-        margin-top: 20px;
+        margin-top: 15px;
         a {
           padding-top: 40px;
         }
@@ -522,7 +525,7 @@ section#getStarted a.btn {
   height: 180px;
   width: 100% ;
   margin: 0 auto;
-  margin-top: -180px;
+  margin-top: -165px;
   position: relative;
   padding: 0 5vw;
   background-position: 0% 50%;
@@ -910,6 +913,15 @@ section#getStarted a.btn {
   width: 50px;
   border-radius: 5px;
   cursor: pointer;
+  display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
 }
 
 .swiper-container {

@@ -5528,6 +5528,8 @@ section#getStarted a.btn:after {
 #main nav#navbar .menu-bar {
   min-width: 35px;
   display: inline-block;
+  float: left;
+  padding-top: 25px;
 }
 
 #main nav#navbar .menu-bar ul {
@@ -5659,21 +5661,22 @@ section#getStarted a.btn:after {
   text-indent: -99999px;
   display: inline-block;
   padding-left: 5vw;
+  float: left;
 }
 
 #main nav#navbar h1.logo a {
   display: flex;
-  width: 66px;
-  height: 40px;
+  width: 170px;
+  height: 60px;
   margin-top: 0;
-  background: url(../images/logo.svg) no-repeat;
+  background: url(../images/logo.png) no-repeat;
   margin-right: 30px;
   align-items: flex-end;
 }
 
 @media (min-width: 768px) {
   #main nav#navbar h1.logo {
-    margin-top: 20px;
+    margin-top: 15px;
   }
   #main nav#navbar h1.logo a {
     padding-top: 40px;
@@ -5734,7 +5737,7 @@ section#getStarted a.btn:after {
   height: 180px;
   width: 100%;
   margin: 0 auto;
-  margin-top: -180px;
+  margin-top: -165px;
   position: relative;
   padding: 0 5vw;
   background-position: 0% 50%;
@@ -6158,6 +6161,15 @@ section#getStarted a.btn:after {
   width: 50px;
   border-radius: 5px;
   cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .swiper-container {
@@ -11866,4 +11878,64 @@ tbody.collapse.in {
 
 .filter-wrapper .advanced-filter .checkbox-style {
   padding: 0px 0px 20px 10px;
+}
+
+.alphabet {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.alphabet a {
+  color: #5d5d5d;
+}
+
+.alphabet li {
+  padding: 5px;
+}
+
+.alphabet li.active {
+  border-bottom: 5px solid #5fc8c1;
+}
+
+@media (max-width: 380px) {
+  .alphabet {
+    font-size: 1rem;
+  }
+}
+
+.background-panel {
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-title {
+  font-size: 20px;
+  color: #3F515D;
+  font-family: 'latoblack';
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+.page-tags {
+  margin: 10px 0;
+}
+
+.page-tags li {
+  padding: 5px 10px;
+}
+
+.page-tags a {
+  color: #39819c;
+}
+
+.upload.trans a {
+  display: inline-block !important;
+  padding: 0 !important;
+}
+
+.user-bar .search {
+  background: none;
 }
