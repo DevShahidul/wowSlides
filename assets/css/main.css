@@ -11194,6 +11194,7 @@ div.tagsinput div {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 480px;
 }
 
 .full-screen-toggle {
