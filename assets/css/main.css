@@ -6029,7 +6029,6 @@ section#getStarted a.btn:after {
 
 .container {
   position: relative;
-  z-index: 99;
 }
 
 .main-slider {
@@ -6225,6 +6224,7 @@ section#getStarted a.btn:after {
   overflow: hidden;
   cursor: default;
   position: relative;
+  z-index: 1;
 }
 
 .swiper-slide.wowSlideBox:hover {
@@ -6292,6 +6292,7 @@ section#getStarted a.btn:after {
   color: #909FA9;
   margin-bottom: 10px;
   line-height: 16px;
+  height: 32px;
 }
 
 .swiper-slide.wowSlideBox .texts .tags {
@@ -6299,6 +6300,7 @@ section#getStarted a.btn:after {
   font-size: 12px;
   font-family: 'latoblack';
   margin-bottom: 10px;
+  height: 12px;
 }
 
 .swiper-slide.wowSlideBox .texts .tags a {
@@ -6378,6 +6380,7 @@ section#getStarted a.btn:after {
   padding-bottom: 10px;
   padding-top: 1px;
   padding-left: 30px;
+  height: 24px;
 }
 
 .swiper-pagination.wowSlideTop {
@@ -7546,8 +7549,18 @@ section#copyright p a {
   border-radius: 31px;
 }
 
-.previewBox .select {
+.previewBox .uploadPic {
   margin-bottom: 40px;
+}
+
+.previewBox .uploadPic img {
+  width: 100%;
+  height: 200px;
+}
+
+.previewBox .select {
+  margin-top: -60px;
+  position: absolute;
 }
 
 .previewBox .select .nice-select {
@@ -7556,7 +7569,6 @@ section#copyright p a {
   border-radius: 3px;
   background: #56C8C2;
   border: 0;
-  margin-top: -20px;
   margin-left: 30px;
 }
 
@@ -7664,7 +7676,7 @@ section#copyright p a {
 
 .previewBox .uploadSection {
   width: 100%;
-  height: 210px;
+  height: 200px;
   background: #CACFDB;
   font-size: 18px;
   color: #fff;
@@ -7676,7 +7688,7 @@ section#copyright p a {
   background-image: url(../images/icons/upload_white.svg);
   background-position: center 60px;
   background-repeat: no-repeat;
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 .previewBox .uploadSection input[type=file] {
@@ -7842,6 +7854,11 @@ rotateX .check-item span.box.square {
   border-radius: 5px;
   background: #F6F7F9;
   cursor: pointer;
+}
+
+.check-item span.text.left-align {
+  justify-content: flex-start;
+  padding-left: 80px;
 }
 
 .check-item input[type=checkbox], .check-item input[type=radio] {
@@ -9435,7 +9452,7 @@ nav#navbar.whiteNav {
 .shareList {
   position: absolute;
   z-index: 9999;
-  top: 70px;
+  top: 90px;
   background: #adbac8;
   -webkit-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
@@ -11673,6 +11690,10 @@ span.title {
   min-width: 162px;
 }
 
+.select2-container .select2-choice abbr {
+  top: 12px;
+}
+
 .select2-results li {
   padding: 5px 0;
   font-family: 'latolight';
@@ -11880,7 +11901,7 @@ tbody.collapse.in {
 }
 
 .filter-wrapper .advanced-filter .ui-select-container {
-  padding: 20px 10px;
+  margin: 20px 10px;
 }
 
 .filter-wrapper .advanced-filter .checkbox-style {

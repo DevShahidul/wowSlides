@@ -703,6 +703,10 @@ span.title {
   min-width: 162px;
 }
 
+.select2-container .select2-choice abbr {
+  top: 12px;
+}
+
 .select2-results li {
   padding: 5px 0;
   font-family: 'latolight';
@@ -892,7 +896,7 @@ tbody.collapse.in {
   .advanced-filter {
       padding: 0px 10px;
     .ui-select-container {
-        padding: 20px 10px;
+        margin: 20px 10px;
     }
     .checkbox-style {
       padding: 0px 0px 20px 10px;
