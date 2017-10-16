@@ -1060,3 +1060,9 @@ tbody.collapse.in {
     height: calc(100vh - 62px);
   }
 }
+
+
+.justify-left {
+  justify-content: flex-start;
+  text-align: left;
+}

@@ -5734,15 +5734,18 @@ section#getStarted a.btn:after {
 .motto {
   border-bottom: 1px dashed #60666A;
   text-align: center;
-  height: 180px;
+  height: 185px;
   width: 100%;
   margin: 0 auto;
-  margin-top: -165px;
+  margin-top: -185px;
   position: relative;
   padding: 0 5vw;
   background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .motto .action {
@@ -5769,7 +5772,6 @@ section#getStarted a.btn:after {
   font-family: 'latoblack';
   letter-spacing: -1.71px;
   line-height: 72px;
-  padding-top: 10px;
   text-transform: uppercase;
   color: #fff;
   background: url(../images/icons/video.png) no-repeat center 0;
@@ -5781,7 +5783,7 @@ section#getStarted a.btn:after {
 }
 
 .motto p {
-  margin: 30px 0;
+  margin: 10px 0;
   font-size: 21px;
   color: #fff;
   font-family: 'latolight';
@@ -5789,18 +5791,14 @@ section#getStarted a.btn:after {
 }
 
 .motto.motto-homepage {
-  height: calc(100vh - 75px);
+  height: calc(100vh - 90px);
   margin-top: 0;
   padding-top: 100px;
+  display: block;
 }
 
 .motto .main-btn {
-  position: absolute;
-  bottom: 10px;
-  right: 0;
-  left: 0;
-  max-width: 200px;
-  margin: auto;
+  width: 200px;
 }
 
 .titleTop .user-item {
@@ -6818,6 +6816,14 @@ section#copyright p a {
   width: 40px;
 }
 
+.mobile-nav .menu-bar {
+  position: absolute;
+  left: 20px;
+  opacity: .8;
+  cursor: pointer;
+  z-index: 9;
+}
+
 .mobile-menu {
   width: 80%;
   height: 100vh;
@@ -7069,9 +7075,9 @@ section#copyright p a {
 }
 
 .smallMain {
-  max-height: 250px !important;
-  min-height: 250px !important;
-  height: 250px !important;
+  max-height: 280px !important;
+  min-height: 280px !important;
+  height: 280px !important;
 }
 
 .light {
@@ -12064,4 +12070,9 @@ tbody.collapse.in {
   .error3-wrapper {
     height: calc(100vh - 62px);
   }
+}
+
+.justify-left {
+  justify-content: flex-start;
+  text-align: left;
 }
