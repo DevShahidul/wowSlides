@@ -3177,7 +3177,7 @@ disabled look for disabled choices in the results dropdown
 }
 
 .scene-video-container iframe {
-  width: 100%;
+  width: 96%;
   height: 420px;
 }
 
@@ -7973,6 +7973,7 @@ rotateX .check-item span.box.square {
   bottom: -20px;
   cursor: pointer;
   margin-top: 10px;
+  width: 44px;
 }
 
 .imageBig .imageBg {
