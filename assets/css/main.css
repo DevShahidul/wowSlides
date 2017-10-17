@@ -5775,6 +5775,9 @@ section#getStarted a.btn:after {
   text-transform: uppercase;
   color: #fff;
   background: url(../images/icons/video.png) no-repeat center 0;
+}
+
+.motto h1.title.homepage-icon {
   padding-top: 50px;
 }
 

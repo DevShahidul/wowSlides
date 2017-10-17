@@ -559,7 +559,9 @@ section#getStarted a.btn {
     text-transform: uppercase;
     color: #fff;
     background: url(../images/icons/video.png) no-repeat center 0;
-    padding-top: 50px;
+    &.homepage-icon {
+      padding-top: 50px;
+    }
     span {
       display: inline-block;
       color: #56C8C2;
