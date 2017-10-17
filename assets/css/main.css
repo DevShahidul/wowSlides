@@ -5775,6 +5775,7 @@ section#getStarted a.btn:after {
   text-transform: uppercase;
   color: #fff;
   background: url(../images/icons/video.png) no-repeat center 0;
+  padding-top: 50px;
 }
 
 .motto h1.title span {
@@ -6961,6 +6962,7 @@ section#copyright p a {
   -ms-background-size: cover !important;
   background-size: cover !important;
   background-position: center !important;
+  min-height: 100%;
 }
 
 #form-groups {
