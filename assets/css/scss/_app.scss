@@ -2285,24 +2285,26 @@ section#copyright {
       }
     }
   }
-  .uploadSection {
-    width: 100%;
-    height: 200px;
-    background: #CACFDB;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    font-family: 'latoblack';
-    border-radius: 5px;
-    background-image: url(../images/icons/upload_white.svg);
-    background-position: center 60px;
-    background-repeat: no-repeat;
-    padding-top: 60px;
-    input[type=file] {
-      display: none;
-    }
+
+}
+.uploadSection {
+  width: 100%;
+  height: 200px;
+  background: #CACFDB;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-family: 'latoblack';
+  border-radius: 5px;
+  background-image: url(../images/icons/upload_white.svg);
+  background-position: center 60px;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  @extend .centered;
+  input[type=file] {
+    display: none;
   }
 }
 

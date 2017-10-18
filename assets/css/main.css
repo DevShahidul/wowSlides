@@ -2866,7 +2866,7 @@ disabled look for disabled choices in the results dropdown
     line-height: 22px;
     margin-bottom: 20px;
   }
-  .contact .centered {
+  .contact .centered, .contact .uploadSection {
     display: block !important;
   }
   #clients {
@@ -2875,11 +2875,11 @@ disabled look for disabled choices in the results dropdown
   #clients h3 {
     font-size: 26px !important;
   }
-  #clients .centered {
+  #clients .centered, #clients .uploadSection {
     margin-bottom: 30px;
     height: 70px;
   }
-  #clients .centered img {
+  #clients .centered img, #clients .uploadSection img {
     max-width: 70%;
   }
   .allPage {
@@ -5399,7 +5399,7 @@ section#getStarted a.btn:after {
   transition: all 300ms;
 }
 
-.centered, #main nav#navbar .user-bar > ul > li.notification a span, .titleTop .search, .details ul li {
+.centered, .uploadSection, #main nav#navbar .user-bar > ul > li.notification a span, .titleTop .search, .details ul li {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -6596,7 +6596,7 @@ section.blog {
   margin-top: -30px;
 }
 
-#clients .centered, #clients #main nav#navbar .user-bar > ul > li.notification a span {
+#clients .centered, #clients .uploadSection, #clients #main nav#navbar .user-bar > ul > li.notification a span {
   height: 100px;
   margin-top: -30px;
 }
@@ -7684,7 +7684,7 @@ section#copyright p a {
   padding-left: 30px;
 }
 
-.previewBox .uploadSection {
+.uploadSection {
   width: 100%;
   height: 200px;
   background: #CACFDB;
@@ -7701,7 +7701,7 @@ section#copyright p a {
   padding-top: 60px;
 }
 
-.previewBox .uploadSection input[type=file] {
+.uploadSection input[type=file] {
   display: none;
 }
 
@@ -12134,7 +12134,7 @@ tbody.collapse.in {
   .error-wrapper span {
     font-size: 1.5rem;
   }
-  .error-wrapper .centered {
+  .error-wrapper .centered, .error-wrapper .uploadSection {
     display: block;
     width: 50%;
     text-align: center;
