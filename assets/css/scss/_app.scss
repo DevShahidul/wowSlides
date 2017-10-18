@@ -436,8 +436,7 @@ section#getStarted a.btn {
             background: #eba613;
           }
         }
-        &.user {
-          a {
+        &.user-img {
             display: block;
             width: 35px;
             height: 35px;
@@ -445,7 +444,6 @@ section#getStarted a.btn {
             border: 3px solid #56C8C2;
             overflow: hidden;
             display: block;
-          }
           img {
             width: 100%;
             height: 100%;
@@ -565,6 +563,10 @@ section#getStarted a.btn {
     span {
       display: inline-block;
       color: #56C8C2;
+    }
+    &.search-title {
+      font-size: 2.5rem;
+      text-transform: capitalize;
     }
   }
   p {
@@ -3284,6 +3286,11 @@ nav#navbar.whiteNav {
       }
     }
   }
+  &.tab-white-style {
+    padding: 10px 0;
+    background: #ffffff;
+    margin-bottom: 30px
+  }
 }
 
 .about-section {
@@ -3421,6 +3428,15 @@ nav#navbar.whiteNav {
       opacity: 0;
     }
   }
+  .user {
+    a.toggleButton {
+      &.active:before {
+        opacity: 1;
+        top: 30px;
+        right: 7px;
+      }
+    }
+  }
   li {
     position: relative;
     .notification-box {
@@ -3510,6 +3526,65 @@ nav#navbar.whiteNav {
           }
         }
       }
+    }
+
+  }
+}
+.user-box {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 60px;
+  left: -100px;
+  width: 160px;
+  -webkit-transform: scale(1.1, 1.2);
+  -ms-transform: scale(1.1, 1.2);
+  transform: scale(1.1, 1.2);
+  background: #fff;
+  -ms-box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
+  -o-box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
+  box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
+  border-radius: 5px;
+  z-index: 999999999;
+  padding: 10px 0;
+  transition: 0.3s;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition: 0.3s;
+  }
+  &.mobile-user {
+    left: 0px;
+    width: 100%;
+    &.active {
+      width: 97%;
+      top: 85px;
+      left: 0px;
+    }
+  }
+  li {
+    width: 100%;
+    padding: 10px 15px;
+    transition: 0.5s;
+    a {
+      color: #3F515D;
+      line-height: 25px;
+      img {
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 25px;
+        height: auto;
+        border: none;
+      }
+    }
+    &:hover {
+      background-color: #e4e4e4;
+      transition: 0.5s;
+      border-radius: 5px;
     }
   }
 }

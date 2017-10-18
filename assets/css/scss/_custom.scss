@@ -546,7 +546,7 @@ span.title {
   }
 }
 .big-search {
-  width: 50vw;
+  width: 45vw;
   height: 50px;
   padding: 10px;
   border-radius: 5px;
@@ -558,7 +558,10 @@ span.title {
   color: #525252;
   font-size: 1.1rem;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95vw;
+  }
+  @media (min-width: 768px) and (max-width: 995px){
+    width: 75vw;
   }
 }
 
