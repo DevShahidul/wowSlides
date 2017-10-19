@@ -108,7 +108,7 @@
     }
   }
   .blog-full-box {
-    margin: 10px;
+    margin: 0px;
     padding-bottom: 20px !important;
     height: 400px !important;
     .image {
@@ -162,9 +162,9 @@
   .contactInfo {
     padding: 50px !important;
   }
-  .titleTop h3 {
-    width: 100%;
-  }
+  // .titleTop h3 {
+  //   width: 100%;
+  // }
   .blog-full-box.smallBlog {
     &:nth-child(odd) {
       left: auto !important;
@@ -271,7 +271,6 @@
     transition: all 300ms;
   }
   .selects {
-    float: left !important;
     display: block !important;
     .nice-select {
       &:first-of-type {
@@ -317,7 +316,7 @@
     }
     overflow: hidden;
     input {
-      &[type=text], &[type=password] {
+      &[type=text], &[type=password], &[type=email]   {
         width: 100%;
         text-align: center;
       }

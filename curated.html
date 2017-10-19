@@ -144,7 +144,7 @@
 		<div class="mobile-nav">
 
 			<div class="logo">
-				<img src="assets/images/logo.svg" alt="">
+				<img src="assets/images/logo.png" alt="">
 			</div>
 
 			<div class="menu-bar">
@@ -153,9 +153,8 @@
 
 		</div>
 
-
 		<!-- navbar -->
-		<nav id="navbar" class="whiteNav">
+		<nav id="navbar">
 
 				<!-- logo -->
 				<h1 class="logo"><a href="#">wowslides</a></h1>
@@ -163,12 +162,15 @@
 
 				<!-- menu -->
 				<div class="menu-bar">
-					<ul class="	">
+					<ul>
 						<li>
 							<a href="#">HOW IT WORKS?</a>
 						</li>
 						<li>
 							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">DISCOVER</a>
 						</li>
 						<li>
 							<a href="#">BLOG</a>
@@ -184,13 +186,78 @@
 				<div class="user-bar">
 					<ul class="centered">
 						<li>
-							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+							<a href="#" class="toggleButton" data-target=".searchBox"><img src="assets/images/icons/search.svg" alt=""></a>
+							<div class="searchBox popUpItem">
+								<input type="text" placeholder="Search">
+								<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+							</div>
 						</li>
 						<li class="notification">
-							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+							<a href="#" class="toggleButton" data-target=".notification-box"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+							<div class="notification-box popUpItem">
+								<ul>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li class="user">
-							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+							<a href="#" class="user-img toggleButton" data-target=".user-box"><img src="assets/images/araz.png" alt=""></a>
+							<div class="user-box popUpItem">
+								<ul>
+									<li><a href="#"><img src="assets/images/icons/profile.svg" alt="">Profile</a></li>
+									<li><a href="#"><img src="assets/images/icons/settings.svg" alt="">Settings</a></li>
+									<li><a href="#"><img src="assets/images/icons/logout.svg" alt="">Logout</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="upload">
 							<a href="#">UPLOAD</a>
@@ -225,7 +292,7 @@
 
 			<div class="selects">
 
-				<a href="#" class="link">VIEW GALLERY <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
+				<a href="#" class="link"><span class="hidden-xs">VIEW GALLERY</span> <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
 
 			</div>
 
@@ -468,7 +535,7 @@
 
 			<div class="selects">
 
-				<a href="#" class="link">VIEW GALLERY <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
+				<a href="#" class="link"><span class="hidden-xs">VIEW GALLERY</span> <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
 
 			</div>
 
@@ -709,7 +776,7 @@
 
 			<div class="selects">
 
-				<a href="#" class="link">VIEW GALLERY <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
+				<a href="#" class="link"><span class="hidden-xs">VIEW GALLERY</span> <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
 
 			</div>
 
@@ -950,7 +1017,7 @@
 
 			<div class="selects">
 
-				<a href="#" class="link">VIEW GALLERY <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
+				<a href="#" class="link"><span class="hidden-xs">VIEW GALLERY</span> <img src="assets/images/icons/box_arrow_right.svg" alt=""></a>
 
 			</div>
 

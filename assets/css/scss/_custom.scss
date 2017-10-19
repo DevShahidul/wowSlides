@@ -557,8 +557,10 @@ span.title {
   background-position: 97% 50%;
   color: #525252;
   font-size: 1.1rem;
+  margin-top: 20px;
   @media (max-width: 768px) {
-    width: 95vw;
+    width: 90vw;
+    margin-top: 10px;
   }
   @media (min-width: 768px) and (max-width: 995px){
     width: 75vw;
@@ -687,6 +689,16 @@ span.title {
     text-transform: uppercase;
     img {
       vertical-align: middle;
+    }
+  }
+  @media (max-width: 544px) {
+    flex-direction: column-reverse;
+    .bar-search {
+      margin: 15px !important;
+    }
+    .select-sort {
+      width: 100%;
+
     }
   }
 }
@@ -890,6 +902,12 @@ tbody.collapse.in {
   }
   .select-position h2.title {
     width: 180px;
+    @media (min-width: 544px) and (max-width: 768px ) {
+      width: auto;
+    }
+    @media (max-width: 544px) {
+      margin: 15px;
+    }
   }
 }
 
@@ -903,6 +921,20 @@ tbody.collapse.in {
     }
     .checkbox-style {
       padding: 0px 0px 20px 10px;
+    }
+    .d-flex {
+      overflow-x: auto;
+    }
+    @media (max-width: 768px) {
+      .d-flex {
+        flex-direction: column;
+      }
+      .ui-select-container {
+          margin: 10px 0px;
+      }
+      .checkbox-style {
+          padding: 20px 0;
+      }
     }
   }
 }
@@ -1030,7 +1062,7 @@ tbody.collapse.in {
     }
   }
   @media (max-width: 768px) {
-    height: calc(100vh - 62px);
+    height: calc(100vh - 70px);
   }
 }
 
@@ -1065,7 +1097,7 @@ tbody.collapse.in {
     }
   }
   @media (max-width: 768px) {
-    height: calc(100vh - 62px);
+    height: calc(100vh - 70px);
   }
 }
 
