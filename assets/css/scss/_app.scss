@@ -520,10 +520,10 @@ section#getStarted a.btn {
 .motto {
   border-bottom: 1px dashed #60666A;
   text-align: center;
-  height: 185px;
+  height: 180px;
   width: 100% ;
   margin: 0 auto;
-  margin-top: -185px;
+  margin-top: -180px;
   position: relative;
   padding: 0 5vw;
   background-position: 0% 50%;
@@ -593,6 +593,9 @@ section#getStarted a.btn {
   .main-btn {
     width: 200px;
   }
+  // @media (max-width: 768px) {
+  //   margin-top: -185px;
+  // }
 }
 
 .titleTop .user-item {
@@ -1538,6 +1541,7 @@ section#copyright {
   top: 0;
   left: 0;
   display: none;
+
   .top {
     padding-bottom: 20px;
     border-bottom: 1px dashed #465965;
@@ -3116,6 +3120,7 @@ nav#navbar.whiteNav {
   @media (max-width: 768px) {
     height: 210px;
     min-height: 210px;
+    margin-bottom: 170px;
   }
 }
 
@@ -3313,23 +3318,23 @@ nav#navbar.whiteNav {
     padding: 10px 0;
     background: #ffffff;
     margin-bottom: 30px;
-    @media (max-width: 768px) {
-      overflow-x: auto;
-      padding-bottom: 10px !important;
-      ul {
-        white-space: nowrap;
-        li {
-          width: auto !important;
-          margin-right: 0;
-          float: none;
-          display: inline-block;
-          a {
-                padding: 10px 25px;
-          }
+  }
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    padding-bottom: 10px !important;
+    ul {
+      white-space: nowrap;
+      li {
+        width: auto !important;
+        margin-right: 0;
+        float: none;
+        display: inline-block;
+        a {
+              padding: 10px 25px;
         }
       }
-
     }
+
   }
 }
 

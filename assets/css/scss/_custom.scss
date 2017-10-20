@@ -1044,7 +1044,7 @@ tbody.collapse.in {
   }
   @media (max-width: 955px) and (min-width: 767px) {
     p {
-      font-size: 20rem;
+      font-size: 16rem;
     }
   }
   @media (max-width: 768px) {
@@ -1061,7 +1061,7 @@ tbody.collapse.in {
       margin: auto;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     height: calc(100vh - 70px);
   }
 }
@@ -1096,7 +1096,7 @@ tbody.collapse.in {
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     height: calc(100vh - 70px);
   }
 }
@@ -1105,4 +1105,14 @@ tbody.collapse.in {
 .justify-left {
   justify-content: flex-start;
   text-align: left;
+}
+
+.tab-search-area {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 992px) {
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }
