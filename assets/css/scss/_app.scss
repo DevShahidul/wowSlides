@@ -473,50 +473,63 @@ section#getStarted a.btn {
       }
     }
   }
+}
 
-  .scroll-down {
-    text-align: center;
+.scroll-down {
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+  width: calc(100vw - 10vw);
+  opacity: .6;
+  font-size: 12px;
+  font-family: 'latobold';
+  color: #fff;
+  letter-spacing: 0.35px;
+  &:after {
+    content: '';
+    width: 17px;
+    height: 27px;
     position: absolute;
-    bottom: 80px;
-    width: calc(100vw - 10vw);
-    opacity: .6;
-    font-size: 12px;
-    font-family: 'latobold';
-    color: #fff;
-    letter-spacing: 0.35px;
-    &:after {
-      content: '';
-      width: 17px;
-      height: 27px;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin-left: -8.5px;
-      top: 30px;
-      background: url(../images/icons/down.svg) no-repeat;
-    }
-  }
-  .info-boxes {
-    padding-top: 100px;
-    min-height: 400px;
-    .info-box {
-      text-align: center;
-      h4 {
-        font-size: 26px;
-        color: #fff;
-        font-family: 'latoblack';
-        padding: 18px 0;
-      }
-      p {
-        color: #DFF3F2;
-        font-family: 'latolight';
-        line-height: 23px;
-        padding: 0 10%;
-        font-size: 19px;
-      }
-    }
+    bottom: 0;
+    left: 50%;
+    margin-left: -8.5px;
+    top: 30px;
+    background: url(../images/icons/down.svg) no-repeat;
   }
 }
+.info-boxes {
+  padding-top: 100px;
+  min-height: 400px;
+  margin-top: -400px;
+  padding-bottom: 20px;
+  .info-box {
+    text-align: center;
+    h4 {
+      font-size: 26px;
+      color: #fff;
+      font-family: 'latoblack';
+      padding: 18px 0;
+    }
+    p {
+      color: #DFF3F2;
+      font-family: 'latolight';
+      line-height: 23px;
+      padding: 0 10%;
+      font-size: 19px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: - 880px;
+    padding-top: 40px;
+  }
+}
+.homeMain {
+  height: calc(100vh + 400px);
+  @media (max-width: 768px) {
+    height: calc(100vh + 880px);
+  }
+}
+
 .motto {
   border-bottom: 1px dashed #60666A;
   text-align: center;
@@ -586,9 +599,13 @@ section#getStarted a.btn {
     margin-top: 0;
     padding-top: 100px;
     display: block;
+    position: absolute;
+    top: 90px;
     @media (max-width: 768px) {
       height: calc(100vh - 70px);
+      top: 70px;
     }
+
   }
   .main-btn {
     width: 200px;
