@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>Payment</title>
+
+  	<link href="../assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <div class="profile-cover-image dashboard" style="background-image: url('../assets/img/profile-cover.jpeg')">
+        <div class="profile-cover">
+          <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-light">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Logo</a>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                  <ul class="social-media-icon">
+                    <li class="nav-item"><a href="#"><img src="../assets/img/profile.jpg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="dashboard-inner">
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12 col-xs-12 settings-container">
+              <h1 class="display-4 text-center">Payment</h1>
+            </div>
+            <div class="col-md-4 col-sm-6 offset-md-2 col-xs-12">
+              <h1 class="display-3 color-gobito">356TL</h1>
+              <div class="text-center">
+                <button class="btn button-primary w-100" type="button" name="button">PayPal</button>
+                <button class="btn button-secondary w-100 m_t_10" href="#" data-toggle="modal" data-target="#addCreditCard">
+                  Select from my saved cards
+                </button>
+              </div>
+            </div>
+            <form class="col-md-4 col-sm-6 col-xs-12 m_t_20">
+              <!-- <div class="card-wrapper">
+                <div class="card-head">
+                  <span>Credit Card</span>
+                  <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                </div>
+                <div class="card-number">
+                  {{cardNumber}}
+                </div>
+                <h6>{{fullName}}</h6>
+              </div> -->
+
+              <div class="form-group m_t_10">
+                <input type="text" class="form-control text-input" required ng-model="fullName">
+                <label class="input-label">Full Name</label>
+                <small id="emailHelp" class="form-text text-muted">*Bu alan boş bırakılamaz.</small>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control text-input" required  ng-model="cardNumber">
+                <label class="input-label">Credit Card Number</label>
+              </div>
+              <div class="d-flex">
+                <div class="form-group m_r_10">
+                  <input type="text" class="form-control text-input" required>
+                  <label class="input-label">MM</label>
+                </div>
+                <div class="form-group m_r_10">
+                  <input type="text" class="form-control text-input" id="exampleInputEmail3" aria-describedby="emailHelp" required>
+                  <label for="exampleInputEmail3" class="input-label">YY</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control text-input" id="exampleInputEmail4" aria-describedby="emailHelp" required>
+                  <label for="exampleInputEmail4" class="input-label">CVC</label>
+                </div>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                  <div class="control__indicator"></div>
+                  <a href="#">Mesafeli Satış Sözleşmesi</a>ni okudum ve kabul ediyorum.
+                </label>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label" title="Ödeme yöntemini kayıt ederek bir sonraki satın alma işleminizi hızlı ve kolay bir şekilde yapın.">
+                    <input type="checkbox" class="form-check-input">
+                    <div class="control__indicator"></div>
+                     Bu Kartı Sakla
+                  </label>
+                </div>
+                <div class="col-md-12 col-xs-12 m_t_30">
+                  <div class="profile-follow m_b_20 m_t_20">
+                    <button class="btn button-primary" type="button" name="button">Pay</button>
+                  </div>
+                </div>
+            </form>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="common-footer">
+          <div class="container">
+            <span><a href="http://www.gobito.com">Gobito Enterprise</a> ortak ödeme sayfası. Telif Hakkı © 2017</span>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="addCreditCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enter Credit Card Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <a href="#">
+                <div class="card-wrapper">
+                  <div class="card-head">
+                    <span>Credit Card</span>
+                    <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-wrapper ">
+                  <div class="card-head">
+                    <span>Bank Card</span>
+                    <img class="card-bank" src="../assets/img/akbank.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-wrapper">
+                  <div class="card-head">
+                    <span>Credit Card</span>
+                    <img class="card-bank" src="../assets/img/vakif.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+            </div>
+            <!-- <form class="col-md-12 col-xs-12 m_t_20 m_b_20">
+              <div class="card-wrapper">
+                <div class="card-head">
+                  <span>Credit Card</span>
+                  <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                </div>
+                <div class="card-number">
+                  {{cardNumber}}
+                </div>
+                <h6>{{fullName}}</h6>
+              </div>
+              <div class="form-group m_t_30">
+                <input type="text" class="form-control text-input" required ng-model="fullName">
+                <label class="input-label">Full Name</label>
+                <small id="emailHelp" class="form-text text-muted">*Bu alan boş bırakılamaz.</small>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control text-input" required  ng-model="cardNumber">
+                <label class="input-label">Credit Card Number</label>
+              </div>
+              <div class="d-flex">
+                <div class="form-group m_r_10">
+                  <input type="text" class="form-control text-input" required>
+                  <label class="input-label">MM</label>
+                </div>
+                <div class="form-group m_r_10">
+                  <input type="text" class="form-control text-input" id="exampleInputEmail3" aria-describedby="emailHelp" required>
+                  <label for="exampleInputEmail3" class="input-label">YY</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control text-input" id="exampleInputEmail4" aria-describedby="emailHelp" required>
+                  <label for="exampleInputEmail4" class="input-label">CVC</label>
+                </div>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    <div class="control__indicator"></div>
+                     Ödeme yöntemini kayıt ederek bir sonraki satın alma işleminizi hızlı ve kolay bir şekilde yapın.
+                  </label>
+                </div>
+            </form> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-secondary" data-dismiss="modal">Close</button>
+            <button class="btn button-primary" type="button" name="button">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/vendor/tether.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>
