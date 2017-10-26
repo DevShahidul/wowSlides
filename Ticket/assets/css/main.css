@@ -11338,20 +11338,23 @@ nav[role="navigation"] {
 }
 
 .success-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
-.success-message img {
-  margin-right: 30px;
+.success-message h1 {
+  font-size: 3rem;
+  margin-top: 20px;
 }
 
 .success-message p {
   text-align: center;
-  font-size: 2rem;
-  color: #3d3d3d;
+  font-size: 1.2rem;
+  color: #707070;
   max-width: 50%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {

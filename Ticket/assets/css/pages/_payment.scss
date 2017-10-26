@@ -210,18 +210,20 @@
 }
 
 .success-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    margin-right: 30px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+  h1 {
+    font-size: 3rem;
+    margin-top: 20px
   }
   p {
     text-align: center;
-    font-size: 2rem;
-    color: $p_text_color;
+    font-size: 1.2rem;
+    color: $light_text_color;
     max-width: 50%;
-
+    margin: auto;
+    margin-top: 20px;
   }
 }
 
