@@ -8764,6 +8764,10 @@ button {
   cursor: pointer;
 }
 
+.navbar-brand {
+  margin-right: 2rem;
+}
+
 /*Theme Color */
 /*Text Color*/
 /*Border Color*/
@@ -9110,6 +9114,7 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
 #footer img {
@@ -10141,7 +10146,6 @@ nav[role="navigation"] {
   justify-content: space-around;
   align-items: center;
   top: 0;
-  border-bottom: 1px solid #d8d8d8;
 }
 
 .logo-area .navbar-brand img {
@@ -11400,7 +11404,6 @@ nav[role="navigation"] {
 #sutori {
   font-family: 'Dosis', sans-serif;
   /*Theme Color */
-  /*** INPUT SEARCH STYLE ***/
   /* Spinner 1 starts here */
   /* Spinner 1 ends here */
 }
@@ -11420,6 +11423,14 @@ nav[role="navigation"] {
 #sutori p {
   font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
+}
+
+#sutori #navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #fff;
+  z-index: 3;
 }
 
 #sutori #content {
@@ -11446,6 +11457,9 @@ nav[role="navigation"] {
   padding: 1rem;
   margin-top: 20px;
   text-align: center;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
 }
 
 #sutori .primary-color {
@@ -11466,19 +11480,19 @@ nav[role="navigation"] {
 }
 
 #sutori .catalog-wrapper {
-  justify-content: space-between;
+  justify-content: normal;
   margin: 10px 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #sutori .catalog-wrapper {
     justify-content: center;
   }
 }
 
 #sutori .card-catalog {
-  width: 22rem;
-  margin: 10px 0;
+  width: 21.8rem;
+  margin: 10px;
   text-align: center;
   height: auto;
   border: none;
@@ -11532,6 +11546,12 @@ nav[role="navigation"] {
   #sutori .story-main-img {
     height: 240px;
   }
+}
+
+#sutori .story-default-bg {
+  background-repeat: initial;
+  background-size: initial;
+  background-position: initial;
 }
 
 #sutori .container-info {
@@ -11669,7 +11689,14 @@ nav[role="navigation"] {
 }
 
 #sutori .insert-heading input {
-  padding: 1rem 60px;
+  padding: 1rem 8rem;
+}
+
+@media (max-width: 768px) {
+  #sutori .insert-heading input {
+    padding-left: 2rem;
+    font-size: 2rem;
+  }
 }
 
 #sutori .upload-box {
@@ -11744,56 +11771,6 @@ nav[role="navigation"] {
   }
 }
 
-#sutori .search {
-  display: inline-block;
-  position: relative;
-  height: 30px;
-  width: 30px;
-  box-sizing: border-box;
-  margin: 0 20px;
-  padding: 7px 9px 0px 9px;
-  border: 3px solid #999;
-  border-radius: 25px;
-  transition: all 200ms ease;
-  cursor: text;
-}
-
-#sutori .search:after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 15px;
-  right: -5px;
-  top: 21px;
-  background: #999;
-  border-radius: 3px;
-  transform: rotate(-45deg);
-  transition: all 200ms ease;
-}
-
-#sutori .search.active,
-#sutori .search:hover {
-  width: 200px;
-  margin-right: 10px;
-  padding: 10px;
-  height: 45px;
-}
-
-#sutori .search.active:after,
-#sutori .search:hover:after {
-  height: 0px;
-}
-
-#sutori .search input {
-  width: 100%;
-  border: none;
-  box-sizing: border-box;
-  font-size: 15px;
-  color: inherit;
-  background: transparent;
-  outline-width: 0px;
-}
-
 #sutori .edit-image {
   position: absolute;
   left: 20px;
@@ -11802,6 +11779,7 @@ nav[role="navigation"] {
   padding: 10px;
   border-radius: 50%;
   transition: all 200ms ease;
+  cursor: pointer;
 }
 
 #sutori .edit-image:hover {
@@ -11911,6 +11889,7 @@ nav[role="navigation"] {
   width: 50%;
   float: left;
   clear: left;
+  z-index: 2;
 }
 
 #sutori .timeline > li:before {
@@ -12041,8 +12020,9 @@ nav[role="navigation"] {
 }
 
 #sutori .timeline-footer {
-  padding: 20px;
+  padding: 10px;
   background-color: #f4f4f4;
+  height: 50px;
 }
 
 #sutori .timeline-footer > a {
@@ -12200,6 +12180,48 @@ nav[role="navigation"] {
   margin-top: 150px;
 }
 
+#sutori .add-story-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sutori .add-story-box .add-story-wrapper {
+  padding: 30px;
+}
+
+#sutori .add-story-box h2 {
+  padding-top: 20px;
+}
+
+#sutori .clearfix {
+  z-index: 1 !important;
+}
+
+#sutori .profile-page {
+  display: flex;
+  align-items: center;
+}
+
+#sutori .profile-page .mini-img {
+  width: 80px;
+  height: 80px;
+}
+
+#sutori .profile-page span {
+  font-size: 1.5rem;
+}
+
+#sutori .no-result-area {
+  text-align: center;
+  padding: 30px;
+}
+
+#sutori .no-result-area p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 992px) {
   #sutori .mobile-navbar {
     text-align: center;
@@ -12210,5 +12232,8 @@ nav[role="navigation"] {
   }
   #sutori .mobile-navbar .form-inline {
     justify-content: center;
+  }
+  #sutori .profile-area {
+    padding-top: 20px;
   }
 }

@@ -22,7 +22,13 @@
     font-family: 'Lato', sans-serif;
     font-size: 1.1rem;
   }
-
+  #navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #fff;
+    z-index: 3;
+  }
   #content {
       padding: 20px 0;
   }
@@ -45,6 +51,9 @@
     padding: 1rem;
     margin-top: 20px;
     text-align: center;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
   }
 
   .primary-color {
@@ -63,15 +72,15 @@
   }
 
   .catalog-wrapper {
-    justify-content: space-between;
+    justify-content: normal;
     margin: 10px 0;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         justify-content: center;
     }
   }
   .card-catalog {
-    width: 22rem;
-    margin: 10px 0;
+    width: 21.8rem;
+    margin: 10px;
     text-align: center;
     height: auto;
     border: none;
@@ -111,6 +120,12 @@
     @media (max-width: 768px) {
       height: 240px;
     }
+  }
+
+  .story-default-bg {
+    background-repeat: initial;
+    background-size: initial;
+    background-position: initial;
   }
 
   .container-info {
@@ -234,7 +249,11 @@
   .insert-heading {
     position: relative;
     input {
-      padding: 1rem 60px;
+      padding: 1rem 8rem;
+      @media (max-width: 768px){
+        padding-left: 2rem;
+        font-size: 2rem;
+      }
     }
   }
 
@@ -296,61 +315,6 @@
     }
   }
 
-
-
-
-
-
-  /*** INPUT SEARCH STYLE ***/
-  .search {
-  	display: inline-block;
-  	position: relative;
-  	height: 30px;
-  	width: 30px;
-  	box-sizing: border-box;
-  	margin: 0 20px;
-  	padding: 7px 9px 0px 9px;
-  	border: 3px solid #999;
-  	border-radius: 25px;
-  	transition: all 200ms ease;
-  	cursor: text;
-
-  	&:after {
-  		content: "";
-  		position: absolute;
-  		width: 3px;
-  		height: 15px;
-  		right: -5px;
-  		top: 21px;
-  		background: #999;
-  		border-radius: 3px;
-  		transform: rotate(-45deg);
-  		transition: all 200ms ease;
-  	}
-
-  	&.active,
-  	&:hover {
-  		width: 200px;
-  		margin-right: 10px;
-      padding: 10px;
-      height: 45px;
-  		&:after {
-  			height: 0px;
-  		}
-  	}
-
-  	input {
-  		width: 100%;
-  		border: none;
-  		box-sizing: border-box;
-  		font-size: 15px;
-  		color: inherit;
-  		background: transparent;
-  		outline-width: 0px;
-  	}
-  }
-
-
   .edit-image {
     position: absolute;
     left: 20px;
@@ -359,6 +323,7 @@
     padding: 10px;
     border-radius: 50%;
     transition: all 200ms ease;
+    cursor: pointer;
     &:hover {
       background: rgba(0, 0, 0, 0.7);
       transition: all 200ms ease;
@@ -463,6 +428,7 @@
       width: 50%;
       float: left;
       clear: left;
+      z-index: 2;
       &:before {
         content: " ";
         display: table;
@@ -584,8 +550,9 @@
   }
 
   .timeline-footer {
-    padding: 20px;
+    padding: 10px;
     background-color: #f4f4f4;
+    height: 50px;
     > a {
       margin-right: 10px;
     }
@@ -739,6 +706,43 @@
     margin-top: 150px;
   }
 
+  .add-story-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .add-story-wrapper {
+      padding: 30px;
+    }
+    h2 {
+      padding-top: 20px;
+    }
+  }
+
+  .clearfix {
+    z-index: 1 !important;
+  }
+
+  .profile-page {
+    display: flex;
+    align-items: center;
+    .mini-img {
+      width: 80px;
+      height: 80px;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  .no-result-area {
+    text-align: center;
+    padding: 30px;
+    p {
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+  }
+
   @media (max-width: 992px) {
     .mobile-navbar {
         text-align: center;
@@ -750,6 +754,8 @@
           justify-content: center;
         }
     }
+    .profile-area {
+      padding-top: 20px;
+    }
   }
-
 }

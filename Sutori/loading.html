@@ -11,45 +11,34 @@
   </head>
   <body>
     <div id="wrapper">
-        <div id="navbar">
-          <nav class="navbar navbar-toggleable-md navbar-light bg-shadow">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img width="70" src="assets/img/story-logo.png" alt="" style="margin-bottom: 10px;"></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Explore</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">My Stories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="create-story.html">Create</a>
-                </li>
-                <li class="nav-item d-flex m_l_20">
-                  <button class="btn btn-secondary-color" type="button" name="button">Create Story</button>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <!-- <input class="form-control mr-sm-2" type="text" placeholder="Explore"> -->
-                <label class="search" for="inpt_search">
-            			<input id="inpt_search" type="text" />
-            		</label>
-              </form>
-              <div class="dropdown">
-                <a href="#" class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt=""></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
+      <div id="navbar">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-shadow">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img width="70" src="../assets/img/sutori/story-logo.png" alt="" style="margin-bottom: 10px;"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="my-stroies.html">My Stories</a>
+              </li>
+              <li class="nav-item d-flex m_l_20">
+                <button class="btn btn-secondary-color" type="button" name="button" onclick="window.location.href='create-story.html'">Create Story</button>
+              </li>
+            </ul>
+
+            <div>
+              <a href="#">
+                <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
+                <span>Betül Uzun</span>
+              </a>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
+      </div>
         <div id="content">
           <div class="container">
             <div class="row">
@@ -90,7 +79,7 @@
                        </div>
                      </div>
                      <!-- End Loading -->
-                     
+
                     </div>
                     <div class="tab-pane" id="latest" role="tabpanel">...</div>
                     <div class="tab-pane" id="popular" role="tabpanel">...</div>
