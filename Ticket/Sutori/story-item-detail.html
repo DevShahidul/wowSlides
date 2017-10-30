@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>Story</title>
+
+  	<link href="../assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="sutori">
+      <div id="navbar">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-shadow">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img width="70" src="../assets/img/sutori/story-logo.png" alt="" style="margin-bottom: 10px;"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="my-stroies.html">My Stories</a>
+              </li>
+              <li class="nav-item hidden-lg-up">
+                <a class="nav-link" href="create-story.html">Create</a>
+              </li>
+              <li class="nav-item d-flex m_l_20 hidden-md-down">
+                <button class="btn btn-secondary-color" type="button" name="button" onclick="window.location.href='create-story.html'">Create Story</button>
+              </li>
+            </ul>
+            <div class="profile-area">
+              <a href="https://gobitobeta.akademi.net/portal/" target="_blank">
+                <img class="mini-img" src="http://orig10.deviantart.net/e8df/f/2017/058/5/3/profile_picture_by_jakeiartwork-db0niey.jpg" alt="">
+                <span>Betül Uzun</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+        <div id="content">
+          <div class="container">
+            <div class="row m_t_30">
+              <div class="col-md-12 col-xs-12">
+                <a href="#"><h4><img class="m_r_5" width="25px" src="../assets/img/left-arrow.svg" alt=""> <span style="vertical-align:middle;">Colorful Food</span></h4></a>
+              </div>
+              <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 offset-lg-3 offset-md-2 offset-sm-1 m_t_20">
+                 <img class="img-fluid m_b_20" src="https://static.pexels.com/photos/450279/pexels-photo-450279.jpeg" />
+                 <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
+                    Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis
+                     quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim.
+                     Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+               <div class="timeline-footer">
+                   <a href="#"><img class="timline-icon-img" src="../assets/img/sutori/share.svg" alt=""><span>Share</span></a>
+               </div>
+             </div>
+
+
+
+                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+    <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="sutori">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Share</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="share-social">
+              <ul>
+                <li><a href="#"><img src="../assets/img/sutori/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/sutori/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/sutori/linkedin.svg" alt=""></a></li>
+                <li><a href="#"><img src="../assets/img/sutori/google-plus.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="share-link">
+              <span>Copy Link</span>
+              <input type="text" name="link" value="www.story.com/story">
+            </div>
+            <div class="share-link">
+              <span>Embed Code:</span>
+              <input type="text" name="link" value="www.story.com/story">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-gray-color" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/vendor/tether.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      window.sr = ScrollReveal({ reset: true });
+      // Customizing a reveal set
+      sr.reveal('.timeline > li', { duration: 800 });
+    </script>
+  </body>
+</html>

@@ -62,8 +62,9 @@
               </div>
               <div class="action-button">
                 <button class="btn btn-primary-color" type="button" name="button" data-toggle="modal" data-target="#shareModal">Share</button>
+                <button class="btn btn-secondary-color" type="button" name="button" data-toggle="modal" data-target="#collaborateModal">Collaborate</button>
                 <div class="dropdown">
-                  <button class="btn btn-secondary-color dropdown-toggle" type="button" name="button"
+                  <button class="btn btn-gray-color dropdown-toggle" type="button" name="button"
                     id="actionBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</button>
                   <div class="dropdown-menu" aria-labelledby="actionBtn">
                     <a class="dropdown-item" href="#">Print Story</a>
@@ -245,7 +246,7 @@
         </div>
     </div>
 
-
+    <!-- Share Modal -->
     <div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document" id="sutori">
         <div class="modal-content">
@@ -274,7 +275,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary-color" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-gray-color" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -283,7 +284,7 @@
 
 
 
-
+    <!-- Delete Modal -->
     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document" id="sutori">
         <div class="modal-content">
@@ -297,8 +298,57 @@
             <p>Are you sure you want to delete?</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary-color" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-gray-color" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary-color" data-dismiss="modal">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Collaborate Modal -->
+    <div class="modal fade" id="collaborateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" id="sutori">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Collaborate</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img src="../assets/img/sutori/collaborate.png" alt="">
+              <h4 class="m_t_15 secondary-color">Team-up to build a better story!</h4>
+            </div>
+            <div class="share-link">
+              <span>Add friends and colleagues below.</span>
+              <input type="text" name="link" placeholder="Search by name, username or email. ">
+            </div>
+            <div class="collaborators-area">
+              <!-- Collaborate Tag -->
+              <div class="profile-title collaborate-tag">
+                <img class="mini-img" src="http://static.djbooth.net/pics-albums/jaymesyoung-darkstat.jpg" alt="">
+                <span><a href="#">James Young</a></span>
+                <a href="#"><img class="close-icon" src="../assets/img/close.svg" alt=""></a>
+              </div>
+              <!-- Collaborate Tag -->
+              <div class="profile-title collaborate-tag">
+                <img class="mini-img" src="https://pbs.twimg.com/profile_images/877291361552171008/rjlcAVx0_400x400.jpg" alt="">
+                <span><a href="#">Kate Mckinnon</a></span>
+                <a href="#"><img class="close-icon" src="../assets/img/close.svg" alt=""></a>
+              </div>
+              <!-- Collaborate Tag -->
+              <div class="profile-title collaborate-tag">
+                <img class="mini-img" src="http://icube.milliyet.com.tr/YeniAnaResim/2016/11/23/tarkan-anne-ve-babalar-yargilanmali-8038163.Jpeg" alt="">
+                <span><a href="#">Tarkan</a></span>
+                <a href="#"><img class="close-icon" src="../assets/img/close.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-gray-color" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary-color" data-dismiss="modal">Done</button>
           </div>
         </div>
       </div>

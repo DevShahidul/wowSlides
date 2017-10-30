@@ -5,6 +5,7 @@
   $primary_color: #00cebe;
   $secondary_color: #8447a7;
   $third-color: #f8a132;
+  $gray_color: #868686;
 
   button,
   input,
@@ -61,6 +62,9 @@
   }
   .secondary-color {
     color: $secondary_color;
+  }
+  .gray-color {
+    color: $gray_color;
   }
 
   .nav {
@@ -145,6 +149,7 @@
     align-items: center;
     span {
       font-size: 1.2rem;
+      padding-right: 5px;
     }
   }
 
@@ -174,6 +179,15 @@
     &:hover {
       border-color: $secondary_color;
       background: $secondary_color;
+      color: #fff;
+    }
+  }
+  .btn-gray-color {
+    border-color: $gray_color;
+    color: $gray_color;
+    &:hover {
+      border-color: $gray_color;
+      background: $gray_color;
       color: #fff;
     }
   }
@@ -741,6 +755,25 @@
       margin-top: 20px;
       font-size: 1.5rem;
     }
+  }
+
+  .collaborators-area {
+    margin: 20px 0;
+  }
+  .collaborate-tag {
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 1px 1px 5px 1px #cccccc;
+    display: inline-block;
+    margin-left: 0;
+    span {
+      vertical-align: middle;
+    }
+  }
+  .close-icon {
+    width: 25px;
+    margin-left: 20px;
+    padding: 5px;
   }
 
   @media (max-width: 992px) {

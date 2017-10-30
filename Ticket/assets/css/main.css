@@ -11470,6 +11470,10 @@ nav[role="navigation"] {
   color: #8447a7;
 }
 
+#sutori .gray-color {
+  color: #868686;
+}
+
 #sutori .nav {
   border-bottom: 1px solid #d8d8d8;
 }
@@ -11573,6 +11577,7 @@ nav[role="navigation"] {
 
 #sutori .profile-title span {
   font-size: 1.2rem;
+  padding-right: 5px;
 }
 
 #sutori .btn {
@@ -11607,6 +11612,17 @@ nav[role="navigation"] {
 #sutori .btn-secondary-color:hover {
   border-color: #8447a7;
   background: #8447a7;
+  color: #fff;
+}
+
+#sutori .btn-gray-color {
+  border-color: #868686;
+  color: #868686;
+}
+
+#sutori .btn-gray-color:hover {
+  border-color: #868686;
+  background: #868686;
   color: #fff;
 }
 
@@ -12220,6 +12236,28 @@ nav[role="navigation"] {
 #sutori .no-result-area p {
   margin-top: 20px;
   font-size: 1.5rem;
+}
+
+#sutori .collaborators-area {
+  margin: 20px 0;
+}
+
+#sutori .collaborate-tag {
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 1px 1px 5px 1px #cccccc;
+  display: inline-block;
+  margin-left: 0;
+}
+
+#sutori .collaborate-tag span {
+  vertical-align: middle;
+}
+
+#sutori .close-icon {
+  width: 25px;
+  margin-left: 20px;
+  padding: 5px;
 }
 
 @media (max-width: 992px) {
