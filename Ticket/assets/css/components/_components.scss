@@ -443,6 +443,7 @@ form {
   position:relative;
   margin-bottom:45px;
   padding: 0;
+  min-width: 100px;
   textarea {
     padding:1rem 0;
   }
@@ -914,11 +915,9 @@ nav[role="navigation"] {
 
 
 .logo-area {
-  width: 230px;
   height: 100%;
   position: absolute;
   left: -15px;
-  background: rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -929,5 +928,11 @@ nav[role="navigation"] {
   }
   .sidebar-toggle {
     padding: 10px;
+    display: flex;
+    height: 100%;
+    background: white;
+    justify-content: center;
+    margin-right: 20px;
+    width: 55px;
   }
 }
