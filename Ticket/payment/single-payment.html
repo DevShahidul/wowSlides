@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title>Payment</title>
+
+  	<link href="../assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content">
+        <div id="dashboard-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 col-sm-12 col-xs-12 store-info">
+                <h3>StreamX</h3>
+                <a href="#"><img src="http://streamx.io/_/image/28534f9f-1081-4cf9-b5bd-c6735b3135da:0e66bc60e24620d708bc62647075c67f03acf3fb/-1-1/streaming_logo.png?quality=100" alt=""></a>
+              </div>
+
+              <div class="col-md-4 col-sm-6 offset-md-2 col-xs-12">
+
+                <div class="price-info">
+                  <a class="navbar-brand " href="#" ><img width="100px" src="../assets/img/gobitoLogoWeb.png" alt=""></a>
+                  <h4 class="dropdown"><img width="20px" class="m_r_5" src="../assets/img/cart.svg" alt="">356 TL
+                    <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="../assets/img/sort-down.svg" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right order-detail-dd" aria-labelledby="dropdownMenu2">
+                      <div class="p_10">
+                        <p class="color-gobito p_5">Order Detail</p>
+                        <ul>
+                          <li>Item NO5245 <span>32 TL</span></li>
+                          <li>Item NO5245 <span>132 TL</span></li>
+                          <li>Item NO2545 <span>62 TL</span></li>
+                          <li>Item NO4845 <span>79 TL</span></li>
+                          <li>Item NO6589 <span>51 TL</span></li>
+                        </ul>
+                      </div>
+                  </h4>
+                </div>
+                <div class="m_t_10">
+                  <button class="btn button-primary w-100 text-center" type="button" name="button">PayPal</button>
+                  <button class="btn button-secondary w-100 m_t_10 text-center" href="#" data-toggle="modal" data-target="#addCreditCard">
+                    Select from my saved cards
+                  </button>
+                  <button class="btn button-primary w-100 m_t_10" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Credit Card
+                  </button>
+                  <p class="thin-text">View <a href="#">Gobito Policies</a> and your payment method rights.</p>
+                  <form class="collapse m_t_30" id="collapseExample">
+                    <div class="form-group m_t_10">
+                      <input type="text" class="form-control text-input" required ng-model="fullName">
+                      <label class="input-label">Full Name</label>
+                      <small id="emailHelp" class="form-text text-muted">*Bu alan boş bırakılamaz.</small>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control text-input" required  ng-model="cardNumber">
+                      <label class="input-label">Credit Card Number</label>
+                    </div>
+                    <div class="d-flex">
+                      <div class="form-group m_r_10">
+                        <label for="exampleSelect1">MM</label>
+                        <select class="form-control" id="exampleSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                      </div>
+                      <div class="form-group m_r_10">
+                        <label for="exampleSelect1">YY</label>
+                        <select class="form-control" id="exampleSelect1">
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                          <option>2026</option>
+                          <option>2027</option>
+                          <option>2028</option>
+                          <option>2029</option>
+                          <option>2030</option>
+                        </select>
+                      </div>
+                        <!-- <div class="form-group m_r_10">
+                          <input type="text" class="form-control text-input" required>
+                          <label class="input-label">MM</label>
+                        </div> -->
+                      <!-- <div class="form-group m_r_10">
+                        <input type="text" class="form-control text-input" id="exampleInputEmail3" aria-describedby="emailHelp" required>
+                        <label for="exampleInputEmail3" class="input-label">YY</label>
+                      </div> -->
+                      <div class="form-group">
+                        <label for="exampleInputEmail4" >CVC</label>
+                        <input type="text" class="form-control text-input" id="exampleInputEmail4" aria-describedby="emailHelp" required>
+
+                      </div>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input">
+                          <div class="control__indicator"></div>
+                           Bu kartı sakla.
+                        </label>
+                      </div>
+                      <div class="col-md-12 col-xs-12 m_t_30">
+                        <div class="profile-follow m_b_20 m_t_20">
+                          <button class="btn button-primary" type="button" name="button">Pay</button>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12 text-center m_t_30 padding-secure">
+                <img width="100px"  src="../assets/img/secure.png" alt="">
+                <h3 class="m_t_15">Gobito Payment System is safe and easy to pay.</h3>
+                <p class="thin-text">Your financial information security is important for us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="common-footer">
+          <div class="container">
+            <span><a href="http://www.gobito.com">Gobito Enterprise</a> ortak ödeme sayfası. Telif Hakkı © 2017</span>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="addCreditCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enter Credit Card Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <a href="#">
+                <div class="card-wrapper">
+                  <div class="card-head">
+                    <span>Credit Card</span>
+                    <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-wrapper ">
+                  <div class="card-head">
+                    <span>Bank Card</span>
+                    <img class="card-bank" src="../assets/img/akbank.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+              <a href="#">
+                <div class="card-wrapper">
+                  <div class="card-head">
+                    <span>Credit Card</span>
+                    <img class="card-bank" src="../assets/img/vakif.png" alt="">
+                  </div>
+                  <div class="card-number">
+                    2552 3669 9889 4554
+                  </div>
+                  <h6>Betül Uzun</h6>
+                </div>
+              </a>
+            </div>
+            <!-- <form class="col-md-12 col-xs-12 m_t_20 m_b_20">
+              <div class="card-wrapper">
+                <div class="card-head">
+                  <span>Credit Card</span>
+                  <img class="card-bank" src="../assets/img/garanti.png" alt="">
+                </div>
+                <div class="card-number">
+                  {{cardNumber}}
+                </div>
+                <h6>{{fullName}}</h6>
+              </div>
+              <div class="form-group m_t_30">
+                <input type="text" class="form-control text-input" required ng-model="fullName">
+                <label class="input-label">Full Name</label>
+                <small id="emailHelp" class="form-text text-muted">*Bu alan boş bırakılamaz.</small>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control text-input" required  ng-model="cardNumber">
+                <label class="input-label">Credit Card Number</label>
+              </div>
+              <div class="d-flex">
+                <div class="form-group m_r_10">
+                  <input type="text" class="form-control text-input" required>
+                  <label class="input-label">MM</label>
+                </div>
+                <div class="form-group m_r_10">
+                  <input type="text" class="form-control text-input" id="exampleInputEmail3" aria-describedby="emailHelp" required>
+                  <label for="exampleInputEmail3" class="input-label">YY</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control text-input" id="exampleInputEmail4" aria-describedby="emailHelp" required>
+                  <label for="exampleInputEmail4" class="input-label">CVC</label>
+                </div>
+              </div>
+              <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    <div class="control__indicator"></div>
+                     Ödeme yöntemini kayıt ederek bir sonraki satın alma işleminizi hızlı ve kolay bir şekilde yapın.
+                  </label>
+                </div>
+            </form> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-secondary" data-dismiss="modal">Close</button>
+            <button class="btn button-primary" type="button" name="button">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/vendor/tether.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>
