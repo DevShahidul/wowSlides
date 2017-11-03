@@ -94,6 +94,12 @@
           height: 50px;
         }
       }
+      th {
+        position: sticky;
+        top: 0;
+        background-color: $gobito_color;
+        color: #fff;
+      }
       .price {
         font-size: 1rem;
         color: $gobito_color;
@@ -255,7 +261,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $p_border_color;
   padding: 10px 5px;
   padding-top: 0;
   h3 {
@@ -303,7 +308,9 @@ select.form-control:not([size]):not([multiple]) {
 
 .order-detail-dd {
   width: 300px;
+  padding: 0;
   ul {
+    padding: 5px 10px;
     li {
       padding: 5px;
       padding-bottom: 10px;
@@ -311,6 +318,58 @@ select.form-control:not([size]):not([multiple]) {
         float: right;
       }
     }
+  }
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $p_border_color;
+  img {
+    max-width: 200px;
+  }
+}
+
+.list-style {
+  color: $light_text_color;
+  li {
+    padding: 5px;
+  }
+  p {
+    color: $gobito_color;
+    min-width: 200px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .total {
+    background: $gobito_color;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.payment-box {
+  border: 1px solid $p_border_color;
+  padding: 20px;
+}
+.payment-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  align-items: center;
+  span {
+    vertical-align: middle;
+    font-size: 0.9rem;
+  }
+  a {
+    color: $gobito_color;
+
   }
 }
 

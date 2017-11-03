@@ -19,6 +19,14 @@
   }
 }
 
+.border-top {
+  border-top: 1px solid $p_border_color;
+  padding-top: 5px;
+}
+.border-bottom {
+  border-bottom : 1px solid $p_border_color;
+}
+
 .list-bg-style {
   padding: 10px 0;
   li {
@@ -26,6 +34,14 @@
   }
   li:nth-child(odd) {
     background-color: #e8e8e8;
+  }
+}
+
+.horizontal-list {
+  li {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 0.8rem;
   }
 }
 

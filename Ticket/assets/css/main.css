@@ -8794,6 +8794,22 @@ button {
   margin: 0;
 }
 
+.m_5 {
+  margin: 5px;
+}
+
+.m_10 {
+  margin: 10px;
+}
+
+.m_15 {
+  margin: 15px;
+}
+
+.m_20 {
+  margin: 20px;
+}
+
 /*TOP*/
 .m_t_0 {
   margin-top: 0;
@@ -9157,6 +9173,15 @@ button {
   padding: 4px 0;
 }
 
+.border-top {
+  border-top: 1px solid #d8d8d8;
+  padding-top: 5px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d8d8d8;
+}
+
 .list-bg-style {
   padding: 10px 0;
 }
@@ -9167,6 +9192,12 @@ button {
 
 .list-bg-style li:nth-child(odd) {
   background-color: #e8e8e8;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 0.8rem;
 }
 
 .content {
@@ -11240,6 +11271,13 @@ nav[role="navigation"] {
   height: 50px;
 }
 
+.product-list .table-style tr th {
+  position: sticky;
+  top: 0;
+  background-color: #3482c6;
+  color: #fff;
+}
+
 .product-list .table-style tr .price {
   font-size: 1rem;
   color: #3482c6;
@@ -11424,7 +11462,6 @@ nav[role="navigation"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #d8d8d8;
   padding: 10px 5px;
   padding-top: 0;
 }
@@ -11483,6 +11520,11 @@ select.form-control:not([size]):not([multiple]) {
 
 .order-detail-dd {
   width: 300px;
+  padding: 0;
+}
+
+.order-detail-dd ul {
+  padding: 5px 10px;
 }
 
 .order-detail-dd ul li {
@@ -11492,6 +11534,65 @@ select.form-control:not([size]):not([multiple]) {
 
 .order-detail-dd ul li span {
   float: right;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.invoice-header img {
+  max-width: 200px;
+}
+
+.list-style {
+  color: #707070;
+}
+
+.list-style li {
+  padding: 5px;
+}
+
+.list-style p {
+  color: #3482c6;
+  min-width: 200px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.list-style .total {
+  background: #3482c6;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.list-style .total p {
+  color: #fff;
+}
+
+.payment-box {
+  border: 1px solid #d8d8d8;
+  padding: 20px;
+}
+
+.payment-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.payment-footer span {
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.payment-footer a {
+  color: #3482c6;
 }
 
 @media (max-width: 768px) {
