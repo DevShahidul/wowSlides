@@ -330,13 +330,23 @@ select.form-control:not([size]):not([multiple]) {
   justify-content: space-between;
   padding-bottom: 10px;
   border-bottom: 1px solid $p_border_color;
+  align-items: center;
   img {
     max-width: 200px;
+  }
+  .list-style {
+    li {
+      padding: 0;
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 768px) {
+    display: block;
   }
 }
 
 .list-style {
-  color: $light_text_color;
+  color: $p_text_color;
   li {
     padding: 5px;
   }
@@ -349,8 +359,7 @@ select.form-control:not([size]):not([multiple]) {
   .total {
     background: $gobito_color;
     color: #fff;
-    font-size: 1.4rem;
-    padding: 5px 10px;
+    padding: 10px;
     font-weight: 600;
     p {
       color: #fff;
@@ -374,6 +383,19 @@ select.form-control:not([size]):not([multiple]) {
   a {
     color: $gobito_color;
 
+  }
+}
+
+.payment-method {
+  h5 {
+    margin: 20px;
+    color: $p_text_color;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  img {
+    margin-left: 20px;
+    max-width: 150px;
   }
 }
 

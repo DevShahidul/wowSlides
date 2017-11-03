@@ -10162,7 +10162,7 @@ nav[role="navigation"] {
 }
 
 #content {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 #wrapper {
@@ -11546,14 +11546,26 @@ select.form-control:not([size]):not([multiple]) {
   justify-content: space-between;
   padding-bottom: 10px;
   border-bottom: 1px solid #d8d8d8;
+  align-items: center;
 }
 
 .invoice-header img {
   max-width: 200px;
 }
 
+.invoice-header .list-style li {
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .invoice-header {
+    display: block;
+  }
+}
+
 .list-style {
-  color: #707070;
+  color: #3d3d3d;
 }
 
 .list-style li {
@@ -11570,8 +11582,7 @@ select.form-control:not([size]):not([multiple]) {
 .list-style .total {
   background: #3482c6;
   color: #fff;
-  font-size: 1.4rem;
-  padding: 5px 10px;
+  padding: 10px;
   font-weight: 600;
 }
 
@@ -11598,6 +11609,18 @@ select.form-control:not([size]):not([multiple]) {
 
 .payment-footer a {
   color: #3482c6;
+}
+
+.payment-method h5 {
+  margin: 20px;
+  color: #3d3d3d;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.payment-method img {
+  margin-left: 20px;
+  max-width: 150px;
 }
 
 @media (max-width: 768px) {
