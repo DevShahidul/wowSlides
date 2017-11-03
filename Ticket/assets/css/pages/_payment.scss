@@ -309,15 +309,19 @@ select.form-control:not([size]):not([multiple]) {
 .order-detail-dd {
   width: 300px;
   padding: 0;
+  font-size: 0.9rem;
   ul {
     padding: 5px 10px;
+    background: whitesmoke;
     li {
-      padding: 5px;
-      padding-bottom: 10px;
+      padding: 10px 5px;
       span {
         float: right;
       }
     }
+  }
+  .subtotal {
+    font-weight: 600;
   }
 }
 

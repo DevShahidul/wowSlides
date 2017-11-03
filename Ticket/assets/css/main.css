@@ -11521,19 +11521,24 @@ select.form-control:not([size]):not([multiple]) {
 .order-detail-dd {
   width: 300px;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 .order-detail-dd ul {
   padding: 5px 10px;
+  background: whitesmoke;
 }
 
 .order-detail-dd ul li {
-  padding: 5px;
-  padding-bottom: 10px;
+  padding: 10px 5px;
 }
 
 .order-detail-dd ul li span {
   float: right;
+}
+
+.order-detail-dd .subtotal {
+  font-weight: 600;
 }
 
 .invoice-header {
