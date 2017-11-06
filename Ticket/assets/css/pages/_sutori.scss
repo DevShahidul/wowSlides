@@ -776,6 +776,31 @@
     padding: 5px;
   }
 
+  .errorContent {
+    h1 {
+      font-size: 10rem;
+      color: $light_text_color;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    img {
+      max-height: calc(100vh - 400px);
+    }
+    a {
+      color: $secondary_color;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 8rem;
+      }
+      img {
+        max-width: 500px;
+      }
+    }
+  }
+
   @media (max-width: 992px) {
     .mobile-navbar {
         text-align: center;

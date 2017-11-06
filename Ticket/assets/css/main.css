@@ -12570,6 +12570,33 @@ select.form-control:not([size]):not([multiple]) {
   padding: 5px;
 }
 
+#sutori .errorContent h1 {
+  font-size: 10rem;
+  color: #707070;
+}
+
+#sutori .errorContent p {
+  font-size: 1.5rem;
+}
+
+#sutori .errorContent img {
+  max-height: calc(100vh - 400px);
+}
+
+#sutori .errorContent a {
+  color: #8447a7;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #sutori .errorContent h1 {
+    font-size: 8rem;
+  }
+  #sutori .errorContent img {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 992px) {
   #sutori .mobile-navbar {
     text-align: center;
