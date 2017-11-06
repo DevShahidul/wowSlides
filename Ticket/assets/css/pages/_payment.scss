@@ -97,8 +97,8 @@
       th {
         position: sticky;
         top: 0;
-        background-color: $gobito_color;
-        color: #fff;
+        background-color: #f3f3f2;
+        color: $light_text_color;
       }
       .price {
         font-size: 1rem;
@@ -288,14 +288,6 @@
   }
 }
 
-.thin-text {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  a {
-    color: $gobito_color;
-  }
-}
-
 select.form-control:not([size]):not([multiple]) {
   height: calc(2.25rem + 7px);
 }
@@ -338,6 +330,9 @@ select.form-control:not([size]):not([multiple]) {
     li {
       padding: 0;
       font-size: 0.9rem;
+      p {
+        min-width: 100px;
+      }
     }
   }
   @media (max-width: 768px) {
@@ -346,9 +341,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .list-style {
-  color: $p_text_color;
+  color: $light_text_color;
   li {
-    padding: 5px;
+    padding: 5px 10px;
+    font-weight: 600;
   }
   p {
     color: $gobito_color;
@@ -387,15 +383,67 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .payment-method {
+  margin-left: 20px;
   h5 {
-    margin: 20px;
+    margin: 20px 0;
     color: $p_text_color;
     font-style: italic;
     margin-bottom: 10px;
   }
   img {
-    margin-left: 20px;
-    max-width: 150px;
+    max-width: 100px;
+  }
+  p {
+    font-size: 0.8rem;
+    color: $light_text_color;
+  }
+}
+
+.invoice-to-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f2;
+  margin: 15px 0;
+  margin-right: 10px;
+  .total-info {
+    background: $gobito_color;
+    color: #fff;
+    padding: 20px 35px;
+    h3 {
+      font-weight: 700;
+    }
+    span {
+      color: #fff;
+      font-weight: 100;
+      margin-left: 20px;
+    }
+  }
+  .person-info {
+    padding-left: 20px;
+    p {
+      color: $light_text_color;
+      margin-bottom: 0;
+    }
+    h4 {
+      color: $gobito_color;
+    }
+  }
+  @media (max-width: 768px) {
+    display: block;
+    .person-info {
+      padding: 15px;
+      h4 {
+        font-size: 1.1rem;
+
+      }
+    }
+    .total-info {
+      padding: 15px;
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
 

@@ -11,6 +11,37 @@
   </head>
   <body>
     <div id="wrapper">
+      <div class="profile-cover-image dashboard" style="background-image: url('../assets/img/profile-cover.jpeg')">
+        <div class="profile-cover">
+          <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-light">
+              <div class="logo-area">
+                <a class="sidebar-toggle" href="#" id="sidebar-left"><img src="../assets/img/menu.svg" alt=""></a>
+                <a class="navbar-brand " href="#" ><img src="../assets/img/gobito_White.svg" alt=""></a>
+              </div>
+                <div class="social-media-icon ml-auto">
+                  <a href="#"><img src="../assets/img/profile.jpg" alt=""></a>
+                </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Left Menu -->
+      <div class="dashboard-menu-wrapper small-dashboard">
+        <ul class="dashboard-menu">
+          <li><a class="" href="payment-index.html"><img src="../assets/img/home.svg" alt="">Home</a></li>
+          <li><a href="orderHistory.html"><img src="../assets/img/history.svg" alt="">Order History</a></li>
+          <li><a href="creditCards.html"><img src="../assets/img/cards.svg" alt="">Credit Cards</a></li>
+          <li><a href="#"><img src="../assets/img/settings.svg" alt="">Settings</a> </li>
+        </ul>
+        <ul class="explore-products">
+          <li><div class="product-img"><img src="../assets/img/wow.png  " alt=""></div><a href="#">Wowslides</a> </li>
+          <li><div class="product-img"><img src="../assets/img/story.png  " alt=""></div><a href="#">StreamX</a> </li>
+          <li><div class="product-img"><img src="../assets/img/kb.png  " alt=""></div><a href="#">Akademi.net</a> </li>
+          <li><div class="product-img"><img src="../assets/img/ticket.png  " alt=""></div><a href="#">Tube</a> </li>
+        </ul>
+      </div>
+      <!-- End Left Menu -->
       <div id="content">
         <div id="dashboard-inner">
           <div class="container">
@@ -25,10 +56,15 @@
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
-                <ul class="list-style m_t_10 m_b_10">
-                  <li><p>Invoice to:</p>Betül Uzun</li>
-                  <li ><p>Total Due: </p>365 TL</li>
-                </ul>
+                <div class="invoice-to-info">
+                  <div class="person-info">
+                    <h4>Invoice To</h4>
+                    <p>Betül Uzun</p>
+                  </div>
+                  <div class="total-info">
+                    <h3>TOTAL DUE : <span> 365 TL</span></h3>
+                  </div>
+                </div>
               </div>
               <div class="col-md-12 col-sm-12 col-xs-12 product-list product-list-overflow">
                 <table class="table-style">
@@ -85,14 +121,18 @@
 
             </div>
             <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12 payment-method">
-                <h5>Payment Method</h5>
-                <img src="../assets/img/paypal.svg" alt="">
-                <!-- <img src="../assets/img/creditcard.svg" alt="">
-                <img src="../assets/img/garanti-pay.svg" alt=""> -->
+              <div class="col-md-4 col-sm-5 col-xs-12 ">
+                <div class="payment-method">
+                  <h5>Payment Method</h5>
+                  <img src="../assets/img/paypal.svg" alt="">
+                  <!-- <img src="../assets/img/creditcard.svg" alt="">
+                  <img src="../assets/img/garanti-pay.svg" alt=""> -->
+
+                  <p>betul.uzun@gobito.com</p>
+                </div>
               </div>
-              <div class="col-md-4 offset-md-4 col-sm-6 col-xs-12">
-                <ul class="list-style m_t_10">
+              <div class="col-md-4 offset-md-4 col-sm-7 col-xs-12">
+                <ul class="list-style m_t_10 m_r_10">
                   <li><p>SUB TOTAL: </p>345 TL</li>
                   <li><p>Tax: </p>25 TL</li>
                   <li><p>Discount: </p>0</li>
