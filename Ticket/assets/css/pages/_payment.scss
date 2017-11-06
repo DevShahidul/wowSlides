@@ -204,6 +204,12 @@
   .form-search {
     width: 45%;
   }
+  @media (max-width: 768px) {
+    display: block;
+    .form-search {
+      width: 100%;
+    }
+  }
 }
 
 .welcome-section {
@@ -218,6 +224,11 @@
   p {
     font-size: 1.4rem;
     color: $gobito_color;
+  }
+  @media (max-width: 768px) {
+    img {
+      width: 300px;
+    }
   }
 }
 
