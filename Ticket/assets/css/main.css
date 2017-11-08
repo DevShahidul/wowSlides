@@ -9704,10 +9704,16 @@ form .form-control p {
   }
 }
 
-.form-group input:focus ~ label {
+.form-group input:focus ~ label, .form-group input:not(:placeholder-shown) ~ label {
   top: -20px;
   font-size: 14px;
   color: #3482c6;
+}
+
+.form-group input:invalid ~ label {
+  top: 10px;
+  font-size: 18px;
+  color: gray;
 }
 
 .form-group textarea::placeholder {

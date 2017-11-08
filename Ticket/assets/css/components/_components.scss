@@ -498,11 +498,30 @@ form {
     }
   }
 
-  /* active state */
-  input:focus ~ label		{
+  input:focus ~ label, input:not(:placeholder-shown) ~ label {
     top:-20px;
-    font-size:14px;
-    color: $gobito_color;
+      font-size:14px;
+      color: $gobito_color;
+  }
+
+
+  /* active state */
+  // input:focus ~ label		{
+  //   top:-20px;
+  //   font-size:14px;
+  //   color: $gobito_color;
+  //   outline: none;
+  // }
+  //
+  // input:valid ~ label		{
+  //   top:-20px;
+  //   font-size:14px;
+  //   color: $gobito_color;
+  // }
+  input:invalid ~ label		{
+    top:10px;
+    font-size:18px;
+    color: gray;
   }
 
   textarea::placeholder {
