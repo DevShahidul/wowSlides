@@ -476,6 +476,15 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 
+.action-buttons {
+  .button-primary {
+    color: $light_text_color;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .payment-page {
     display: block;

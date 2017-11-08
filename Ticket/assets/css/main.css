@@ -10189,6 +10189,20 @@ nav[role="navigation"] {
   background: #fff;
 }
 
+.profile-dd .profile-img {
+  margin: 0 5px;
+  border-radius: 50%;
+  width: 40px;
+}
+
+.profile-dd .dropdown-item {
+  padding: 7px 1.3rem;
+}
+
+.profile-dd .dropdown-item img {
+  margin-right: 5px;
+}
+
 /* Common, default styles for the notification box */
 .ns-box {
   position: fixed;
@@ -11713,6 +11727,14 @@ select.form-control:not([size]):not([multiple]) {
 
 .pay-footer .list-style {
   min-width: 337px;
+}
+
+.action-buttons .button-primary, .action-buttons .button-secondary {
+  color: #707070;
+}
+
+.action-buttons .button-primary:hover, .action-buttons .button-secondary:hover {
+  color: #fff;
 }
 
 @media (max-width: 768px) {

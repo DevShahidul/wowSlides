@@ -950,3 +950,17 @@ nav[role="navigation"] {
   box-shadow: 1px 1px 10px 1px #d8d8d8;
   background: #fff;
 }
+
+.profile-dd {
+  .profile-img {
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 40px;
+  }
+  .dropdown-item {
+    padding: 7px 1.3rem;  
+    img {
+      margin-right: 5px;
+    }
+  }
+}

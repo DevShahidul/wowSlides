@@ -19,8 +19,14 @@
                 <a class="sidebar-toggle" href="#" id="sidebar-left"><img src="../assets/img/menu.svg" alt=""></a>
                 <a class="navbar-brand " href="#" ><img src="../assets/img/gobitoLogoWeb.png" alt=""></a>
               </div>
-                <div class="social-media-icon ml-auto">
-                  <a href="#"><img src="../assets/img/profile.jpg" alt=""></a>
+              <div class="dropdown profile-dd ml-auto">
+                  <a href="#" class="dropdown-toggle" id="profiledd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="profile-img" src="../assets/img/profile.jpg" alt="">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profiledd">
+                    <a class="dropdown-item" href="#"><img src="../assets/img/profile.svg" alt=""> <span>Profile</span></a>
+                    <a class="dropdown-item" href="#"><img src="../assets/img/logout.svg" alt=""> <span>Logout</span></a>
+                  </div>
                 </div>
             </nav>
           </div>
@@ -137,26 +143,33 @@
               </div>
 
             </div>
-            <div class="row pay-footer">
-                <div class="payment-method">
-                  <h5>Payment Method</h5>
-                  <img src="../assets/img/paypal.svg" alt="">
-                  <!-- <img src="../assets/img/creditcard.svg" alt="">
-                  <img src="../assets/img/garanti-pay.svg" alt=""> -->
-
-                  <p>betul.uzun@gobito.com</p>
-                </div>
-                <ul class="list-style m_t_10">
-                  <li><p>SUB TOTAL: </p>345 TL</li>
-                  <li><p>Tax: </p>25 TL</li>
-                  <li><p>Discount: </p>0</li>
-                  <li class="total"><p>Grand Total </p>365 TL</li>
-                </ul>
-            </div>
             <div class="row">
-              <div class="col-md-12 col-xs-12 text-center">
-                <button class="btn button-primary m_t_10" >
-                  Save as PDF
+                <div class="col-md-12 col-xs-12 pay-footer">
+                  <div class="payment-method">
+                    <h5>Payment Method</h5>
+                    <img src="../assets/img/paypal.svg" alt="">
+                    <!-- <img src="../assets/img/creditcard.svg" alt="">
+                    <img src="../assets/img/garanti-pay.svg" alt=""> -->
+
+                    <p>betul.uzun@gobito.com</p>
+                  </div>
+                  <ul class="list-style m_t_10">
+                    <li><p>SUB TOTAL: </p>345 TL</li>
+                    <li><p>Tax: </p>25 TL</li>
+                    <li><p>Discount: </p>0</li>
+                    <li class="total"><p>Grand Total </p>365 TL</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12 col-xs-12 text-right action-buttons">
+                <button class="btn button-primary m_t_10 color-gray" title="Print">
+                  <img width="15px" src="../assets/img/print.svg" alt="">
+                  Print
+                </button>
+                <button class="btn button-primary m_t_10" title="Save as PDF">
+                  <img width="15px" src="../assets/img/save.svg" alt="">
+                  Save
                 </button>
               </div>
             </div>
