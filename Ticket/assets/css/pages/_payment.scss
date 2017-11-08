@@ -37,28 +37,7 @@
     }
   }
 }
-.small-dashboard {
-  width: 55px;
-  li {
-    white-space: nowrap;
-    overflow: hidden;
-    width: 55px;
-    img {
-      margin-right: 25px !important;
-    }
-    &:hover {
-      box-shadow: 1px 1px 5px 1px #d9d9d9;
-      width: 230px;
-      background: #fff;
-      animation-name: slideRight;
-    }
-  }
-}
 
-@keyframes slideRight {
-    from {width: 0px;}
-    to {width: 230px;}
-}
 
 .product-list-wrapper {
   width: 100%;
