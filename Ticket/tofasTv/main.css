@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin-ext');
 
 
-
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -11,6 +10,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 ul {
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 #wrapper {
   display: flex;
@@ -55,7 +57,7 @@ ul {
 }
 
 .background-wrapper {
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -143,4 +145,130 @@ ul {
   right: 0;
   left: 0;
   color: rgba(255, 255, 255, 0.20);
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.clock {
+  padding: 5px 0 5px 0px;
+  font-size: 4rem;
+  text-align: center;
+  color: #505050;
+  font-weight: 100;
+  line-height: 4rem;
+}
+.recent-date {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #757575;
+}
+
+.box-style {
+  margin: auto;
+  margin-top: 40px;
+  padding: 40px 60px;
+  background: linear-gradient(to right, #f91c34c9, #ee5d2fd4);
+  color: #fff;
+}
+.box-style .box-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-field label{
+  display: block;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.input-field input {
+  width: 100%;
+  background: #ffffffd9;
+  border: none;
+  padding: 15px 5px;
+  font-size: 1.2rem;
+  color: #5c5c5c;
+}
+.note {
+  font-size: 0.9rem;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  background: #ffffffd6;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #656565;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.text-center {
+  text-align: center;
+}
+.mini-box {
+  width: 500px;
+}
+
+.large-box {
+  width: 80%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  width: 60px;
+  border-radius: 50%;
+  max-height: 60px;
+  margin-left: 10px;
+  border: 3px solid white;
+}
+.profile span {
+  font-size: 1.2rem;
+}
+.table-wrapper {
+  height: 50vh;
+  overflow: auto;
+    margin-top: 20px;
+}
+.table-style {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.table-style th {
+  text-align: left;
+  font-size: 1.6rem;
+  padding-left: 5px;
+  border-bottom: 1px dotted #ffffff4a;
+}
+.table-style tr {
+  line-height: 4rem;
+
+}
+.table-style td {
+  padding-left: 5px;
+  border-bottom: 1px dotted #ffffff4a;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #ffffff73;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #ffffff73;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #922c28;
 }

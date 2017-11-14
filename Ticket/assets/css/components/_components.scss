@@ -504,20 +504,6 @@ form {
       color: $gobito_color;
   }
 
-
-  /* active state */
-  // input:focus ~ label		{
-  //   top:-20px;
-  //   font-size:14px;
-  //   color: $gobito_color;
-  //   outline: none;
-  // }
-  //
-  // input:valid ~ label		{
-  //   top:-20px;
-  //   font-size:14px;
-  //   color: $gobito_color;
-  // }
   input:invalid ~ label		{
     top:10px;
     font-size:18px;
@@ -931,15 +917,19 @@ nav[role="navigation"] {
   z-index: 2;
   .dashboard-menu {
     li {
-      padding: 10px 15px;
+      padding:15px 10px;
       font-weight: 600;
       transition: 0.2s;
-      margin: 10px 0;
       .active {
         border-left: 5px solid $gobito_color;
         color: $gobito_color;
         padding-left: 10px;
         margin-left: -10px;
+      }
+      &:hover {
+        background-color: #ffffff;
+        margin-right: -10px;
+        box-shadow: 1px 1px 10px 1px #e5e5e5;
       }
     }
     .dashboard-inner-menu {

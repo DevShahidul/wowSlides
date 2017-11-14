@@ -9664,7 +9664,6 @@ form .form-control p {
   padding: 0;
   min-width: 100px;
   /* LABEL ======================================= */
-  /* active state */
 }
 
 .form-group textarea {
@@ -10158,10 +10157,9 @@ nav[role="navigation"] {
 }
 
 .dashboard-menu-wrapper .dashboard-menu li {
-  padding: 10px 15px;
+  padding: 15px 10px;
   font-weight: 600;
   transition: 0.2s;
-  margin: 10px 0;
 }
 
 .dashboard-menu-wrapper .dashboard-menu li .active {
@@ -10169,6 +10167,12 @@ nav[role="navigation"] {
   color: #3482c6;
   padding-left: 10px;
   margin-left: -10px;
+}
+
+.dashboard-menu-wrapper .dashboard-menu li:hover {
+  background-color: #ffffff;
+  margin-right: -10px;
+  box-shadow: 1px 1px 10px 1px #e5e5e5;
 }
 
 .dashboard-menu-wrapper .dashboard-menu .dashboard-inner-menu {
