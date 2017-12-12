@@ -218,7 +218,6 @@ a {
 .large-box {
   width: 80%;
 }
-
 .profile {
   display: flex;
   align-items: center;
@@ -255,8 +254,63 @@ a {
 .table-style td {
   padding-left: 5px;
   border-bottom: 1px dotted #ffffff4a;
+  max-width: 20vw;
+}
+.tv-box {
+  width: 95%;
+  background: rgba(255, 255, 255, 0.5);
+  color: #1f1f1f;
+  padding: 0;
+}
+.tv-box .table-style{
+  font-size: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tv-box .table-style tr {
+  height: 6rem;
+  border-bottom: 1px dotted #c0c0c0;
+}
+.tv-box .table-style .class-name {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tv-box .table-style tr:nth-child(3n-1){
+  border-left: 10px solid #ab1c09;
+}
+.tv-box .table-style tr:nth-child(3n-1) .class-name{
+  background: #ab1c09;
+}
+.tv-box .table-style tr:nth-child(3n) {
+  border-left: 10px solid #e03121;
+}
+.tv-box .table-style tr:nth-child(3n) .class-name{
+  background: #e03121;
+}
+.tv-box .table-style tr:nth-child(3n+1){
+  border-left: 10px solid #e6471c;
+}
+.tv-box .table-style tr:nth-child(3n+1) .class-name{
+  background: #e6471c;
+}
+.tv-box .table-style tr:first-child {
+  border-left: 10px solid transparent;
 }
 
+.tv-box .table-style td {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+  padding-left: 15px;
+}
+.tv-box .table-style th {
+  padding-left: 15px;
+}
 ::-webkit-scrollbar-track
 {
 	background-color: #ffffff73;

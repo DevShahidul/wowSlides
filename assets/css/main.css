@@ -7463,7 +7463,7 @@ rotateX .check-item span.box.square {
 
 .check-item span.text.left-align {
   justify-content: flex-start;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .check-item input[type=checkbox], .check-item input[type=radio] {
@@ -7478,11 +7478,37 @@ rotateX .check-item span.box.square {
   color: #fff;
 }
 
-.check-item input[type=checkbox]:checked ~ span.box, .check-item input[type=radio]:checked ~ span.box {
+.check-item input[type=checkbox]:checked ~ span.box {
   background-image: url(../images/icons/icon_check.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-color: #fff;
+}
+
+.check-item input[type=radio]:checked ~ span.box {
+  background-image: url(../images/icons/icon_radio.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-color: #fff;
+  background-size: 70%;
+}
+
+.check-item.tiny-box span.text {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-size: 18px;
+}
+
+.check-item.tiny-box span.text.left-align {
+  padding-left: 40px;
+}
+
+.check-item.tiny-box span.box {
+  width: 25px;
+  height: 25px;
+  top: 24px;
 }
 
 .left-desc {

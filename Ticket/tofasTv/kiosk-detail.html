@@ -8,7 +8,7 @@
     <title>TOFAS</title>
     <link href="main.css" rel="stylesheet">
   </head>
-  <body>
+  <body ng-app="courseList" ng-controller="personCourseList">
     <div id="wrapper">
       <div class="background-wrapper" style="background-image: url('white-bg.svg')">
         <div id="nav">
@@ -26,8 +26,8 @@
           <div class="box-header">
             <a href="kiosk-login.html" class="btn-primary" type="button" name="button">Sorgulamaya Geri Dön</a>
             <div class="profile">
-              <span class="name">Evan Rachel Wood</span>
-              <img src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ginger-guy.png" alt="">
+              <span class="name">{{personInfo.name}}</span>
+              <img src="{{personInfo.profileImg}}" alt="">
 
             </div>
           </div>
@@ -105,4 +105,6 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </html>
