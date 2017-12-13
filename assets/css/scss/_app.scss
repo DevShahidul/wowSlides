@@ -2506,6 +2506,10 @@ rotateX .check-item span.box.square {
       opacity: 0;
       left: 0;
     }
+    &[type=checkbox] ~ span.text {
+      border-radius: 0;
+
+    }
     &[type=checkbox]:checked ~ span.text, &[type=radio]:checked ~ span.text {
       background-color: #56C8C2;
       color: #fff;
@@ -2515,6 +2519,7 @@ rotateX .check-item span.box.square {
       background-repeat: no-repeat;
       background-position: center center;
       border-color: #fff;
+      border-radius: 0;
     }
     &[type=radio]:checked ~ span.box {
       background-image: url(../images/icons/icon_radio.svg);

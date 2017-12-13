@@ -7477,6 +7477,10 @@ rotateX .check-item span.box.square {
   left: 0;
 }
 
+.check-item input[type=checkbox] ~ span.text {
+  border-radius: 0;
+}
+
 .check-item input[type=checkbox]:checked ~ span.text, .check-item input[type=radio]:checked ~ span.text {
   background-color: #56C8C2;
   color: #fff;
@@ -7487,6 +7491,7 @@ rotateX .check-item span.box.square {
   background-repeat: no-repeat;
   background-position: center center;
   border-color: #fff;
+  border-radius: 0;
 }
 
 .check-item input[type=radio]:checked ~ span.box {

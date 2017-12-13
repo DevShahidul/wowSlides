@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="demo">
   <head>
     <meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,9 +7,17 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<title>Wiki</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+
+   <!-- ui-select files -->
+   <script src="assets/js/select.js"></script>
+   <script src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
+
   	<link href="assets/css/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body  ng-controller="DemoCtrl as ctrl">
     <div id="wrapper">
 
         <div id="content">
@@ -73,6 +81,21 @@
                   <input type="text" class="form-control text-input" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <label class="input-label" for="">Tag</label>
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelect1" >Category</label>
+                  <div ng-if="ctrl.appendToBodyDemo.present">
+                    <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="ctrl.disabled" style="min-width: 300px;" title="Choose a person" append-to-body="true">
+                      <ui-select-match>{{$select.selected.name}}</ui-select-match>
+                      <ui-select-choices repeat="person in ctrl.people | propsFilter: {name: $select.search, age: $select.search}">
+                        <div ng-bind-html="person.name | highlight: $select.search"></div>
+                        <small>
+                          email: {{person.email}}
+                          age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                        </small>
+                      </ui-select-choices>
+                    </ui-select>
+                  </div>
                 </div>
                 <div class="tag-style">
                   <ul class="tag-child-style">
