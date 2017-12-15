@@ -9122,6 +9122,55 @@ button {
   margin-right: 5px;
 }
 
+.thin-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  align-items: center;
+}
+
+.thin-bar .profile-info {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .thin-bar .profile-info span {
+    display: none;
+  }
+  .thin-bar .profile-info .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+.thin-bar .thin-left {
+  display: flex;
+  float: left;
+  align-items: center;
+  margin: 0;
+}
+
+.thin-bar .thin-left img {
+  width: 100px;
+}
+
+.thin-bar .thin-left input {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 0;
+}
+
+.thin-bar .thin-left .tag-style {
+  display: none;
+}
+
+.thin-bar .mobile-logo {
+  display: none;
+}
+
+.thin-bar .logo {
+  display: block !important;
+}
+
 #footer {
   background: linear-gradient(to left, #eef2f3, #e4e4e4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

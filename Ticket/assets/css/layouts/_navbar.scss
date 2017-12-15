@@ -94,3 +94,46 @@
   border-radius: 50%;
   margin-right: 5px;
 }
+
+
+.thin-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  align-items: center;
+  .profile-info {
+    float: right;
+    @media (max-width: 768px) {
+      span {
+        display: none;
+      }
+      .dropdown-toggle::after {
+        display: none;
+      }
+    }
+  }
+  .thin-left {
+    display: flex;
+    float: left;
+    align-items: center;
+    margin: 0;
+    img {
+      width: 100px;
+    }
+    input {
+      margin: 0;
+      margin-left: 20px;
+      line-height: 0;
+    }
+    .tag-style {
+      display: none;
+    }
+  }
+  .mobile-logo {
+    display: none;
+  }
+  .logo {
+    display: block !important;
+  }
+
+}
