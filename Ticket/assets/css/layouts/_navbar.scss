@@ -117,7 +117,7 @@
     float: left;
     align-items: center;
     margin: 0;
-    img {
+    .logo img {
       width: 100px;
     }
     input {
@@ -125,8 +125,19 @@
       margin-left: 20px;
       line-height: 0;
     }
+    .big-search {
+      margin: 0;
+      margin-left: 20px;
+    }
     .tag-style {
       display: none;
+    }
+    span {
+      right: -20px;
+      height: 36px;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .mobile-logo {
@@ -135,5 +146,4 @@
   .logo {
     display: block !important;
   }
-
 }

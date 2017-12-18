@@ -405,14 +405,34 @@ form {
     }
   }
 }
+
+
 .big-search {
   margin: auto;
   width: 80%;
   margin-top: 20px;
-  line-height: 2rem;
-  text-align: center;
-  @media (max-width: 768px){
-    line-height: 1.5rem;
+  position: relative;
+  input {
+    text-align: center;
+    line-height: 2rem;
+    @media (max-width: 768px){
+      line-height: 1.5rem;
+    }
+  }
+  span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    button {
+      border-left: none;
+      border-color: rgba(0, 0, 0, 0);
+      background: rgba(0, 0, 0, 0);
+      padding: 0 15px;
+    }
+    @media (max-width: 768px){
+      display: none;
+    }
   }
 }
 .form-group {

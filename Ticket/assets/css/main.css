@@ -9149,7 +9149,7 @@ button {
   margin: 0;
 }
 
-.thin-bar .thin-left img {
+.thin-bar .thin-left .logo img {
   width: 100px;
 }
 
@@ -9159,8 +9159,24 @@ button {
   line-height: 0;
 }
 
+.thin-bar .thin-left .big-search {
+  margin: 0;
+  margin-left: 20px;
+}
+
 .thin-bar .thin-left .tag-style {
   display: none;
+}
+
+.thin-bar .thin-left span {
+  right: -20px;
+  height: 36px;
+}
+
+@media (max-width: 768px) {
+  .thin-bar .thin-left span {
+    display: none;
+  }
 }
 
 .thin-bar .mobile-logo {
@@ -9644,13 +9660,37 @@ form .form-control p {
   margin: auto;
   width: 80%;
   margin-top: 20px;
-  line-height: 2rem;
+  position: relative;
+}
+
+.big-search input {
   text-align: center;
+  line-height: 2rem;
 }
 
 @media (max-width: 768px) {
-  .big-search {
+  .big-search input {
     line-height: 1.5rem;
+  }
+}
+
+.big-search span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+}
+
+.big-search span button {
+  border-left: none;
+  border-color: transparent;
+  background: transparent;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .big-search span {
+    display: none;
   }
 }
 
