@@ -71,7 +71,8 @@
 .wiki-detail-wrapper {
   display: flex;
   .left-menu {
-    max-width: 300px;
+    min-width: 300px;
+    width: 300px;
     margin-left: 10px;
   }
   .wiki-content-wrapper {

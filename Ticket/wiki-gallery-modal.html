@@ -151,7 +151,7 @@
 
     <!-- Gallery Modal -->
     <div class="modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-dialog modal-xlg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Add Media</h5>
@@ -160,18 +160,18 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="m_b_20">
+            <div class="d-flex align-items-start">
+              <form class="w-100 p_r_10">
+                <div class="form-group w-100">
+                  <input type="text" class="form-control text-input" id="search" aria-describedby="search" required>
+                  <label for="search" class="input-label">Search</label>
+                </div>
+              </form>
               <input type="file" class="hidden-xs-up" id="fileUpload">
-              <button type="button" class="btn button-secondary file-input"><label for="fileUpload">Upload</label></button>
-
+              <button type="button" class="btn button-secondary file-input m_r_10"><label for="fileUpload">Upload</label></button>
               <button type="button" class="btn button-primary">Create Folder</button>
             </div>
-            <form class="">
-              <div class="form-group">
-                <input type="text" class="form-control text-input" id="search" aria-describedby="search" required>
-                <label for="search" class="input-label">Search</label>
-              </div>
-            </form>
+
             <div class="row files-container">
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="file-wrapper">
