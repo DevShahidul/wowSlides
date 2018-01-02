@@ -33,6 +33,15 @@
   #content {
       padding: 20px 0;
   }
+
+  .navbar-nav .btn-secondary-color {
+    background: $secondary_color;
+    color: #fff;
+    &:hover {
+    background-color: $primary_color;
+    border-color: $primary_color
+    }
+  }
   .mini-img {
     width: 40px;
     height: 40px;
