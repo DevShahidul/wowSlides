@@ -298,6 +298,13 @@
     input[type=file] {
       display: none;
     }
+
+    .progress-area {
+       img {
+        width: 15px;
+        margin-left: 5px
+      }
+    }
   }
 
   .create-new-box {
@@ -540,6 +547,7 @@
     }
     .timeline-heading {
       padding: 20px;
+      position: relative;
       iframe {
         width: 100%;
         max-height: 350px;
@@ -822,6 +830,14 @@
   .story-count {
     padding-left: 15px;
     color: #5f5f5f;
+  }
+  .progress-bar{
+    &.progress-prmy {
+      background: $primary_color;
+    }
+    &.progress-scnd {
+      background: $secondary_color;
+    }
   }
   @media (max-width: 992px) {
     .mobile-navbar {

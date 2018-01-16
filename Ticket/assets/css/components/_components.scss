@@ -1069,3 +1069,16 @@ nav[role="navigation"] {
   padding: 10px;
   border-radius: 50%;
 }
+
+
+.position-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.position-bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
