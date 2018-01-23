@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="demo">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="reporting/angular.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/select.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	  <script src="reporting/demo.js"></script>
+
+</head>
+<body ng-controller="DemoCtrl as ctrl">
+
+
+<!-- loader -->
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div id="main" class="smallMain">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.png" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+	</div>
+	<!-- #main -->
+
+	<!-- motto -->
+	<div class="motto">
+		<div class="motto-inner">
+
+			<h1 class="title light transBg">DISCOVER THE <span>CATEGORIES</span></h1>
+			<p class="hidden-xs">Ut mauris arcu, tincidunt non diam sed, sollicitudin consequat lectus. Vivamus ut neque at nulla volutpat fringilla in et augue. </p>
+		</div>
+	</div>
+	<!-- #motto -->
+
+	<div class="filter-wrapper">
+		<div class="filter-area container">
+			<div class="select-position ">
+				<div class="">
+
+					<a  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+						<h2 class="title">Advanced Filter <img src="assets/images/icons/down-arrow.svg" alt=""></h2>
+					</a>
+				</div>
+				<div class="bar-search">
+					<input type="text" placeholder="Search">
+					<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+				</div>
+				<div class="select-sort">
+
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+						<div class="desc-btn">
+							<a class="down" href="#"><img src="assets/images/icons/arrow-down.svg" alt=""></a>
+							<!-- <a class="up" href="#"><img src="assets/images/icons/arrow-down.svg" alt=""></a> -->
+						</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="advanced-filter collapse container"  id="collapseExample">
+
+			<div class="d-flex">
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+					<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+							<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+								<span ng-bind-html="item.name | highlight: $select.search"></span>
+							</ui-select-choices>
+						</ui-select>
+						<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+								<ui-select-match placeholder="Sort Projects By">{{$select.selected.name}}</ui-select-match>
+								<ui-select-choices repeat="item in ctrl.sort | filter: $select.search">
+									<span ng-bind-html="item.name | highlight: $select.search"></span>
+								</ui-select-choices>
+							</ui-select>
+			</div>
+			<div class="checkbox-filter checkbox-style ">
+				<label>
+						<input type="checkbox">
+						<span class="box"></span>
+						<span class="checkbox-name">Curated</span>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<!-- works -->
+	<div id="works">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/latest-entries.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Latest Entries</h3>
+								<p class="category-description">Last added presentations.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/curated-wowslides.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Curated Wowslides</h3>
+								<p class="category-description">Editor’s weekly picked Wow Presentations.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/trending-wowslides.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Trending Wowslides</h3>
+								<p class="category-description">Popular Wowslides presentations.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/art-photos.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Art & Photos</h3>
+								<p class="category-description">Cultural subjects such as painting, photography, illustration, street art etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/automotive-transport.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Automotive & Transport</h3>
+								<p class="category-description">Logistic activities such as cars, trucks, transportation, conveyance, shipping etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/business.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Business</h3>
+								<p class="category-description">Commercial subjects such as mercantile affairs,
+									business concern and organization etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/career.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Career</h3>
+								<p class="category-description">Vocational subjects such as occupation, improvement, profession, experience etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/data-analytics.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Data & Analytics</h3>
+								<p class="category-description">Digital information such as database, statistics, analysis, indicators etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/design-print.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Design & Print</h3>
+								<p class="category-description">Inspirational topics and methods such as conception, web design, graphic design, blueprint,
+									 print making etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/economy-finance.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Economy & Finance</h3>
+								<p class="category-description">Monetary subjects such as investing, commerce, profitability, pecuniary resources, funds etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/education.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Education</h3>
+								<p class="category-description">Educational topics such as teaching, training, pedagogy, tuition, curriculums etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/engineering.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Engineering</h3>
+								<p class="category-description">Functional topics such as applied science, technics, construction, mechanics, ergonomics etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/entertainment-leisure.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Entertainment & Leisure</h3>
+								<p class="category-description">Entertaining topics such as music, movies, hobbies, performing, gaming, amenity space etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/environment.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Environment</h3>
+								<p class="category-description">Peripheral topics such as climate, ecosystem, nature, habitat, fracking, sustainability etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/food-beverages.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Food & Beverages</h3>
+								<p class="category-description">Refreshments such as nutrient and nutrition, gourmet delicacies, condiments etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/government-nonprofit.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Government & Nonprofit</h3>
+								<p class="category-description">Legitimate topics such as authorities, policies, politics, public administration, non-commercial organizations etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/hardware-electronics.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Hardware & Electronics</h3>
+								<p class="category-description">Programmable and magnetic topics such as computers, technology, firmware, deployment, console etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/health-medicine.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Health & Medicine</h3>
+								<p class="category-description">Sanitary topics and products such as wellness, disease, phylaxis, meds, medication etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/health-safety.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Health & Safety</h3>
+								<p class="category-description">Topics such as workplace and its health requirements, protections etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/healthcare.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Healthcare</h3>
+								<p class="category-description">Medicare, treatment, outpatient, nursing etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/internet.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Internet</h3>
+								<p class="category-description">IoT (Internet of Things) topics such as website, big data, network, internet working, intranet etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/investor-relations.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Investor Relations</h3>
+								<p class="category-description">Investing activities such as corporation, partnership, commercial customers etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/law-courts.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Law & Courts</h3>
+								<p class="category-description">Judicial topics such as legislation, jurisprudence, rules, regulations, tribunals etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/leadership-management.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Leadership & Management</h3>
+								<p class="category-description">Managerial topics such as leaders, execution, distribution of cadres etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/lifestyle-wellbeing.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Lifestyle & Wellbeing</h3>
+								<p class="category-description">The way of living topics.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/marketing.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Marketing</h3>
+								<p class="category-description">Promotional topics such as merchandising, advertising, trading, branding etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/mobile.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Mobile</h3>
+								<p class="category-description">Transportable devices and technologies such as smart phones, applications etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/news-politics.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">News & Politics</h3>
+								<p class="category-description">Reported things such as current discussions, headlines, political formation etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/presentations.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Presentations & Public Speaking</h3>
+								<p class="category-description">Introductory, explanatory, oratorical topics.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/real-estate.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Real Estate</h3>
+								<p class="category-description">Immovable possessions topics and its instructions such as house, apartment, residence, timeshare, mortgage etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/recruitment.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Recruitment & Human Resources</h3>
+								<p class="category-description">Employing topics such as pre-employment, hiring, hiring process, onboarding etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/religion.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Religion & Spirituality</h3>
+								<p class="category-description">Inner side of human such as beliefs, faith, denomination, mysticism etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/retail.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Retail</h3>
+								<p class="category-description">Commercial occupations, procedures, instructions etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/sales.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Sales</h3>
+								<p class="category-description">Vendition actions such as wholesale, emptiovenditio, transaction etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/science.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Science</h3>
+								<p class="category-description">Scientific topics such as physics, mathematics, biology, space, cosmos, scientific knowledge etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/self-improvement.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Self Improvement</h3>
+								<p class="category-description">Personal development topics.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/services.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Services</h3>
+								<p class="category-description">Operational topics such as serving, service of process, help desk etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/small-business.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Small Business & Entrepreneurship</h3>
+								<p class="category-description">Pioneering, initiative business ideas.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/social-media.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Social Media</h3>
+								<p class="category-description">Social network, webcast, Facebook, Instagram, Twitter etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/software.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Software</h3>
+								<p class="category-description">Programming topics such as internet browser, movie player, operating system etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/sports.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Sports</h3>
+								<p class="category-description">Programming topics such as internet browser, movie player, operating system etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/technology.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Technology</h3>
+								<p class="category-description">Technological topics such as new tech age, advanced technology and its products etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/travel.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Travel</h3>
+								<p class="category-description">Trips, journeys, vacation, visa, accommodations for travelers and tourists etc.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+					<a href="#">
+						<div class="wow-category-box" style="background-image: url('assets/images/category/other.png')">
+							<div class="wow-category-wrapper">
+								<h3 class="category-title">Other/Miscellaneous</h3>
+								<p class="category-description">That we couldn’t catch, but you attach here.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- #works -->
+
+
+	<!-- blog -->
+	<section class="blog">
+		<div class="container">
+
+
+			<!-- titles -->
+			<div class="titleTop">
+
+				<div class="selects centered">
+
+					 <a class="more" href="#">VIEW ALL STORIES <img src="assets/images/icons/arrow_right.svg" alt=""></a>
+
+				</div>
+
+				<h3>ON THE BLOG</h3>
+
+			</div>
+			<!-- #titles -->
+
+		</div>
+
+			<!-- Swiper -->
+		    <div class="swiper-container slideBlog">
+		        <div class="swiper-wrapper">
+
+					<!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+
+		            	<div class="date centered">
+		            		<div>
+			            		<span class="icon" style="background:#FF6C0D"><img src="assets/images/icons/icon_slider.svg" alt=""></span>
+								<span class="number"><b>20</b> JUN</span>
+							</div>
+		            	</div>
+
+		            	<div class="desc centered">
+		            		<div>
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<p><a href="#">Contrary to popular belief, lorem Ipsum is not simply.</a></p>
+		            		</div>
+		            	</div>
+
+		            </div>
+		            <!-- #slide -->
+
+		        </div>
+
+	            <div class="swiper-pagination slideBlog"></div>
+
+		    </div>
+
+
+
+
+		    <!-- Initialize Swiper -->
+		    <script>
+		    var swiper = new Swiper('.swiper-container.slideBlog', {
+    			paginationClickable: true,
+        		pagination: '.swiper-pagination.slideBlog',
+		        slidesPerView: 3,
+		        spaceBetween: 30,
+		        autoplay : 2500,
+    			breakpoints: {
+	            1024: {
+	                slidesPerView: 3,
+	                spaceBetween: 40
+	            },
+	            768: {
+	                slidesPerView: 2,
+	                spaceBetween: 30
+	            },
+	            640: {
+	                slidesPerView: 1,
+	                spaceBetween: 20
+	            },
+	            320: {
+	                slidesPerView: 1,
+	                spaceBetween: 10
+	            }
+	        }
+		    });
+		    </script>
+
+
+ 		<div class="clear"></div>
+	</section>
+	<!-- #blog -->
+
+
+	<!-- contact -->
+	<section class="contact">
+		<div class="container centered">
+
+			<p>There are many variations of passages of lorem ipsum available!</p>
+
+			<a href="#" class="action">GET IN TOUCH</a>
+
+		</div>
+	</section>
+	<!-- #contact -->
+
+		<!-- contactForm -->
+	<div class="contactForm">
+		<div class="container">
+
+			<h4>GET IN TOUCH</h4>
+
+		 	<div class="col-md-6 col-xs-12 inputBox">
+		 		<div class="row">
+	                <label>WHO ARE YOU</label>
+	                <input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+            	</div>
+            </div>
+
+            <div class="col-md-6 col-xs-12 inputBox">
+            	<div class="row">
+	                <label>EMAIL TO REACH YOU</label>
+	                <input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+            	</div>
+            </div>
+
+            <div class="col-md-6 col-xs-12 inputBox">
+            	<div class="row">
+	                <label>TELL US ABOUT IT</label>
+	                <textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+            	</div>
+            </div>
+
+            <div class="pull-right">
+            	<button class="button">SUBMIT</button>
+            </div>
+
+		</div>
+	</div>
+	<!-- #contactForm -->
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+
+
+			<!-- left -->
+			<div class="col-md-8 col-xs-12 footerMenu">
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+				<ul>
+					<span class="title">SUPPORT</span>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">Templates</a></li>
+					<li><a href="#">Submit Ticket</a></li>
+					<li><a href="#">Affiliate</a></li>
+					<li><a href="#">Sitemap </a></li>
+				</ul>
+				</ul>
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+			</div>
+
+
+			<!-- right -->
+			<div class="col-md-4 col-xs-12 blogList">
+
+				<span class="title">BLOG</span>
+
+				<ul>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							[Video Series] Unlock The Power Of Conversational
+						</a>
+					</li>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							Escape The Noise: Join Us At The  Dreamforce
+						</a>
+					</li>
+					<li>
+						<span>Sept. 8, 2016</span>
+						<a href="#">
+							On-Demand Webinar: How to Bring A Data-Driven
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- #footer -->
+
+
+ 	<!-- copyright -->
+ 	<section id="copyright">
+ 		<div class="container">
+
+ 			<div class="logo">
+ 				<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+ 			</div>
+
+ 			<ul class="copylist">
+ 				<li><a href="#">English</a></li>
+ 				<li><a href="#">Español</a></li>
+ 				<li><a href="#">한국어</a></li>
+ 				<li><a href="#">日本語</a></li>
+ 				<li><a href="#">Deutsch</a></li>
+ 			</ul>
+
+ 			<div class="clear"></div>
+
+ 			<ul class="copylist">
+ 				<ul>
+					<li><a href="#">TERMS OF SERVICE</a> </li>
+					<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+					<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+					<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+					<li><a href="#">PRIVACY POLICY </a></li>
+				</ul>
+ 			</ul>
+
+
+ 			<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+ 		</div>
+ 	</section>
+ 	<!-- #copyright -->
+
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>
