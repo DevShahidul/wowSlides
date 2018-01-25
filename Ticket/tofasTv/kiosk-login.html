@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TOFAS</title>
     <link href="main.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+     <script src="app.js"></script>
   </head>
   <body>
-    <div id="wrapper">
+    <div id="wrapper" ng-app="appCtrl">
       <div class="background-wrapper" style="background-image: url('white-bg.svg')">
         <div id="nav">
           <img src="logo.png" alt="">
@@ -23,15 +25,45 @@
           </div>
         </div>
         <div >
-          <div class="box-style mini-box">
-            <div class="input-field">
-              <label for="number">TC No / Sicil No</label>
-              <input id="number" type="text" name="" value="" placeholder="TC No veya Sicil No Girininiz">
+          <div class="box-style mini-box" ng-init="workerType=0">
+            <h1 class="login-title">Eğitimim Nerede?</h1>
+            <div class="worker-type">
+              <a class="item" href="#" ng-click="workerType='tofas'">
+                <div class="icon-box">
+                  <img src="home.svg" alt="">
+                </div>
+                <p>TOFAS Çalışanıyım</p>
+              </a>
+              <a class="item" href="#" ng-click="workerType='bayi'">
+                <div class="icon-box">
+                  <img src="home.svg" alt="">
+                </div>
+                <p>BAYİ/TEDARİKÇİ Çalışanıyım</p>
+              </a>
             </div>
-            <p class="note">Tofaş çalışanları , sicil numaralarını TXXXXX olarak , Bayi ve Tedarikçi  çalışanları TC kimlik numaraları ile eğitimlerine giriş yapabilirsiniz.</p>
-            <div class="text-center">
-              <a href="kiosk-detail.html" class="btn-primary" type="button" name="button">SORGULA</a>
+
+            <!-- Tofas Field -->
+            <div class="" ng-if="workerType=='tofas'">
+              <div class="input-field">
+                <label for="number">Sicil No</label>
+                <input id="number" type="text" name="" value="" placeholder="Sicil Numaranızı başına T koyarak giriniz">
+              </div>
+              <div class="text-center">
+                <a href="kiosk-detail.html" class="btn-primary" type="button" name="button">SORGULA</a>
+              </div>
             </div>
+
+            <!-- Bayi/Tedarikçi Field -->
+            <div class="" ng-if="workerType=='bayi'">
+              <div class="input-field">
+                <label for="number">TC No</label>
+                <input id="number" type="text" name="" value="" placeholder="TC No Girininiz">
+              </div>
+              <div class="text-center">
+                <a href="kiosk-detail.html" class="btn-primary" type="button" name="button">SORGULA</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

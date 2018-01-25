@@ -34,70 +34,18 @@
           <div class="table-wrapper">
             <table class="table-style">
               <tr>
-                <th>Tarih</th>
                 <th>Eğitim Adı</th>
-                <th>Sınıf Adı</th>
-                <th>Saat</th>
+                <th>Eğitim Yeri</th>
+                <th>Eğitmen</th>
+                <th>Başlangıç - Bitiş Tarihi</th>
+                <th>Başlangıç Saati</th>
               </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
-              </tr>
-              <tr>
-                <td>06.07.2018</td>
-                <td>WCM - İş Güvenliği 7 Adım Yaklaşımı</td>
-                <td>D2</td>
-                <td>09.00</td>
+              <tr ng-repeat="course in personInfo.courses">
+                <td>{{course.name}}</td>
+                <td>{{course.className}}</td>
+                <td>{{course.trainer}}</td>
+                <td class="course-date">{{course.startDate}} - {{course.endDate}}</td>
+                <td>{{course.hour}}</td>
               </tr>
             </table>
           </div>

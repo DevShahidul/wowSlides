@@ -215,6 +215,10 @@ a {
   width: 500px;
 }
 
+.mini-box .input-field {
+  margin-bottom: 35px;
+}
+
 .large-box {
   width: 80%;
 }
@@ -248,13 +252,17 @@ a {
   border-bottom: 1px dotted #ffffff4a;
 }
 .table-style tr {
-  line-height: 4rem;
+  height: 80px;
 
 }
 .table-style td {
   padding-left: 5px;
   border-bottom: 1px dotted #ffffff4a;
   max-width: 20vw;
+  line-height: 2.4rem;
+}
+.table-style .course-date {
+  font-size: 1.2rem;
 }
 .tv-box {
   width: 95%;
@@ -271,11 +279,16 @@ a {
   height: 6rem;
   border-bottom: 1px dotted #c0c0c0;
 }
+
+.tv-box .table-style .hour{
+  width: 10%;
+  line-height: 2rem;
+}
 .tv-box .table-style .class-name {
-  width: 70px;
+  width: 100px;
   height: 70px;
   color: #fff;
-  border-radius: 50%;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,4 +338,43 @@ a {
 ::-webkit-scrollbar-thumb
 {
 	background-color: #922c28;
+}
+
+.login-title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.worker-type {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.worker-type .item {
+    width: 40%;
+}
+
+.icon-box {
+  text-align: center;
+  background: #fff;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.icon-box img {
+  width: 75px;
+}
+
+.worker-type p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
 }
