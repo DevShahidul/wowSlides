@@ -24,15 +24,15 @@
             </div>
           </div>
         </div>
-        <div >
-          <div class="box-style mini-box" ng-init="workerType=0">
+        <div class="box-style w_60">
+          <div class="mini-box" ng-init="workerType=0">
             <h1 class="login-title">Eğitimim Nerede?</h1>
             <div class="worker-type">
               <a class="item" href="#" ng-click="workerType='tofas'">
                 <div class="icon-box">
                   <img src="home.svg" alt="">
                 </div>
-                <p>TOFAS Çalışanıyım</p>
+                <p>TOFAŞ Çalışanıyım</p>
               </a>
               <a class="item" href="#" ng-click="workerType='bayi'">
                 <div class="icon-box">
@@ -43,7 +43,7 @@
             </div>
 
             <!-- Tofas Field -->
-            <div class="" ng-if="workerType=='tofas'">
+            <div style="padding-bottom: 25px" ng-if="workerType=='tofas'">
               <div class="input-field">
                 <label for="number">Sicil No</label>
                 <input id="number" type="text" name="" value="" placeholder="Sicil Numaranızı başına T koyarak giriniz">
@@ -54,7 +54,7 @@
             </div>
 
             <!-- Bayi/Tedarikçi Field -->
-            <div class="" ng-if="workerType=='bayi'">
+            <div style="padding-bottom: 25px" ng-if="workerType=='bayi'">
               <div class="input-field">
                 <label for="number">TC No</label>
                 <input id="number" type="text" name="" value="" placeholder="TC No Girininiz">

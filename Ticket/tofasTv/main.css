@@ -186,12 +186,13 @@ a {
   padding-bottom: 10px;
 }
 .input-field input {
-  width: 100%;
+  width: 85%;
   background: #ffffffd9;
   border: none;
   padding: 15px 5px;
   font-size: 1.2rem;
   color: #5c5c5c;
+  text-align: center;
 }
 .note {
   font-size: 0.9rem;
@@ -212,11 +213,13 @@ a {
   text-align: center;
 }
 .mini-box {
-  width: 500px;
+  width: 600px;
+  margin: auto;
 }
 
 .mini-box .input-field {
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .large-box {
@@ -354,17 +357,21 @@ a {
   margin-top: 40px;
 }
 .worker-type .item {
-    width: 40%;
+    width: 50%;
 }
 
 .icon-box {
   text-align: center;
   background: #fff;
-  width: 50%;
+  width: 60%;
   margin: auto;
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-box img {
@@ -377,4 +384,8 @@ a {
   margin: auto;
   color: #fff;
   text-align: center;
+}
+
+.w_60 {
+  width: 60%;
 }

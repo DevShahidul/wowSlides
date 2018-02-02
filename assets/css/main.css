@@ -10743,6 +10743,7 @@ h1.title.regular span {
 
 .related-projects span.title {
   margin-bottom: 10px;
+  display: block;
 }
 
 .special-area, .special-area-half {
@@ -11744,6 +11745,7 @@ tbody.collapse.in {
 @media (max-width: 994px) {
   .related-projects {
     margin-top: 30px;
+    padding: 10px;
   }
 }
 
