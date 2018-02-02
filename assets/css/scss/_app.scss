@@ -2664,8 +2664,8 @@ rotateX .check-item span.box.square {
   position: relative;
   .fullscreen {
     position: absolute;
-    right: -10px;
-    bottom: -20px;
+    right: -2px;
+    bottom: -5px;
     cursor: pointer;
     margin-top: 10px;
     width: 44px;
@@ -5417,4 +5417,10 @@ h1.title.regular {
 .special-area-half {
   @extend .special-area;
   height: 150px;
+}
+
+.mini-title {
+  color: #ffffff;
+  padding-bottom: 5px;
+  font-weight: 700;
 }
