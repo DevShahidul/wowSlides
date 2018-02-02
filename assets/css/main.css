@@ -6383,6 +6383,10 @@ div.tagsinput input {
   transition: all 300ms;
 }
 
+.footer .footer-items {
+  margin-bottom: 20px;
+}
+
 .footer .footer-items li {
   padding: 5px 0;
 }
@@ -6466,6 +6470,12 @@ section#copyright p a {
   left: 0;
   right: 0;
   top: 5px;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav .logo img {
+    width: 120px;
+  }
 }
 
 .mobile-nav .menu-bar {
@@ -11412,6 +11422,10 @@ span.title {
   justify-content: space-between;
 }
 
+.login {
+  margin-right: auto;
+}
+
 .login a {
   font-size: 12px;
   font-family: 'latoblack';
@@ -12597,6 +12611,6 @@ tbody.collapse.in {
     width: 140px;
   }
   .smallMain {
-    height: 170px !important;
+    height: 160px !important;
   }
 }

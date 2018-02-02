@@ -1507,6 +1507,7 @@ div.tagsinput {
     }
   }
   .footer-items {
+    margin-bottom: 20px;
     li {
       padding: 5px 0;
       a {
@@ -1582,6 +1583,11 @@ section#copyright {
     left: 0;
     right: 0;
     top: 5px;
+    @media (max-width: 768px) {
+      img {
+        width: 120px;
+      }
+    }
   }
   .menu-bar {
     position: absolute;
