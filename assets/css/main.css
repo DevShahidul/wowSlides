@@ -7682,8 +7682,13 @@ rotateX .check-item span.box.square {
 }
 
 .imageBig .pagination {
-  padding: 20px 0 0px 0;
+  padding: 20px 0 20px 0;
   text-align: center;
+}
+
+.imageBig .pagination img {
+  border-radius: 0px;
+  padding-right: 5px;
 }
 
 .imageBig .pagination ul {
@@ -9430,6 +9435,10 @@ nav#navbar.whiteNav {
   background: #DEE2EA;
 }
 
+.popUpContainer .popUp.popUp-md {
+  max-width: 500px;
+}
+
 input:-webkit-autofill {
   background: #fff;
 }
@@ -10691,7 +10700,7 @@ h1.title.regular span {
 }
 
 .wow-category-box .wow-category-wrapper {
-  padding: 8px;
+  padding: 16px;
 }
 
 .wow-category-box .wow-category-wrapper .category-title {
@@ -11285,16 +11294,21 @@ div.tagsinput div {
   margin: 0 3px;
 }
 
+.action-buttons .share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .action-buttons .share-buttons img {
-  width: 40px;
+  width: 35px;
   vertical-align: middle;
 }
 
 .action-buttons .share-buttons span {
-  color: #56c8c2;
-  font-size: 1rem;
+  color: #707070;
+  font-size: 0.9rem;
   padding-left: 3px;
-  font-family: latoblack;
 }
 
 .action-buttons .share-buttons a {
@@ -11311,12 +11325,8 @@ div.tagsinput div {
   opacity: .5;
 }
 
-.action-buttons .share-buttons a.unlike img {
-  transform: rotate(180deg);
-}
-
-.action-buttons .share-buttons a.like.selected img {
-  opacity: 0.5;
+.action-buttons .share-buttons .view {
+  margin: 0 5px;
 }
 
 .embedCopy {
@@ -11407,10 +11417,9 @@ span.title {
     display: block;
   }
   .share-buttons {
-    margin-top: 70px;
     border-top: 1px solid #e7e7e7;
     padding-top: 20px;
-    text-align: center;
+    justify-content: center !important;
   }
 }
 
@@ -11811,14 +11820,14 @@ tbody.collapse.in {
 
 .profile-in-project.right-items .social {
   float: none;
-  top: 10px;
-  left: 60px;
+  top: -10px;
+  left: 10px;
 }
 
 .profile-in-project.right-items .social li a {
-  width: 35px;
-  height: 35px;
-  background: gray;
+  width: 25px;
+  height: 25px;
+  background: #a6a6a6;
 }
 
 .profile-in-project.right-items .social li a img {
@@ -11830,7 +11839,7 @@ tbody.collapse.in {
 }
 
 .profile-in-project.right-items .social li a.add-user img {
-  height: 22px;
+  height: 18px;
 }
 
 .profile-in-project.right-items .social li a.remove-user {
@@ -11838,7 +11847,7 @@ tbody.collapse.in {
 }
 
 .profile-in-project.right-items .social li a.remove-user img {
-  height: 22px;
+  height: 18px;
 }
 
 .filter-area {

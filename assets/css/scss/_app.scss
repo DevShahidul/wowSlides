@@ -2684,8 +2684,12 @@ rotateX .check-item span.box.square {
     width: 100%;
   }
   .pagination {
-    padding: 20px 0 0px 0;
+    padding: 20px 0 20px 0;
     text-align: center;
+    img {
+      border-radius: 0px;
+      padding-right: 5px;
+    }
     ul {
       display: inline-block;
       li {
@@ -4226,6 +4230,9 @@ nav#navbar.whiteNav {
         }
       }
     }
+    &.popUp-md {
+      max-width: 500px;
+    }
   }
 }
 
@@ -5348,7 +5355,7 @@ h1.title.regular {
     filter: grayscale(0);
   }
   .wow-category-wrapper {
-    padding: 8px;
+    padding: 16px;
     .category-title {
       font-size: 1.5rem;
       font-family: 'latoblack';

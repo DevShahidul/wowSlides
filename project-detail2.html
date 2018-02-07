@@ -34,6 +34,38 @@
 </div>
 <!-- #loader -->
 
+<!-- popUp -->
+<div class="popUpContainer centered">
+	<div class="popUp popUp-md centerForms" >
+
+		<div class="close close-button" data-target=".popUpContainer">
+			<img src="assets/images/icons/times.svg" alt="">
+		</div>
+
+			<h4>Share Wowslide Project with Email</h4>
+
+			<div class="inputRow">
+				<label>From</label>
+				<input type="text" placeholder="From...">
+			</div>
+			<div class="inputRow">
+				<label>Email Address</label>
+				<input type="text" placeholder="Email Address">
+			</div>
+			<!-- comment -->
+			<div class="inputRow">
+				<label>Message</label>
+				<textarea placeholder="Send a few words..."></textarea>
+			</div>
+
+			<ul class="buttons">
+				<li><a class="close-button" data-target=".popUpContainer" href="#">CANCEL</a></li>
+				<li class="colured"><a href="#">SEND</a></li>
+			</ul>
+
+	</div>
+</div>
+<!-- #popUp -->
 
 <!-- mobile-menu -->
 <div class="mobile-menu">
@@ -253,17 +285,18 @@
 								<a href="#"><h3>Araz Murat Ak</h3></a>
 								<p>İstanbul, Turkey</p>
 							</div>
+							<div class="social">
+								<ul>
+									<li><a class="add-user" href="#"><img src="assets/images/icons/add-user.svg" alt="" title="Follow"></a></li>
+									<!-- Unfollow -->
+									<!-- <li><a class="remove-user" href="#"><img src="assets/images/icons/remove-user.svg" alt="" title="Unfollow"></a></li> -->
+									<li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
+									<li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="social">
-							<ul>
-								<li><a class="add-user" href="#"><img src="assets/images/icons/add-user.svg" alt="" title="Follow"></a></li>
-								<!-- Unfollow -->
-								<!-- <li><a class="remove-user" href="#"><img src="assets/images/icons/remove-user.svg" alt="" title="Unfollow"></a></li> -->
-								<li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
-								<li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
-								<li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
-							</ul>
-						</div>
+
 					</div>
 					<!-- #profile box -->
 
@@ -275,22 +308,27 @@
 
 
 						<div class="share-buttons">
-							<a href="#" class="like toggleButton shareButton" title="Share"><img src="assets/images/icons/share.svg" alt=""><span>23</span></a>
-							<div class="shareList">
-								<ul>
-									<li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
-									<li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
-									<li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
-									<li><a href="#"><img src="assets/images/icons/mail.svg" alt=""></a></li>
-								</ul>
-								<div class="embed">
-									<p class="mini-title">Embed Code</p>
-									<textarea>&lt;iframe width="560" height="315" src="https://www.wowslides.com/embed/SEaFHPvuE6Y" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</textarea>
-									<button class="copy">COPY CODE</button>
+							<a href="#"><img src="assets/images/icons/unlike.svg" alt=""><span>23</span></a>
+							<!-- <a href="#"><img src="assets/images/icons/like.svg" alt=""><span>23</span></a> -->
+							<div class="share">
+								<a href="#" class="like toggleButton shareButton" title="Share"><img src="assets/images/icons/share.svg" alt=""><span>Share</span></a>
+								<div class="shareList">
+									<ul>
+										<li><a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/icons/facebook.svg" alt=""></a></li>
+										<li><a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a></li>
+										<li><a href="project-detail2.html"><img src="assets/images/icons/mail.svg" alt=""></a></li>
+									</ul>
+									<div class="embed">
+										<p class="mini-title">Embed Code</p>
+										<textarea>&lt;iframe width="560" height="315" src="https://www.wowslides.com/embed/SEaFHPvuE6Y" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</textarea>
+										<button class="copy">COPY CODE</button>
+									</div>
 								</div>
 							</div>
-							<a href="#" class="like selected"><img src="assets/images/icons/icon_like_big.svg" alt=""><span>23</span></a>
-							<a href="#" class="like"><img src="assets/images/icons/eye.svg" alt=""><span>133</span></a>
+							<div class="view">
+								<img src="assets/images/icons/view.svg" alt=""><span>133 views</span>
+							</div>
 						</div>
 
 					</div>
@@ -475,6 +513,9 @@
 
 								</div>
 
+								<div class="text-center">
+									<a href="#" class="main-btn">LOAD MORE</a>
+								</div>
 
 							</div>
 							<!-- #comments -->
