@@ -222,10 +222,10 @@
    		<div class="container">
    			<div class="row">
 					<ul >
-  		 			<li class="active">
+  		 			<li>
   		 				<a href="edit-project.html">EDIT PROJECT</a>
   		 			</li>
-  		 			<li>
+  		 			<li class="active">
   						<a href="edit-project-privacy.html">PRIVACY</a>
   		 			</li>
   		 			<li>
@@ -358,14 +358,11 @@
 
 					<div class="centerForms">
 
-						<div class="inputRow">
-							<label>Title</label>
-							<input type="text" data-pre-target="#pre__title" placeholder="Enter Project Title">
-						</div>
+
 
 						<div class="inputRow niceSelectArea" data-pre-target="#pre__keyw">
-							<label>Category</label>
-							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
+							<label>LICENCE</label>
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="All Rights Reserved">
 									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
 									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
 										<span ng-bind-html="item.name | highlight: $select.search"></span>
@@ -375,22 +372,75 @@
 						</div>
 
 						<div class="inputRow">
-							<label>Description</label>
-							<textarea placeholder="Enter Description" data-pre-target="#pre__desc"></textarea>
+							<label>AVAILABLE FROM</label>
+							<input type="text" data-pre-target="#pre__title" placeholder="Select Date">
+							<p class="text-description">*Select a date and time above if you want this content to be made public automatically.</p>
 						</div>
 
-						<div class="inputRow keyw">
-							<label>Keywords</label>
-							<ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" style="width: 300px;" title="Choose a color">
-						    <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
-						    <ui-select-choices repeat="color in ctrl.availableColors | filter:$select.search">
-						      {{color}}
-						    </ui-select-choices>
-						  </ui-select>
+						<div class="inputRow">
+							<label>ALLOW DOWLOAD</label>
+							<div class="check-item row tiny-box">
+								<label class="col-md-4 radio-type">
+									<input type="radio" name="val">
+									<span class="box"></span>
+									<span class="text">None</span>
+								</label>
+								<label class="col-md-4 checkbox-type">
+									<input type="checkbox" name="val">
+									<span class="box"></span>
+									<span class="text">PDF</span>
+								</label>
+								<label class="col-md-4 checkbox-type">
+									<input type="checkbox" name="val">
+									<span class="box"></span>
+									<span class="text">Original</span>
+								</label>
+							</div>
+						</div>
+						<div class="inputRow">
+							<label>VISIBILITY</label>
+							<div class="check-item row tiny-box">
+								<label class="col-md-6 radio-type">
+									<input type="radio" name="val1">
+									<span class="box"></span>
+									<div class="select-content">
+										<h5><img width="20px" src="assets/images/icons/friends.svg" alt="">Everybody</h5>
+										<p>Project is available for everyone.</p>
+									</div>
+								</label>
+								<label class="col-md-6 radio-type">
+									<input type="radio" name="val1">
+									<span class="box"></span>
+									<div class="select-content">
+										<h5><img width="20px" src="assets/images/icons/user.svg" alt="">Only Me</h5>
+										<p>Project is available just for you.</p>
+									</div>
+								</label>
+								<label class="col-md-6 radio-type">
+									<input type="radio" name="val1">
+									<span class="box"></span>
+									<div class="select-content">
+										<h5><img width="20px" src="assets/images/icons/link.svg" alt="">Anyone with a link</h5>
+										<p>Project is available with the link that you shared.</p>
+										<h6>Project Link</h6>
+										<input readonly="readonly" type="text" name="" value="http://beta.wowslides.com/users/be/t./bet.l.bet.l/projects/2018/01/ruby-101-pdf">
+									</div>
+								</label>
+								<label class="col-md-6 radio-type">
+									<input type="radio" name="val1">
+									<span class="box"></span>
+									<div class="select-content">
+										<h5><img width="20px" src="assets/images/icons/secure.svg" alt="">Anyone with a link & password</h5>
+										<p>Project is available with the link & the password.</p>
+										<h6>Password</h6>
+										<input type="text" name="" value="">
+									</div>
+								</label>
+							</div>
+
 						</div>
 
 					</div>
-
 				</div>
 				<div class="clear"></div>
 

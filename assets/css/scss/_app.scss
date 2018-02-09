@@ -2446,14 +2446,11 @@ section#copyright {
       color: #7B8D99;
       font-family: 'latolight';
       font-size: 20px;
-      height: 60px;
+      height: 50px;
       background: #fff;
       padding-left: 20px;
       border-radius: 5px;
       padding-right: 20px;
-      background-image: url(../images/icons/icon_plus.svg);
-      background-repeat: no-repeat;
-      background-position: 94%;
     }
     label {
       display: block;
@@ -2461,7 +2458,6 @@ section#copyright {
       font-size: 14px;
       color: #7B8D99;
       font-family: 'latoblack';
-      text-transform: uppercase;
     }
   }
 }
@@ -2500,7 +2496,6 @@ section#copyright {
 }
 
 .check-item {
-  width: 100%;
   min-height: 72px;
   position: relative;
   margin-bottom: 10px;
@@ -2517,12 +2512,10 @@ section#copyright {
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid #D9DFEA;
+    background: #EBEBEB;
     position: absolute;
     top: 16px;
-    left: 23px;
+    left: 30px;
   }
 }
 
@@ -2533,12 +2526,12 @@ rotateX .check-item span.box.square {
 .check-item {
   span.text {
     width: 100%;
-    height: 72px;
+    min-height: 50px;
     font-family: 'latobold';
     font-size: 20px;
     color: #3F515D;
     border-radius: 5px;
-    background: #F6F7F9;
+    background: #ffffff;
     cursor: pointer;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
@@ -2549,39 +2542,55 @@ rotateX .check-item span.box.square {
       padding-left: 60px;
     }
   }
+  .radio-type .box {
+    border-radius: 50%;
+  }
   input {
     &[type=checkbox], &[type=radio] {
       position: absolute;
       top: 0;
       opacity: 0;
       left: 0;
+      cursor: pointer;
     }
-    &[type=checkbox] ~ span.text {
-      border-radius: 0;
-
+    &[type=checkbox]:checked ~ span.text, &[type=radio]:checked ~ span.text, &[type=checkbox]:checked ~ .select-content, &[type=radio]:checked ~ .select-content {
+      background: #ececec;
     }
-    &[type=checkbox]:checked ~ span.text, &[type=radio]:checked ~ span.text {
-      background-color: #56C8C2;
-      color: #fff;
+    &[type=checkbox]:checked ~ .select-content input, &[type=radio]:checked ~ .select-content input {
+      background: #fff;
     }
+  }
+  .checkbox-type input {
     &[type=checkbox]:checked ~ span.box {
       background-image: url(../images/icons/icon_check.svg);
       background-repeat: no-repeat;
       background-position: center center;
-      border-color: #fff;
-      border-radius: 0;
+      background-color: #fff;
+      background-size: 70%;
     }
+  }
+  .radio-type input {
     &[type=radio]:checked ~ span.box {
-      background-image: url(../images/icons/icon_radio.svg);
+      background-image: url(../images/icons/icon_check.svg);
       background-repeat: no-repeat;
       background-position: center center;
-      border-color: #fff;
+      background-color: #fff;
       background-size: 70%;
+    }
+  }
+  .radio-type:hover, .checkbox-type:hover {
+    .text, .select-content,  {
+      background: #ececec;
+      transition: 0.3s;
+    }
+    .box ,.select-content input{
+      background: #fff;
+      transition: 0.3s;
     }
   }
   &.tiny-box {
     span.text {
-      font-size: 18px;
+      font-size: 16px;
       &.left-align {
         padding-left: 40px;
       }
@@ -2589,7 +2598,42 @@ rotateX .check-item span.box.square {
     span.box {
       width: 25px;
       height: 25px;
-      top: 24px;
+      top: 12px;
+    }
+  }
+  .select-content {
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    padding-left: 50px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    h5 {
+      font-size: 15px;
+      color: #41505c;
+      img {
+        padding-right: 5px;
+      }
+    }
+    p {
+      font-size: 13px;
+      padding-top: 5px;
+      font-family: 'lato';
+      color: #bab7b7;
+    }
+    h6 {
+      font-size: 13px;
+      padding-top: 10px;
+    }
+    input {
+      background: #ececec;
+      height: 30px;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 5px;
+      font-family: 'lato';
     }
   }
 }
@@ -5436,4 +5480,11 @@ h1.title.regular {
   color: #ffffff;
   padding-bottom: 5px;
   font-weight: 700;
+}
+
+.text-description {
+  color: #a3a3a3;
+  font-size: 0.7rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }

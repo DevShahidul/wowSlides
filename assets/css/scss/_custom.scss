@@ -726,12 +726,15 @@ span.title {
   font-family: 'latolight';
 }
 
-
 .select2-container .select2-choice {
     padding: 5px 0px 0px 8px;
-    font-family: 'latomedium';
     height: 40px;
     background-image: none;
+    display: flex;
+    align-items: center;
+    color: #7B8D99 !important;
+    font-family: 'latolight';
+    font-size: 20px;
     .select2-arrow  {
         background: #fff;
         background-image: none;
@@ -739,9 +742,20 @@ span.title {
 
       b {
         margin-top: 5px;
+        background: url("../images/icons/select2.png") no-repeat 0 8px;
       }
   }
 }
+.centerForms {
+
+  .select2-container .select2-choice {
+      padding: 0px 0px 0px 20px;
+      height: 50px;
+        border: none;
+
+  }
+}
+
 .select-sort {
   display: flex;
 }
@@ -921,9 +935,6 @@ tbody.collapse.in {
     }
     .checkbox-style {
       padding: 0px 0px 20px 10px;
-    }
-    .d-flex {
-      overflow-x: auto;
     }
     @media (max-width: 768px) {
       .d-flex {
