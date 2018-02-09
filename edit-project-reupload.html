@@ -228,11 +228,11 @@
   		 			<li>
   						<a href="edit-project-privacy.html">PRIVACY</a>
   		 			</li>
-  		 			<li class="active">
+  		 			<li>
   		 				<a href="edit-project-viewer.html">VIEWER</a>
   		 			</li>
-						<li>
-  		 				<a href="edit-project-reupload.html">RE-UPLOAD</a>
+						<li class="active">
+							<a href="edit-project-reupload.html">RE-UPLOAD</a>
   		 			</li>
   		 		</ul>
    			</div>
@@ -241,86 +241,33 @@
 
 		<!-- forms -->
 		<div class="step-forms container">
-			<!-- left -->
-			<div class="col-lg-8 col-md-6 col-xs-12" id="preview__area">
 
-			<h4>PREVIEW</h4>
-			<div class="">
-				<iframe width="100%" height="445" src="https://wows.li/e/QaAK9KN7ZwQ" frameborder="0" allowfullscreen></iframe>
-			</div>
+			<div class="col-md-12 col-xs-12">
 
-				<!-- #previewBox -->
-
-			</div>
-			<!-- #left -->
-			<!-- middle -->
-			<div class="col-lg-4 col-md-6 col-xs-12" id="preview__items">
-
-				<h4>VIEWER SETTINGS</h4>
-
-				<div class="centerForms">
-
-					<div class="inputRow switch-checkbox">
-						<label>AUTO ADVANCED</label>
-						<input type="checkbox" class="switch">
-					</div>
-					<div class="inputRow">
-						<label>NAVIGATION TYPE</label>
-						<div class="check-item row tiny-box">
-							<label class="col-md-6 col-xs-12 radio-type">
-								<input type="radio" name="val">
-								<span class="box"></span>
-								<span class="text left-align">AUTO</span>
-							</label>
-							<label class="col-md-6 col-xs-12 radio-type">
-								<input type="radio" name="val">
-								<span class="box"></span>
-								<span class="text left-align">HOVER</span>
-							</label>
-							<label class="col-md-6 col-xs-12 radio-type">
-								<input type="radio" name="val">
-								<span class="box"></span>
-								<span class="text left-align">FOOTER</span>
-							</label>
-							<label class="col-md-6 col-xs-12 radio-type">
-								<input type="radio" name="val">
-								<span class="box"></span>
-								<span class="text left-align">HIDDEN</span>
-							</label>
-						</div>
-					</div>
-					<div class="inputRow switch-checkbox">
-						<label>PREVIOUS & NEXT</label>
-						<input type="checkbox" class="switch">
-					</div>
-					<div class="inputRow switch-checkbox">
-						<label>OUTLINE MENU</label>
-						<input type="checkbox" class="switch">
-					</div>
-					<div class="inputRow switch-checkbox">
-						<label>LASER</label>
-						<input type="checkbox" class="switch">
-					</div>
-					<div class="inputRow switch-checkbox">
-						<label>FULL SCREEN</label>
-						<input type="checkbox" class="switch">
+					<div class="centered">
+						<h4>RE-UPLOAD DOCUMENT</h4>
 					</div>
 
-				</div>
+					<form action="upload" class="dropzone" id="my-awesome-dropzone">
+						<input type="file" name="file" />
+					</form>
+					<div class="button">
+						<button type="submit">UPLOAD</button>
+					</div>
+
+
+					<div class="description">
+						<ul class="centered">
+							<li><img width="30" src="assets/images/icons/pdf.svg" alt=""></li>
+							<li><img width="30" src="assets/images/icons/ppt.svg" alt=""></li>
+							<li><img width="30" src="assets/images/icons/pptx.svg" alt=""></li>
+						</ul>
+						<p>
+							Supported formats are PDF, PPT, PPTX
+						</p>
+					</div>
 
 			</div>
-
-
-
-
-
-				<div class="clear"></div>
-
-				<div class="col-md-12">
-					<div class="button pull-right">
-						<button type="submit">UPDATE</button>
-					</div>
-				</div>
 
 
 

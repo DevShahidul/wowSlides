@@ -6898,6 +6898,10 @@ section#copyright p a {
   color: #3F515D;
 }
 
+.upload-container .description img {
+  margin: 5px;
+}
+
 .upload-container .button {
   text-align: center;
   margin-top: 30px;
@@ -7496,7 +7500,7 @@ section#copyright p a {
   background: #EBEBEB;
   position: absolute;
   top: 16px;
-  left: 30px;
+  left: 25px;
 }
 
 rotateX .check-item span.box.square {
@@ -8005,6 +8009,7 @@ rotateX .check-item span.box.square {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 30px 70px;
+  position: relative;
 }
 
 .contentDescs h1 {
@@ -11380,8 +11385,21 @@ div.tagsinput div {
   opacity: .5;
 }
 
-.action-buttons .share-buttons .view {
-  margin: 0 5px;
+.view {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.view img {
+  width: 25px;
+  vertical-align: middle;
+}
+
+.view span {
+  color: #707070;
+  font-size: 0.9rem;
+  padding-left: 3px;
 }
 
 .embedCopy {
@@ -12178,6 +12196,56 @@ tbody.collapse.in {
     padding-bottom: 20px;
     text-align: center;
   }
+}
+
+input[type="checkbox"].switch {
+  font-size: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 2.5em;
+  height: 25px;
+  background: #ddd;
+  border-radius: 3em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"].switch:checked {
+  background: #56C8C2;
+}
+
+input[type="checkbox"].switch:after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"].switch:checked:after {
+  left: calc(100% - 0.9em);
+}
+
+.switch-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-checkbox label {
+  margin: 0 !important;
 }
 
 @media (min-width: 0px) and (max-width: 768px) {

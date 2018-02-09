@@ -1966,6 +1966,9 @@ section#copyright {
         color: #3F515D;
       }
     }
+    img {
+      margin: 5px;
+    }
   }
   .button {
     text-align: center;
@@ -2515,7 +2518,7 @@ section#copyright {
     background: #EBEBEB;
     position: absolute;
     top: 16px;
-    left: 30px;
+    left: 25px;
   }
 }
 
@@ -2970,6 +2973,7 @@ rotateX .check-item span.box.square {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 30px 70px;
+  position: relative;
   h1 {
     font-size: 2rem;
     color: #3F515D;
