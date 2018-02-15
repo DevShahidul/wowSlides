@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div class="" id="main">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+	</div>
+	<!-- #main -->
+
+  <div class="container pageEnterance">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 sticky-position">
+        <div class="profile-card-wrapper">
+          <div class="profile-image-area">
+            <img src="assets/images/pp.png" alt="">
+          </div>
+          <div class="profile-info-area">
+            <h4>Milo Ventimiglia</h4>
+            <p>Actor, USA</p>
+          </div>
+					<div class="profile-social">
+						<ul>
+							<li><a ><img src="assets/images/icons/facebook.svg" alt=""></a></li>
+							<li><a ><img src="assets/images/icons/twitter.svg" alt=""></a></li>
+							<li class="clickble-img"><a href="https://www.instagram.com" target="_blank"><img src="assets/images/icons/instagram.svg" alt=""></a></li>
+						</ul>
+					</div>
+          <div class="profile-action">
+            <a href="#" class="main-btn radius blue">Edit Profile</a>
+            <a href="#" class="main-btn radius">Analytics <span>BETA</span></a>
+          </div>
+          <div class="profile-numbers">
+            <div class="profile-numbers-box">
+								<h3>2k</h3>
+	              <p>Project Views</p>
+            </div>
+            <div class="profile-numbers-box">
+              <h3>5126</h3>
+              <p>Appreciations</p>
+            </div>
+            <div class="profile-numbers-box">
+              <a href="#">
+								<h3>1351</h3>
+	              <p>Followers</p>
+							</a>
+            </div>
+            <div class="profile-numbers-box">
+              <a href="#">
+								<h3>2136</h3>
+	              <p>Following</p>
+							</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+				<!-- tab pagelinks -->
+			 	<div class="tab-page-links" style="padding-bottom: 26px;">
+			 		<ul>
+			 			<li class="active">
+			 				<a href="#">PROJECTS</a>
+			 			</li>
+			 			<li>
+							<a href="#">APPRECIATED</a>
+			 			</li>
+			 			<li>
+			 				<a href="#">FOLLOWING</a>
+			 			</li>
+			 		</ul>
+			 	</div>
+			 	<!-- #tab page links -->
+
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
+						<!-- slide -->
+						<div class="swiper-slide wowSlideBox ownProfileItem">
+
+							<!-- image -->
+							<div class="img">
+
+								<a href="#">
+									<img src="assets/images/image1.png" alt="">
+								</a>
+							</div>
+
+							<!-- icon -->
+							<div class="icon" style="background:#FF6C0D">
+								EDUCATION
+							</div>
+
+							<div class="texts">
+								<div class="hoverItems">
+
+											<div class="toggleButton profileButton"><img src="assets/images/icons/more.svg" alt=""></div>
+
+											<div class="listDetail">
+												<ul>
+													<li><a href="#">Edit Project</a></li>
+													<li><a href="#">Add Templates</a></li>
+													<li><a href="#">Report</a></li>
+												</ul>
+											</div>
+
+
+								</div>
+								<!-- tags -->
+								<h5><a href="#">Red Mountain</a></h5>
+
+								<!-- desc -->
+								<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+								<!-- tags -->
+								<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							</div>
+
+							<!-- list -->
+							<div class="details">
+								<ul>
+									<li class="view"><a href="#">682</a></li>
+									<li class="like"><a href="#">349</a></li>
+									<li class="share"><a href="#">280</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- #slide -->
+
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
+						<!-- slide -->
+						<div class="swiper-slide wowSlideBox ownProfileItem">
+
+							<!-- image -->
+							<div class="img">
+
+								<a href="#">
+									<img src="assets/images/image1.png" alt="">
+								</a>
+							</div>
+
+							<!-- icon -->
+							<div class="icon" style="background:#FF6C0D">
+								EDUCATION
+							</div>
+
+							<div class="texts">
+								<div class="hoverItems">
+
+											<div class="toggleButton profileButton"><img src="assets/images/icons/more.svg" alt=""></div>
+
+											<div class="listDetail">
+												<ul>
+													<li><a href="#">Edit Project</a></li>
+													<li><a href="#">Add Templates</a></li>
+													<li><a href="#">Report</a></li>
+												</ul>
+											</div>
+
+
+								</div>
+								<!-- tags -->
+								<h5><a href="#">Red Mountain</a></h5>
+
+								<!-- desc -->
+								<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+								<!-- tags -->
+								<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							</div>
+
+							<!-- list -->
+							<div class="details">
+								<ul>
+									<li class="view"><a href="#">682</a></li>
+									<li class="like"><a href="#">349</a></li>
+									<li class="share"><a href="#">280</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- #slide -->
+
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
+						<!-- slide -->
+						<div class="swiper-slide wowSlideBox ownProfileItem">
+
+							<!-- image -->
+							<div class="img">
+
+								<a href="#">
+									<img src="assets/images/image1.png" alt="">
+								</a>
+							</div>
+
+							<!-- icon -->
+							<div class="icon" style="background:#FF6C0D">
+								EDUCATION
+							</div>
+
+							<div class="texts">
+								<div class="hoverItems">
+
+											<div class="toggleButton profileButton"><img src="assets/images/icons/more.svg" alt=""></div>
+
+											<div class="listDetail">
+												<ul>
+													<li><a href="#">Edit Project</a></li>
+													<li><a href="#">Add Templates</a></li>
+													<li><a href="#">Report</a></li>
+												</ul>
+											</div>
+
+
+								</div>
+								<!-- tags -->
+								<h5><a href="#">Red Mountain</a></h5>
+
+								<!-- desc -->
+								<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+								<!-- tags -->
+								<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							</div>
+
+							<!-- list -->
+							<div class="details">
+								<ul>
+									<li class="view"><a href="#">682</a></li>
+									<li class="like"><a href="#">349</a></li>
+									<li class="share"><a href="#">280</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- #slide -->
+
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
+						<!-- slide -->
+						<div class="swiper-slide wowSlideBox ownProfileItem">
+
+							<!-- image -->
+							<div class="img">
+
+								<a href="#">
+									<img src="assets/images/image1.png" alt="">
+								</a>
+							</div>
+
+							<!-- icon -->
+							<div class="icon" style="background:#FF6C0D">
+								EDUCATION
+							</div>
+
+							<div class="texts">
+								<div class="hoverItems">
+
+											<div class="toggleButton profileButton"><img src="assets/images/icons/more.svg" alt=""></div>
+
+											<div class="listDetail">
+												<ul>
+													<li><a href="#">Edit Project</a></li>
+													<li><a href="#">Add Templates</a></li>
+													<li><a href="#">Report</a></li>
+												</ul>
+											</div>
+
+
+								</div>
+								<!-- tags -->
+								<h5><a href="#">Red Mountain</a></h5>
+
+								<!-- desc -->
+								<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+								<!-- tags -->
+								<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							</div>
+
+							<!-- list -->
+							<div class="details">
+								<ul>
+									<li class="view"><a href="#">682</a></li>
+									<li class="like"><a href="#">349</a></li>
+									<li class="share"><a href="#">280</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- #slide -->
+
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
+						<!-- slide -->
+						<div class="swiper-slide wowSlideBox ownProfileItem">
+
+							<!-- image -->
+							<div class="img">
+
+								<a href="#">
+									<img src="assets/images/image1.png" alt="">
+								</a>
+							</div>
+
+							<!-- icon -->
+							<div class="icon" style="background:#FF6C0D">
+								EDUCATION
+							</div>
+
+							<div class="texts">
+								<div class="hoverItems">
+
+											<div class="toggleButton profileButton"><img src="assets/images/icons/more.svg" alt=""></div>
+
+											<div class="listDetail">
+												<ul>
+													<li><a href="#">Edit Project</a></li>
+													<li><a href="#">Add Templates</a></li>
+													<li><a href="#">Report</a></li>
+												</ul>
+											</div>
+
+
+								</div>
+								<!-- tags -->
+								<h5><a href="#">Red Mountain</a></h5>
+
+								<!-- desc -->
+								<p>Contrary to popular belief, lorem Ipsum is not simply.</p>
+
+								<!-- tags -->
+								<span class="tags"><a href="#">Art Direction</a>,<a href="#"> UI Design</a>,<a href="#"> UX Design</a></span>
+
+							</div>
+
+							<!-- list -->
+							<div class="details">
+								<ul>
+									<li class="view"><a href="#">682</a></li>
+									<li class="like"><a href="#">349</a></li>
+									<li class="share"><a href="#">280</a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- #slide -->
+
+					</div>
+				</div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+<!-- contact -->
+<section class="contact">
+	<div class="container centered">
+
+		<p>There are many variations of passages of lorem ipsum available!</p>
+
+		<a href="#" class="action">GET IN TOUCH</a>
+
+	</div>
+</section>
+<!-- #contact -->
+
+
+<!-- contactForm -->
+<div class="contactForm">
+	<div class="container">
+
+		<h4>GET IN TOUCH</h4>
+
+		<div class="col-md-6 col-xs-12 inputBox">
+			<div class="row">
+								<label>WHO ARE YOU</label>
+								<input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>EMAIL TO REACH YOU</label>
+								<input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>TELL US ABOUT IT</label>
+								<textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+						</div>
+					</div>
+
+					<div class="pull-right">
+						<button class="button">SUBMIT</button>
+					</div>
+
+	</div>
+</div>
+<!-- #contactForm -->
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+
+
+		<!-- left -->
+		<div class="col-md-8 col-xs-12 footerMenu">
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+			<ul>
+				<span class="title">SUPPORT</span>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Tutorials</a></li>
+				<li><a href="#">Templates</a></li>
+				<li><a href="#">Submit Ticket</a></li>
+				<li><a href="#">Affiliate</a></li>
+				<li><a href="#">Sitemap </a></li>
+			</ul>
+			</ul>
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+		</div>
+
+
+		<!-- right -->
+		<div class="col-md-4 col-xs-12 blogList">
+
+			<span class="title">BLOG</span>
+
+			<ul>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						[Video Series] Unlock The Power Of Conversational
+					</a>
+				</li>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						Escape The Noise: Join Us At The  Dreamforce
+					</a>
+				</li>
+				<li>
+					<span>Sept. 8, 2016</span>
+					<a href="#">
+						On-Demand Webinar: How to Bring A Data-Driven
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+
+	</div>
+</div>
+<!-- #footer -->
+
+
+<!-- copyright -->
+<section id="copyright">
+	<div class="container">
+
+		<div class="logo">
+			<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+		</div>
+
+		<ul class="copylist">
+			<li><a href="#">English</a></li>
+			<li><a href="#">Español</a></li>
+			<li><a href="#">한국어</a></li>
+			<li><a href="#">日本語</a></li>
+			<li><a href="#">Deutsch</a></li>
+		</ul>
+
+		<div class="clear"></div>
+
+		<ul class="copylist">
+			<ul>
+				<li><a href="#">TERMS OF SERVICE</a> </li>
+				<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+				<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+				<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+				<li><a href="#">PRIVACY POLICY </a></li>
+			</ul>
+		</ul>
+
+
+		<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+	</div>
+</section>
+<!-- #copyright -->
+
+
+
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>
