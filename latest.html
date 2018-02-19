@@ -10,8 +10,7 @@
 
 	<!-- basic needs -->
 	<link rel="stylesheet" href="assets/css/main.css">
-
-
+	<link rel="stylesheet" href="assets/css/pagination.css">
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="reporting/angular.min.js"></script>
@@ -19,6 +18,15 @@
 	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
 	<script type="text/javascript" src="assets/js/select.js"></script>
 	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.simplePagination.js"></script>
+	<script type="text/javascript">
+	$(function() {
+	$(selector).pagination({
+			items: 100,
+			itemsOnPage: 10,
+	});
+});
+	</script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
 
@@ -315,6 +323,8 @@
 				</div>
 
 </div>
+
+
 				<!-- item -->
 				<div class="col-md-3 col-sm-6 col-xs-12">
 
@@ -947,9 +957,22 @@
 				<!-- #item -->
 
 
-				<div class="see-more">
-					<a href="#">SHOW MORE</a>
+				<div class="pagination light-theme simple-pagination">
+					<ul>
+						<li class="disabled"><span class="current prev">Prev</span></li>
+						<li class="active"><span class="current">1</span></li>
+						<li><a href="#page-2" class="page-link">2</a></li>
+						<li><a href="#page-3" class="page-link">3</a></li>
+						<li><a href="#page-4" class="page-link">4</a></li>
+						<li><a href="#page-5" class="page-link">5</a></li>
+						<li class=""><span class="ellipse clickable">…</span></li>
+						<li><a href="#page-19" class="page-link">19</a></li>
+						<li><a href="#page-20" class="page-link">20</a></li>
+						<li><a href="#page-2" class="page-link next">Next</a></li>
+					</ul>
 				</div>
+
+
 
 
 		</div>
