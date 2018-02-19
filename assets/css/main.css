@@ -11146,6 +11146,56 @@ div.tagsinput div {
   color: #90111A !important;
 }
 
+.simple-pagination {
+  display: block;
+  overflow: hidden;
+  padding: 0 5px 5px 0;
+  text-align: center;
+}
+
+.simple-pagination ul {
+  width: auto;
+  max-width: none;
+  display: inline-block;
+}
+
+.simple-pagination ul li {
+  margin: 0;
+  float: left;
+  margin: 2px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 1px 1px 10px 1px #dfdfdf;
+}
+
+.simple-pagination ul li span, .simple-pagination ul li span.ellipse.clickable {
+  cursor: pointer;
+}
+
+.simple-pagination ul li a, .simple-pagination ul li span {
+  float: left;
+  color: #565656;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+  min-width: 14px;
+  padding: 0.5em 1.4em;
+}
+
+.simple-pagination ul li .current {
+  background: #56C8C2;
+  color: #FFF;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.simple-pagination ul li .ellipse {
+  padding: 0.5em 2em;
+  font-weight: bold;
+  cursor: default;
+}
+
 .edit-tab.tab-page-links {
   padding: 20px;
 }

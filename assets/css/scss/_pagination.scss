@@ -1,0 +1,44 @@
+
+.simple-pagination {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	text-align: center;
+	ul {
+		width: auto;
+		max-width: none;
+		display: inline-block;
+		li {
+			margin: 0;
+			float: left;
+			margin: 2px;
+	    border-radius: 3px;
+	    background: #fff;
+	    box-shadow: 1px 1px 10px 1px #dfdfdf;
+			span, span.ellipse.clickable {
+				cursor: pointer;
+			}
+			a,span {
+				float: left;
+				color: #565656;
+				font-size:14px;
+				line-height:24px;
+				font-weight: normal;
+				text-align: center;
+				min-width: 14px;
+				padding: 0.5em 1.4em;
+			}
+			.current {
+				background: #56C8C2;
+				color: #FFF;
+				cursor: default;
+				border-radius: 3px;
+			}
+			.ellipse {
+				padding: 0.5em 2em;
+				font-weight: bold;
+				cursor: default;
+			}
+		}
+	}
+}
