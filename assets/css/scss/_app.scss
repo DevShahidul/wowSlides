@@ -5673,4 +5673,7 @@ h1.title.regular {
 .sticky-position {
   position: sticky;
   top: 20px;
+  @media (max-width: 768px) {
+    position: inherit;
+  }
 }
