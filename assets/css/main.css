@@ -11049,6 +11049,12 @@ h1.title.regular span {
   top: 20px;
 }
 
+@media (max-width: 768px) {
+  .sticky-position {
+    position: inherit;
+  }
+}
+
 table {
   background-color: #dbe0e5;
   width: 100%;
