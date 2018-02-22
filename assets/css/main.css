@@ -8020,6 +8020,12 @@ rotateX .check-item span.box.square {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .contentDescs h1 {
+    margin-top: 20px;
+  }
+}
+
 .contentDescs p {
   color: #7E8693;
   font-size: 16px;
@@ -13003,6 +13009,7 @@ input[type="checkbox"].switch:checked:after {
   }
   .motto h1.title {
     font-size: 25px !important;
+    line-height: inherit;
   }
   .motto .main-btn.radius {
     padding: 10px 0px;

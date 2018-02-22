@@ -2980,6 +2980,9 @@ rotateX .check-item span.box.square {
     font-family: 'latoblack';
     line-height: 55px;
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
   p {
     color: #7E8693;
