@@ -11061,6 +11061,39 @@ h1.title.regular span {
   }
 }
 
+.input-group {
+  position: relative;
+}
+
+.input-group .input-group-btn {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.input-group .input-group-btn button {
+  height: 50px;
+  border-radius: 5px;
+  width: 60px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+
+.input-group .input-group-btn button:hover {
+  background: rgba(145, 145, 145, 0.22);
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .input-group .input-group-btn {
+    top: 10px;
+  }
+  .input-group .input-group-btn button {
+    width: 50px;
+  }
+}
+
 table {
   background-color: #dbe0e5;
   width: 100%;
