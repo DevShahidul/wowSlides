@@ -2654,6 +2654,7 @@ disabled look for disabled choices in the results dropdown
 .video-info {
   width: 100%;
   height: 420px;
+  position: relative;
 }
 
 .scene-stats-table {
@@ -2697,8 +2698,8 @@ disabled look for disabled choices in the results dropdown
 }
 
 .scene-chart-container {
-  width: 96%;
-  height: 83%;
+  width: 100%;
+  height: 100%;
   position: absolute;
 }
 
@@ -2713,13 +2714,13 @@ disabled look for disabled choices in the results dropdown
 .scene-video-container {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
   /*min-width: 765px;
 	min-height: 445px;*/
 }
 
 .scene-video-container iframe {
-  width: 96%;
+  width: 100%;
   height: 420px;
 }
 
@@ -6087,72 +6088,62 @@ section.blog {
 }
 
 .slideBlogBox {
-  min-height: 150px;
+  min-height: 120px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0px 12px 34px 0px rgba(178, 178, 178, 0.5);
   -webkit-box-shadow: 0px 12px 34px 0px rgba(178, 178, 178, 0.5);
   -moz-box-shadow: 0px 12px 34px 0px rgba(178, 178, 178, 0.5);
   overflow: hidden;
+  display: flex;
+}
+
+.slideBlogBox .blog-img {
+  width: 160px;
+  height: 120px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .slideBlogBox .desc {
-  float: left;
-  width: calc(100% - 87px);
-  min-height: 150px;
-  padding-left: 5px;
-  padding-right: 10px;
+  min-height: 120px;
+  padding: 15px;
 }
 
 .slideBlogBox .desc h6 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'latoblack';
   padding-bottom: 12px;
   margin-bottom: 12px;
-  border-bottom: 1px solid #F2F3F4;
   line-height: 22px;
+  max-height: 70px;
+  overflow: hidden;
 }
 
 .slideBlogBox .desc h6 a {
   color: #3F515D;
 }
 
-.slideBlogBox .desc p {
-  font-size: 14px;
-}
-
-.slideBlogBox .desc p a {
-  color: #909FA9;
-}
-
-.slideBlogBox .date {
-  background: #FBFBFB;
-  float: left;
-  width: 87px;
-  min-height: 150px;
-}
-
-.slideBlogBox .date span {
+.slideBlogBox .desc .number {
   display: block;
+  color: #9BA9B3;
+  font-size: 13px;
+  font-family: 'latoblack';
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
-.slideBlogBox .date span.icon {
+.slideBlogBox .desc .number b {
+  font-size: 19px;
+}
+
+.slideBlogBox .desc .number.icon {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   margin-bottom: 10px;
-}
-
-.slideBlogBox .date span.number {
-  color: #9BA9B3;
-  font-size: 13px;
-  font-family: 'latoblack';
-  text-align: center;
-}
-
-.slideBlogBox .date span.number b {
-  display: block;
-  font-size: 19px;
 }
 
 .swiper-pagination.slideBlog {
@@ -6394,6 +6385,8 @@ div.tagsinput input {
 .footer .footer-items li a {
   color: #fff;
   transition: all 300ms;
+  font-family: 'latolight';
+  font-weight: 700;
 }
 
 .footer .footer-items li a:hover {
@@ -6758,6 +6751,10 @@ section#copyright p a {
 
 .mb30 {
   margin-bottom: 30px;
+}
+
+.m_t_10 {
+  margin-top: 10px;
 }
 
 #main.navMain {
@@ -12544,6 +12541,96 @@ input[type="checkbox"].switch:checked:after {
 
 .switch-checkbox label {
   margin: 0 !important;
+}
+
+.analysis-grid {
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 10px 0px rgba(178, 178, 178, 0.5);
+  border-radius: 5px;
+  display: flex;
+}
+
+.analysis-grid p {
+  margin: 0;
+  color: #777777;
+}
+
+.analysis-grid h3 {
+  color: #646464;
+  font-size: 1.5rem;
+}
+
+.analysis-grid img {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+
+.analysis-grid.gray {
+  border-left: 5px solid #7a7a7a;
+}
+
+.analysis-grid.red {
+  border-left: 5px solid #ff7070;
+}
+
+.analysis-grid.blue {
+  border-left: 5px solid #56C8C2;
+}
+
+.analysis-grid.purple {
+  border-left: 5px solid #ab7cff;
+}
+
+.analysis-grid.orange {
+  border-left: 5px solid #ffbf60;
+}
+
+.analysis-grid.green {
+  border-left: 5px solid #43d6a0;
+}
+
+.list-style2 {
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  width: 100%;
+  box-shadow: 0px 12px 34px 0px rgba(178, 178, 178, 0.5);
+  border-radius: 5px;
+}
+
+.list-style2 .title {
+  background-color: #56C8C2;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.list-style2 li {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.list-style2 li p {
+  font-family: 'latoblack';
+  color: #3F515D;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.list-style2 li span {
+  color: #7E8693;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.list-style2 li:nth-child(even) {
+  background-color: #fff;
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
