@@ -11931,13 +11931,14 @@ body > .ui-select-bootstrap.open {
 }
 
 .wiki-detail-wrapper .wiki-content-wrapper {
-  width: 100%;
+  width: calc(100% - 330px);
   margin: 0 20px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
   .wiki-detail-wrapper {
+    width: 100%;
     display: block;
   }
   .wiki-detail-wrapper .left-menu {

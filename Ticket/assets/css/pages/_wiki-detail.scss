@@ -77,11 +77,12 @@
     margin-left: 10px;
   }
   .wiki-content-wrapper {
-    width: 100%;
+    width: calc(100% - 330px);
     margin: 0 20px;
     margin-bottom: 30px;
   }
   @media (max-width: 768px) {
+    width: 100%;
     display: block;
     .left-menu {
       width: 100%;
