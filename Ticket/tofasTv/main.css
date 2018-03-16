@@ -48,7 +48,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-#top .class-name {
+#top .course-name {
   font-size: 2.5rem;
   text-align: center;
   padding: 35px 20px;
@@ -79,22 +79,25 @@ a {
 }
 
 .background-layer.busy {
-  background: linear-gradient(to bottom, rgba(0, 150, 136, 0.36), rgba(126, 9, 0, 0.75));
+  background: linear-gradient(to bottom, rgba(255, 87, 34, 0.5), rgba(126, 9, 0, 0.85));
 }
-
+/*rgba(0, 150, 136, 0.36)*/
 .course-title {
   font-size: 2.5rem;
 }
 .trainer-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 100;
 }
+.trainer-name b {
+  font-size: 1.5rem;
+}
 .class-hours {
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 3rem;
 }
 .course-description {
-  margin-top: 30px;
+  margin-top: 10px;
   font-weight: 100;
   line-height: 1.5rem;
   font-size: 1.1rem;
@@ -137,14 +140,20 @@ a {
   padding-top: 5px;
 }
 
-.status {
-  font-size: 10rem;
+.class-number {
+  font-size: 12rem;
   text-align: center;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  color: rgba(255, 255, 255, 0.20);
+  color: #fff;
+}
+
+.status {
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
 #nav {

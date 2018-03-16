@@ -11937,8 +11937,13 @@ body > .ui-select-bootstrap.open {
 }
 
 @media (max-width: 768px) {
-  .wiki-detail-wrapper {
+  .wiki-detail-wrapper .wiki-content-wrapper {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wiki-detail-wrapper {
     display: block;
   }
   .wiki-detail-wrapper .left-menu {
