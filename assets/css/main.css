@@ -5906,7 +5906,10 @@ section#getStarted a.btn:after {
   font-size: 12px;
   font-family: 'latoblack';
   margin-bottom: 10px;
-  height: 12px;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 
 .swiper-slide.wowSlideBox .texts .tags a {
