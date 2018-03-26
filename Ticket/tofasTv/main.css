@@ -181,7 +181,7 @@ a {
   margin: auto;
   margin-top: 40px;
   padding: 40px 60px;
-  background: linear-gradient(to right, #f91c34c9, #ee5d2fd4);
+  background: linear-gradient(to right, rgba(249, 28, 52, 0.78), rgba(238, 93, 47, 0.8));
   color: #fff;
 }
 .box-style .box-header{
@@ -195,13 +195,12 @@ a {
   padding-bottom: 10px;
 }
 .input-field input {
-  width: 85%;
-  background: #ffffffd9;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
   border: none;
   padding: 15px 5px;
   font-size: 1.2rem;
   color: #5c5c5c;
-  text-align: center;
 }
 .note {
   font-size: 0.9rem;
@@ -209,7 +208,7 @@ a {
   margin-bottom: 30px;
 }
 .btn-primary {
-  background: #ffffffd6;
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   padding: 15px 30px;
   border-radius: 5px;
@@ -227,8 +226,9 @@ a {
 }
 
 .mini-box .input-field {
+  width: 85%;
+  margin: auto;
   margin-bottom: 35px;
-  text-align: center;
 }
 
 .large-box {
@@ -261,7 +261,7 @@ a {
   text-align: left;
   font-size: 1.6rem;
   padding-left: 5px;
-  border-bottom: 1px dotted #ffffff4a;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
 }
 .table-style tr {
   height: 80px;
@@ -269,7 +269,7 @@ a {
 }
 .table-style td {
   padding-left: 5px;
-  border-bottom: 1px dotted #ffffff4a;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
   max-width: 20vw;
   line-height: 2.4rem;
 }
@@ -338,18 +338,18 @@ a {
 }
 ::-webkit-scrollbar-track
 {
-	background-color: #ffffff73;
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 ::-webkit-scrollbar
 {
 	width: 6px;
-	background-color: #ffffff73;
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #922c28;
+	background-color: 922c28;
 }
 
 .login-title {
