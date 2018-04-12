@@ -7003,6 +7003,16 @@ section#copyright p a {
   border-radius: 5px;
 }
 
+.upload-container .settingInputs .input-row .ui-select-multiple {
+  background: #f6f7f9 !important;
+  min-height: 65px;
+}
+
+.upload-container .settingInputs .input-row .ui-select-multiple input:focus {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
 .upload-container .no-icon:after {
   display: none;
 }
@@ -7028,7 +7038,7 @@ section#copyright p a {
 }
 
 .upload-container .step-forms .input-row label {
-  width: 190px;
+  min-width: 190px !important;
   display: inline-block;
   padding-left: 30px;
   font-size: 19px;
