@@ -1391,3 +1391,26 @@ input[type="checkbox"].switch{
     }
   }
 }
+
+.text-desc {
+  color: #6b6b6b;
+  a {
+    color: #56C8C2;
+  }
+}
+
+.footer-logo {
+  width: 100px;
+  @media (max-width: 768px) {
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 20px;
+  }
+  .social-media {
+    padding-bottom: 20px;
+  }
+}
