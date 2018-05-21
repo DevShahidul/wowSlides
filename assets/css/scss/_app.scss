@@ -1582,6 +1582,9 @@ section#copyright {
     left: 0;
     right: 0;
     top: 10px;
+    img {
+      max-width: 150px;
+    }
     @media (max-width: 768px) {
       img {
         width: 120px;
