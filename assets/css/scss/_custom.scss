@@ -1414,3 +1414,60 @@ input[type="checkbox"].switch{
     padding-bottom: 20px;
   }
 }
+
+.toggle-radio {
+  margin-top: 20px;
+  .switch {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 150px;
+      height: 40px;
+      text-align: center;
+      margin: -30px 0 0 -75px;
+      transition: all 0.2s ease;
+    }
+    input[type=radio] {
+      display: none;
+    }
+    .switch label {
+      cursor: pointer;
+      color: rgba(0,0,0,0.4);
+      width: 75px;
+      line-height: 30px;
+      transition: all 0.2s ease;
+      background: #ececec;
+    }
+    label[for=yes] {
+      position: absolute;
+      left: 0px;
+    }
+    label[for=no] {
+      position: absolute;
+      right: 0px;
+    }
+    #yes:checked ~ .switch label[for=yes] {
+      color: #fff;
+      background: #56C8C2;
+      font-weight: 700;
+    }
+    #no:checked ~ .switch label[for=no] {
+      color: #fff;
+      background: #56C8C2;
+      font-weight: 700;
+    }
+}
+
+.m_l_125 {
+  margin-left: 12.5%;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+#plans .pageEnterance {
+  padding: 80px 0;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+}

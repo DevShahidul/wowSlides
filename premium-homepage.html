@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader -->
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#"  class="toggleButton user-img " data-target=".user-box">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+			<div class="user-box popUpItem mobile-user">
+				<ul>
+					<li><a href="#"><img src="assets/images/icons/profile.svg" alt="">Profile</a></li>
+					<li><a href="#"><img src="assets/images/icons/settings.svg" alt="">Settings</a></li>
+					<li><a href="#"><img src="assets/images/icons/logout.svg" alt="">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div id="main" class="midMain" style="background-image: url(assets/images/bg/premium-bg.png);    background-color: #2c353d;">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.png" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">DISCOVER</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#" class="toggleButton" data-target=".searchBox"><img src="assets/images/icons/search.svg" alt=""></a>
+							<div class="searchBox popUpItem">
+								<input type="text" placeholder="Search">
+								<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+							</div>
+						</li>
+						<li class="notification">
+							<a href="#" class="toggleButton" data-target=".notification-box"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+							<div class="notification-box popUpItem">
+								<ul>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+									<li>
+										<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+										<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+										<span class="time">about 2 hours ago</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="user">
+							<a href="#" class="user-img toggleButton" data-target=".user-box"><img src="assets/images/araz.png" alt=""></a>
+							<div class="user-box popUpItem">
+								<ul>
+									<li><a href="#"><img src="assets/images/icons/profile.svg" alt="">Profile</a></li>
+									<li><a href="#"><img src="assets/images/icons/settings.svg" alt="">Settings</a></li>
+									<li><a href="#"><img src="assets/images/icons/logout.svg" alt="">Logout</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+		<!-- motto -->
+
+		<!-- #motto -->
+
+	</div>
+	<!-- #main -->
+	<div class="motto mid-motto">
+		<div class="motto-inner">
+
+			<h1 class="title light transBg pt0 capitalize">Start Your Wowslide Professional Membership</h1>
+			<p class="hidden-xs"> </p>
+			<a href="#plans" class="main-btn radius red">BE PROFESSIONAL</a>
+		</div>
+	</div>
+	<!-- #mot
+
+	<!-- how-it-works -->
+	<div class="how-it-works">
+		<div class="container">
+
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<div class="how-it-works-item">
+							<span class="icon">
+								<img src="assets/images/icons/wow-analytic.png" alt="">
+							</span>
+							<h6>Upload PPTX to WowSlides</h6>
+							<p>Wowslides converts your PPTX file to HTML5 with all elements!</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-12">
+						<div class="how-it-works-item">
+							<span class="icon">
+								<img src="assets/images/icons/wow-secure.png" alt="">
+							</span>
+							<h6>Share Your Presentation</h6>
+							<p>Shared presentations work flawlessly on all devices with all features.Shared presentations work flawlessly on all devices with all features.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-12">
+						<div class="how-it-works-item">
+							<span class="icon">
+								<img src="assets/images/icons/wow-download.png" alt="">
+							</span>
+							<h6>Convert & Download Scorm Format</h6>
+							<p>Get detailed report of your presentations.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="plans">
+					<div class="col-md-12 col-xs-12 pageEnterance ">
+						<div class="pageTitle ">
+							<h4 class="text-center">Wowslide Plans</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12 m_l_125">
+							<div class="box-style">
+			          <div class="box-image" style="background-image: url(assets/images/wowslides-free.png)"></div>
+			          <div class="box-info">
+									<h3 class="box-title">FREE</h3>
+									<p class="box-price"><span>$0.00</span>/month</p>
+			            <p class="box-desc">Upload PPTX to WowSlides</p>
+									<p class="box-desc">Private Wowslide Option</p>
+			            <p class="box-desc">Share Your Presentations</p>
+									<p class="box-desc">Download PPTX, PDF Format</p>
+									<p class="box-desc">Manage, Track & Analyse Your Presentations</p>
+									<p class="box-desc">Open Your Presentations On All Devices</p>
+			          </div>
+								<div class="box-button"><a href="#" class="main-btn radius red">SIGN UP</a></div>
+			        </div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 ">
+							<div class="box-style">
+			          <div class="box-image" style="background-image: url(assets/images/wow-logo-bg.png)"></div>
+			          <div class="box-info">
+									<h3 class="box-title">PROFESSIONAL</h3>
+									<p class="box-price"><span>$149.99</span>/month</p>
+									<div class="toggle-radio">
+										<input type="radio" name="rdo" id="yes" checked>
+									  <input type="radio" name="rdo" id="no">
+									  <div class="switch">
+									    <label for="yes">Month</label>
+									    <label for="no">Year</label>
+									  </div>
+									</div>
+			            <p class="box-desc">Convert & Download Scorm Format</p>
+			            <p class="box-desc">Advanced Share Options for Private Wowslides</p>
+									<p class="box-desc">Account Management</p>
+									<p class="box-desc">Dedicated Support</p>
+			            <p class="box-desc">Domain Restriction</p>
+			          </div>
+								<div class="box-button"><a href="#" class="main-btn radius red">BE PROFESSIONAL</a></div>
+			        </div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="box-style">
+			          <div class="box-image" style="background-image: url(assets/images/wowslides-enterprise.png)"></div>
+			          <div class="box-info">
+									<h3 class="box-title">ENTERPRISE</h3>
+									<p class="box-price"><span>Contact Us</span></p>
+									<p class="box-desc">All available features</p>
+			            <p class="box-desc">More Storage</p>
+									<p class="box-desc">Enterprise-grade security, support, implementation</p>
+			          </div>
+								<div class="box-button"><a href="#" class="main-btn radius red">CONTACT US</a></div>
+			        </div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+	</div>
+	<!-- #how-it-works -->
+
+
+
+	<!-- descriptions -->
+
+
+
+
+
+
+		<!-- contact -->
+		<section class="contact">
+			<div class="container centered">
+
+				<p>There are many variations of passages of lorem ipsum available!</p>
+
+				<a href="#" class="action">GET IN TOUCH</a>
+
+			</div>
+		</section>
+		<!-- #contact -->
+
+			<!-- contactForm -->
+		<div class="contactForm">
+			<div class="container">
+
+				<h4>GET IN TOUCH</h4>
+
+			 	<div class="col-md-6 col-xs-12 inputBox">
+			 		<div class="row">
+		                <label>WHO ARE YOU</label>
+		                <input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+	            	</div>
+	            </div>
+
+	            <div class="col-md-6 col-xs-12 inputBox">
+	            	<div class="row">
+		                <label>EMAIL TO REACH YOU</label>
+		                <input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+	            	</div>
+	            </div>
+
+	            <div class="col-md-6 col-xs-12 inputBox">
+	            	<div class="row">
+		                <label>TELL US ABOUT IT</label>
+		                <textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+	            	</div>
+	            </div>
+
+	            <div class="pull-right">
+	            	<button class="button">SUBMIT</button>
+	            </div>
+
+			</div>
+		</div>
+		<!-- #contactForm -->
+
+
+
+			<!-- footer -->
+			<div class="footer">
+				<div class="container">
+
+					<div class="col-md-2 col-xs-12 text-center">
+						<img class="footer-logo" src="assets/images/logo-image.svg" alt="">
+						<div class="social-media">
+							<a href="https://www.linkedin.com/company/18132687/"><img src="assets/images/icons/social/linkedin.svg" alt=""></a>
+							<a href="https://www.facebook.com/wowslides/"><img src="assets/images/icons/social/facebook.svg" alt=""></a>
+							<a href="https://www.twitter.com/wowslides_"><img src="assets/images/icons/social/twitter.svg" alt=""></a>
+
+						</div>
+					</div>
+					<!-- left -->
+					<div class="col-md-3 col-xs-12">
+						<ul class="footer-items">
+							<span class="title">COMPANY</span>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Help & Support</a></li>
+							<li><a href="#">Sitemap</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-12">
+						<ul class="footer-items">
+							<span class="title">POLICIES</span>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+
+
+					<!-- right -->
+					<div class="col-md-4 col-xs-12 blogList">
+
+						<span class="title">BLOG</span>
+
+						<ul>
+							<li>
+								<span>Sept. 22, 2016</span>
+								<a href="#">
+									[Video Series] Unlock The Power Of Conversational
+								</a>
+							</li>
+							<li>
+								<span>Sept. 22, 2016</span>
+								<a href="#">
+									Escape The Noise: Join Us At The  Dreamforce
+								</a>
+							</li>
+							<li>
+								<span>Sept. 8, 2016</span>
+								<a href="#">
+									On-Demand Webinar: How to Bring A Data-Driven
+								</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<p class="copyright">WOWSLIDES, Copyrights <a href="#">Gobito Enterprise Solutions</a> © 2017 </p>
+					</div>
+
+
+				</div>
+			</div>
+			<!-- #footer -->
+
+
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>
