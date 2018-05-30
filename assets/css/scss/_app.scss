@@ -339,7 +339,7 @@ section#getStarted a.btn {
 
 #main {
   nav#navbar {
-    background: rgba(0, 0, 0, 0.2);
+    // background: rgba(0, 0, 0, 0.2);
     padding-bottom: 15px;
     .menu-bar {
       min-width: 35px;
@@ -3533,7 +3533,11 @@ nav#navbar.whiteNav {
         }
       }
     }
-
+  }
+  &.left-side {
+    text-align: left;
+    padding: 0 !important;
+    padding-top: 25px !important;
   }
 }
 
@@ -3794,8 +3798,8 @@ nav#navbar.whiteNav {
   visibility: hidden;
   opacity: 0;
   top: 60px;
-  left: -100px;
-  width: 160px;
+  left: -150px;
+  width: 200px;
   -webkit-transform: scale(1.1, 1.2);
   -ms-transform: scale(1.1, 1.2);
   transform: scale(1.1, 1.2);
@@ -3844,6 +3848,29 @@ nav#navbar.whiteNav {
       background-color: #e4e4e4;
       transition: 0.5s;
       border-radius: 5px;
+    }
+  }
+  .user-profile-info {
+    padding: 15px 10px;
+    background: #f1f1f1;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 5px;
+      align-self: flex-start;
+    }
+    h4 {
+      color: #39979c;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+    p {
+      font-size: 0.8rem;
+      padding-top: 4px;
+      color: #6f6f6f;
+      word-break: break-word;
+      word-wrap: break-word;
     }
   }
 }
@@ -4249,7 +4276,6 @@ nav#navbar.whiteNav {
   }
 }
 
-
 .shareList {
   position: absolute;
   z-index: 9999;
@@ -4265,6 +4291,22 @@ nav#navbar.whiteNav {
     -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
+  ul {
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    img {
+      height: 30px;
+    }
+    li {
+        padding: 15px 5px;
+    }
+  }
+}
+
+.shareList-wrapper {
+  background: #adbac8 ;
+  padding: 5px;
   ul {
     display: flex;
     margin-top: 0;
@@ -5499,6 +5541,7 @@ h1.title.regular {
   background-repeat: no-repeat;
   color: #fff;
   display: flex;
+  position: relative;
   align-items: flex-end;
   border-radius: 5px;
   margin-bottom: 16px;
@@ -5526,44 +5569,58 @@ h1.title.regular {
       text-shadow: 1px 1px 10px #1d1d1d;
     }
   }
+  .wow-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 700;
+  }
 }
 
 .related-wowBox {
   display: flex;
-  background: #fff;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px 0px rgba(178, 178, 178, 0.5);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(178, 178, 178, 0.5);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(178, 178, 178, 0.5);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 6px;
     @extend .transition;
   &:hover {
-      box-shadow: 0px 24px 68px 0px rgba(178, 178, 178, 0.5);
-      -webkit-box-shadow: 0px 24px 68px 0px rgba(178, 178, 178, 0.5);
-      -moz-box-shadow: 0px 24px 68px 0px rgba(178, 178, 178, 0.5);
+      box-shadow: 0px 10px 68px 0px rgba(178, 178, 178, 0.5);
+      -webkit-box-shadow: 0px 10px 68px 0px rgba(178, 178, 178, 0.5);
+      -moz-box-shadow: 0px 10px 68px 0px rgba(178, 178, 178, 0.5);
         @extend .transition;
   }
   .img {
-    height: 100px;
-    width: 135px;
-    min-width: 135px;
-    box-shadow: 1px 1px 10px 0px #dddddd;
-    border-radius: 5px;
     img {
-      width: 100%;
-      height: 100%;
+      width: 120px;
       border-radius: 5px;
+      height: 67px;
     }
   }
   .wow-text {
-    padding: 10px;
+    padding: 0 10px;
     max-height: 100px;
     overflow: hidden;
     h4 {
       font-size: 0.9rem;
-      font-family: 'latoblack';
       color: #41505c;
-      line-height: 1.4rem;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      -webkit-line-clamp: 2;
+      line-height: 1rem;
+      font-family: 'latoblack';
+      max-height: 3.2rem;
+      display: -webkit-box;
+    }
+    p {
+      color: gray;
+      font-size: 0.8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 1rem;
+
     }
   }
 }
@@ -5617,6 +5674,7 @@ h1.title.regular {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 86px;
+    position: relative;
     img {
       width: 140px;
       height: 140px;
@@ -5626,6 +5684,15 @@ h1.title.regular {
       box-shadow: 0px 3px 10px 1px rgba(29, 40, 48, 0.45);
       -webkit-box-shadow: 0px 3px 10px 1px rgba(29, 40, 48, 0.45);
       -moz-box-shadow: 0px 3px 10px 1px rgba(29, 40, 48, 0.45);
+    }
+    .premium-logo {
+      position: absolute;
+      right: 10px;
+      top: -10px;
+      img {
+        width: 40px !important;
+        height: 40px !important;
+      }
     }
   }
   .profile-info-area {

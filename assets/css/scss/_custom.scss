@@ -111,6 +111,13 @@
   padding: 20px 0;
   text-align: left;
 }
+.md-title {
+  @extend .loading-title;
+  padding: 0;
+  padding-top: 20px;
+  text-align: left;
+  font-size: 40px;
+}
 
 .edit-buttons {
   text-align: right;
@@ -1400,7 +1407,7 @@ input[type="checkbox"].switch{
 }
 
 .footer-logo {
-  width: 100px;
+  width: 80px;
   @media (max-width: 768px) {
     width: 50px;
   }
