@@ -4090,7 +4090,7 @@ nav#navbar.whiteNav {
 }
 
 .pageEnterance {
-  padding: 30px 0;
+  padding: 30px 20px;
   .right-buttons {
     ul {
       float: right;
@@ -4187,6 +4187,9 @@ nav#navbar.whiteNav {
     padding-bottom: 5px;
     border-bottom: 1px solid #d6d6d6;
     display: inline-block;
+  }
+  @media (max-width: 544px) {
+    margin-bottom: 0px;
   }
 }
 
@@ -5829,7 +5832,8 @@ h1.title.regular {
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -ms-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  background: #fff;
   .box-image {
     background-size: cover;
     background-repeat: no-repeat;
