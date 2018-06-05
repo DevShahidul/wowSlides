@@ -1606,3 +1606,17 @@ input[type="checkbox"].switch{
     }
   }
 }
+
+.message-warning {
+  display: flex;
+  margin-bottom: 20px;
+  p {
+    color: #8e8e8e;
+    border-radius: 5px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px
+  }
+}

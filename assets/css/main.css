@@ -13230,6 +13230,22 @@ input[type="checkbox"].switch:checked:after {
   padding-right: 5px;
 }
 
+.message-warning {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message-warning p {
+  color: #8e8e8e;
+  border-radius: 5px;
+}
+
+.message-warning img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
 @media (min-width: 0px) and (max-width: 768px) {
   /* Navbar */
   .pageNavigators {
