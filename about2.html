@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader -->
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div id="main" class="smallMain">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.png" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">DISCOVER</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<div class="bar-search">
+								<input type="text" placeholder="Search">
+								<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+							</div>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+		<!-- motto -->
+
+		<!-- #motto -->
+
+	</div>
+	<!-- #main -->
+	<div class="motto centered">
+		<div class="motto-inner">
+
+			<h1 class="title light transBg pt0">About Wowslides</h1>
+
+		</div>
+	</div>
+
+
+	<!-- about text -->
+	<div class="about-section">
+		<div class="container">
+			<h3>Reach A Wide Range of People</h3>
+			<p>In 2017, we decided to ensure people to deliver a speech on a product, idea or a work to their audience by the most comfortable way.
+				Within the improvements, PowerPoint added new features in itself and each time, the possibility of better presentations grew up. With this conscious,
+				Wowslides appeared as the Powerful PowerPoint to HTML5 converter.</p>
+		</div>
+	</div>
+	<div class="about-section about-info-section">
+		<div class="container">
+			<h3>Our Mission</h3>
+			<p>To reach PowerPoint presentations with their almost all features to the large masses.</p>
+		</div>
+	</div>
+	<div class="about-section">
+		<div class="container">
+			<h3>Wowslides Is an Advanced Presentation Technology</h3>
+			<p>As a product of Gobito Enterprise Solutions that is comprising of experts specialized in the industry,
+				 we are keeping tabs on the technological developments and creating genuine solutions for corporate structures and individual uses.</p>
+		</div>
+	</div>
+	<div class="about-section about-info-section">
+		<div class="container">
+			<h3>The Power of The Platform</h3>
+			<p>Presentation technologies have been taken an online step ahead with the idea of PPT to HTML5 conversion. Wowslides comes true this conversion
+				with almost all of the features that are pinned on PPT slides such as animations,
+				triggers, transition effects, embedded video and narrations, tables, shapes, hyperlinks, buttons, smart art objects, text formatting and effects.</p>
+			<p>As it is a pretty easy process, Wowslides lets you track presentations that means to know the reaction of the audience to the
+				presentations as view rate and how long users stayed and which slide part attracted them.</p>
+			<p>Besides, shared presentations are smoothly working on all devices, and if you want to limit the access with assigned users, there’s a solution with the password option.</p>
+		</div>
+	</div>
+	<div class="about-section">
+		<div class="container">
+			<h3>Wowslides Enterprise</h3>
+			<p>Enterprises integrates Wowslides to their systems.
+				As an organization, convert interactive PowerPoint presentations to Scorm package and upload the LMS (Learning Management System).</p>
+		</div>
+	</div>
+  <!-- #about text -->
+
+
+
+
+
+
+
+	<!-- blog -->
+	<section class="blog">
+		<div class="container">
+
+
+			<!-- titles -->
+			<div class="titleTop">
+
+				<div class="selects centered">
+
+					 <a class="more" href="#">VIEW ALL STORIES <img src="assets/images/icons/arrow_right.svg" alt=""></a>
+
+				</div>
+
+				<h3>ON THE BLOG</h3>
+
+			</div>
+			<!-- #titles -->
+
+		</div>
+
+			<!-- Swiper -->
+		    <div class="swiper-container slideBlog">
+		        <div class="swiper-wrapper">
+
+							<!-- slide -->
+							<div class="swiper-slide slideBlogBox">
+								<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+								<div class="desc">
+										<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+										<span class="number"><b>20</b> JUN</span>
+								</div>
+							</div>
+							<!-- #slide -->
+		            <!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+		            	<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+		            	<div class="desc">
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<span class="number"><b>20</b> JUN</span>
+		            	</div>
+		            </div>
+		            <!-- #slide -->
+
+								<!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+		            	<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+		            	<div class="desc">
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<span class="number"><b>20</b> JUN</span>
+		            	</div>
+		            </div>
+		            <!-- #slide -->
+
+								<!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+		            	<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+		            	<div class="desc">
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<span class="number"><b>20</b> JUN</span>
+		            	</div>
+		            </div>
+		            <!-- #slide -->
+
+								<!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+		            	<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+		            	<div class="desc">
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<span class="number"><b>20</b> JUN</span>
+		            	</div>
+		            </div>
+		            <!-- #slide -->
+
+								<!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+		            	<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+		            	<div class="desc">
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<span class="number"><b>20</b> JUN</span>
+		            	</div>
+		            </div>
+		            <!-- #slide -->
+
+								<!-- slide -->
+		            <div class="swiper-slide slideBlogBox">
+		            	<a href="#"><div class="blog-img" style="background-image: url('assets/images/image1.png')"></div></a>
+		            	<div class="desc">
+		            			<h6><a href="#">Unlock The Power Of Conversational Presenting</a></h6>
+		            			<span class="number"><b>20</b> JUN</span>
+		            	</div>
+		            </div>
+		            <!-- #slide -->
+
+		        </div>
+
+	            <div class="swiper-pagination slideBlog"></div>
+
+		    </div>
+
+
+
+
+		    <!-- Initialize Swiper -->
+		    <script>
+		    var swiper = new Swiper('.swiper-container.slideBlog', {
+    			paginationClickable: true,
+        		pagination: '.swiper-pagination.slideBlog',
+		        slidesPerView: 3,
+		        spaceBetween: 30,
+    			breakpoints: {
+	            1024: {
+	                slidesPerView: 3,
+	                spaceBetween: 40
+	            },
+	            768: {
+	                slidesPerView: 2,
+	                spaceBetween: 30
+	            },
+	            640: {
+	                slidesPerView: 1,
+	                spaceBetween: 20
+	            },
+	            320: {
+	                slidesPerView: 1,
+	                spaceBetween: 10
+	            }
+	        }
+		    });
+		    </script>
+
+
+ 		<div class="clear"></div>
+	</section>
+	<!-- #blog -->
+
+
+
+
+		<!-- contactForm -->
+
+	<!-- #contactForm -->
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+
+
+			<!-- left -->
+			<div class="col-md-8 col-xs-12 footerMenu">
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+				<ul>
+					<span class="title">SUPPORT</span>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Tutorials</a></li>
+					<li><a href="#">Templates</a></li>
+					<li><a href="#">Submit Ticket</a></li>
+					<li><a href="#">Affiliate</a></li>
+					<li><a href="#">Sitemap </a></li>
+				</ul>
+				</ul>
+
+				<ul>
+					<span class="title">COMPANY</span>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+
+			</div>
+
+
+			<!-- right -->
+			<div class="col-md-4 col-xs-12 blogList">
+
+				<span class="title">BLOG</span>
+
+				<ul>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							[Video Series] Unlock The Power Of Conversational
+						</a>
+					</li>
+					<li>
+						<span>Sept. 22, 2016</span>
+						<a href="#">
+							Escape The Noise: Join Us At The  Dreamforce
+						</a>
+					</li>
+					<li>
+						<span>Sept. 8, 2016</span>
+						<a href="#">
+							On-Demand Webinar: How to Bring A Data-Driven
+						</a>
+					</li>
+				</ul>
+
+			</div>
+
+
+		</div>
+	</div>
+	<!-- #footer -->
+
+
+	<!-- copyright -->
+	<section id="copyright">
+		<div class="container">
+
+			<div class="logo">
+				<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+			</div>
+
+			<ul class="copylist">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Español</a></li>
+				<li><a href="#">한국어</a></li>
+				<li><a href="#">日本語</a></li>
+				<li><a href="#">Deutsch</a></li>
+			</ul>
+
+			<div class="clear"></div>
+
+			<ul class="copylist">
+				<ul>
+					<li><a href="#">TERMS OF SERVICE</a> </li>
+					<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+					<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+					<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+					<li><a href="#">PRIVACY POLICY </a></li>
+				</ul>
+			</ul>
+
+
+			<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+		</div>
+	</section>
+	<!-- #copyright -->
+
+</div>
+<!-- #All Page -->
+
+
+
+</body>
+</html>

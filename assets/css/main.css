@@ -9256,12 +9256,12 @@ nav#navbar.whiteNav {
   margin-bottom: 5px;
 }
 
-.pageLinks .active a, .sitemap .active a {
+.pageLinks li a.active, .sitemap li a.active {
   background: #56C8C2;
   color: #fff;
 }
 
-.pageLinks .active a:hover, .sitemap .active a:hover {
+.pageLinks li a.active:hover, .sitemap li a.active:hover {
   background: #56C8C2;
   color: #fff;
 }
@@ -9270,8 +9270,7 @@ nav#navbar.whiteNav {
   font-size: 16px;
   color: #6D7E8A;
   border-radius: 6px;
-  text-transform: uppercase;
-  padding: 15px;
+  padding: 7px 10px;
   display: block;
   font-family: 'latoblack';
 }
@@ -9279,6 +9278,20 @@ nav#navbar.whiteNav {
 .pageLinks a:hover, .sitemap a:hover {
   background: #6D7E8A;
   color: #fff;
+}
+
+.pageLinks .second-level, .sitemap .second-level {
+  margin-left: 15px;
+}
+
+.pageLinks .second-level a, .sitemap .second-level a {
+  font-family: 'lato';
+}
+
+.pageLink-height {
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+  margin-bottom: 30px;
 }
 
 .pageEnterance {
@@ -9401,6 +9414,40 @@ nav#navbar.whiteNav {
   .pageTexts {
     margin-bottom: 0px;
   }
+}
+
+.pageContent p {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.pageContent p a {
+  color: #56C8C2;
+  font-weight: 700;
+}
+
+.pageContent p:last-of-type {
+  margin-bottom: 70px;
+}
+
+.pageContent p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.pageContent h2 {
+  font-size: 2rem;
+  font-family: 'latoblack';
+  margin-bottom: 30px;
+  color: #3F515D;
+}
+
+.pageContent h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pageContent b {
+  font-weight: 700;
 }
 
 .img-upload {
@@ -11012,6 +11059,13 @@ h1.title.regular span {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1rem;
+}
+
+@media (max-width: 991px) and (min-width: 554px) {
+  .related-wowBox {
+    width: 50%;
+    float: left;
+  }
 }
 
 .related-projects span.title {

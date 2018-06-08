@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div class="" id="main">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+	</div>
+	<!-- #main -->
+
+
+
+	<!-- titles -->
+	<div class="container pageEnterance">
+
+		<div class="pageTitle col-md-12 col-xs-12">
+
+			<h4 class="col-md-12">Frequently Asked Questions</h4>
+
+		</div>
+
+	</div>
+
+
+	<!-- content -->
+	<div class="container helpContent">
+
+
+		<!-- texts -->
+		<div class="pageTexts pageContent col-md-12 col-xs-12">
+
+
+				<div class="content-section">
+					<h2> GENERAL</h2>
+					<h4>What is Wowslides?</h4>
+					<p>Wowslides is a powerful PowerPoint to HTML5 converter.</p>
+
+					<h4>Where can I find the user guides of Wowslides?</h4>
+					<p>Visit the <a href="#">user guide documentation page</a> of the Wowslides.</p>
+
+					<h4>Can I install Wowslides on my computer?</h4>
+					<p>Wowslides is not a desktop application. It is a web application to convert and share your presentations online.</p>
+
+					<h4>Which version of MS PowerPoint does Wowslides convert?</h4>
+					<p>Wowslides converts all versions of MS PowerPoint presentations. </p>
+
+					<h4>Is Wowslides free or paid?</h4>
+					<p>Wowslides is a free application with all features. Only enterprise edition is paid.</p>
+
+					<h4>Can I convert other file extensions except PowerPoint on Wowslides?</h4>
+					<p>Yes. Wowslides converts ppt, pptx and pdf documents to html5.</p>
+
+					<h4>Which features of PowerPoint presentation are converted to HTML5 by Wowslides?</h4>
+					<p>Wowslides converts your PowerPoint presentations with all features such as animations, transitions, triggers, audios, videos, gifs, tables, shapes, hyperlinks, buttons, graphics, smart arts, text formatting and effects etc.</p>
+
+					<h4>Can I upload a file without sign-in to Wowslides?</h4>
+					<p>No, you must sign-in to Wowslides. This also provides you to analyze your presentations.</p>
+
+					<h4>Is there a presentation limit for free membership? </h4>
+					<p>No. You can upload how many presentations you want. But, if you want to embeddable private presentation, you should upgrade your membership to Wowslides Professional.</p>
+
+					<h4>Is there a presentation limit for individual use? </h4>
+					<p>No. You can upload how many presentations you want.</p>
+
+					<h4>Is there a slide limitation for each presentation?</h4>
+					<p>No. You can upload your presentation without limitation of slide number.</p>
+
+					<h4>Does Wowslides play the video in my presentation?</h4>
+					<p>Wowslides converts all features in a PowerPoint presentation. Your video will play on Wowslides.</p>
+
+					<h4>Does Wowslides play the audio in my presentation?</h4>
+					<p>Wowslides converts all features in a PowerPoint presentation. Your audio will play on Wowslides.</p>
+
+					<h4>Does Wowslides view the gifs in my presentation?</h4>
+					<p>Wowslides converts all features in a PowerPoint presentation. Your gifs will be viewed on Wowslides.</p>
+
+					<h4>Do all presentations work on mobile?</h4>
+					<p>Wowslides is a PowerPoint to Html5 converter. All presentations work flawlessly on all mobile devices.</p>
+
+				</div>
+
+				<div class="content-section">
+					<h2> TEMPLATES</h2>
+					<h4>Are the templates of Wowslides free or paid?</h4>
+					<p>All templates of Wowslides are free for all users. You can download and start to use them on PowerPoint.</p>
+
+					<h4>Are the templates of Wowslides compatible with all versions of MS PowerPoint?</h4>
+					<p>No. Templates of Wowslides are compatible with only MS PowerPoint 2007 and over.</p>
+
+					<h4>Can I publish my own template on Wowslides?</h4>
+					<p>Yes, you can publish your own template public or private. When you upload your presentation, mark the “Save as a draft” option. </p>
+					<p>Click to see the guide of <a href="https://www.wowslides.com/templates.html">templates</a> in detailed.</p>
+					<p>Please read the <a href="#">policy</a> about templates before you share them with all users.</p>
+
+					<h4>Can I sell my own template on Wowslides?</h4>
+					<p>No. Wowslides is a free application except enterprises. It cannot be used for commercial purposes.</p>
+
+					<h4>Is it required to confirm by Wowslides for publishing my own template?</h4>
+					<p>Your template is submitted for the Wowslides’ approval. If it is confirmed, template will publish for members to use.</p>
+
+					<h4>Can I remove a template that Wowslides confirmed before?</h4>
+					<p>You can remove your published template.</p>
+
+					<h4>Can I define specific users to download my template?</h4>
+					<p>Uploaded templates are for all Wowslides users. You can’t define specific user for downloading your template.</p>
+				</div>
+
+				<div class="content-section">
+					<h2> PUBLISHING PRESENTATIONS</h2>
+					<h4>Who can view my presentation on Wowslides?</h4>
+					<p>All Wowslides users can view your presentation. If you don’t want them to view it, you should use settings of your presentation. You can select one of the below:</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt=""><b>Everyone:</b> All users included non-member of Wowslides can view your presentation.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt=""><b>Members:</b> All Wowslides members can view your presentation.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt=""><b>Private:</b> Only you can view your presentation.</p>
+					<p>Click to see the guide of <a href="#">Publishing Settings</a> in detailed.</p>
+
+					<h4>Can I assign my presentation someone I defined?</h4>
+					<p>You can use privacy settings to obtain link and password for your presentation. Or you can define domain restriction for your presentation. But, you should upgrade your membership to Wowslides Professional to use domain restriction.</p>
+
+					<h4>Can users download my presentation?</h4>
+					<p>If you allow users to download your presentation as PDF or PowerPoint, they can download it. </p>
+
+					<h4>Can I download my presentation as a video?</h4>
+					<p>Wowslides is a PowerPoint to HTML5 converter. It is not allowed to download a converted presentation.</p>
+
+					<h4>Can I remove the default next and previous buttons when the presentation is viewed?</h4>
+					<p>You can switch next and previous buttons, outline menu, laser and full screen options on presentation viewer settings.</p>
+
+				</div>
+
+				<div class="content-section">
+					<h2> ANALYTICS</h2>
+					<h4>Which reports of the presentation does Wowslides give?</h4>
+					<p>Wowslides gives you reports that includes count of view and unique view, total watch time, user name, view dates and times, IP addresses, watched time and watched percentage per user who viewed your presentation.</p>
+
+					<h4>Is analytic report of an updated presentation deleted?</h4>
+					<p>Currently yes, we are working on it.</p>
+
+					<h4>Is there any difference between presentation reports on Wowslides Professional and individual use?</h4>
+					<p>Wowslides Enterprise and Wowslides Professional membership allows you to see more detailed user information who view your presentation than free account. </p>
+				</div>
+
+				<div class="content-section">
+					<h2>WOWSLIDES PROFESSIONAL</h2>
+					<h4>What are the main differences between Wowslides Enterprise, Professional and Free membership?</h4>
+					<p>You can view Wowslides membership features below:</p>
+					<p><b>Wowslides Free:</b></p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You have private Wowslides options (Everybody, Only Me, Anyone with a Link, Anyone with a Link & Password)</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can share your presentations on social media and websites with embed code</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can allow users to download your presentation as PPTX, PDF format</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can track & analyze your presentations</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can open your presentations on all devices</p>
+
+					<p><b>Wowslides Professional:</b></p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Convert & Download Scorm Format: You can download your presentation as Scorm package for Scorm 2004 1th, 2nd, 3rd edition. Also, you can set completed status.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Advanced Share Options for Private Wowslides: You can use your private presentations on your learning management system, publish them on your website. Wowslides Professional gives 10 GB storage space to keep your private presentations.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Account Management & Dedicated Support: You have an account contact responsible to get live support.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Domain Restriction: You can make advanced privacy settings by using domain restriction.</p>
+
+					<p><b>Wowslides Enterprise:</b></p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">All features available for enterprise users.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You have more storage field for your private presentations.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You have enterprise-grade security, support and implementation.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Wowslides Enterprise allows you to view detailed analytics.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Advanced Share Options for Private Wowslides: You can use your private presentations on your learning management system, publish them on your website. There is not storage limitation for your private presentations.</p>
+
+					<h4>How much does Wowslides Professional cost?</h4>
+					<p>You can view pricing table on <a href="https://www.wowslides.com/pricing.html">Pricing Page</a>.</p>
+				</div>
+
+				<div class="content-section">
+					<h2>WOWSLIDES ENTERPRISE</h2>
+					<h4>What is Wowslides Enterprise?</h4>
+					<p>Wowslides Enterprise is a package that offers you to integrate the PowerPoint to Html5 converter to your systems.</p>
+
+					<h4>What are the main differences between Wowslides Enterprise and individual usage?</h4>
+					<p>You can view Wowslides membership features below:</p>
+					<p><b>Wowslides Free:</b></p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You have private Wowslides options (Everybody, Only Me, Anyone with a Link, Anyone with a Link & Password)</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can share your presentations on social media and websites with embed code</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can allow users to download your presentation as PPTX, PDF format</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can track & analyze your presentations</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You can open your presentations on all devices</p>
+
+					<p><b>Wowslides Professional:</b></p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Convert & Download Scorm Format: You can download your presentation as Scorm package for Scorm 2004 1th, 2nd, 3rd edition. Also, you can set completed status.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Advanced Share Options for Private Wowslides: You can use your private presentations on your learning management system, publish them on your website. Wowslides Professional gives 10 GB storage space to keep your private presentations.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Account Management & Dedicated Support: You have an account contact responsible to get live support.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Domain Restriction: You can make advanced privacy settings by using domain restriction.</p>
+
+					<p><b>Wowslides Enterprise:</b></p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">All features available for enterprise users.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You have more storage field for your private presentations.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">You have enterprise-grade security, support and implementation.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Wowslides Enterprise allows you to view detailed analytics.</p>
+					<p style="margin-left: 10px;"> <img style="margin-right: 5px" src="assets/images/icons/arrow_gray.svg" alt="">Advanced Share Options for Private Wowslides: You can use your private presentations on your learning management system, publish them on your website. There is not storage limitation for your private presentations.</p>
+
+					<h4>Is Wowslides Enterprise free or paid?</h4>
+					<p>Integration of Wowslides Enterprise is paid. Get in touch to plan your enterprise integration.</p>
+
+					<h4>Which SCORM edition does Wowslides Enterprise export? </h4>
+					<p>You can download your presentations as Scorm 2004 1th, 2nd, 3rd edition.</p>
+
+					<h4>Can I integrate Wowslides to our systems?</h4>
+					<p>You can integrate the generated HTML5 into your applications with powerful Rest API's. You can use Wowslides on your Learning Management System.</p>
+
+					<!-- <h4>What are the system requirements for Wowslides Enterprise?</h4>
+					<p></p> -->
+
+					<h4>How much does Wowslides Enterprise cost?</h4>
+					<p>You can view the pricing table on <a href="https://www.wowslides.com/pricing.html">Pricing Page</a> or <a href="https://www.wowslides.com/s/contact-us.html">Get in touch</a> to plan your enterprise integration.</p>
+
+					<!-- <h4>What if I’m having problems about integration of Wowslides Enterprise with API key?</h4>
+					<p></p> -->
+				</div>
+
+				<div class="">
+					<h2>SIGNING UP AND SIGNING IN</h2>
+					<h4>I signed up for Wowslides but I didn’t receive the confirmation email.</h4>
+					<p>If you don’t see the confirmation e-mail, check your Spam folder and. If you’re using Gmail, please check the Social and Promotions folders.</p>
+					<p><a href="https://www.wowslides.com/s/contact-us.html">Get in touch</a> if you don’t find it anyway.</p>
+
+					<h4>I can’t remember my password for signing in. How do I reset it?</h4>
+					<p>If you can’t remember your password, you can use the “I Forgot My Password. Send Again?” link under the “Password” on the Sign In page to reset it. Be sure to enter the same e-mail address as the one you have registered with Wowslides.</p>
+
+					<h4>I can’t sign in after resetting my password.</h4>
+					<p>When you try to sign in, be sure you’re using the same e-mail address that you used to reset when signing in to your account. Also, don’t forget that passwords are case-sensitive; make sure there are no extra spaces in the password field.</p>
+					<p><a href="https://www.wowslides.com/s/contact-us.html">Get in touch</a> if you continue to have trouble.</p>
+
+				</div>
+		</div>
+
+
+	</div>
+
+
+
+<!-- contact -->
+<section class="contact">
+	<div class="container centered">
+
+		<p>There are many variations of passages of lorem ipsum available!</p>
+
+		<a href="#" class="action">GET IN TOUCH</a>
+
+	</div>
+</section>
+<!-- #contact -->
+
+
+<!-- contactForm -->
+<div class="contactForm">
+	<div class="container">
+
+		<h4>GET IN TOUCH</h4>
+
+		<div class="col-md-6 col-xs-12 inputBox">
+			<div class="row">
+								<label>WHO ARE YOU</label>
+								<input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>EMAIL TO REACH YOU</label>
+								<input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>TELL US ABOUT IT</label>
+								<textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+						</div>
+					</div>
+
+					<div class="pull-right">
+						<button class="button">SUBMIT</button>
+					</div>
+
+	</div>
+</div>
+<!-- #contactForm -->
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+
+
+		<!-- left -->
+		<div class="col-md-8 col-xs-12 footerMenu">
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+			<ul>
+				<span class="title">SUPPORT</span>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Tutorials</a></li>
+				<li><a href="#">Templates</a></li>
+				<li><a href="#">Submit Ticket</a></li>
+				<li><a href="#">Affiliate</a></li>
+				<li><a href="#">Sitemap </a></li>
+			</ul>
+			</ul>
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+		</div>
+
+
+		<!-- right -->
+		<div class="col-md-4 col-xs-12 blogList">
+
+			<span class="title">BLOG</span>
+
+			<ul>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						[Video Series] Unlock The Power Of Conversational
+					</a>
+				</li>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						Escape The Noise: Join Us At The  Dreamforce
+					</a>
+				</li>
+				<li>
+					<span>Sept. 8, 2016</span>
+					<a href="#">
+						On-Demand Webinar: How to Bring A Data-Driven
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+
+	</div>
+</div>
+<!-- #footer -->
+
+
+<!-- copyright -->
+<section id="copyright">
+	<div class="container">
+
+		<div class="logo">
+			<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+		</div>
+
+		<ul class="copylist">
+			<li><a href="#">English</a></li>
+			<li><a href="#">Español</a></li>
+			<li><a href="#">한국어</a></li>
+			<li><a href="#">日本語</a></li>
+			<li><a href="#">Deutsch</a></li>
+		</ul>
+
+		<div class="clear"></div>
+
+		<ul class="copylist">
+			<ul>
+				<li><a href="#">TERMS OF SERVICE</a> </li>
+				<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+				<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+				<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+				<li><a href="#">PRIVACY POLICY </a></li>
+			</ul>
+		</ul>
+
+
+		<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+	</div>
+</section>
+<!-- #copyright -->
+
+
+
+</div>
+<!-- #All Page -->
+
+<script type="text/javascript">
+	$('.pageLinks ul li a').click(function(){
+		$('li a').removeClass("active");
+		$(this).addClass("active");
+	});
+</script>
+
+</body>
+</html>

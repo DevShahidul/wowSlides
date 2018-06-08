@@ -4065,21 +4065,21 @@ nav#navbar.whiteNav {
   }
   li {
     margin-bottom: 5px;
-  }
-  .active a {
-    background: #56C8C2;
-    color: #fff;
-    &:hover {
+    a.active {
       background: #56C8C2;
       color: #fff;
+      &:hover {
+        background: #56C8C2;
+        color: #fff;
+      }
     }
   }
+
   a {
     font-size: 16px;
     color: #6D7E8A;
     border-radius: 6px;
-    text-transform: uppercase;
-    padding: 15px;
+    padding: 7px 10px;
     display: block;
     font-family: 'latoblack';
     &:hover {
@@ -4087,6 +4087,18 @@ nav#navbar.whiteNav {
       color: #fff;
     }
   }
+  .second-level {
+    margin-left: 15px;
+    a {
+      font-family: 'lato'
+    }
+  }
+}
+
+.pageLink-height {
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+  margin-bottom: 30px;
 }
 
 .pageEnterance {
@@ -4190,6 +4202,37 @@ nav#navbar.whiteNav {
   }
   @media (max-width: 544px) {
     margin-bottom: 0px;
+  }
+}
+
+.pageContent {
+  @extend .pageText;
+  p {
+    margin-bottom: 20px;
+    line-height: 20px;
+    a {
+      color: #56C8C2;
+      font-weight: 700;
+    }
+    &:last-of-type {
+      margin-bottom: 70px;
+    }
+  }
+  p:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 2rem;
+    font-family: 'latoblack';
+    margin-bottom: 30px;
+    color: #3F515D;
+  }
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  b {
+    font-weight: 700;
   }
 }
 
@@ -5625,6 +5668,10 @@ h1.title.regular {
       line-height: 1rem;
 
     }
+  }
+  @media (max-width: 991px) and (min-width: 554px) {
+    width: 50%;
+    float: left;
   }
 }
 
