@@ -7787,11 +7787,6 @@ rotateX .check-item span.box.square {
   width: 100%;
 }
 
-.imageBig img {
-  border-radius: 10px;
-  width: 100%;
-}
-
 .imageBig .pagination {
   padding: 20px 0 20px 0;
   text-align: center;
