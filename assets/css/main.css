@@ -6652,7 +6652,8 @@ section#copyright p a {
 }
 
 #form-groups {
-  margin: 3vh auto;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 #form-groups h1 {
