@@ -2501,7 +2501,7 @@ section#copyright {
       display: block;
       margin-bottom: 12px;
       font-size: 14px;
-      color: #6f6f6f;
+      color: #545454;
       font-family: 'latoblack';
       position: relative;
       &.secure::after {
@@ -2564,7 +2564,7 @@ section#copyright {
     display: block;
     width: 40px;
     height: 40px;
-    background: #EBEBEB;
+    background: #e0e0e0;
     position: absolute;
     top: 16px;
     left: 25px;
@@ -2673,7 +2673,7 @@ rotateX .check-item span.box.square {
       font-size: 13px;
       padding-top: 5px;
       font-family: 'lato';
-      color: #bab7b7;
+      color: #808080;
     }
     h6 {
       font-size: 13px;
@@ -3549,8 +3549,9 @@ nav#navbar.whiteNav {
   }
   p {
     font-size: 30px;
-    color: #7E8693;
+    color: #292929;
     line-height: 40px;
+    text-align: justify;
   }
   @media (max-width: 768px) {
     padding: 30px 0;
@@ -4199,6 +4200,10 @@ nav#navbar.whiteNav {
   }
   @media (max-width: 544px) {
     margin-bottom: 0px;
+  }
+  .content-section p {
+    color: #565656;
+    font-family: 'lato';
   }
 }
 
@@ -5878,6 +5883,7 @@ h1.title.regular {
   border-radius: 5px;
   margin-bottom: 40px;
   background: #fff;
+  min-height: 700px;
   .box-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -5922,6 +5928,10 @@ h1.title.regular {
     text-align: center;
     padding-bottom: 15px;
     padding-top: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 40px;
   }
 }
 small {
