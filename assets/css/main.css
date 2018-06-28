@@ -11313,6 +11313,10 @@ h1.title.regular span {
   box-shadow: 1px 1px 10px 1px #eaeaea;
 }
 
+.box-style .box-info {
+  padding-bottom: 70px;
+}
+
 .box-style .box-info .box-title {
   display: block;
   font-size: 20px;
