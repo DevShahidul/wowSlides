@@ -1631,5 +1631,10 @@ input[type="checkbox"].switch{
   border-radius: 5px;
   color: #fff;
   font-family: 'latoblack';
+}
 
+input[type=submit]:disabled, button:disabled{
+  cursor: unset !important;
+  background-color: #cccccc !important;
+  color: #fff !important;
 }

@@ -5580,6 +5580,18 @@ h1.title.regular {
   }
 }
 
+a {
+  &.disabled {
+    background: #cccccc !important;
+    cursor: unset !important;
+    color: #fff !important;
+    &:hover {
+      background: #cccccc !important;
+      color: #fff !important;
+    }
+  }
+}
+
 
 .wow-category-box {
   width: 100%;
