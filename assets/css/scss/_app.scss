@@ -524,9 +524,9 @@ section#getStarted a.btn {
   }
 }
 .homeMain {
-  height: calc(100vh + 400px);
+  height: calc(100vh - -400px);
   @media (max-width: 768px) {
-    height: calc(100vh + 880px);
+    height: calc(100vh - -880px);
   }
 }
 

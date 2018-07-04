@@ -5283,12 +5283,12 @@ section#getStarted a.btn:after {
 }
 
 .homeMain {
-  height: calc(100vh + 400px);
+  height: calc(100vh - -400px);
 }
 
 @media (max-width: 768px) {
   .homeMain {
-    height: calc(100vh + 880px);
+    height: calc(100vh - -880px);
   }
 }
 
