@@ -1638,3 +1638,19 @@ input[type=submit]:disabled, button:disabled{
   background-color: #cccccc !important;
   color: #fff !important;
 }
+
+.cookie-block {
+  padding: 20px 59px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999999;
+  background: #283138;
+  color: #fff;
+  font-size: 20px;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

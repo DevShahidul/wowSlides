@@ -13312,6 +13312,23 @@ input[type=submit]:disabled, button:disabled {
   color: #fff !important;
 }
 
+.cookie-block {
+  padding: 20px 59px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999999;
+  background: #283138;
+  color: #fff;
+  font-size: 20px;
+}
+
+.cookie-block a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media (min-width: 0px) and (max-width: 768px) {
   /* Navbar */
   .pageNavigators {
