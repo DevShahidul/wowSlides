@@ -9188,34 +9188,6 @@ nav#navbar.whiteNav {
   z-index: 99;
 }
 
-.descriptions .img:after {
-  content: '';
-  display: block;
-  width: 70px;
-  height: 70px;
-  background: #56C8C2;
-  position: absolute;
-  border: 10px solid #fff;
-  border-radius: 50%;
-  bottom: 35px;
-  right: 35px;
-  z-index: 99;
-}
-
-.descriptions .img:before {
-  content: '';
-  display: block;
-  width: 160px;
-  height: 160px;
-  background: #56C8C2;
-  position: absolute;
-  border-radius: 50%;
-  top: 35px;
-  left: -35px;
-  opacity: .5;
-  z-index: 98;
-}
-
 .descriptions .img img {
   max-width: 100%;
   position: relative;
