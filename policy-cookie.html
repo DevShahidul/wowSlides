@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div class="" id="main">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+	</div>
+	<!-- #main -->
+
+
+
+	<!-- titles -->
+	<div class="container pageEnterance">
+
+		<div class="pageTitle col-md-12 col-xs-12">
+
+			<h4>Cookie Policy</h4>
+
+		</div>
+
+	</div>
+
+
+	<!-- content -->
+	<div class="container helpContent">
+
+		<!-- texts -->
+		<div class="pageTexts pageContent col-md-12 col-xs-12">
+				<div class="content-section">
+					<h4>Introduction</h4>
+					<p>This cookie notice is for visitors to our websites, apps and other digital platforms. It sets out how we use cookies. In this notice ‘we’ and ‘our’ means Wowslides Video Company which operates this platform.</p>
+					<h4>What are cookies?</h4>
+					<p>For almost any modern website to work properly, it needs to collect certain basic information on its users. To do this, a site will create files known as cookies – which are small text files – on its users’ computers. These cookies are designed to allow the website to recognise its users on subsequent visits, or to authorise other designated websites to recognise these users for a particular purpose.</p>
+					<p>Cookies do a lot of different jobs which make your experience of the Internet much smoother and more interactive. For instance, they are used to remember your preferences on sites you visit often, to remember your user ID and the contents of your shopping baskets, and to help you navigate between pages more efficiently. They also help ensure that the advertisements that you see online are more relevant to you and your interests. Some data collected is designed to detect browsing patterns and approximate geographical location to improve user experience.</p>
+					<p>Some websites may also contain images called ‘web beacons’ (also known as ‘clear gifs’). Web beacons only collect limited information, including a cookie number, a timestamp, and a record of the page on which they are placed. Websites may also carry web beacons placed by third party advertisers. These beacons do not carry any personally identifiable information and are only used to track the effectiveness of a particular campaign (for example by counting the number of visitors).</p>
+					<p>Information collected by cookies is now classed as personal data.</p>
+					<h4>How do we use cookies?</h4>
+					<p>We collect a number of cookies from our users for various reasons, not least to track our own performance – but also to let us serve you content tailored to your own specifications, hopefully improving your overall experience of the website. Amongst other things, the cookies we use allow users to register to make comments, allow us to calculate how many visitors we have and how long they stay on our site.</p>
+					<p>We do our utmost to respect users’ privacy. We use cookies to monitor and improve our services, but they do also allow us to sell advertising campaigns that are tailored to your interests and reading behavior on our website, which helps keeps our content free to our readers. We sometimes include links on our site to goods and services offered by third parties and we may be paid some commission if you subsequently decide to make a purchase. Cookies may be used to track your visits to third party sites to help ensure that we are paid the correct amounts. Please note that these commercial arrangements do not influence our editorial content in any way.</p>
+					<p>We believe that your experience of the site would be adversely affected if you opted out of the cookies we use.</p>
+					<h4>What types of cookie are there and which ones do we use?</h4>
+					<p>There are two  types of cookie:</p>
+					<p><b>Persistent cookies</b> remain on a user’s device for a set period of time specified in the cookie. They are activated each time that the user visits the website that created that particular cookie.</p>
+					<p><b>Session cookies</b> are temporary. They allow website operators to link the actions of a user during a browser session. A browser session starts when a user opens the browser window and finishes when they close the browser window. Once you close the browser, all session cookies are deleted.</p>
+					<p>Cookies also have, broadly speaking, four different functions and can be categorised as follow: ‘strictly necessary’ cookies, ‘performance’ cookies, ‘functionality’ cookies and ‘targeting’ or ‘advertising’ cookies.</p>
+					<p><b>Strictly necessary cookies</b> are essential to navigate around a website and use its features. Without them, you wouldn’t be able to use basic services like registration or shopping baskets. These cookies do not gather information about you that could be used for marketing or remembering where you’ve been on the internet.</p>
+					<p>Examples of how we use ‘strictly necessary’ cookies include:</p>
+					<p>Setting unique identifiers for each unique visitor, so site numbers can be analyzed.</p>
+					<p>Allowing you to sign in to The Wowslides website as a registered user.</p>
+					<p><b>Performance cookies</b> collect data for statistical purposes on how visitors use a website, they don’t contain personal information such as names and email addresses, and are used to improve your user experience of a website.  </p>
+					<p>Here are some examples of how we use performance cookies:</p>
+					<p>Gathering data about visits to the website, including numbers of visitors and visits, length of time spent on the site, pages clicked on or where visitors have come from.</p>
+				  <p>For comparison with other websites using data collected by industry-accepted measurement and research companies. </p>
+					<p>Information supplied by performance cookies helps us to understand how you use the website; for example, whether or not you have visited before, what you looked at or clicked on and how you found us. We can then use this data to help improve our services.  We generally use independent analytics companies to perform these services for us and when this is the case, these cookies may be set by a third party company (third party cookies).</p>
+					<p>If you have registered with the website we can combine the data from the web analytics services and their cookies with the information you have supplied to us, so that we can make your experience more personal by recommending certain articles to you based on your reading behavior or tailoring your emails with content you might find more interesting.  We would only do this if you have given us permission to communicate with you. Sometimes the data used from the web analytics companies has been collected before you registered or signed in. In these cases, if we use this data to identify you, we use it only in accordance with our privacy notice.</p>
+					<p><b>Functionality cookies</b> allow users to customize how a website looks for them: they can remember usernames, language preferences and regions, and can be used to provide more personal services like local weather reports and traffic news.</p>
+					<p>Here are some examples of how we use functionality cookies:</p>
+					<p>Storing your user preferences on Your Account page</p>
+					<p>Remembering if you’ve been to the site before so that messages intended for first-time users are not displayed to you.</p>
+					<p><b>Advertising and targeting cookies</b> are used to deliver advertisements more relevant to you, but can also limit the number of times you see an advertisement, and be used to chart the effectiveness of an ad campaign by tracking users’ clicks. They can also provide security in transactions. They are usually placed by third-party advertising networks with a website operator’s permission, but can be placed by the operator themselves. They can remember that you have visited a website, and this information can be shared with other organizations, including other advertisers. They cannot determine who you are though, as the data collected is never linked to your profile. </p>
+					<p>The two main ways we use advertising and targeting cookies are set out below:</p>
+					<p>Interest-based advertising (or online behavioural advertising) is where cookies are placed on your device by our third party service providers which remember your web browsing activity and group together your interests in order to provide you with targeted advertisements which are more relevant to you when you visit wowslides.com.  Your previous web browsing activity can also be used to infer things about you, such as your demographics (age, gender etc.). This information may also be used to make the advertising on wowslides.com more relevant to you.</p>
+					<p>‘Retargeting’ is a form of interest-based advertising that enables our advertising partners to show you advertisements selected based on your online browsing activity away from the website.  This allows companies to advertise to people who previously visited their website. These cookies will usually be placed on your device by third-party advertising networks and we have listed the main third party networks we work with below.</p>
+					<p>Without these cookies, online advertisements you encounter will be less relevant to you and your interests. </p>
+
+					<h4>How do I control my cookies?</h4>
+					<p>You should be aware that any preferences will be lost if you delete all cookies and many websites will not work properly or you will lose some functionality. We do not recommend turning cookies off when using our website for these reasons.</p>
+					<p>Most browsers accept cookies automatically, but you can alter the settings of your browser to erase cookies or prevent automatic acceptance if you prefer. Generally you have the option to see what cookies you’ve got and delete them individually, block third party cookies or cookies from particular sites, accept all cookies, to be notified when a cookie is issued or reject all cookies. Visit the ‘options’ or ‘preferences’ menu on your browser to change settings, and check the following links for more browser-specific information.</p>
+					<p>Cookie settings in Internet Explorer</p>
+					<p>Cookie settings in Firefox</p>
+					<p>Cookie settings in Chrome</p>
+					<p>Cookie settings in Safari</p>
+
+					<h4>Managing performance cookies</h4>
+					<p>It is possible to opt out of having your anonymized browsing activity within websites recorded by performance cookies.</p>
+					<p>wowslides.com uses the following companies and you can opt out of their cookies by clicking on the relevant links. Please note that this will take you to the relevant third party’s website and generate a ‘no thanks’ cookie, which will stop any further cookies being set by those third parties.</p>
+					<p>Don’t forget that by not allowing performance cookies, this stops us from being able to learn what people like or don’t like about our website so that we can make it better.</p>
+					<p>Adobe: https://www.adobe.com/uk/privacy/marketing-cloud.html</p>
+					<p>Chartbeat: https://chartbeat.com/privacy/</p>
+					<p>ComScore: http://www.scorecardresearch.com/about.aspx</p>
+					<p>Google Analytics: http://tools.google.com/dlpage/gaoptout</p>
+					<p>Quantcast: https://www.quantcast.com/en-uk/opt-out/ </p>
+
+					<h4>Managing advertising cookies</h4>
+					<p>Please note that if you want to opt out from receiving targeted advertising, this does not mean that you will receive less advertising when you use our website. This just means that the advertising you see will not be as customized to you.</p>
+					<p>You can visit the Internet Advertising Bureau’s consumer advice site, http://www.youronlinechoices.com/uk/your-ad-choices.  This will give you a list of all cookies that are currently set on your device and how to opt out of each of them.  Please note that this list will contain more networks than just found on wowslides.com </p>
+					<p>We have also set out links below to some of the specific partners we work with who set cookies on our websites, and therefore on your computer, each of which have instructions on how to opt out of their cookies.</p>
+					<p>Affilinet - https://www.affili.net/uk/footeritem/privacy-policy</p>
+					<p>Appnexus - https://www.appnexus.com/en/company/cookie-policy</p>
+					<p>Exponential - http://exponential.com/privacy</p>
+					<p>Google – http://www.google.com/ads/preferences/html/opt-out.html</p>
+					<p>Index Media - http://www.indexexchange.com/privacy/</p>
+					<p>Inskin – http://www.inskinmedia.com/privacy-policy/</p>
+					<p>OpenX - https://www.openx.com/legal/privacy-policy/</p>
+					<p>Pubmatic – http://www.pubmatic.com/opt-out.php</p>
+					<p>Sharethrough – http://platform-cdn.sharethrough.com/privacy-policy</p>
+					<p>Skimlinks - https://skimlinks.com/privacy-policy</p>
+					<p>Sovrn - https://www.sovrn.com/privacy-policy-eu/</p>
+					<p>Teads - http://teads.tv/en/privacy-policy/ad-interest-manager/</p>
+					<p>Triplelift: http://triplelift.com/privacy/</p>
+
+				</div>
+		</div>
+
+
+	</div>
+
+
+
+<!-- contact -->
+<section class="contact">
+	<div class="container centered">
+
+		<p>There are many variations of passages of lorem ipsum available!</p>
+
+		<a href="#" class="action">GET IN TOUCH</a>
+
+	</div>
+</section>
+<!-- #contact -->
+
+
+<!-- contactForm -->
+<div class="contactForm">
+	<div class="container">
+
+		<h4>GET IN TOUCH</h4>
+
+		<div class="col-md-6 col-xs-12 inputBox">
+			<div class="row">
+								<label>WHO ARE YOU</label>
+								<input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>EMAIL TO REACH YOU</label>
+								<input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>TELL US ABOUT IT</label>
+								<textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+						</div>
+					</div>
+
+					<div class="pull-right">
+						<button class="button">SUBMIT</button>
+					</div>
+
+	</div>
+</div>
+<!-- #contactForm -->
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+
+
+		<!-- left -->
+		<div class="col-md-8 col-xs-12 footerMenu">
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+			<ul>
+				<span class="title">SUPPORT</span>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Tutorials</a></li>
+				<li><a href="#">Templates</a></li>
+				<li><a href="#">Submit Ticket</a></li>
+				<li><a href="#">Affiliate</a></li>
+				<li><a href="#">Sitemap </a></li>
+			</ul>
+			</ul>
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+		</div>
+
+
+		<!-- right -->
+		<div class="col-md-4 col-xs-12 blogList">
+
+			<span class="title">BLOG</span>
+
+			<ul>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						[Video Series] Unlock The Power Of Conversational
+					</a>
+				</li>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						Escape The Noise: Join Us At The  Dreamforce
+					</a>
+				</li>
+				<li>
+					<span>Sept. 8, 2016</span>
+					<a href="#">
+						On-Demand Webinar: How to Bring A Data-Driven
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+
+	</div>
+</div>
+<!-- #footer -->
+
+
+<!-- copyright -->
+<section id="copyright">
+	<div class="container">
+
+		<div class="logo">
+			<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+		</div>
+
+		<ul class="copylist">
+			<li><a href="#">English</a></li>
+			<li><a href="#">Español</a></li>
+			<li><a href="#">한국어</a></li>
+			<li><a href="#">日本語</a></li>
+			<li><a href="#">Deutsch</a></li>
+		</ul>
+
+		<div class="clear"></div>
+
+		<ul class="copylist">
+			<ul>
+				<li><a href="#">TERMS OF SERVICE</a> </li>
+				<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+				<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+				<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+				<li><a href="#">PRIVACY POLICY </a></li>
+			</ul>
+		</ul>
+
+
+		<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+	</div>
+</section>
+<!-- #copyright -->
+
+
+
+</div>
+<!-- #All Page -->
+
+<script type="text/javascript">
+	$('.pageLinks ul li a').click(function(){
+		$('li a').removeClass("active");
+		$(this).addClass("active");
+	});
+</script>
+
+</body>
+</html>

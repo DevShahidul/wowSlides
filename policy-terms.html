@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>WowSlides</title>
+
+
+	<!-- basic needs -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+	<script type="text/javascript" src="assets/js/dropzone.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="assets/js/video.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+</head>
+<body>
+
+
+<!-- loader
+<div id="loader" class="loader centered">
+	<div class="sk-folding-cube">
+	  <div class="sk-cube1 sk-cube"></div>
+	  <div class="sk-cube2 sk-cube"></div>
+	  <div class="sk-cube4 sk-cube"></div>
+	  <div class="sk-cube3 sk-cube"></div>
+	</div>
+</div>
+<!-- #loader -->
+
+
+
+
+<!-- mobile-menu -->
+<div class="mobile-menu">
+
+	<div class="top">
+
+		<!-- user -->
+		<div class="user">
+			<a href="#">
+				<img src="assets/images/araz.png" alt="">
+			</a>
+		</div>
+
+		<!-- userbar -->
+		<div class="user-bar">
+			<ul class="centered">
+				<li>
+					<a href="#" class="toggleButton" data-target=".mobile-search"><img src="assets/images/icons/search.svg" alt=""></a>
+					<div class="searchBox mobile-search popUpItem">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="assets/images/icons/search_white.svg" alt=""></button>
+					</div>
+				</li>
+				<li class="notification">
+					<a href="#" class="toggleButton" data-target=".mobile-nots"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+					<div class="notification-box mobile-nots popUpItem">
+						<ul>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+							<li>
+								<span class="img"><a href="#"><img src="assets/images/araz.png" alt=""></a></span>
+								<span class="text"><a href="#">Sergiu Bishop</a> liked <a href="#">Flat Footer View</a></span>
+								<span class="time">about 2 hours ago</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="upload">
+		<a href="#">UPLOAD</a>
+	</div>
+
+
+	<div class="menu-list">
+		<ul>
+			<li>
+				<a href="#">HOW IT WORKS?</a>
+			</li>
+			<li>
+				<a href="#">TEMPLATES</a>
+			</li>
+			<li>
+				<a href="#">DISCOVER</a>
+			</li>
+			<li>
+				<a href="#">BLOG</a>
+			</li>
+			<li>
+				<a href="#">SUPPORT</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+<!-- #mobile-menu -->
+
+<!-- All Page -->
+<div class="allPage">
+
+
+
+	<!-- main -->
+	<div class="" id="main">
+
+
+
+		<!-- mobile nav -->
+		<div class="mobile-nav">
+
+			<div class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+
+			<div class="menu-bar">
+				<img src="assets/images/icons/menuBar.svg" width="30" fill="#fff" alt="">
+			</div>
+
+		</div>
+
+
+		<!-- navbar -->
+		<nav id="navbar">
+
+				<!-- logo -->
+				<h1 class="logo"><a href="#">wowslides</a></h1>
+
+
+				<!-- menu -->
+				<div class="menu-bar">
+					<ul>
+						<li>
+							<a href="#">HOW IT WORKS?</a>
+						</li>
+						<li>
+							<a href="#">TEMPLATES</a>
+						</li>
+						<li>
+							<a href="#">BLOG</a>
+						</li>
+						<li>
+							<a href="#">SUPPORT</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- userbar -->
+				<div class="user-bar">
+					<ul class="centered">
+						<li>
+							<a href="#"><img src="assets/images/icons/search.svg" alt=""></a>
+						</li>
+						<li class="notification">
+							<a href="#"><img src="assets/images/icons/notification.svg" alt=""> <span>2</span></a>
+						</li>
+						<li class="user">
+							<a href="#"><img src="assets/images/araz.png" alt=""></a>
+						</li>
+						<li class="upload">
+							<a href="#">UPLOAD</a>
+						</li>
+					</ul>
+				</div>
+
+		</nav>
+		<!-- #navbar -->
+
+
+	</div>
+	<!-- #main -->
+
+
+
+	<!-- titles -->
+	<div class="container pageEnterance">
+
+		<div class="pageTitle col-md-12 col-xs-12">
+
+			<h4>Terms of Service</h4>
+
+		</div>
+
+	</div>
+
+
+	<!-- content -->
+	<div class="container helpContent">
+
+		<!-- texts -->
+		<div class="pageTexts pageContent col-md-12 col-xs-12">
+				<div class="content-section">
+					<h4>I. TERMS OF SERVICE</h4>
+					<p>Welcome to Wowslides.com. This website (the “Site”) is owned and operated by Gobito Digital Soluitons and subject to the following Terms of Service. Your registration on and/or use of this Site in any way, including merely browsing the Site, signifies your agreement to be bound by these Terms of Service. By using or registering on the Site, you agree to also be bound by the Wowslides Privacy Policy. In addition, when using particular Wowslides-owned or -operated services, you shall be subject to any posted guidelines or rules applicable to such services. All such guidelines or rules are hereby incorporated by reference into these Terms of Service.</p>
+					<p>Wowslides reserves the right, at its sole discretion, to change, modify, add or remove any portion of this Site or these Terms of Service, in whole or in part, at any time. Changes to these Terms of Service will be effective when posted. You agree to review these Terms of Service periodically to be aware of any changes. Your continued use of this Site after any changes to these Terms of Service are posted will be considered acceptance of those changes.</p>
+
+					<h4>II. SERVICES</h4>
+					<p>The Site provides you access to the Wowslides video engineering platform which allows users to edit and encode videos and other media content into an interactive media presentation (“Presentation”) and to publish, distribute and share such Presentations online. Through the use of the Site, Wowslides also offers analytics services to users for tracking views of the Presentations created using the Site. The video engineering platform and analytics services are collectively referred to in these Terms of Service as the “Services.” The Services may be provided for free or for a fee, either under our Personal or Enterprise Customer pricing models.</p>
+					<p>You understand and acknowledge that the Site and Services are being provided and made available on an “AS IS” and “AS AVAILABLE” basis. The Site and/or Services may contain errors or inaccuracies that could cause failures, corruption or loss of data and/or information. Wowslides strongly encourages you to back-up all data and information on any servers and computers prior to using the Site. YOU ASSUME ALL RISKS AND ALL COSTS ASSOCIATED WITH YOUR USE OF THE SITE AND/OR SERVICES, INCLUDING, WITHOUT LIMITATION, ANY INTERNET ACCESS FEES, BACK-UP EXPENSES, COSTS INCURRED FOR THE USE OF YOUR COMPUTERS AND SERVERS.</p>
+					<p>Wowslides reserves the right to modify, suspend or stop your access to the Site and/or Services (or any part thereof), either temporarily or permanently, at any time or from time to time, with or without prior notice to you. You agree that Wowslides shall not be liable to you or any third party for any modification or cessation of the Services. You acknowledge that Wowslides has no express or implied obligation to provide, or continue to provide, access to the Site and/or Services, or any part thereof, now or in the future; and in addition, Wowslides is not obligated to provide any maintenance, technical or other support for the Site and/or Services.</p>
+
+					<h4>III. LIMITED USER LICENSE</h4>
+					<p>You acknowledge that the Site, the Services and the underlying software and technology used in connection with the operation of the Site and the Services, and all content made available by Wowslides, including, without limitation, any information, data, documents, communications, text, images, photographs, graphics, audio, videos, or links (collectively, the “Content”) are provided by Wowslides or third-party providers and are the copyrighted works of Wowslides and/or such third parties. Subject to your full compliance with these Terms of Service, Wowslides grants you a personal, revocable, limited, non-transferable, non-sublicensable, non-assignable nonexclusive license and right to access, use and display the Content (excluding source and object code) in the manner permitted by these Terms of Service and any applicable law or regulation; PROVIDED that you maintain all copyright and other proprietary notices contained in the Content and you do not use the Content in a manner that suggests an association with Wowslides or such third-party providers.</p>
+					<p>Except as expressly authorized by Wowslides or such third parties in these Terms of Service, you may not copy, reproduce, publish, distribute, modify, create derivative works of, rent, lease, sell, transfer, display, transmit, compile or collect in a database, or in any manner commercially exploit any part of the Content. For clarity, the preceding restriction is not applicable to commercial exploitation of any User Materials (as defined below). You further agree that you will not decompile, reverse engineer, reverse assemble or otherwise attempt to discover the source code of the software underlying the Services. You may not store any significant portion of any Content owned by, or licensed to Wowslides in any form, whether archival files, computer-readable files, or any other medium. You also may not “mirror” any Content on any other server.</p>
+					<p>The rights granted to you in the Content as specified above are not applicable to the design, layout or look and feel of the Site. Such elements of the Site are protected by intellectual property rights and may not be copied or imitated in whole or in part.</p>
+
+					<h4>IV. USE OF SITE AND SERVICES</h4>
+					<p>Use of the Site is void where prohibited by law. By using any of the Site, you represent and warrant that you are over the age of 13 and that your use of the Content does not violate any applicable law or regulation, and acknowledge that the Site and Content were not intended for children under 13 years of age.</p>
+					<p>Wowslides makes certain Content available only if you have paid a fee and/or have become a registered user. These Terms of Service may be supplemented or amended by the terms and conditions of other agreements to which you agree when registering, becoming an Enterprise customer, and/or when using specific portions or features of the Site. You agree to abide by such other terms and conditions. If there is a conflict between these Terms of Service and the terms posted for, or applicable to, a specific portion of the Site or for any product or service offered on or through the Site, the latter terms shall control with respect to your use of that portion of the Site or the specific product or service. If there is a conflict between these Terms of Service and the terms of your Enterprise Customer agreement, the latter terms shall control.</p>
+					<p>If you elect to register and create an account with Wowslides, you warrant that all information you submit (“Account Information”) is complete, true and accurate and you agree to maintain the accuracy of such information. You are responsible for maintaining the confidentiality of your Account Information, including your Username and password, and will be solely and fully responsible for all activity that occurs when anyone is logged in to your account, even if the individual is not authorized by you. If you have reason to believe your Account Information has been compromised or there has been an unauthorized use of your account or Account Information, you agree to promptly notify Wowslides.</p>
+					<p>Wowslides may, for any reason, at any time in its sole discretion, terminate your account, username and password.</p>
+
+					<h4>V. FEES AND PAYMENT</h4>
+					<p>Unless otherwise noted, registration on the Site will provide you limited access to the Services at no cost (“Free Trial”). By using the Site, you acknowledge that Wowslides reserves the right to charge you for the products and services offered on the Site, including, without limitation, for the Services, any time after the Free Trial. Further, registration fees and use fees (if any) may change from time to time, at any time, without notice, and are not subject to price protection or refunds in the event of a price reduction or promotional offering.</p>
+					<p>You agree to pay any applicable charges or fees that may be accrued by or in connection with your registered account, including, without limitation, fees for encoding, hosting and streaming User Materials and Presentations, activation fees, analytics fees and other nonrecurring charges, taxes, interest, late fees and charges due to insufficient credit or insufficient funds. Wowslides will bill you directly, charge your credit card, or obtain payment through your PayPal account for all such fees/charges. If a credit card or PayPal account is being used for payment, you authorize Wowslides to obtain preapproval for an amount up to the amount of fees or charges owed. You are responsible for the timely payment of all such fees/charges and for providing Wowslides with a valid credit card or PayPal account details for payment of fees/charges. Failure to pay fees/charges as required by these Terms of Service, may lead to disruption or termination of your use of the Site and/or the Services (as applicable), including denial of access to or removal of any User Materials and Presentations.</p>
+
+					<h4>VI. USER MATERIALS</h4>
+					<p>It is solely your responsibility to store, secure and keep confidential any material, information, or other communication, and all audio, videos, photographs, data, images, text and other things embodied therein that you upload, transmit, post, or otherwise submit to this Site (collectively, “User Materials”). Unless expressly agreed by Wowslides in writing elsewhere, Wowslides has no obligation or liability for the deletion or accuracy of any Content, User Materials, Presentations, or for its failure to store, transmit or receive transmission of any User Materials or Presentations.</p>
+					<p>By uploading, transmitting, posting, or otherwise submitting any User Materials, you represent and warrant that you, the organization you represent, or its or your licensors (i) are the owner of all right, title and interest in and to the User Materials, or have obtained all necessary license(s) and permission(s), to use the User Materials to create one or more Presentations as permitted by these Terms of Service; (ii) have the rights necessary to grant the license to Wowslides its affiliates and their officers, directors, employees and agents set forth in this Section VI; and (iii) have received consent from any and all persons depicted in the User Materials to use the User Materials on the Site and in connection with the Services as set forth in these Terms of Service. Under no circumstances will Wowslides be liable or responsible in any way for any User Materials or Presentations, including, but not limited to, any loss or damage of any kind incurred as a result of the use or misuse of any User Materials or Presentations uploaded, created, or otherwise made available on the Site.</p>
+					<p>Unless otherwise agreed between you and Wowslides in writing, you hereby grant and/or warrant that the owner of the User Materials has granted, Wowslides its affiliates and their officers, directors, employees and agents, a worldwide, royalty-free, perpetual, irrevocable, transferable, assignable, fully sublicensable, nonexclusive right and license to prepare and encode the User Materials and Presentations for electronic, digital and/or other transmission, manipulation and exhibition in any format and by any means now known or hereafter devised; and to use, copy, reproduce, modify, create derivative works of, exhibit, publish, distribute, perform, display, broadcast, transmit the User Materials and Presentations.</p>
+					<p>By submitting User Materials to the Site you expressly assume any risk associated with third party download or use of the User Materials. By creating Presentations using the Service you likewise expressly assume any risk associated with third party download or use of such Presentations. You hereby agree Wowslides is not liable for any illegal or unauthorized use, misuse, copying or reproduction of the User Materials or Presentations, by third parties.</p>
+
+					<h4>VII. OWNERSHIP</h4>
+					<p>You and/or your licensors shall at all times retain all right, title and interest in and to the User Materials and Presentations, subject to the nonexclusive license granted to Wowslides and its affiliates and their officers, directors, employees and agents in Section VI.</p>
+					<p>You acknowledge that Wowslides and/or third-party owners remain the sole and exclusive owners of the Content, which is protected by copyright, trademark, patent, trade secret, unfair competition, and other intellectual property rights, and that, except as expressly provided in these Terms of Service, you do not acquire any rights (express or implied) to use the Content.</p>
+					<p>The Wowslides trademark and service mark, and all related trademarks, service marks, logos and slogans displayed or associated with the Content are owned by Wowslides or its affiliates. All other trademarks and service marks contained on the Site are trademarks of their respective owners. You may not use any Wowslides or third party trademarks, service marks or logos without the prior written consent of Wowslides or the applicable owner.</p>
+
+					<h4>VIII. USER CONDUCT</h4>
+					<p>You are solely responsible for the knowledge of and adherence to any and all laws, rules, and regulations pertaining to your use of the Site and Services. You agree that you will not:</p>
+					<p>(i) use the Site or Services to commit a criminal offense or to encourage conduct that would constitute a criminal offense or give rise to a civil liability, or otherwise violate any local, state, Federal, or international law or regulation, including, but not limited to, export control laws and regulations governing the transmission or retransmission of technical data from the United States;</p>
+					<p>(ii) upload, post, display, e-mail, or otherwise transmit or distribute (“Make Available”) any User Materials or Presentations that is unlawful, harmful, threatening, tortious, defamatory, libelous, harassing, vulgar, obscene, invasive of another’s privacy, hateful, or ethnically, racially or otherwise objectionable;</p>
+					<p>(iii) Make Available any User Materials or Presentations that you do not have a right to transmit or otherwise make available on or through the Site or Services;</p>
+					<p>(iv) Make Available any User Materials or Presentations that infringe any patent, trademark, trade secret, copyright, right of publicity or privacy, or other forms of intellectual property or other similar rights of any party;</p>
+					<p>(v) alter, damage, or delete any Content or other communications that are not your own, or to otherwise interfere with the ability of others to access or use the Site or Services;</p>
+					<p>(vi) use the Site or Services in connection with the distribution of unsolicited advertising, promotional materials, or other forms of solicitation including, without limitation, “junk mail,” “spam,” “chain letters,” or “pyramid schemes”;</p>
+					<p>(vii) Make Available any User Materials or Presentations that contain any viruses or other programming routines that may detrimentally interfere with computer systems or data, whether those of Wowslides or any third party;</p>
+					<p>(viii) interfere with or disrupt the Site or Services, or servers or networks connected to the Site, or disobey any requirements, procedures, policies, or regulations of networks connected to the Site;</p>
+					<p>(ix) disrupt or interfere with the security of, or otherwise cause harm to, the Site, or systems resources, accounts, passwords, servers or networks connected to or accessible through the Site or any affiliated or linked sites;</p>
+					<p>(x) reproduce, duplicate, copy, use, distribute, sell, resell, or otherwise exploit for any commercial purposes, any portion of the Content, use of the Site, or access to the Site or Services;</p>
+					<p>(xi) harm minors in any way;</p>
+					<p>(xii) stalk or otherwise harass another;</p>
+					<p>(xiii) use any data mining, robots, spiders, rovers, scrapers, or other data gathering and extraction methods in connection with the Content; or (xiv) collect or store personal information about other users of the Site or the Services without their permission.</p>
+					<p>You acknowledge that Wowslides does not pre-screen any User Materials or Presentations or monitor user activities in connection with the Site or Services, but agree that Wowslides shall have the right (but not the obligation) in its sole discretion to remove or refuse any User Materials and Presentations that are available through the Site or Services for any reason (or no reason), including if it violates these Terms of Services or the law or is otherwise objectionable. You agree and acknowledge that Wowslides may preserve any User Materials and Presentation and may disclose any User Materials and Presentation if required to do so by law or in the good faith belief that any such preservation or disclosure is reasonably necessary to comply with legal process, enforce these Terms of Service, respond to claims that any User Materials or Presentation violates the rights of third parties or protect the rights, property or personal safety of Wowslides, the users of the Site, the Services, and/or the public.</p>
+					<p>Wowslides reserves the right to take such action as it deems appropriate where the Site is used in a manner that is deemed by Wowslides to be in violation of the Terms of Service or is used in any way that is otherwise unlawful.</p>
+
+					<h4>IX. TERMINATION</h4>
+					<p>You may terminate your account and/or cease to use the Site and/or Services at any time.</p>
+					<p>Wowslides has the right to terminate or suspend your account at any time for any breach or violation of these Terms of Service. In the event of such termination, you will not be entitled to any refund of any unused portion of fees previously paid by you. Moreover, your account may be terminated or suspended at any time, in Wowslides’s sole discretion for any reason.</p>
+
+					<h4>X. DISCLAIMER OF WARRANTIES</h4>
+					<p>YOU EXPRESSLY UNDERSTAND AND AGREE THAT, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW: (A) THE SITE IS PROVIDED “AS IS” WITH NO WARRANTIES WHATSOEVER. WOWSLIDES DISCLAIMS ALL EXPRESS, IMPLIED, AND STATUTORY WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, Wowslides MAKES NO WARRANTY THAT THE SITE OR SERVICES WILL BE UNINTERRUPTED, ACCURATE, TIMELY, SECURE OR FREE OF ERRORS, DEFECTS OR VIRUSES. YOUR USE OF THE SITE AND SERVICES IS SOLELY AT YOUR OWN DISCRETION AND RISK.</p>
+					<p>(B) Wowslides WILL HAVE NO LIABILITY WITH REGARD TO ANY ACTIONS RESULTING FROM YOUR USE OF THE SITE, SERVICES, USER MATERIALS OR PRESENTATIONS. ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH USE OF THE SITE AND/OR SERVICES IS ACCESSED AT YOUR OWN RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR ANY LOSS OF DATA RELATED THERETO.</p>
+					<p>(C) Some links on this Site may let you leave the Site. Wowslides does not control, endorse or accept responsibility for any content, materials or services offered by third parties accessible through the linked sites. Wowslides makes no representations or warranties whatsoever about, and shall not be liable for, any such third parties, their content, materials or services.</p>
+					<p>(D) Wowslides will not be liable for any loss that you may incur as a result of someone else using your password and username, or account, or Account Information in connection with the Site and/or Services, either with or without your knowledge.</p>
+
+					<h4>XI. LIMITED LIABILITY/EXCLUSION OF DAMAGES</h4>
+					<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WOWSLIDES , ITS OFFICERS, DIRECTORS, EMPLOYEES, AFFILIATES, AGENTS OR REPRESENTATIVES BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY CLAIM, LIABILITY, EXPENSE OR DAMAGE (INCLUDING, WITHOUT LIMITATION, ACTUAL, EXEMPLARY, SPECIAL, INCIDENTAL, INDIRECT, CONSEQUENTIAL OR PUNITIVE DAMAGES, AND DAMAGES RESULTING FROM LOSS OF USE, DATA, PROFITS OR OTHER PECUNIARY LOSSES) WHETHER BASED ON BREACH OF CONTRACT, NEGLIGENCE OR ANY OTHER THEORY OF LIABILITY, ARISING OUT OF OR RELATING TO THE CONTENT, USER MATERIALS OR PRESENTATIONS OR THE USE OF, OR THE INABILITY TO USE, THE SITE OR THE SERVICES, EVEN IF FORESEEABLE OR IF Wowslides HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH CLAIM, LIABILITY, EXPENSE OR DAMAGE.</p>
+					<p>UNDER NO CIRCUMSTANCES WILL Wowslides’S TOTAL LIABILITY TO YOU UNDER OR IN CONNECTION WITH THESE TERMS OF SERVICE EXCEED ONE HUNDRED DOLLARS ($100) OR THE AMOUNT PAID BY YOU, IF ANY, FOR ACCESSING THIS SITE AND/OR USING THE SERVICES, WHICHEVER IS LARGER. THIS LIMITATION WILL APPLY EVEN IF Wowslides HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY. YOU EXPRESSLY WAIVE ANY AND ALL RIGHT TO SEEK OR OBTAIN EQUITABLE OR INJUNCTIVE RELIEF RELATING IN ANY WAY TO THESE TERMS OF SERVICE, THE SITE, THE SERVICES, USER MATERIALS AND/OR PRESENTATIONS, INCLUDING, WITHOUT LIMITATION, WITH RESPECT TO ANY USE OF ANY USER MATERIALS OR PRESENTATONS BY Wowslides.</p>
+					<p>APPLICABLE LAW IN SOME JURISDICTIONS MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR EXEMPLARY, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES. ACCORDINGLY, THE ABOVE LIMITATIONS AND EXCLUSIONS MAY NOT APPLY TO YOU. IN SUCH CASES, Wowslides’S LIABILITY IS LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW.</p>
+
+					<h4>XII. INDEMNIFICATION</h4>
+					<p>You agree to indemnify, defend and hold harmless Wowslides, its officers, directors, employees, agents, licensors, suppliers and any third party information providers to the Site from and against any and all liability, losses, expenses, damages and costs, including reasonable attorneys’ fees, arising out of or related to (i) your use of the Site and/or the Services, (ii) use of User Materials and Presentations, or (iii) any violation of these Terms of Service by you.</p>
+					<p>The provisions of these Terms of Service are for the benefit of Wowslides and its officers, directors, employees, agents, licensors, suppliers, and any third party information providers to the Site. Each of these individuals or entities shall have the right to assert and enforce those provisions directly against you on its own behalf.</p>
+
+					<h4>XIII. TERMINATION</h4>
+					<p>You understand and agree that Wowslides may, in its sole discretion and at any time, terminate your username and password, any account created on the Site, and discard and remove any User Materials and Presentation, for any reason. You understand and agree that Wowslides may take any one or more of these actions without prior notice to you. Should Wowslides take any of these actions, it may, in its sole discretion, immediately deactivate and/or delete any or all information about and concerning your account, including information submitted for registration on the Site, submitted User Materials and any Presentations you have created. YOU UNDERSTAND AND AGREE THAT Wowslides SHALL HAVE NO LIABILITY TO YOU OR ANY OTHER PERSON FOR ANY TERMINATION OF YOUR ACCESS TO THE SITE AND/OR THE REMOVAL OF INFORMATION CONCERNING YOUR ACCOUNT.</p>
+
+					<h4>XIV. COPYRIGHT OR INTELLECTUAL PROPERTY INFRINGEMENT</h4>
+					<p>If you believe that your work has been made available on the Site in a way that constitutes copyright infringement, or your intellectual property rights have been otherwise violated in connection with the Site, please provide Wowslides’s copyright agent the following information:</p>
+					<p>an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest;</p>
+					<p>a description of the copyrighted work or other intellectual property that you claim has been infringed;</p>
+					<p>a description of where the material that you claim is infringing is located within the Site;</p>
+					<p>your address, telephone number and e-mail address;</p>
+					<p>a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright or intellectual property owner, its agent or the law; and</p>
+					<p>a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner’s behalf.</p>
+					<p>Wowslides’s Agent for notice of claims of copyright or other intellectual property infringement can be reached as follows:</p>
+					<p><b>Gobito Digital Solutions</b> <br> ISTANBUL OFFICE (TR) Çifte Havuzlar Mahallesi Eski Londra Asfaltı Caddesi 151 / 1E D2 BLOK 1.KAT NO:108 Esenler/ ISTANBUL E-mail: [info @ Wowslides.com]</p>
+
+					<h4>XV. APPLICABLE LAW AND JURISDICTION</h4>
+					<p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Colorado without regard to its conflicts of laws provisions. Each party to these Terms of Service submits to the exclusive jurisdiction of the state and federal courts of Colorado, and waives any jurisdictional, venue, or inconvenient forum objections to such courts. In any action to enforce these Terms of Service, the prevailing party will be entitled to costs and attorney’s fees.</p>
+
+					<h4>XVI. ENTIRE AGREEMENT</h4>
+					<p>These Terms of Service constitute the entire understanding and agreement between Wowslides and you with respect to your use of the Site and the Services and supersedes all prior agreements, written or oral, express or implied, at law or in equity, between you and Wowslides in connection with such subject matter.</p>
+
+					<h4>XVII. WAVIER AND SEVERABILITY</h4>
+					<p>Wowslides’s failure to enforce any right or provision in these Terms of Service shall not constitute a waiver of such right or provision. If any provision of this Agreement is found to be prohibited by law and invalid, or for any reason such provision is held unenforceable, in whole or in part, that provision shall be considered severable and its invalidity or unenforceability shall not affect the remainder of this Agreement, which shall continue in full force and effect to the maximum extent permissible under law.</p>
+
+					<h4>XVIII. CONTACT</h4>
+					<p>If you have any comments or questions about the Site or these Terms of Service, or if you wish to report a violation of the Terms of Service, please contact us by email at [info@Wowslides.com] or via mail to:</p>
+
+					<p><b>Gobito Digital Solutions</b> <br> ISTANBUL OFFICE (TR) Çifte Havuzlar Mahallesi Eski Londra Asfaltı Caddesi 151 / 1E D2 BLOK 1.KAT NO:108 Esenler/ ISTANBUL T: (+90) 212 483 74 81</p>
+
+
+
+				</div>
+		</div>
+
+
+	</div>
+
+
+
+<!-- contact -->
+<section class="contact">
+	<div class="container centered">
+
+		<p>There are many variations of passages of lorem ipsum available!</p>
+
+		<a href="#" class="action">GET IN TOUCH</a>
+
+	</div>
+</section>
+<!-- #contact -->
+
+
+<!-- contactForm -->
+<div class="contactForm">
+	<div class="container">
+
+		<h4>GET IN TOUCH</h4>
+
+		<div class="col-md-6 col-xs-12 inputBox">
+			<div class="row">
+								<label>WHO ARE YOU</label>
+								<input type="text" required="" placeholder="YOU OR YOUR COMPANY'S NAME">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>EMAIL TO REACH YOU</label>
+								<input type="email" name="email" required="" placeholder="YOU@YOURCOMPANY.COM">
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 inputBox">
+						<div class="row">
+								<label>TELL US ABOUT IT</label>
+								<textarea placeholder="BRIEFLY, WHAT DO YOU NEED"></textarea>
+						</div>
+					</div>
+
+					<div class="pull-right">
+						<button class="button">SUBMIT</button>
+					</div>
+
+	</div>
+</div>
+<!-- #contactForm -->
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+
+
+		<!-- left -->
+		<div class="col-md-8 col-xs-12 footerMenu">
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+			<ul>
+				<span class="title">SUPPORT</span>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Tutorials</a></li>
+				<li><a href="#">Templates</a></li>
+				<li><a href="#">Submit Ticket</a></li>
+				<li><a href="#">Affiliate</a></li>
+				<li><a href="#">Sitemap </a></li>
+			</ul>
+			</ul>
+
+			<ul>
+				<span class="title">COMPANY</span>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+
+		</div>
+
+
+		<!-- right -->
+		<div class="col-md-4 col-xs-12 blogList">
+
+			<span class="title">BLOG</span>
+
+			<ul>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						[Video Series] Unlock The Power Of Conversational
+					</a>
+				</li>
+				<li>
+					<span>Sept. 22, 2016</span>
+					<a href="#">
+						Escape The Noise: Join Us At The  Dreamforce
+					</a>
+				</li>
+				<li>
+					<span>Sept. 8, 2016</span>
+					<a href="#">
+						On-Demand Webinar: How to Bring A Data-Driven
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+
+	</div>
+</div>
+<!-- #footer -->
+
+
+<!-- copyright -->
+<section id="copyright">
+	<div class="container">
+
+		<div class="logo">
+			<a href="#"><img src="assets/images/logo.svg" alt=""></a>
+		</div>
+
+		<ul class="copylist">
+			<li><a href="#">English</a></li>
+			<li><a href="#">Español</a></li>
+			<li><a href="#">한국어</a></li>
+			<li><a href="#">日本語</a></li>
+			<li><a href="#">Deutsch</a></li>
+		</ul>
+
+		<div class="clear"></div>
+
+		<ul class="copylist">
+			<ul>
+				<li><a href="#">TERMS OF SERVICE</a> </li>
+				<li><a href="#">ACCEPTABLE USE POLICY </a> </li>
+				<li><a href="#">SERVICE LEGAL AGREEMENT</a> </li>
+				<li><a href="#">RESOURCE ABUSE POLICY</a> </li>
+				<li><a href="#">PRIVACY POLICY </a></li>
+			</ul>
+		</ul>
+
+
+		<p>WOWSLIDES, INC. COMPANY. COPYRIGHT &copy; 2016</p>
+
+
+	</div>
+</section>
+<!-- #copyright -->
+
+
+
+</div>
+<!-- #All Page -->
+
+<script type="text/javascript">
+	$('.pageLinks ul li a').click(function(){
+		$('li a').removeClass("active");
+		$(this).addClass("active");
+	});
+</script>
+
+</body>
+</html>
