@@ -1654,3 +1654,25 @@ input[type=submit]:disabled, button:disabled{
     text-decoration: underline;
   }
 }
+
+.file-upload {
+  background: rgba(38, 48, 56, 0.7);
+  padding: 7px;
+  border-radius: 50%;
+  position: absolute;
+  right: calc(50% - -35px);
+  top: 110px;
+  cursor: pointer;
+  transition: all 300ms;
+  &:hover {
+    background: rgba(38, 48, 56, 0.9);
+    transition: all 300ms;
+  }
+  img {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+}
