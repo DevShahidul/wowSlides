@@ -1676,3 +1676,21 @@ input[type=submit]:disabled, button:disabled{
     margin: 0 !important;
   }
 }
+
+.responsive-flex {
+  display: flex;
+  align-items: center;
+  @media (max-width: 994px) {
+    display: block;
+  }
+}
+
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
