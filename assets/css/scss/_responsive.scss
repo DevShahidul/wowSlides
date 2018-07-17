@@ -4,9 +4,6 @@
   .pageNavigators {
     display: none;
   }
-  .pageEnterance .pageTitle h4 {
-    margin-bottom: 18px;
-  }
   #main {
     .motto h1.title {
       font-size: 28px !important;
@@ -129,20 +126,25 @@
     width: 100% !important;
   }
   .contactPageForm {
+    height: 550px;
     .contactRow {
       width: 100% !important;
+      line-height: 55px;
+      min-height: 55px;
+      width: 100% !important;
+      margin: 8px auto;
+      display: block !important;
       input, textarea {
         width: 200px !important;
         font-size: 16px !important;
+        min-height: 55px;
+        padding: 5px;
       }
-      width: 100% !important;
-      margin: 0 auto;
-      display: block !important;
-      line-height: 72px;
       span {
         font-size: 13px !important;
         width: 100px !important;
         padding-left: 20px !important;
+        margin-right: 8px;
       }
     }
     .button {
@@ -151,6 +153,11 @@
   }
   .contactInfo {
     padding: 50px !important;
+    text-align: center;
+    height: 450px;
+    h5:after {
+      display: none;
+    }
   }
   // .titleTop h3 {
   //   width: 100%;
@@ -418,7 +425,8 @@
         display: none !important;
       }
     }
-    padding-bottom: 20px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 0 !important;
   }
   .upload-container .step-forms .input-row textarea {
     width: 100% !important;
@@ -518,6 +526,11 @@
     line-height: 50px;
   }
 }
+@media (max-width: 992px) and (min-width: 768px) {
+  .m_l_125 {
+    margin-left: 0;
+  }
+}
 @media (max-width: 544px) {
   .motto {
     height: 100px;
@@ -532,7 +545,8 @@
     }
     .main-btn.radius {
       padding: 10px 0px;
-          width: 140px;
+      width: 140px;
+      margin-right: 8px;
     }
   }
   .smallMain {
