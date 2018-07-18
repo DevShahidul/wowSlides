@@ -365,7 +365,7 @@ section#getStarted a.btn {
             @media (min-width: 768px) {
               padding-top: 15px;
             }
-            &:hover {
+            &:hover, &.active {
               color: #fff;
               transition: 0.2s;
               &:before {
@@ -631,9 +631,15 @@ section#getStarted a.btn {
   .main-btn {
     width: 200px;
   }
+  @media (max-width: 1210px) and (min-width: 768px) {
+    iframe {
+      width: 750px;
+      height: 421px;
+    }
+  }
   @media (max-width: 768px) and (min-width: 450px) {
     iframe {
-      width: 450px;
+      width: 400px;
       height: 225px;
     }
   }
@@ -644,9 +650,15 @@ section#getStarted a.btn {
     }
   }
   &.iframe-motto {
-    margin-bottom: 180px;
+    margin-bottom: 200px;
+    margin-top: -60px;
     @media (max-width: 768px) {
+      margin-bottom: 40px;
+      margin-top: -110px;
+    }
+    @media (max-width: 1210px) and (min-width: 768px) {
       margin-bottom: 90px;
+      margin-top: -180px;
     }
   }
 }
@@ -1119,7 +1131,7 @@ align-items: center;
       display: inline-block;
       font-size: 12px;
       font-family: 'latoblack';
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       white-space: nowrap;
       width: 100%;
       text-overflow: ellipsis;
@@ -4043,7 +4055,6 @@ nav#navbar.whiteNav {
   }
   .descs {
     font-family: 'latolight';
-    padding-left: 30px;
     margin: 30px 5px;
 
   }

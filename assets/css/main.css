@@ -5102,12 +5102,12 @@ section#getStarted a.btn:after {
   }
 }
 
-#main nav#navbar .menu-bar ul li a:hover {
+#main nav#navbar .menu-bar ul li a:hover, #main nav#navbar .menu-bar ul li a.active {
   color: #fff;
   transition: 0.2s;
 }
 
-#main nav#navbar .menu-bar ul li a:hover:before {
+#main nav#navbar .menu-bar ul li a:hover:before, #main nav#navbar .menu-bar ul li a.active:before {
   width: 100%;
   bottom: 0;
   opacity: 1;
@@ -5416,9 +5416,16 @@ section#getStarted a.btn:after {
   width: 200px;
 }
 
+@media (max-width: 1210px) and (min-width: 768px) {
+  .motto iframe {
+    width: 750px;
+    height: 421px;
+  }
+}
+
 @media (max-width: 768px) and (min-width: 450px) {
   .motto iframe {
-    width: 450px;
+    width: 400px;
     height: 225px;
   }
 }
@@ -5431,12 +5438,21 @@ section#getStarted a.btn:after {
 }
 
 .motto.iframe-motto {
-  margin-bottom: 180px;
+  margin-bottom: 200px;
+  margin-top: -60px;
 }
 
 @media (max-width: 768px) {
   .motto.iframe-motto {
+    margin-bottom: 40px;
+    margin-top: -110px;
+  }
+}
+
+@media (max-width: 1210px) and (min-width: 768px) {
+  .motto.iframe-motto {
     margin-bottom: 90px;
+    margin-top: -180px;
   }
 }
 
@@ -5955,7 +5971,7 @@ section#getStarted a.btn:after {
   display: inline-block;
   font-size: 12px;
   font-family: 'latoblack';
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   white-space: nowrap;
   width: 100%;
   text-overflow: ellipsis;
@@ -9240,7 +9256,6 @@ nav#navbar.whiteNav {
 
 .descriptions .descs, .hero-block .descs {
   font-family: 'latolight';
-  padding-left: 30px;
   margin: 30px 5px;
 }
 
