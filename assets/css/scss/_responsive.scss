@@ -132,7 +132,7 @@
       line-height: 55px;
       min-height: 55px;
       width: 100% !important;
-      margin: 8px auto;
+      margin: 10px auto;
       display: block !important;
       input, textarea {
         width: 200px !important;
@@ -154,7 +154,7 @@
   .contactInfo {
     padding: 50px !important;
     text-align: center;
-    height: 450px;
+    height: auto;
     h5:after {
       display: none;
     }

@@ -287,6 +287,7 @@
   margin-top: 10px;
   li {
     line-height: 2rem;
+    margin-bottom: 8px;
     span {
       color: #676767;
       font-family: latolight;
@@ -946,6 +947,15 @@ tbody.collapse.in {
         }
       }
     }
+    @media (max-width: 768px) {
+      li {
+        margin-right: 8px;
+        a {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
   }
 }
 
@@ -1062,6 +1072,7 @@ tbody.collapse.in {
   bottom: 0;
   width: 100%;
   height: 60%;
+  opacity: 0.3;
   @media (max-width: 768px) {
     height: 30%;
   }
@@ -1497,8 +1508,12 @@ input[type="checkbox"].switch{
       margin-bottom: 16px;
       .switch  {
         height: 48px;
+        background: #dbdbdb;
         label {
           line-height: 48px;
+        }
+        label[for=yes], label[for=monthly] {
+          left: -10px !important;
         }
       }
     }

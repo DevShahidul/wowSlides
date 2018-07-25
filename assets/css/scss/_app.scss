@@ -400,7 +400,7 @@ section#getStarted a.btn {
       position: absolute;
       right: 0;
       top: 0;
-      margin-top: 20px;
+      margin-top: 25px;
       padding-right: 5vw;
       > ul > li {
         float: left;
@@ -713,7 +713,7 @@ section#getStarted a.btn {
 
 .see-more {
   text-align: center;
-  margin-top: 60px;
+  margin: 20px 0;
   &.colured a {
     background: #56C8C2;
     color: #fff;
@@ -1141,24 +1141,28 @@ align-items: center;
         color: #3F515D;
         line-height: 22px;
         word-break: normal;
+        margin: 0 4px;
         &:hover {
           color: #56C8C2;
         }
       }
     }
-    .user span {
-      display: inline-block;
-      overflow: hidden;
-      img {
-        margin-right: 12px;
-        width: 35px;
-        border-radius: 31px;
-      }
-      &.text {
-        font-size: 13px;
-        color: #909FA9;
-        position: relative;
-        top: -8px;
+    .user {
+      margin-bottom: 8px;
+      span {
+        display: inline-block;
+        overflow: hidden;
+        img {
+          margin-right: 12px;
+          width: 35px;
+          border-radius: 31px;
+        }
+        &.text {
+          font-size: 13px;
+          color: #909FA9;
+          position: relative;
+          top: -8px;
+        }
       }
     }
   }
@@ -1175,6 +1179,9 @@ align-items: center;
     align-items: center;
     a {
       width: 100%;
+      @media (max-width: 768px) {
+        height: 142px;
+      }
     }
     img {
       width: 100%;
@@ -1556,6 +1563,7 @@ div.tagsinput {
     a {
       color: #77c7c3;
       transition: all 300ms;
+      padding: 8px;
       &:hover {
         color: #fff;
         transition: all 300ms;
@@ -1571,7 +1579,7 @@ div.tagsinput {
         transition: all 300ms;
         font-family: 'latolight';
         font-weight: 700;
-        padding: 4px 0;
+        padding: 6px 0;
         &:hover {
           color: #77c7c3;
           transition: all 300ms;
@@ -1685,7 +1693,7 @@ section#copyright {
     margin: 8px 0;
     a {
       color: #7f8c94;
-      padding: 6px 0;
+      padding: 10px 0;
       display: block;
     }
   }
@@ -3577,6 +3585,7 @@ nav#navbar.whiteNav {
     padding-bottom: 10px !important;
     ul {
       white-space: nowrap;
+      padding-bottom: 10px;
       li {
         width: auto !important;
         margin-right: 8px;
@@ -3584,6 +3593,7 @@ nav#navbar.whiteNav {
         display: inline-block;
         a {
               padding: 10px 25px;
+              font-size: 17px;
         }
       }
     }
@@ -3996,6 +4006,12 @@ nav#navbar.whiteNav {
       border-radius: 5px;
     }
   }
+  @media (max-width: 768px) {
+    top: auto;
+    right: auto;
+    margin-top: 80px;
+    margin-left: 10px;
+  }
 }
 
 .how-it-works {
@@ -4376,6 +4392,7 @@ nav#navbar.whiteNav {
   }
   li {
     border-bottom: 1px solid #E6E6E6;
+    margin: 4px 0;
     &:last-child {
       border: 0;
     }
@@ -4425,6 +4442,14 @@ nav#navbar.whiteNav {
     li {
         margin: 15px 5px;
     }
+  }
+  @media (max-width: 768px) {
+    left: calc(50% - 155px);
+    top: auto;
+    margin-top: 10px;
+  }
+  @media (max-width: 310px) {
+    width: 100%;
   }
 }
 
@@ -4889,7 +4914,7 @@ h1.title.regular {
     a {
       transition: all 300ms;
       display: inline-block;
-      padding: 0px 2px;
+      padding: 0px 4px;
       margin: 10px 4px;
       &:hover {
         opacity: .5;
@@ -5715,6 +5740,12 @@ a {
     right: 5px;
     font-weight: 700;
   }
+  @media (max-width: 767px) {
+    height: 80px;
+    .category-description {
+      display: none;
+    }
+  }
 }
 
 .related-wowBox {
@@ -5857,13 +5888,13 @@ a {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin: 8px 0;
+    margin: 10px 0;
     li {
       float: left;
       margin-right: 8px;
       a {
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
         background: #ADBAC8;
         border-radius: 50%;
         display: flex;
@@ -5898,6 +5929,11 @@ a {
         vertical-align: top;
         color: #F44336;
         font-family: 'latomedium';
+      }
+    }
+    @media (max-width: 768px) {
+      .main-btn {
+        margin: 0 4px;
       }
     }
   }
