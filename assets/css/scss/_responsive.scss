@@ -95,7 +95,7 @@
     }
   }
   .blog-full-box {
-    margin: 0px;
+    margin: 16px 0px;
     padding-bottom: 20px !important;
     height: 400px !important;
     .image {
@@ -264,6 +264,7 @@
   }
   .selects {
     display: block !important;
+    margin-bottom: 16px;
     .nice-select {
       &:first-of-type {
         margin-left: 0 !important;
@@ -313,11 +314,10 @@
           float: none !important;
         }
         &.left-steps {
-          margin-bottom: 30px;
           li {
             font-size: 13px !important;
             line-height: 30px;
-            margin-right: 10px;
+            margin-right: 16px;
             margin-bottom: 10px;
             span {
               width: 30px;
