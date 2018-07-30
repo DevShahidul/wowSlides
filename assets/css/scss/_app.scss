@@ -6091,29 +6091,9 @@ small {
 }
 
 
-.autocomplete-items {
-   position: absolute;
-   border-bottom: none;
+.angucomplete-dropdown {
    z-index: 999999;
-   left: 0;
-   right: 0;
-   background: #fff;
-   color: gray;
    width: 45vw;
-   margin: auto;
-   border-radius: 5px;
-   margin-top: 2px;
-   li {
-      height: 40px;
-      border-bottom: 1px solid #f1f1f1;
-      padding: 10px;
-      transition: 0.2s;
-      cursor:pointer;
-      &:hover {
-        background: #f1f1f1;
-        transition: 0.2s;
-      }
-   }
    @media (max-width: 995px) and (min-width: 768px) {
      width: 75vw;
    }
@@ -6123,8 +6103,6 @@ small {
 
    &.mini-search {
      width: 300px !important;
-     top: 53px;
-     left: -5px;
      @media (max-width: 768px) {
        width: 100% !important;
      }
