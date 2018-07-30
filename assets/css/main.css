@@ -11563,18 +11563,18 @@ small {
 
 .angucomplete-dropdown {
   z-index: 999999;
-  width: 45vw;
+  width: 45vw !important;
 }
 
 @media (max-width: 995px) and (min-width: 768px) {
   .angucomplete-dropdown {
-    width: 75vw;
+    width: 75vw !important;
   }
 }
 
 @media (max-width: 768px) {
   .angucomplete-dropdown {
-    width: 90vw;
+    width: 90vw !important;
   }
 }
 
