@@ -11561,20 +11561,20 @@ small {
   padding-top: 5px;
 }
 
-.angucomplete-dropdown, .angucomplete-holder {
+#main_src1 .angucomplete-dropdown, #main_src1 .angucomplete-holder {
   z-index: 999999;
   width: 45vw !important;
   margin: auto;
 }
 
 @media (max-width: 995px) and (min-width: 768px) {
-  .angucomplete-dropdown, .angucomplete-holder {
+  #main_src1 .angucomplete-dropdown, #main_src1 .angucomplete-holder {
     width: 75vw !important;
   }
 }
 
 @media (max-width: 768px) {
-  .angucomplete-dropdown, .angucomplete-holder {
+  #main_src1 .angucomplete-dropdown, #main_src1 .angucomplete-holder {
     width: 90vw !important;
   }
 }
