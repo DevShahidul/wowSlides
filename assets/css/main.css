@@ -11579,15 +11579,6 @@ small {
   }
 }
 
-.mini-search {
-  left: -210px !important;
-  width: 250px !important;
-}
-
-.mini-search .angucomplete-dropdown {
-  width: 250px !important;
-}
-
 .autocomplete-active {
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
@@ -11610,6 +11601,20 @@ small {
   margin-top: 6px !important;
   left: -6px !important;
   z-index: 999999 !important;
+}
+
+.mini-search {
+  left: -210px !important;
+  width: 250px !important;
+}
+
+.mini-search .angucomplete-dropdown {
+  width: 250px !important;
+}
+
+#adv_ftl1 .angucomplete-dropdown {
+  width: 100%;
+  margin-top: 13px;
 }
 
 table {
