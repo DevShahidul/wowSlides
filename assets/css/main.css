@@ -2959,6 +2959,11 @@ tbody.collapse.show {
   top: 17px;
 }
 
+.simple-table {
+  overflow-x: auto;
+  padding: 1px;
+}
+
 .video-js .vjs-audio-button, .video-js .vjs-big-play-button, .video-js .vjs-captions-button, .video-js .vjs-chapters-button, .video-js .vjs-control.vjs-close-button, .video-js .vjs-descriptions-button, .video-js .vjs-fullscreen-control, .video-js .vjs-mouse-display, .video-js .vjs-mute-control, .video-js .vjs-mute-control.vjs-vol-0, .video-js .vjs-mute-control.vjs-vol-1, .video-js .vjs-mute-control.vjs-vol-2, .video-js .vjs-play-control, .video-js .vjs-play-control.vjs-playing, .video-js .vjs-play-progress, .video-js .vjs-subtitles-button, .video-js .vjs-volume-level, .video-js .vjs-volume-menu-button, .video-js .vjs-volume-menu-button.vjs-vol-0, .video-js .vjs-volume-menu-button.vjs-vol-1, .video-js .vjs-volume-menu-button.vjs-vol-2, .video-js.vjs-fullscreen .vjs-fullscreen-control, .vjs-icon-audio, .vjs-icon-audio-description, .vjs-icon-cancel, .vjs-icon-captions, .vjs-icon-chapters, .vjs-icon-circle, .vjs-icon-circle-inner-circle, .vjs-icon-circle-outline, .vjs-icon-cog, .vjs-icon-facebook, .vjs-icon-fullscreen-enter, .vjs-icon-fullscreen-exit, .vjs-icon-gplus, .vjs-icon-hd, .vjs-icon-linkedin, .vjs-icon-pause, .vjs-icon-pinterest, .vjs-icon-play, .vjs-icon-play-circle, .vjs-icon-replay, .vjs-icon-spinner, .vjs-icon-square, .vjs-icon-subtitles, .vjs-icon-tumblr, .vjs-icon-twitter, .vjs-icon-volume-high, .vjs-icon-volume-low, .vjs-icon-volume-mid, .vjs-icon-volume-mute {
   font-family: VideoJS;
   font-weight: 400;
