@@ -97,7 +97,7 @@
     height: 45px;
     vertical-align: top;
 		@media (max-width: 768px) {
-			height: auto;
+			height: auto !important;
 			margin-bottom: 20px;
 		}
 }

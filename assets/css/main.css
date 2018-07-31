@@ -2736,7 +2736,7 @@ disabled look for disabled choices in the results dropdown
 
 @media (max-width: 768px) {
   .legend {
-    height: auto;
+    height: auto !important;
     margin-bottom: 20px;
   }
 }
@@ -11049,7 +11049,7 @@ h1.title.regular span {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   border-radius: 40px;
-  padding: 16px 25px;
+  padding: 16px 20px;
 }
 
 .bigger-btn.radius {
