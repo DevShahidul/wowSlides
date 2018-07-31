@@ -3703,7 +3703,7 @@ nav#navbar.whiteNav {
     -ms-transform: scale(1.1, 1.4);
     transform: scale(1.1, 1.4);
     position: absolute;
-    z-index: 9999;
+    z-index: 9999999;
     -ms-box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
     -o-box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
     box-shadow: 0 2px 34px rgba(35, 35, 35, 0.5);
@@ -6101,13 +6101,13 @@ small {
    @media (max-width: 768px) {
      width: 90vw !important;
    }
-
-   &.mini-search {
-     width: 300px !important;
-     @media (max-width: 768px) {
-       width: 100% !important;
-     }
-   }
+}
+.mini-search {
+    left: -210px !important;
+    width: 250px !important;
+    .angucomplete-dropdown {
+      width: 250px !important;
+    }
 }
 
 .autocomplete-active {
