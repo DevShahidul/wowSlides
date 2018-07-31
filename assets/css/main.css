@@ -2734,6 +2734,13 @@ disabled look for disabled choices in the results dropdown
   vertical-align: top;
 }
 
+@media (max-width: 768px) {
+  .legend {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
 .legend-title {
   line-height: 40px;
   font-weight: bold;

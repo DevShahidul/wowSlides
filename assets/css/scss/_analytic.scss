@@ -96,6 +96,10 @@
     overflow: hidden;
     height: 45px;
     vertical-align: top;
+		@media (max-width: 768px) {
+			height: auto;
+			margin-bottom: 20px;
+		}
 }
 
 .legend-title{
