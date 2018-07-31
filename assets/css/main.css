@@ -11608,7 +11608,7 @@ small {
   width: 250px !important;
 }
 
-.mini-search .angucomplete-dropdown {
+.mini-search #mini_search_dropdown {
   width: 250px !important;
 }
 
