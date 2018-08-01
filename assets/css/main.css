@@ -11645,6 +11645,12 @@ small {
   margin-bottom: 20px;
 }
 
+@media (max-width: 544px) {
+  .hmi-text {
+    display: none;
+  }
+}
+
 table {
   background-color: #dbe0e5;
   width: 100%;

@@ -6157,3 +6157,9 @@ small {
   line-height: 50px;
   margin-bottom: 20px;
 }
+
+.hmi-text {
+  @media (max-width: 544px) {
+    display: none;
+  }
+}
