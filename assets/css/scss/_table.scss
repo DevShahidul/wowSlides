@@ -53,8 +53,9 @@ table .img {
         border-bottom: 1px solid #ddd;
         display: block;
         font-size: .8em;
-        text-align: right;
+        text-align: right !important;
         white-space: normal;
+        min-height: 50px;
         &::before {
           content: attr(data-label);
           float: left;
@@ -76,5 +77,10 @@ table .img {
   }
   .heatmaps {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      width: 50%;
+    }
   }
 }

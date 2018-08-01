@@ -5525,7 +5525,7 @@ section#getStarted a.btn:after {
 
 .see-more {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 60px;
 }
 
 .see-more.colured a {
@@ -11711,8 +11711,9 @@ table .img {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
-    text-align: right;
+    text-align: right !important;
     white-space: normal;
+    min-height: 50px;
   }
   .big-table table td::before {
     content: attr(data-label);
@@ -11734,6 +11735,12 @@ table .img {
 
 .big-table .heatmaps {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-table .heatmaps svg {
+  width: 50%;
 }
 
 div.tagsinput {
