@@ -31,3 +31,50 @@ table .img {
   width: 60px;
   height: 60px;
 }
+
+.big-table {
+  @media screen and (max-width: 994px) {
+    border: none;
+    table {
+      border: none;
+      thead {
+        display: none;
+      }
+      tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #D8DEE4;
+        border-radius: 3px;
+        &:last-child {
+          border-bottom: 1px solid #D8DEE4;
+        }
+      }
+      td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+        white-space: normal;
+        &::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-right: 30px;
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+        &.td-title {
+          background: #ddd;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .heatmaps {
+    width: 100%;
+  }
+}

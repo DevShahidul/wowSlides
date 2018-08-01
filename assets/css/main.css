@@ -11688,6 +11688,54 @@ table .img {
   height: 60px;
 }
 
+@media screen and (max-width: 994px) {
+  .big-table {
+    border: none;
+  }
+  .big-table table {
+    border: none;
+  }
+  .big-table table thead {
+    display: none;
+  }
+  .big-table table tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #D8DEE4;
+    border-radius: 3px;
+  }
+  .big-table table tr:last-child {
+    border-bottom: 1px solid #D8DEE4;
+  }
+  .big-table table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    white-space: normal;
+  }
+  .big-table table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .big-table table td:last-child {
+    border-bottom: 0;
+  }
+  .big-table table td.td-title {
+    background: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.big-table .heatmaps {
+  width: 100%;
+}
+
 div.tagsinput {
   border: 1px solid #CCC;
   background: #FFF;
