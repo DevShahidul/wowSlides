@@ -4156,6 +4156,9 @@ nav#navbar.whiteNav {
   padding: 50px;
   @media (max-width: 768px) {
     padding: 20px;
+    ul {
+      text-align: center;
+    }
   }
   .icon-list {
     li {
@@ -4173,15 +4176,17 @@ nav#navbar.whiteNav {
       li {
         display: flex;
         flex-direction: column;
-        text-align: left;
+        text-align: center;
         img {
           width: 30px;
           order:1;
+          align-self: center;
         }
         span {
           order: 2;
         }
       }
+
     }
   }
 }

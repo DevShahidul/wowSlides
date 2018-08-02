@@ -9388,6 +9388,9 @@ nav#navbar.whiteNav {
   .hero-block {
     padding: 20px;
   }
+  .hero-block ul {
+    text-align: center;
+  }
 }
 
 .hero-block .icon-list li {
@@ -9408,11 +9411,12 @@ nav#navbar.whiteNav {
   .hero-block .icon-list li {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
   .hero-block .icon-list li img {
     width: 30px;
     order: 1;
+    align-self: center;
   }
   .hero-block .icon-list li span {
     order: 2;
@@ -13787,6 +13791,15 @@ input[type=submit]:disabled, button:disabled {
 
 .order-3 {
   order: 3;
+}
+
+.top-alert {
+  margin-bottom: 20px;
+  background: #ff9800;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'latoblack';
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
