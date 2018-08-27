@@ -6,9 +6,28 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>TOFAS</title>
-    <link href="main.css" rel="stylesheet">
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  	<!-- keyboard -->
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/css/keyboard.min.css" rel="stylesheet">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/js/jquery.keyboard.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/layouts/keyboard-layouts-combined.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/layouts/keyboard-layouts-greywyvern.min.js"></script>
+
+  	<!-- keyboard extensions (optional) -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/js/jquery.mousewheel.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/js/jquery.keyboard.extension-typing.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.0/js/jquery.keyboard.extension-scramble.min.js"></script>
+
+  	<!-- Materialize -->
+  	<link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+     <script src="ng-virtual-keyboard.js"> </script>
      <script src="app.js"></script>
+     <link href="main.css" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper" ng-app="appCtrl">
@@ -43,27 +62,27 @@
             </div>
 
             <!-- Tofas Field -->
-            <div style="padding-bottom: 25px" ng-if="workerType=='tofas'">
+            <div ng-if="workerType=='tofas'" ng-controller="ExampleCtrl">
               <div class="input-field">
                 <label for="number">Sicil No</label>
-                <input id="number" type="text" name="" value="" placeholder="Sicil Numaranızı başına T koyarak giriniz">
-                <p>*Giriş yaptığınız Sicil No bulunamadı!</p>
+                <input id="number" type="text" name="" value="" placeholder="Sicil Numaranızı başına T koyarak giriniz" ng-virtual-keyboard ng-model="t02">
+                <!-- <p>*Giriş yaptığınız Sicil No bulunamadı!</p> -->
               </div>
-              <div class="text-center">
+              <!-- <div class="text-center">
                 <a href="kiosk-detail.html" class="btn-primary" type="button" name="button">SORGULA</a>
-              </div>
+              </div> -->
             </div>
 
             <!-- Bayi/Tedarikçi Field -->
             <div style="padding-bottom: 25px" ng-if="workerType=='bayi'">
               <div class="input-field">
                 <label for="number">TC No</label>
-                <input id="number" type="text" name="" value="" placeholder="TC No Girininiz">
-                <p>*Lütfen 11 haneli TC Numarınızı giriniz. </p>
+                <input id="number" type="text" name="" value="" placeholder="TC No Girininiz" ng-model="t03" ng-virtual-keyboard="{layout: 'num', restrictInput: true, preventPaste: true}">
+                <!-- <p>*Lütfen 11 haneli TC Numarınızı giriniz. </p> -->
               </div>
-              <div class="text-center">
+              <!-- <div class="text-center">
                 <a href="kiosk-detail.html" class="btn-primary" type="button" name="button">SORGULA</a>
-              </div>
+              </div> -->
             </div>
 
           </div>

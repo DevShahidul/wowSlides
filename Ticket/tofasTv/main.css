@@ -228,7 +228,6 @@ a {
 .mini-box .input-field {
   width: 85%;
   margin: auto;
-  margin-bottom: 35px;
 }
 
 .large-box {
@@ -397,4 +396,46 @@ a {
 
 .w_60 {
   width: 60%;
+}
+
+.no-result {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.no-result img {
+  width: 100px;
+}
+
+.no-result p {
+  margin: 20px;
+  color: #767575;
+  width: 150px;
+  text-align: center;
+}
+
+.ui-widget-content {
+  /* background: rgba(255, 255, 255, 0.85); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(white-bg.svg);
+  min-width: 520px;
+}
+.ui-widget-content .ui-state-default {
+  background: #ffffff;
+}
+.ui-widget-content .ui-state-active {
+  background: rgba(249, 28, 52, 0.78);
+  color: #fff;
+}
+.ui-widget input {
+  background: white;
+  font-size: 0.9rem;
+  height: 30px;
+}
+.ui-keyboard {
+      padding: 2em;
 }
