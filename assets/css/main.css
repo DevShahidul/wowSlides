@@ -5876,6 +5876,10 @@ section#getStarted a.btn:after {
   background: url(../images/icons/icon_like.svg) no-repeat;
 }
 
+.details ul li.liked a {
+  background: url(../images/icons/icon_liked.svg) no-repeat;
+}
+
 .details ul li.share a {
   background: url(../images/icons/icon_share.svg) no-repeat;
 }

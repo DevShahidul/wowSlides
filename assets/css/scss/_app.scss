@@ -1030,6 +1030,9 @@ align-items: center;
     &.like a {
       background: url(../images/icons/icon_like.svg) no-repeat;
     }
+    &.liked a {
+      background: url(../images/icons/icon_liked.svg) no-repeat;
+    }
     &.share a {
       background: url(../images/icons/icon_share.svg) no-repeat;
     }
