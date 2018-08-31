@@ -283,7 +283,7 @@
 
 				</div>
 				</div> -->
-				<div class="col-md-8 col-xs-12 col-md-offset-2" id="preview__items">
+				<div class="col-md-12 col-xs-12 col-md--2" id="preview__items">
 
 
 					<div class="centerForms">
@@ -345,47 +345,56 @@
 								</label>
 							</div>
 						</div>
-						<div class="inputRow">
+						<div class="inputRow" ng-init="check=false">
 							<label>VISIBILITY</label>
 							<div class="check-item row tiny-box">
 								<label class="col-md-6 radio-type">
 									<input type="radio" name="val1">
 									<span class="box"></span>
 									<div class="select-content">
-										<h5><img width="20px" src="assets/images/icons/friends.svg" alt="">Everybody</h5>
+										<h5><img width="20px" src="assets/images/icons/friends.svg" alt="">Public</h5>
 										<p>Project is available for everyone.</p>
 									</div>
 								</label>
 								<label class="col-md-6 radio-type">
-									<input type="radio" name="val1">
+									<input type="radio" name="val1" ng-click="check=true">
+									<span class="box"></span>
+									<div class="select-content">
+										<h5><img width="15px" src="assets/images/icons/lock.svg" alt="">Private</h5>
+										<p>Project is available just for you.</p>
+									</div>
+								</label>
+							</div>
+
+						</div>
+						<div class="inputRow" ng-if="check" ng-init="password=false">
+							<label>PRIVATE</label>
+							<div class="check-item row tiny-box">
+								<label class="col-md-6 radio-type">
+									<input type="radio" name="val2">
 									<span class="box"></span>
 									<div class="select-content">
 										<h5><img width="20px" src="assets/images/icons/user.svg" alt="">Only Me</h5>
 										<p>Project is available just for you.</p>
 									</div>
 								</label>
-								<label class="col-md-6 radio-type">
-									<input type="radio" name="val1">
+								<label class="col-md-6 radio-type" ng-init="passInput=false">
+									<input type="radio" name="val2" ng-click="password=true">
 									<span class="box"></span>
 									<div class="select-content">
 										<h5><img width="20px" src="assets/images/icons/link.svg" alt="">Anyone with a link</h5>
 										<p>Project is available with the link that you shared.</p>
-										<h6>Project Link</h6>
-										<input readonly="readonly" type="text" name="" value="http://beta.wowslides.com/users/be/t./bet.l.bet.l/projects/2018/01/ruby-101-pdf">
-									</div>
-								</label>
-								<label class="col-md-6 radio-type">
-									<input type="radio" name="val1">
-									<span class="box"></span>
-									<div class="select-content">
-										<h5><img width="20px" src="assets/images/icons/secure.svg" alt="">Anyone with a link & password</h5>
-										<p>Project is available with the link & the password.</p>
-										<h6>Password</h6>
-										<input type="text" name="" value="">
+										<label class="checkbox-type" ng-if="password" >
+											<input type="checkbox" name="val3" ng-click="passInput=true">
+											<span class="box" style="border-radius: 0;left: 2px;"></span>
+											<div class="select-content" style="box-shadow: none; padding-bottom: 0;padding-left: 25px; background: none;" >
+												<h5 style="padding-left: 10px">Protect with Password</h5>
+											</div>
+										</label>
+										<input type="text" name="" value="" ng-if="passInput && password">
 									</div>
 								</label>
 							</div>
-
 						</div>
 
 					</div>

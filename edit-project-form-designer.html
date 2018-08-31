@@ -224,10 +224,10 @@
    		<div class="container">
    			<div class="row">
 					<ul >
-  		 			<li class="active">
+  		 			<li>
   		 				<a href="edit-project.html">EDIT PROJECT</a>
   		 			</li>
-  		 			<li>
+  		 			<li >
   						<a href="edit-project-privacy.html">PRIVACY</a>
   		 			</li>
   		 			<li>
@@ -236,6 +236,9 @@
 						<li>
 							<a href="edit-project-reupload.html">RE-UPLOAD</a>
   		 			</li>
+						<li class="active">
+							<a href="edit-project-reupload.html">FORM DESIGNER <span class="new-item">NEW</span> </a>
+  		 			</li>
   		 		</ul>
    			</div>
    		</div>
@@ -243,165 +246,50 @@
 
 		<!-- forms -->
 		<div class="step-forms container">
-
-
-				<!-- left -->
-				<div class="col-md-4 col-xs-12" id="preview__area">
-
-
-					<!-- previewBox -->
-					<!-- <div class="previewBox">
-
-						<div class="uploadPic">
-							<label>
-									<div class="uploadSection">
-									<input type="file">
-										<span>Upload Cover</span>
-									</div>
-							</label>
-							<img src="assets/images/image4.png" alt="">
-						</div>
-
-
-					<div class="select">
-						<div class="nice-select no-icon">
-							<span class="current" id="pre__keyw">KEYWORD</span>
-						</div>
-					</div>
-
-						<div class="formItem title">
-							<h3 id="pre__title">Enter a project title</h3>
-						</div>
-
-						<div class="formItem desc">
-							<p id="pre__desc">Your text is coming here</p>
-						</div>
-
-						<div class="formItem kewy">
-							<input name="tags" id="pre__tags" placeholder="Add Keywords"/>
-						</div>
-
-					<div class="user">
-						<span><img src="assets/images/araz.png" alt=""></span>
-						<span class="text">Araz Murat Ak</span>
-					</div>
-
-					<div class="details">
-						<ul>
-							<li class="view"><a href="#">0</a></li>
-							<li class="like"><a href="#">0</a></li>
-							<li class="share"><a href="#">0</a></li>
-						</ul>
-					</div>
-
-				</div> -->
-
-
-				<div class="swiper-slide wowSlideBox">
-
-					<!-- image -->
-						<!-- <label>
-								<div class="uploadSection">
-								<input type="file">
-									<span>Upload Cover</span>
-								</div>
-						</label> -->
-						<div class="img">
-							<a href="#">
-								<img src="assets/images/image1.png" alt="">
-							</a>
-						</div>
-		<!-- icon -->
-					<div class="icon" style="background:#FF6C0D" id="pre__keyw">
-						EDUCATION
-					</div>
-
-					<div class="texts">
-
-						<!-- tags -->
-						<h5 id="pre__title">Red Mountain</h5>
-
-			<!-- desc -->
-						<p id="pre__desc">Contrary to popular belief, lorem Ipsum is not simply.</p>
-
-			<!-- tags -->
-						<span id="pre__tags" class="tags">Art Direction, UI Design, UX Design</span>
-
-			<!-- user -->
-			<div class="user">
-				<span><img src="assets/images/araz.png" alt=""></span>
-				<span class="text">Araz Murat Ak</span>
+			<div class="col-md-12 col-xs-12">
+				<div class="payment-success gray">
+					<img src="assets/images/icons/form-design.png" alt="">
+					<h3>Welcome to Form Designer!</h3>
+					<p>Engage your audience with conversational forms & surveys</p>
+						<a href="" class="main-btn radius blue">Watch Video</a>
+						<a class="close-icon" href="#"><img src="assets/images/icons/times-gray.svg" alt=""></a>
+				</div>
 			</div>
-
-					</div>
-
-		<!-- list -->
-		<div class="details">
-			<ul>
-				<li class="view"><a href="#">682</a></li>
-				<li class="like"><a href="#">349</a></li>
-				<li class="share"><a href="#">280</a></li>
-			</ul>
-		</div>
+				<div class="col-md-6 col-xs-12">
+					<iframe width="100%" height="300px" src="https://wows.li/e/B3nmmoNo2Ml" frameborder="0" allowfullscreen></iframe>
 
 				</div>
-
-					<!-- #previewBox -->
-
-				</div>
-				<!-- #left -->
+				<div class="col-md-6 col-xs-12 col-md--2" id="preview__items">
 
 
-				<!-- middle -->
-				<div class="col-md-8 col-xs-12" id="preview__items">
-
-
-					<div class="centerForms">
-
-						<div class="inputRow">
-							<label>Title</label>
-							<input type="text" data-pre-target="#pre__title" placeholder="Enter Project Title">
-						</div>
-
+					<div class="centerForms m_b_20">
 						<div class="inputRow niceSelectArea" data-pre-target="#pre__keyw">
-							<label>Category</label>
-							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="Choose a person">
-									<ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+							<label>Select Slide Number</label>
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="All Rights Reserved">
+									<ui-select-match placeholder="Select Slide Number">{{$select.selected.name}}</ui-select-match>
 									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
 										<span ng-bind-html="item.name | highlight: $select.search"></span>
 										<small ng-bind-html="item.email | highlight: $select.search"></small>
 									</ui-select-choices>
 								</ui-select>
 						</div>
-
-						<div class="inputRow">
-							<label>Description</label>
-							<textarea placeholder="Enter Description" data-pre-target="#pre__desc"></textarea>
+						<div class="inputRow niceSelectArea" data-pre-target="#pre__keyw">
+							<label>Select Form</label>
+							<ui-select ng-model="ctrl.person.selected" theme="select2" class="" title="All Rights Reserved">
+									<ui-select-match placeholder="Select Form">{{$select.selected.name}}</ui-select-match>
+									<ui-select-choices repeat="item in ctrl.people | filter: $select.search">
+										<span ng-bind-html="item.name | highlight: $select.search"></span>
+										<small ng-bind-html="item.email | highlight: $select.search"></small>
+									</ui-select-choices>
+								</ui-select>
 						</div>
-
-						<div class="inputRow keyw">
-							<label>Keywords</label>
-							<ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled" style="width: 300px;" title="Choose a color">
-						    <ui-select-match placeholder="Create tags by pressing 'Enter' button">{{$item}}</ui-select-match>
-						    <ui-select-choices repeat="color in ctrl.availableColors | filter:$select.search">
-						      {{color}}
-						    </ui-select-choices>
-						  </ui-select>
-						</div>
-
+						<div class="close-icon"> <a href="edit-project-form-delete-modal.html"><img src="assets/images/icons/times-gray.svg" alt=""></a> </div>
 					</div>
-
-				</div>
-				<div class="clear"></div>
-
-				<div class="col-md-12">
-					<div class="button pull-right">
-						<button type="submit">UPDATE</button>
+					<div class="d-flex justify-between align-center text-center">
+						<a href="#" class="main-btn red m_b_10">ADD NEW RELATION</a>
+						<a href="form-design-create.html" class="main-btn gray">  CREATE FORM</a>
 					</div>
 				</div>
-
-
-
 
 		</div>
 		<!-- #forms -->
