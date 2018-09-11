@@ -37,19 +37,18 @@ a {
 .course-info-wrapper {
   color: #fff;
   padding: 0 70px;
-  padding-top: 70px;
+  padding-top: 20px;
 }
 
 #top {
   color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 #top .course-name {
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 20px 15px;
+  font-size: 2.7rem;
+  text-align: left;
+  padding: 30px 70px;
   text-transform: uppercase;
 
 }
@@ -84,11 +83,11 @@ a {
   font-size: 2.5rem;
 }
 .trainer-name {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 .trainer-name b {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .class-hours {
   margin-top: 10px;
@@ -97,8 +96,8 @@ a {
 .course-description {
   margin-top: 10px;
   font-weight: 100;
-  line-height: 1.5rem;
-  font-size: 1.1rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
 .time {
   padding: 5px 0 5px 0px;
