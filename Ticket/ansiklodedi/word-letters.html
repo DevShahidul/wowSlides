@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ansiklodedi</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/logo/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body ng-app="myApp">
+    <div id="wrapper">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <img class="d-none d-lg-block" width="180px" src="assets/img/logo/ansiklodedi_LOGO.svg" alt="">
+          <img class="d-block d-lg-none" width="50px" src="assets/img/logo/ansiklodedi_favicon_LOGO.svg" alt="">
+        </a>
+        <form class="search-area">
+          <select class="form-control">
+            <option value="">Başlıklar</option>
+            <option value="">Sözlük</option>
+          </select>
+          <input class="form-control" type="search" placeholder="Arama yapmak istediğiniz ifadeyi yazınız." aria-label="Search">
+          <button class="button search-btn" type="submit">ARAMA YAP</button>
+        </form>
+        <button class="navbar-toggler" type="button" id="sidebar-toggle">
+          <img width="30px" src="assets/img/icons/hamburger.svg" alt="">
+        </button>
+          <ul class="navbar-nav ml-auto d-none d-lg-flex">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">ANA SAYFA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="word-letters.html">SÖZLÜK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">KATEGORİLER</a>
+            </li>
+          </ul>
+        <!-- <a class="button transparent-btn d-none d-lg-block ml20" href="login.html">GİRİŞ YAP / KAYIT OL</a> -->
+        <div class="dropdown d-none d-lg-block d-xs-none">
+          <a class="button transparent-btn ml20" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>HESABIM</span> <img src="assets/img/icons/arrow-down-red.svg" alt="">
+          </a>
+
+          <div class="dropdown-menu navbar-dropdown" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="heading-create.html">BAŞLIK OLUŞTUR</a>
+            <a class="dropdown-item" href="word-create.html">SÖZLÜK MADDESİ OLUŞTUR</a>
+            <a class="dropdown-item" href="published-headings.html">YAYINLADIKLARIM</a>
+            <a class="dropdown-item" href="change-password.html">ŞİFRE DEĞİŞTİR</a>
+            <a class="dropdown-item" href="#">ÇIKIŞ YAP</a>
+          </div>
+        </div>
+      </nav>
+      <div id="sidebar"  class="sidebar">
+        <div>
+          <a class="close-right"> <img src="assets/img/icons/close.svg" alt=""> </a>
+          <ul>
+            <li><a href="index.html">ANA SAYFA</a></li>
+            <li><a href="word-letters.html">SÖZLÜK</a></li>
+            <li><a href="categories.html">KATEGORİLER</a></li>
+          </ul>
+          <div class="border-bottom pt20 mb20"></div>
+          <ul>
+            <li><a href="heading-create.html">BAŞLIK OLUŞTUR</a></li>
+            <li><a href="word-create.html">SÖZLÜK MADDESİ OLUŞTUR</a></li>
+            <li><a href="published-headings.html">YAYINLADIKLARIM</a></li>
+            <li><a href="change-password.html">ŞİFRE DEĞİŞTİR</a></li>
+            <li><a href="#">ÇIKIŞ YAP</a></li>
+          </ul>
+            <!-- <ul>
+              <li> <a href="login.html">GİRİŞ YAP / KAYIT OL</a> </li>
+            </ul> -->
+        </div>
+      </div>
+      <div id="content">
+        <section class="slice bg-cover head-content" style="background-image: url(assets/img/backgrounds/heading-banner.png)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                <p class="text-xxs c-white mb10 d-none d-md-block d-lg-block">Ansiklodedi tamamen kullanıcılarının geliştirdiği bir internet ansiklopedisidir.</p>
+                <p class="text-xxs c-white d-none d-md-block d-lg-block">Arama çubuğunu kullanarak başlıklar ve sözlük maddeleri arasında gezinebilirsiniz.
+                  Dilerseniz oturum açarak yeni başlık ve sözlük maddesi oluşturabilir veya katkıda bulunabilirsiniz.</p>
+                <div class="mt30 mb30">
+                  <a href="word-create.html" class="button primary-btn">SÖZLÜK MADDESİ OLUŞTUR</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="inner-content" ng-controller="myAppController as letterList">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-xs-12">
+                <div class="content-wrapper">
+                  <h1 class="heading heading-3 mb20">Bir harf seçin</h1>
+                  <div class="letter-container">
+                    <a ng-repeat="letter in letterList.letters" href="word-letter-detail.html"><h1 class="heading heading-letter"> {{letter}} </h1></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <footer>
+        <div class="bg-primary-color p30 text-center c-white">
+          ® 2018 Ansiklodedi - Tüm Hakları Saklıdır
+        </div>
+      </footer>
+    </div>
+
+
+    <script type="text/javascript" src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+      var myApp = angular.module('myApp', []);
+      myApp.controller('myAppController', function() {
+        var letterList = this;
+        letterList.letters = ["A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L",
+                              "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z"];
+    });
+    </script>
+  </body>
+</html>

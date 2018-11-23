@@ -124,7 +124,7 @@ $(window).load(function(){
 });
 
 
-// loader
-$(window).load(function(){
-	$('#loader').fadeOut(400);
-});
+  // loader
+  $(window).load(function(){
+  	$('#loader').fadeOut(100);
+  });
