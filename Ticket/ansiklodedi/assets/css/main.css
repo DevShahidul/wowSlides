@@ -9876,6 +9876,7 @@ a:focus {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 #content {
@@ -9917,6 +9918,13 @@ button {
     padding-left: 25px;
     flex-direction: column;
   }
+}
+
+.alert-danger {
+  color: #ff6666;
+  background-color: #ffffff;
+  border-color: #ff6666;
+  border-radius: 0;
 }
 
 /*!
@@ -12927,6 +12935,21 @@ p {
   .text-sm {
     font-size: 15px;
   }
+}
+
+.hover-primary {
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hover-primary:hover {
+  color: #ff6666;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .c-primary {

@@ -100,3 +100,11 @@ p {
       font-size: 15px;
     }
 }
+
+.hover-primary {
+  @include transition(0.2s);
+  &:hover {
+    color: $primary_color;
+    @include transition(0.2s);
+  }
+}
