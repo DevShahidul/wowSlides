@@ -9920,13 +9920,6 @@ button {
   }
 }
 
-.alert-danger {
-  color: #ff6666;
-  background-color: #ffffff;
-  border-color: #ff6666;
-  border-radius: 0;
-}
-
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -13154,6 +13147,13 @@ footer {
   transition: 0.2s;
 }
 
+.primary-btn:disabled,
+.primary-btn[disabled] {
+  color: #ffffff;
+  background: #ff9999;
+  cursor: auto;
+}
+
 .gray-btn {
   background: #999999;
   color: #ffffff;
@@ -13170,6 +13170,13 @@ footer {
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.gray-btn:disabled,
+.gray-btn[disabled] {
+  color: #ffffff;
+  background: #b8b8b8;
+  cursor: auto;
 }
 
 .transparent-btn {
@@ -13410,6 +13417,14 @@ footer {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+.input-block.error {
+  border-bottom: 1px solid #ff6666;
+}
+
+.input-block.error label {
+  color: #ff6666;
 }
 
 .input-block label {
@@ -13802,6 +13817,41 @@ footer {
   background-size: contain;
   width: 50px;
   margin-left: 20px;
+}
+
+.alert-danger {
+  color: #ff6666;
+  background-color: #ffffff;
+  border-color: #ff6666;
+  border-radius: 0;
+}
+
+.alert-warning {
+  color: #FF9800;
+  background-color: #ffffff;
+  border-color: #FFC107;
+  border-radius: 0;
+}
+
+.alert-success {
+  color: #339437;
+  background-color: #ffffff;
+  border-color: #339437;
+  border-radius: 0;
+}
+
+.alert-info {
+  color: #004085;
+  background-color: #ffffff;
+  border-color: #004085;
+  border-radius: 0;
+}
+
+.alert-gray {
+  color: #363b42;
+  background-color: #ffffff;
+  border-color: #999999;
+  border-radius: 0;
 }
 
 /*Pages*/

@@ -1,0 +1,34 @@
+.alert-danger {
+    color: $primary_color;
+    background-color: #ffffff;
+    border-color: $primary_color;
+    border-radius: 0;
+}
+
+.alert-warning {
+    color: #FF9800;
+    background-color: #ffffff;
+    border-color: #FFC107;
+    border-radius: 0;
+}
+
+.alert-success {
+    color: #339437;
+    background-color: #ffffff;
+    border-color: #339437;
+    border-radius: 0;
+}
+
+.alert-info {
+    color: #004085;
+    background-color: #ffffff;
+    border-color: #004085;
+    border-radius: 0;
+}
+
+.alert-gray {
+    color: $text_color;
+    background-color: #ffffff;
+    border-color: $gray-color;
+    border-radius: 0;
+}
