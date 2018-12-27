@@ -73,7 +73,6 @@
       color: $text-color-light;
       margin-bottom: 5px;
       a {
-        @extend .proxima-nova-bold;
         color: $text-color-light;
         @include transition(0.2s);
         @extend .text-xs;
