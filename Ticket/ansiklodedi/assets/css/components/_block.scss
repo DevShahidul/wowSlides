@@ -188,3 +188,24 @@
     margin-top: -20px;
   }
 }
+
+.heading-content {
+  p {
+    @extend .text-xs;
+    margin-bottom: 10px
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2.5rem; 
+    margin-bottom: 1rem;
+    @extend .proxima-nova-bold;
+    span {
+      font-size: inherit;
+    }
+  }
+  a {
+      color: #2287d7;
+  }
+  ul, ol {
+    @extend .text-xs;
+  }
+}

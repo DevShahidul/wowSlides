@@ -13654,7 +13654,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-family: 'ProximaNova Semibold',sans-serif;
 }
 
-.proxima-nova-bold, .search-area .search-btn, .search-area-transparent .search-btn, .pagination .page-item .page-link {
+.proxima-nova-bold, .search-area .search-btn, .search-area-transparent .search-btn, .heading-content h1, .heading-content h2, .heading-content h3, .heading-content h4, .heading-content h5, .heading-content h6, .pagination .page-item .page-link {
   font-family: 'ProximaNova Bold',sans-serif;
 }
 
@@ -13724,7 +13724,7 @@ p {
   font-size: 14px;
 }
 
-.text-xs, .sidebar ul, .letter-block .letter-list li a, .pagination .page-item .page-link {
+.text-xs, .sidebar ul, .letter-block .letter-list li a, .heading-content p, .heading-content ul, .heading-content ol, .pagination .page-item .page-link {
   font-size: 15px;
 }
 
@@ -13881,6 +13881,10 @@ nav.transparent-nav .nav-link:hover {
 
 nav.transparent-nav .search-area, nav.transparent-nav .search-area-transparent {
   border-color: #ffffff;
+}
+
+nav.transparent-nav .search-area option, nav.transparent-nav .search-area-transparent option {
+  background: #03102b;
 }
 
 nav.transparent-nav .form-control {
@@ -14709,6 +14713,23 @@ footer {
   .inner-content {
     margin-top: -20px;
   }
+}
+
+.heading-content p {
+  margin-bottom: 10px;
+}
+
+.heading-content h1, .heading-content h2, .heading-content h3, .heading-content h4, .heading-content h5, .heading-content h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.heading-content h1 span, .heading-content h2 span, .heading-content h3 span, .heading-content h4 span, .heading-content h5 span, .heading-content h6 span {
+  font-size: inherit;
+}
+
+.heading-content a {
+  color: #2287d7;
 }
 
 .pagination .page-item {

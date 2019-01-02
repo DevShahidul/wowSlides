@@ -44,6 +44,9 @@ nav.transparent-nav {
   }
   .search-area {
     border-color: $white_text_color;
+      option {
+      background: #03102b;
+    }
   }
   .form-control {
     color: $white_text_color;
