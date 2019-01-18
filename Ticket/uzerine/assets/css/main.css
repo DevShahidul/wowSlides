@@ -13712,27 +13712,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-weight: 700;
 }
 
-.secondary-font-regular, .heading, .content-block h1, .content-block h2, .content-block h3, .content-block h4, .content-block h5, .content-block h6 {
+.secondary-font-regular, .heading {
   font-family: 'Playfair Display', serif;
 }
 
-.heading, .content-block h1, .content-block h2, .content-block h3, .content-block h4, .content-block h5, .content-block h6 {
+.heading {
   color: #363b42;
 }
 
-.heading-1, .content-block h1 {
+.heading-1 {
   font-size: 100px;
 }
 
-.heading-2, .content-block h2 {
+.heading-2 {
   font-size: 60px;
 }
 
-.heading-3, .content-block h3 {
+.heading-3 {
   font-size: 35px;
 }
 
-.heading-4, .content-block h4 {
+.heading-4 {
   font-size: 28px;
 }
 
@@ -13754,13 +13754,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media (max-width: 768px) {
-  .heading-1, .content-block h1 {
+  .heading-1 {
     font-size: 70px;
   }
-  .heading-2, .content-block h2 {
+  .heading-2 {
     font-size: 40px;
   }
-  .heading-3, .content-block h3 {
+  .heading-3 {
     font-size: 30px;
   }
 }
@@ -14977,30 +14977,4 @@ footer {
   .error-container .error-number img {
     width: 140px;
   }
-}
-
-.doc-wrapper {
-  display: flex;
-}
-
-.leftsidebar-wrapper {
-  width: 320px;
-  height: calc(100vh - 91px);
-  position: sticky;
-  top: 20px;
-  padding: 20px;
-}
-
-.doc-content-wrapper {
-  width: 100%;
-  padding: 20px;
-}
-
-.content-link-wrapper {
-  width: 250px;
-  padding-left: 20px;
-  height: calc(100vh - 91px);
-  position: sticky;
-  top: 20px;
-  padding: 20px;
 }
