@@ -1,0 +1,131 @@
+//Font Family
+
+.proxima-nova-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.proxima-nova-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.proxima-nova-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.playfairDisplay {
+  font-family: 'Lora', serif;
+}
+
+.primary-font-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.primary-font-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.primary-font-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.secondary-font-regular {
+  font-family: 'Playfair Display', serif;
+}
+
+
+// Heading
+
+.heading {
+  @extend .secondary-font-regular;
+  color: $text-color;
+}
+.heading-1 {
+  font-size: 100px;
+}
+.heading-2 {
+  font-size: 60px;
+}
+.heading-3 {
+  font-size: 35px;
+}
+.heading-4 {
+  font-size: 28px;
+}
+.heading-letter {
+  font-size: 68px;
+  color: $text-color;
+  @include transition(0.2s);
+  @extend .mr20;
+  &:hover {
+    color: $primary_color;
+    @include transition(0.2s);
+  }
+}
+@media (max-width: 768px) {
+    .heading-1 {
+      font-size: 70px;
+    }
+    .heading-2 {
+      font-size: 40px;
+    }
+    .heading-3 {
+      font-size: 30px;
+    }
+}
+
+
+// Default Text
+
+p {
+  @extend .primary-font-regular;
+  font-weight: 400;
+  font-size: 19px; //14pt
+  color: $text-color;
+  margin-bottom: 0;
+      line-height: 25px;
+}
+.text-xxs {
+  font-size: 14px;
+}
+.text-xs {
+  font-size: 15px;
+}
+.text-sm {
+  font-size: 17px;
+}
+.text-md {
+  font-size: 22px; //16pt
+}
+.text-lg {
+  font-size: 23px; //17pt
+}
+.text-btn-xs {
+  font-size: 12px;
+}
+
+// Alignment
+.text-justify {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .text-sm {
+      font-size: 15px;
+    }
+}
+
+.hover-primary {
+  @include transition(0.2s);
+  &:hover {
+    color: $primary_color;
+    @include transition(0.2s);
+  }
+}

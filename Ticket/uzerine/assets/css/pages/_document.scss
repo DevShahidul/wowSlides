@@ -1,0 +1,23 @@
+.doc-wrapper {
+  display: flex;
+}
+
+.leftsidebar-wrapper {
+    width: 320px;
+	height: calc(100vh - 91px);
+	position: sticky;
+	top: 20px;
+	padding: 20px;
+}
+.doc-content-wrapper {
+  	width: 100%;
+  	padding: 20px;
+}
+.content-link-wrapper {
+	width: 250px;
+	padding-left: 20px;
+	height: calc(100vh - 91px);
+	position: sticky;
+	top: 20px;
+	padding: 20px;
+}

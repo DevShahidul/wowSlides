@@ -1,0 +1,80 @@
+nav {
+  border-bottom: 1px solid #e4e5e7;
+  &.navbar {
+    padding: 1rem 4rem;
+    @media (max-width: 1200px) {
+      padding: 1rem;
+    }
+    @media (max-width: 480px) {
+      padding: 0.5rem;
+      .navbar-brand {
+        margin-right: 0;
+      }
+      .navbar-toggler {
+        padding: 0;
+      }
+    }
+  }
+  .nav-link {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    color: $text-color-light;
+    &:hover {
+      color: $primary_color;
+    }
+    @media (max-width: 1600px) and (min-width: 992px) {
+      padding-right: 12px !important;
+      padding-left: 12px !important;
+    }
+  }
+  .nav-item.active .nav-link {
+    color: $primary_color;
+  }
+}
+
+nav.transparent-nav {
+  border: none;
+  .nav-link {
+    color: $white_text_color;
+    &:hover {
+      color: $primary_color;
+    }
+  }
+  .search-area {
+    border-color: $white_text_color;
+      option {
+      background: #03102b;
+    }
+  }
+  .form-control {
+    color: $white_text_color;
+    background-color: rgba(0, 0, 0, 0);
+    @media (max-width: 1200px) {
+      background-image: url(../../assets/img/icons/search-white.svg);
+    }
+  }
+  .search-btn {
+    @extend .bg-white;
+    color: $text-color;
+  }
+}
+
+.navbar-dropdown {
+  top: 40px;
+  width: 220px;
+  left: -35px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 10px 1px #d2d2d2;
+  border: none;
+  .dropdown-item {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center; 
+    padding: 0.65rem 1.5rem;
+    color: $text-color-light;
+  }
+}

@@ -1,0 +1,28 @@
+.error-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  // height: 100vh;
+}
+
+.error-container {
+  text-align: center;
+  .white-logo {
+    width: 120px;
+  }
+  .error-number {
+    font-size: 200px;
+    @extend .playfairDisplay;
+    color: $white_text_color;
+    img {
+      width: 300px;
+    }
+    @media (max-width: 768px) {
+      font-size: 100px;
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
