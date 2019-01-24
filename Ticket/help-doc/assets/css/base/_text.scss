@@ -1,0 +1,80 @@
+//Font Family
+
+.primary-font-regular {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+.primary-font-semibold {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.primary-font-bold {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+.secondary-font-regular {
+  font-family: 'Playfair Display', serif;
+}
+
+
+// Heading
+
+.heading {
+  @extend .secondary-font-regular;
+  color: $text-color;
+}
+
+// Default Text
+
+p {
+  @extend .primary-font-regular;
+  font-weight: 400;
+  font-size: 19px; //14pt
+  color: $text-color;
+  margin-bottom: 0;
+      line-height: 25px;
+}
+.text-xxs {
+  font-size: 14px;
+}
+.text-xs {
+  font-size: 15px;
+}
+.text-sm {
+  font-size: 17px;
+}
+.text-md {
+  font-size: 22px; //16pt
+}
+.text-lg {
+  font-size: 23px; //17pt
+}
+.text-btn-xs {
+  font-size: 12px;
+}
+
+// Alignment
+.text-justify {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .text-sm {
+      font-size: 15px;
+    }
+}
+
+.hover-primary {
+  @include transition(0.2s);
+  &:hover {
+    color: $primary_color;
+    @include transition(0.2s);
+  }
+}

@@ -1,0 +1,53 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ol {
+  -webkit-padding-start: 20px;
+  li {
+    line-height: 30px;
+    a {
+      color: $text-color;
+    }
+  }
+}
+a {
+  color: #636363;
+  vertical-align: middle;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+figure {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 1rem 0;
+  width: 100%;
+  pre {
+    overflow: auto;
+  }
+}
+
+#content {
+  min-height: calc(100vh - 95px);
+}
+.wrapper {
+  display: flex;
+}
+#doc-content{
+  width: 100%;
+  padding: 20px;
+}

@@ -1,0 +1,50 @@
+.sidebar {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  box-shadow: 1px 1px 10px 1px #c5c5c5;
+  padding: 20px;
+  background: #fff;
+  z-index: 9;
+  @include transition(0.5s);
+  ul {
+    @extend .proxima-nova-semibold;
+    @extend .text-xs;
+    li {
+      padding: 8px 0;
+      margin: 4px 0;
+    }
+  }
+}
+
+.close-right {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  img {
+    width: 35px;
+    padding: 10px;
+  }
+}
+
+#leftsidebar{
+  width: 320px;
+  min-width: 320px;
+  height: calc(100vh - 91px);
+  @extend .scroll-y;
+  padding: 20px;
+  position: sticky;
+  top: 91px;
+}
+
+#rightsidebar{
+  width: 300px;
+  min-width: 300px;
+  padding: 20px;
+  height: calc(100vh - 91px);
+  @extend .scroll-y;
+  position: sticky;
+  top: 91px;
+}
