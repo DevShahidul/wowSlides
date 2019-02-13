@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav class="navbar navbar-expand-lg">
+      <!-- <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">
           <img class="d-none d-lg-block" width="120px" src="https://via.placeholder.com/200x80" alt="">
           <img class="d-block d-lg-none" width="50px" src="assets/img/logo/favicon.png" alt="">
@@ -25,7 +25,6 @@
               <a class="nav-link" href="categories.html">Another Link</a>
             </li>
           </ul>
-        <!-- <a class="button transparent-btn d-none d-lg-block ml20" href="https://uzerine.com" target="_blank"></a> -->
 
       </nav>
       <div id="sidebar"  class="sidebar">
@@ -40,48 +39,58 @@
             <li><a href="https://uzerine.com" target="_blank">Link</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
+      <div class="leftmenu-trigger"><img src="assets/img/icons/arrow-left.svg" alt=""></div>
       <div id="content" class="wrapper">
-        <div id="leftsidebar" class="border-right">
-          <form class="form-inline w-100 mb20">
-              <input class="form-control w-100" type="text" placeholder="Search">
-          </form>
-          <div class="menu-list">
-            <ul class="tree-list">
-              <li>
-                 <input  id="l1" type="checkbox" checked><label for="l1">Getting Started</label>
-                
-                  <ul>
-                    <li>
-                     <input id="l1i1" type="checkbox" checked> <label for="l1i1">Cras justo odio</label>
-                      <ul>
-                        <li><a href="">Dapibus ac facilisis in</a></li>
-                        <li><a href="">Morbi leo risus</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="">Porta ac consectetur ac</a></li>
-                  </ul>
-              </li>
-              
-              <li>
-                
-                 <input id="l1i2" type="checkbox" checked><label for="l1i2">Level 0 : Item 2 </label>
-                  <ul>
-                    <li><a href="">Level 2 : Item 1</a></li>
-                    <li><a href="">Level 2 : Item 2</a></li>
-                  </ul>  
-              </li>
+        <div id="leftsidebar">
+          <div class="head-nav">
+            <div class="pb20"><a href="index.html"><img width="180" src="assets/img/logo/logo_white.svg" alt=""></a></div>
+            <ul class="head-links">
+              <li><a href="index.html">Link</a></li>
+              <li><a href="categories.html">Another Link</a></li>
+            </ul>
 
-              <li>
-                <a href="">Level 0 : Item 3</a>
-              </li>
-              <li>
-                 <input  id="l12" type="checkbox" checked><label for="l12">Level 0 : Item 1</label>
+          </div>
+          <div class="p20">
+            <form class="form-inline w-100 mb20">
+                <input class="form-control w-100" type="text" placeholder="Search">
+            </form>
+            <div class="menu-list">
+              <ul class="tree-list">
+                <li>
+                   <input  id="l1" type="checkbox" checked><label for="l1">Getting Started</label>
+                  
+                    <ul>
+                      <li>
+                       <input id="l1i1" type="checkbox" checked> <label for="l1i1">Cras justo odio</label>
+                        <ul>
+                          <li><a href="">Dapibus ac facilisis in</a></li>
+                          <li><a href="">Morbi leo risus</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">Porta ac consectetur ac</a></li>
+                    </ul>
+                </li>
                 
-                  <ul>
-                    <li>
-                     <input id="l1i12" type="checkbox" checked> <label for="l1i12">Level 1 : Item 1  </label>
-                      <ul>
+                <li>
+                  
+                   <input id="l1i2" type="checkbox" checked><label for="l1i2">Level 0 : Item 2 </label>
+                    <ul>
+                      <li><a href="">Level 2 : Item 1</a></li>
+                      <li><a href="">Level 2 : Item 2</a></li>
+                    </ul>  
+                </li>
+
+                <li>
+                  <a href="">Level 0 : Item 3</a>
+                </li>
+                <li>
+                   <input  id="l12" type="checkbox" checked><label for="l12">Level 0 : Item 1</label>
+                  
+                    <ul>
+                      <li>
+                       <input id="l1i12" type="checkbox" checked> <label for="l1i12">Level 1 : Item 1  </label>
+                        <ul>
                         <li><a href="">Level 2 : Item 1</a></li>
                         <li><a href="">Level 2 : Item 2</a></li>
                       </ul>
@@ -114,31 +123,32 @@
                       </ul>
                     </li>
                     <li><a href="">Level 1 : Item 2</a></li>
-                  </ul>
-              </li>
-              
-              <li>
+                    </ul>
+                </li>
                 
-                 <input id="l1i26" type="checkbox" checked><label for="l1i26">Level 0 : Item 2 </label>
-                  <ul>
-                    <li><a href="">Level 2 : Item 1</a></li>
-                    <li><a href="">Level 2 : Item 2</a></li>
-                  </ul>  
-              </li>
+                <li>
+                  
+                   <input id="l1i26" type="checkbox" checked><label for="l1i26">Level 0 : Item 2 </label>
+                    <ul>
+                      <li><a href="">Level 2 : Item 1</a></li>
+                      <li><a href="">Level 2 : Item 2</a></li>
+                    </ul>  
+                </li>
 
-              <li>
-                <a href="">Level 0 : Item 3</a>
-              </li>
-            </ul>
+                <li>
+                  <a href="">Level 0 : Item 3</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div id="doc-content">
+        <div id="doc-content" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
             <div class="btn-container">
               <a href=""><img src="assets/img/icons/preview.svg" alt="">Preview</a>
               <a href=""><img src="assets/img/icons/save.svg" alt="">Save as Draft</a>
               <a href=""><img src="assets/img/icons/publish.svg" alt="">Publish</a>
             </div>
-            <div class="content-style" id="content-style">
+            <div class="content-style pt30" id="content-style">
               <h1>Heading h1</h1>
               <h2>Heading h2</h2>
               <h3>Heading h3</h3>

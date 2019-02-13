@@ -58,3 +58,21 @@ nav {
     color: $text-color-light;
   }
 }
+
+.head-nav {
+  @extend .p20;
+  background: linear-gradient(to top, #7473ff, #5958ff);
+  .head-links {
+    a {
+      color: #fff;
+      @extend .primary-font-semibold;
+      font-size: 1.1rem;
+      @include transition(0.2s);
+      &:hover {
+        color:  #ddd;
+        @include transition(0.2s);
+      }
+    }
+  }
+  
+}

@@ -44,6 +44,9 @@
       position: absolute;
       right: 0;
     }
+    &.active {
+      color: $primary_color;
+    }
   }
   input[type="checkbox"]:checked + label + {
     ul, ol {
