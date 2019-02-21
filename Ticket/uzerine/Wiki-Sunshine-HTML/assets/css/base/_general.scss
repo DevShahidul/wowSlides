@@ -1,0 +1,38 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ol {
+  -webkit-padding-start: 20px;
+  li {
+    line-height: 30px;
+    a {
+      color: $text-color;
+    }
+  }
+}
+a {
+  color: #636363;
+  vertical-align: middle;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+#content {
+  min-height: calc(100vh - 90px);
+}
+

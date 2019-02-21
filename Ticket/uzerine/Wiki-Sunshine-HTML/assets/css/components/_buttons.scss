@@ -1,0 +1,60 @@
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 7px;
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.primary-btn {
+  background: $primary_color;
+  color: #ffffff;
+  @include transition(0.2s);
+  &:hover {
+    color: #ffffff;
+    background: lighten($primary_color, 8%);
+    @include transition(0.2s);
+  }
+}
+
+/*
+.primary-btn:disabled,
+.primary-btn[disabled]{
+  color: #ffffff;
+  background: lighten($primary_color, 10%);
+  cursor: auto;
+}
+
+.gray-btn {
+  background: $gray-color;
+  color: #ffffff;
+  @include transition(0.2s);
+  &:hover {
+    color: #ffffff;
+    background: lighten($gray-color, 8%);
+    @include transition(0.2s);
+  }
+}
+
+.gray-btn:disabled,
+.gray-btn[disabled]{
+  color: #ffffff;
+  background: lighten($gray-color, 12%);
+  cursor: auto;
+}
+
+.transparent-btn {
+  background: rgba(0, 0, 0, 0);
+  color: $primary_color;
+  border: 1px solid $primary_color;
+  @include transition(0.2s);
+  &:hover {
+    color: #ffffff;
+    background: $primary_color;
+    @include transition(0.2s);
+  }
+}
+
+
+*/

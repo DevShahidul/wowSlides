@@ -59,7 +59,7 @@
 // Default Text
 
 p {
-  font-family: 'ProximaNova Regular',sans-serif;
+  @extend .proxima-nova-regular;
   font-size: 19px; //14pt
   color: $text-color;
   margin-bottom: 0;

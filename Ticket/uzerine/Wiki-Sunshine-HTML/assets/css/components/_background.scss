@@ -1,0 +1,45 @@
+.full-screen-bg {
+  background-size: contain;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.category-bg {
+  height: 175px;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.full-screen-bg-2 {
+  background-size: cover;
+  height: calc(100vh - 91px);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.wiki-category-bg {
+    height: 290px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.category-box-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wiki-detail-bg {
+      background-position: left top;
+    background-size: initial;
+    background-repeat: no-repeat;
+}

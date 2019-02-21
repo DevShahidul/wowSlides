@@ -1,0 +1,14 @@
+.navbar {
+	@media (max-width: 567px) {
+		padding: 0;
+		form {
+			margin-right: 10px;
+		}
+		.form-inline img {
+			width: 25px;
+		}
+		.navbar-brand img {
+			width: 60px;
+		}
+	}
+}
