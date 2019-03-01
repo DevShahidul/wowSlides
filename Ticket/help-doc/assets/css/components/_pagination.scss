@@ -7,7 +7,7 @@
       border: none;
       border-radius: 7px;
       @extend .text-xs;
-      @extend .proxima-nova-bold;
+      @extend .primary-font-bold;
       @include transition(0.2s);
       line-height: 1rem;
       &:hover {

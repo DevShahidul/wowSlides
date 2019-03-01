@@ -10,7 +10,7 @@
   z-index: 9;
   @include transition(0.5s);
   ul {
-    @extend .proxima-nova-semibold;
+    @extend .primary-font-semibold;
     @extend .text-xs;
     li {
       padding: 8px 0;
@@ -39,6 +39,13 @@
   background: linear-gradient(to bottom, #f3f6ff, #fcfcfc);
   box-shadow: 1px 1px 10px 1px #e1e1e1;
   @include transition(0.3s);
+  &:hover {
+    @include transition(0.3s);
+    .leftmenu-trigger {
+      opacity: 1;
+      @include transition(0.3s);
+    }
+  }
 }
 
 #rightsidebar{
@@ -52,20 +59,22 @@
   box-shadow: 1px 1px 10px 1px #e1e1e1;
 }
 .leftmenu-trigger {
-    position: absolute;
+    position: fixed;
     z-index: 9;
-    left: 300px;
-    top: 17px;
-    background: #93a1ff;
-    padding: 7px 17px;
+    left: 295px;
+    top: 165px;
+    background: #fff;
+    box-shadow: 1px 1px 15px 1px #b5b5b5;
+    padding: 7px;
     border-radius: 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     @include transition(0.3s);
+    display: flex;
+    opacity: 0;
     img {
-      width: 20px;
+      width: 15px;
       @include transition(0.3s);
     }
     &.triggered {
@@ -76,6 +85,7 @@
         @include transition(0.3s);
       }
     }
+    
 }
 
 .triggered-sidebar {

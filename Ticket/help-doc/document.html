@@ -39,12 +39,13 @@
             <li><a href="https://uzerine.com" target="_blank">Link</a></li>
           </ul>
         </div>
-      </div>  -->
-      <!-- <div class="leftmenu-trigger"><img src="assets/img/icons/arrow-left.svg" alt=""></div> -->
+      </div> -->
+      
       <div id="content" class="wrapper">
         <div id="leftsidebar">
+          <div class="leftmenu-trigger"><img src="assets/img/icons/arrow-left.svg" alt=""></div>
           <div class="p20">
-            <form class="form-inline w-100 mb20">
+            <form action="search-result.html" class="form-inline w-100 mb20">
                 <input class="form-control w-100" type="text" placeholder="Search">
             </form>
             <p class="text-center mb20"><a href="#" id="tree-expand-all">Expand all</a> | <a href="#" id="tree-collapse-all">Collapse all</a></p>
@@ -113,7 +114,7 @@
                       <li><a href="">Exception.php</a></li>
                     </ul>
                   </li>
-                  <li><a href="">Form</a>
+                  <li>Form
                     <ul>
                       <li><a href="">Decorator</a>
                         <ul>
@@ -166,22 +167,157 @@
         </div>
         <div id="doc-content" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
             <div class="btn-container">
-              <a href=""><img src="assets/img/icons/preview.svg" alt="">Preview</a>
-              <a href=""><img src="assets/img/icons/save.svg" alt="">Save as Draft</a>
-              <a href=""><img src="assets/img/icons/publish.svg" alt="">Publish</a>
+              <a href="edit-doc.html"><img src="assets/img/icons/edit.svg" alt="">Edit</a>
+              <a href=""><img src="assets/img/icons/delete.svg" alt="">Delete</a>
             </div>
-            <div class="content-style pt30" id="content-style">
+            <div class="content-style">
               <h1>Heading h1</h1>
               <h2>Heading h2</h2>
               <h3>Heading h3</h3>
               <h4>Heading h4</h4>
               <h5>Heading h5</h5>
               <h6>Heading h6</h6>
+             <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+              <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;head&gt;</span>
+                  <span class="c">&lt;!-- Required meta tags --&gt;</span>
+                  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+
+                  <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
+                  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+
+                  <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
+                <span class="nt">&lt;/head&gt;</span>
+                <span class="nt">&lt;body&gt;</span>
+                  <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+
+                  <span class="c">&lt;!-- Optional JavaScript --&gt;</span>
+                  <span class="c">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+                  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                <span class="nt">&lt;/body&gt;</span>
+              <span class="nt">&lt;/html&gt;</span></code></pre></figure>
               <p>Sed volutpat arcu tristique vehicula congue. Mauris suscipit sodales dolor, eleifend imperdiet sem tincidunt quis.
-                Donec efficitur erat eget cursus porttitor. Phasellus sed dui id nunc hendrerit aliquam vel efficitur nulla. Praesent
+                Donec efficitur erat eget cursus porttitor. Phasellus  <a href=""> sed dui id nunc hendrerit</a> aliquam vel efficitur nulla. Praesent
                  pellentesque sapien lobortis lorem semper suscipit. Nunc nec leo iaculis mauris volutpat tincidunt id at diam. Sed
                  consectetur neque lacus. Donec eget arcu feugiat justo euismod facilisis. Phasellus cursus orci nec fermentum gravida. P
                  roin sagittis non ipsum ut vulputate. Ut posuere sodales iaculis. Phasellus fermentum vel arcu ac mollis.</p>
+                <table>
+                <tbody><tr>
+                  <th>
+                    Tatil Adı 
+                  </th>
+                  <th>
+                     Tatil Günü 
+                  </th>
+                  <th>
+                    <p>
+                       Değişkenlik Durumu
+                    </p>
+                     
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/cwiki/wiki/Yılbaşı" title="Yılbaşı">Yeni Yıl Günü</a> 
+                  </td>
+                  <td>
+                     1 Ocak 
+                  </td>
+                  <td>
+                    <p>
+                      Sabit
+                    </p>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/cwiki/wiki/Muhammed" title="Muhammed">Muhammed</a>' in doğum günü (<a href="/cwiki/wiki/Mevlid-Kandili" title="Mevlid Kandili">Mevlid Kandili</a>) 
+                  </td>
+                  <td>
+                     24 Ocak 
+                  </td>
+                  <td>
+                    <p>
+                       Değişken
+                    </p>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/cwiki/wiki/Muhammed" title="Muhammed">Muhammed</a>' in göğe yükselişi (<a href="/cwiki/wiki/Mirac-Kandili" title="Mirac Kandili">Mirac Kandili</a>)
+                  </td>
+                  <td>
+                     4 Haziran 
+                  </td>
+                  <td>
+                    <p>
+                       Değişken
+                    </p>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/cwiki/wiki/Şevval" title="Şevval">Şevval</a> ayının ilk 3 günü (<a href="/cwiki/wiki/Ramazan-Bayramı" title="Ramazan Bayramı">Ramazan Bayramı</a>)
+                  </td>
+                  <td>
+                     7 Ağustos
+                  </td>
+                  <td>
+                    <p>
+                       Değişken
+                    </p>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/cwiki/wiki/Kurban" title="Kurban">Kurban</a> Ziyafeti (<a href="/cwiki/wiki/Kurban-Bayramı" title="Kurban Bayramı">Kurban Bayramı</a>)
+                  </td>
+                  <td>
+                     14 Ekim 
+                  </td>
+                  <td>
+                    <p>
+                       Değişken
+                    </p>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="/cwiki/wiki/Hicret" title="Hicret">Hicret</a>' in Yıldönümü (<a href="/cwiki/wiki/Hicri-Yılbaşı" title="Hicri Yılbaşı">Hicri Yılbaşı</a>)
+                  </td>
+                  <td>
+                     4 Kasım 
+                  </td>
+                  <td>
+                    <p>
+                       Değişken
+                    </p>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Ulusal Gün 
+                  </td>
+                  <td>
+                     2 Aralık 
+                  </td>
+                  <td>
+                    <p>
+                       Sabit
+                    </p>
+                     
+                  </td>
+                </tr>
+              </tbody></table>
               <p>Sed volutpat arcu tristique vehicula congue. Mauris suscipit sodales dolor, eleifend imperdiet sem tincidunt quis.
                 Donec efficitur erat eget cursus porttitor. Phasellus sed dui id nunc hendrerit aliquam vel efficitur nulla. Praesent
                  pellentesque sapien lobortis lorem semper suscipit. Nunc nec leo iaculis mauris volutpat tincidunt id at diam. Sed
@@ -284,25 +420,9 @@
 
     <script type="text/javascript" src="assets/js/vendor/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="https://cdn.ckeditor.com/4.11.2/standard-all/ckeditor.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
     <script type="text/javascript" src="assets/js/tree.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script>
-    // The inline editor should be enabled on an element with "contenteditable" attribute set to "true".
-    // Otherwise CKEditor will start in read-only mode.
-    var introduction = document.getElementById('content-style');
-    introduction.setAttribute('contenteditable', true);
-
-    CKEDITOR.inline('introduction', {
-      // Allow some non-standard markup that we used in the introduction.
-      extraAllowedContent: 'a(documentation);abbr[title];code',
-      removePlugins: 'stylescombo',
-      extraPlugins: 'sourcedialog',
-      // Show toolbar on startup (optional).
-      startupFocus: true
-    });
-  </script>
-
    
 
   </body>

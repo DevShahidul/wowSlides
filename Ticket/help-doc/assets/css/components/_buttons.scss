@@ -1,5 +1,5 @@
 .button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   border-radius: 7px;
   padding: 15px 20px;
@@ -54,4 +54,26 @@
   }
 }
 
+.white-border-btn {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: 1px solid #fff;
+  @include transition(0.2s);
+  &:hover {
+    color: $primary_color !important;
+    background: #fff;
+    @include transition(0.2s);
+  }
+}
 
+.white-btn {
+  background: #fff;
+  color: $primary_color;
+  @include transition(0.2s);
+  &:hover {
+    color: #fff !important;
+    background: $primary_color;
+    border: 1px solid #fff;
+    @include transition(0.2s);
+  }
+}

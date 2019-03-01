@@ -18,7 +18,7 @@ ol {
   }
 }
 a {
-  color: #636363;
+  color: #4f4f4f;
   vertical-align: middle;
   &:hover {
     text-decoration: none;
@@ -42,7 +42,7 @@ figure {
 }
 
 #content {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
 }
 .wrapper {
   display: flex;

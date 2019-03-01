@@ -61,6 +61,30 @@
   }
 }
 
+.abix-tree-list {
+  ul {
+    padding-left: 20px;
+  }
+  .collapsed span.icon, .expanded span.icon{
+    margin-right: 6px;
+    cursor: pointer;
+  }
+  .icon {
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    margin-right: 5px;
+        margin-bottom: -2px;
+        cursor: pointer;
+  }
+  .plus-icon {
+    background-image: url(../img/icons/plus.svg);
+  }
+  .minus-icon {
+    background-image: url(../img/icons/minus.svg);
+  }
+}
 .btn-container {
   text-align: right;
   a {
@@ -79,7 +103,8 @@
 .content-style {
   width: 100%;
   h1, h2, h3, h4, h5, h6 {
-    @extend .secondary-font-regular;
+    @extend .secondary-font-bold;
+    color: $text-color-light;
   }
   p {
     @extend .primary-font-regular;
@@ -118,4 +143,27 @@
     max-width: 330px;
     padding: 15px;
     margin: auto;
+}
+
+.card {
+    padding: 20px 30px;
+    /*box-shadow: 1px 1px 10px 1px #c9c9c9;*/
+    border: none;
+    margin-bottom: 20px;
+}
+
+.doc-block {
+  margin-bottom: 20px;
+  &::after {
+    content: "_";
+    font-size: 2rem;
+    color: $primary_color;
+  }
+}
+
+.no-result-block {
+  text-align: center;
+  img {
+    width: 100px;
+  }
 }

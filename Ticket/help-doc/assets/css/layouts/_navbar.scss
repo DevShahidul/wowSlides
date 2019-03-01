@@ -1,7 +1,7 @@
 nav {
   position: sticky !important;
   top: 0;
-  background: #fff;
+  background: $primary_color;
   border-bottom: 1px solid #e4e5e7;
   z-index: 9;
   &.navbar {
@@ -24,9 +24,9 @@ nav {
     @extend .primary-font-bold;
     padding-right: 24px !important;
     padding-left: 24px !important;
-    color: $text-color-light;
+    color: #fff;
     &:hover {
-      color: $primary_color;
+      color: #f0f0f0;
     }
     @media (max-width: 1600px) and (min-width: 992px) {
       padding-right: 12px !important;
@@ -34,45 +34,9 @@ nav {
     }
   }
   .nav-item.active .nav-link {
-    color: $primary_color;
+    color: #fff;
   }
   @media (max-width: 768px) {
     position: relative !important;
   }
-}
-
-
-.navbar-dropdown {
-  top: 40px;
-  width: 220px;
-  left: -35px;
-  border-radius: 7px;
-  box-shadow: 1px 1px 10px 1px #d2d2d2;
-  border: none;
-  .dropdown-item {
-    font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    text-align: center; 
-    padding: 0.65rem 1.5rem;
-    color: $text-color-light;
-  }
-}
-
-.head-nav {
-  @extend .p20;
-  background: linear-gradient(to top, #7473ff, #5958ff);
-  .head-links {
-    a {
-      color: #fff;
-      @extend .primary-font-semibold;
-      font-size: 1.1rem;
-      @include transition(0.2s);
-      &:hover {
-        color:  #ddd;
-        @include transition(0.2s);
-      }
-    }
-  }
-  
 }
