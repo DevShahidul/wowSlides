@@ -5934,7 +5934,7 @@ button.bg-dark:focus {
   background-color: transparent !important;
 }
 
-.border {
+.border, .product-items .product-item {
   border: 1px solid #dee2e6 !important;
 }
 
@@ -13342,7 +13342,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   position: relative;
 }
 
-.slice-xl, .no-result-block {
+.slice-xl {
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
@@ -13379,7 +13379,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: relative;
   }
 
-  .slice-xl, .no-result-block {
+  .slice-xl {
     padding-top: 4rem;
     padding-bottom: 4rem;
     position: relative;
@@ -13407,7 +13407,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-top: 1px solid #5b626c;
 }
 
-.p-box-shadow {
+.p-box-shadow, .product-items img {
   box-shadow: 1px 1px 10px 1px lightgrey;
 }
 
@@ -14093,6 +14093,28 @@ footer {
 }
 .no-result-block img {
   width: 100px;
+}
+
+.product-items .product-item {
+  text-align: center;
+  padding: 40px;
+}
+.product-items .product-item:hover {
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 4px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #f4f4f4;
+}
+.product-items img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+.product-items p {
+  margin-top: 20px;
 }
 
 .pagination .page-item {

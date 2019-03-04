@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg4804"
+   viewBox="0 0 70.000001 70.000003"
+   height="70"
+   width="70"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cinema8_mini_LOGO.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     id="namedview9"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="4.72"
+     inkscape:cx="3.3262726"
+     inkscape:cy="28.855935"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4804" />
+  <defs
+     id="defs4806" />
+  <metadata
+     id="metadata4809">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="opacity:1;fill:#ed213a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:1.25, 1.25000000000000000;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect4149"
+     width="70.000008"
+     height="70.000008"
+     x="-3.8146973e-06"
+     y="-3.8146973e-06" />
+  <g
+     transform="translate(-32.188435,-844.21269)"
+     id="layer1">
+    <g
+       id="g4767"
+       transform="matrix(0.16666659,0,0,-0.16666659,-152.85728,972.82313)">
+      <g
+         style="fill:#ffffff"
+         id="g42"
+         transform="matrix(1.168794,0,0,1.168794,1252.92,553.12717)">
+        <path
+           d="m 0,0 c -1.257,-1.407 -2.478,-2.875 -3.658,-4.41 -9.78,-12.702 -14.424,-28.593 -13.45,-45.96 1.121,-19.97 9.95,-38.303 24.859,-51.623 14.911,-13.325 34.121,-20.045 54.085,-18.92 41.214,2.314 72.859,37.729 70.534,78.935 -1.143,20.488 -10.808,39.825 -26.499,53.057 L 93.122,-4.043 c 11.721,-9.879 18.649,-23.743 19.509,-39.041 1.707,-30.323 -21.577,-56.382 -51.906,-58.087 -14.69,-0.828 -28.822,4.117 -39.793,13.926 -10.973,9.803 -17.472,23.289 -18.297,37.982 -0.707,12.561 2.538,23.903 9.379,32.795 11.543,15.01 29.319,22.558 48.128,30.558 9.304,3.956 18.921,8.049 27.872,13.152 l -0.039,0.072 c 20.404,11.673 30.519,29.652 29.262,51.995 -1.847,32.858 -30.08,58.085 -62.932,56.236 C 37.875,134.627 23.357,127.102 13.17,115.705 2.99,104.311 -2.852,89.042 -1.932,72.613 -1.012,56.285 6.688,40.869 19.194,30.325 l 12.75,15.124 C 23.457,52.599 18.441,62.646 17.817,73.721 16.58,95.689 33.445,114.563 55.42,115.802 77.38,117.038 96.259,100.171 97.488,78.199 98.326,63.401 91.981,52.354 78.072,44.425 l 0.036,-0.059 C 70.187,39.86 61.544,36.178 52.402,32.293 33.699,24.332 14.417,16.134 0,0"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path44"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -167,3 +167,28 @@
     width: 100px;
   }
 }
+
+.product-items {
+  .product-item {
+    text-align: center;
+    @extend .border;
+    padding: 40px;
+    &:hover {
+      @include transition(0.2s);
+      transform: translateY(-5px) scale(1.005) translateZ(0);
+      box-shadow: 0 4px 36px rgba(0,0,0,0.11),
+        0 24px 46px #f4f4f4;
+    }
+  }
+  img {
+    border-radius: 50%;
+    @extend  .p-box-shadow;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+  p {
+    margin-top: 20px;
+  }
+
+}
