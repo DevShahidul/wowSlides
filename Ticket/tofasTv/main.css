@@ -302,13 +302,13 @@ a {
   align-items: center;
   justify-content: center;
 }
-.tv-box .table-style tr:nth-child(3n-1){
+.tv-box .table-style tr {
   border-left: 10px solid #ab1c09;
 }
-.tv-box .table-style tr:nth-child(3n-1) .class-name{
+.tv-box .table-style tr .class-name{
   background: #ab1c09;
 }
-.tv-box .table-style tr:nth-child(3n) {
+/*.tv-box .table-style tr:nth-child(3n) {
   border-left: 10px solid #e03121;
 }
 .tv-box .table-style tr:nth-child(3n) .class-name{
@@ -322,7 +322,7 @@ a {
 }
 .tv-box .table-style tr:first-child {
   border-left: 10px solid transparent;
-}
+}*/
 
 .tv-box .table-style td {
   padding: 0;
