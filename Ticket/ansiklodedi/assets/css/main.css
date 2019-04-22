@@ -13427,6 +13427,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-right: 1px solid #5b626c;
 }
 
+.position-initial {
+  position: initial !important;
+}
+
 .proxima-nova-regular, .search-area input, .search-area-transparent input, p {
   font-family: "ProximaNova Regular", sans-serif;
 }
@@ -14157,6 +14161,28 @@ footer {
 }
 .selectize-dropdown.group-tree .ui-breadcrumb:last-child:after {
   content: " ";
+}
+
+.inline-search {
+  display: flex;
+}
+.inline-search img {
+  margin-right: -23px;
+  z-index: 9;
+  width: 17px;
+  margin-bottom: 4px;
+}
+.inline-search input {
+  border: 0;
+  border-bottom: 1px solid #d5d5d5;
+  padding-left: 30px;
+  font-size: 13px;
+}
+.inline-search input:focus {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ff6666;
+  outline: none;
 }
 
 .nav-tabs {

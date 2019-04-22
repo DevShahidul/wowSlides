@@ -352,3 +352,26 @@
     }
   }
 }
+
+
+.inline-search {
+  display: flex;
+  img {
+    margin-right: -23px;
+    z-index: 9;
+    width: 17px;
+    margin-bottom: 4px;
+  }
+  input {
+    border: 0;
+    border-bottom: 1px solid #d5d5d5;
+    padding-left: 30px;
+    font-size: 13px;
+    &:focus {
+      border: none;
+      box-shadow: none;
+      border-bottom: 1px solid $primary_color;
+      outline: none;
+    }
+  }
+}
