@@ -32,3 +32,21 @@
     border-color: $gray-color;
     border-radius: 0;
 }
+
+/*Badge Pill*/
+.badge-pill {
+    padding: 0.35em 0.8rem;
+}
+
+.badge-warning {
+  background-color: $warning-color;
+  color: #fff;
+}
+.badge-success {
+  background-color: $success-color;
+  color: #fff;
+}
+.badge-danger {
+  background-color: $danger-color;
+  color: #fff;
+}
